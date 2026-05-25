@@ -483,6 +483,7 @@ footer a:hover { text-decoration: underline; }
   <ul>
     <li><a href="#comecar">Começar</a></li>
     <li><a href="#comandos">Comandos</a></li>
+    <li><a href="#pratica">Como rodar</a></li>
     <li><a href="#portal">Portal de aprovação</a></li>
     <li><a href="#criar">Criar conteúdo</a></li>
     <li><a href="#multiplicar">Multiplicar</a></li>
@@ -659,11 +660,306 @@ claude</code></pre>
   </div>
 </section>
 
-<!-- ━━━ SECTION 3: PORTAL ━━━ -->
+<!-- ━━━ SECTION 3: COMO RODAR NA PRÁTICA ━━━ -->
+<section id="pratica">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 · Mão na massa</span>
+      <h2>Como rodar na prática (4 fluxos)</h2>
+      <p class="section-desc">Os 4 fluxos mais comuns do dia a dia, com comando exato, dependências locais necessárias e onde fica o resultado. Mostre essa seção pros operadores antes de eles começarem.</p>
+    </div>
+
+    <!-- ━━━ FLUXO A: SUBIR CONTEÚDO PRO PORTAL ━━━ -->
+    <h3>A) Subir conteúdo novo pro portal</h3>
+    <p>Você criou carrosseis novos via squad e quer eles aparecendo no portal de aprovação. Aqui o fluxo completo:</p>
+
+    <ol class="steps">
+      <li>
+        <div>
+          <h4>Copie os PNGs gerados pra pasta do portal</h4>
+          <p>Os carrosseis novos saíram em <code>outputs/campanhas/{slug}/carrosseis/</code>. Mova pro portal:</p>
+          <pre><code>cp outputs/campanhas/em-cristo/carrosseis/dia-22/*.png \
+   apps/conteudo/img/cf-carrosseis/dia-22/</code></pre>
+          <p>Estrutura esperada: <code>1-capa.png</code> + <code>2.png</code> até <code>7.png</code> (capa + 6 internos).</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Sincronize pro Supabase (banco do portal)</h4>
+          <pre><code>node ~/claude/castelo-forte/squads/conteudo/skills/aprovacoes/scripts/publicar.mjs castelo-forte</code></pre>
+          <p>Escaneia <code>apps/conteudo/img/cf-*</code>, detecta novos itens, faz upsert no Supabase. <strong>Idempotente</strong>: pode rodar várias vezes sem duplicar.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Commit + push no GitHub</h4>
+          <pre><code>cd ~/claude/castelo-forte
+git add apps/conteudo/img/cf-carrosseis/dia-22/
+git commit -m "feat(portal): adiciona carrosseis do dia 22 da campanha em-cristo"
+git push</code></pre>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Deploy automático no Vercel</h4>
+          <p>Configuramos auto-deploy: <strong>push no main = deploy em ~30s</strong>. Não precisa rodar comando nenhum. Você vê o status em:</p>
+          <p><a href="https://vercel.com/torriani/castelo-forte/deployments">vercel.com/torriani/castelo-forte/deployments</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Gere link mágico pro aprovador</h4>
+          <pre><code>node ~/claude/castelo-forte/squads/conteudo/skills/aprovacoes/scripts/link.mjs castelo-forte</code></pre>
+          <p>Imprime URL única com token. Mande pro aprovador via WhatsApp.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-success">
+      <div class="callout-icon">⚡</div>
+      <div class="callout-content">
+        <strong>Atalho:</strong>
+        Em vez de lembrar tudo isso, rode <code>/castelo-forte:conteudo:portal</code> no Claude Code. Ele te guia passo a passo perguntando o que você quer fazer.
+      </div>
+    </div>
+
+    <!-- ━━━ FLUXO B: CRIAR CAMPANHA NOVA ━━━ -->
+    <h3>B) Criar uma campanha nova</h3>
+    <p>Campanha = sequência integrada de peças (feed + stories + reels) em torno de um tema central, com cronograma dia-a-dia.</p>
+
+    <h4>Comando único</h4>
+    <pre><code>cd ~/claude/castelo-forte
+claude
+@content-chief
+*campanha</code></pre>
+
+    <h4>O que o Chief vai pedir (8 inputs)</h4>
+    <table>
+      <thead>
+        <tr><th>Input</th><th>Obrigatório?</th><th>Exemplo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Tema central</strong></td><td>Sim</td><td>"A autoridade do filho de Deus no cotidiano"</td></tr>
+        <tr><td><strong>Público-alvo</strong></td><td>Sim</td><td>"Membros 25-45 anos que se sentem derrotados"</td></tr>
+        <tr><td><strong>Objetivo</strong></td><td>Sim</td><td>Atração / Consciência / Aquecimento / <strong>Venda</strong></td></tr>
+        <tr><td><strong>Duração</strong></td><td>Sim</td><td>3, 5 ou 7 dias</td></tr>
+        <tr><td>Oferta relacionada</td><td>Não</td><td>"Encontro de Avivamento 25/05"</td></tr>
+        <tr><td>Formatos desejados</td><td>Não (default: carrossel + reels + stories)</td><td>"só carrossel + stories"</td></tr>
+        <tr><td>Prints/provas</td><td>Não</td><td>Depoimentos, screenshots, fotos</td></tr>
+        <tr><td>Crença a destruir</td><td>Não</td><td>"Que a vida cristã é só aguentar até morrer"</td></tr>
+      </tbody>
+    </table>
+
+    <h4>O que o Chief entrega</h4>
+    <ul>
+      <li><strong>Narrativa central</strong> da campanha (fio condutor)</li>
+      <li><strong>Progressão emocional</strong> ao longo dos dias</li>
+      <li><strong>Cronograma dia-a-dia</strong> com formato + intenção de cada peça</li>
+      <li><strong>Cada peça criada</strong> pelo agente especializado e validada pelo Anti-IA</li>
+    </ul>
+
+    <h4>Variante avançada (E1-E8)</h4>
+    <p>Se a campanha é mais sofisticada (lançamento de evento, ofensiva editorial), use o <code>@strategist</code> direto com uma das 8 estratégias:</p>
+    <div class="tag-list">
+      <span class="badge badge-info">E1 — Lançamento de pressão (5 dias)</span>
+      <span class="badge badge-info">E2 — Aquecimento suave</span>
+      <span class="badge badge-info">E3 — Doutrina silenciosa</span>
+      <span class="badge badge-info">E4 — Quebra de objeção</span>
+      <span class="badge badge-info">E5 — Híbrido</span>
+      <span class="badge badge-info">E6 — Reativação</span>
+      <span class="badge badge-info">E7 — Manifesto</span>
+      <span class="badge badge-info">E8 — Convocação evento</span>
+    </div>
+
+    <!-- ━━━ FLUXO C: MULTIPLICAR YOUTUBE ━━━ -->
+    <h3>C) Multiplicar um YouTube (pregação/live/aula)</h3>
+    <p>Pegar 1 pregação de 50min e gerar 30+ peças (carrosseis, reels, stories, frases) automaticamente.</p>
+
+    <h4>Pré-requisitos locais (instalar 1 vez)</h4>
+    <div class="callout callout-warn">
+      <div class="callout-icon">📦</div>
+      <div class="callout-content">
+        <strong>Cada operador precisa ter:</strong>
+        <pre style="margin-top:8px"><code>brew install yt-dlp ffmpeg</code></pre>
+        <code>yt-dlp</code> baixa áudio do YouTube, <code>ffmpeg</code> processa vídeos longos.
+        Opcional (só se a transcrição nativa do YouTube falhar): <code>OPENAI_API_KEY</code> ou <code>GEMINI_API_KEY</code> no <code>.env</code>.
+      </div>
+    </div>
+
+    <h4>Comando único</h4>
+    <pre><code>cd ~/claude/castelo-forte
+claude
+@content-chief
+*multiplicar</code></pre>
+
+    <h4>Você cola a URL</h4>
+    <p>Chief pergunta: <em>"Qual é a fonte do conteúdo pilar?"</em></p>
+    <ul>
+      <li><strong>1.</strong> URL do YouTube ← cole aqui</li>
+      <li>2. Colar texto/transcrição (se já tem)</li>
+      <li>3. Arquivo local (áudio/vídeo)</li>
+    </ul>
+
+    <h4>Pipeline automático (7 fases)</h4>
+    <div class="flow">
+      <div class="flow-step">
+        <span class="step-num">1</span>
+        <h5>Transcrever</h5>
+        <p>Tenta transcrição nativa do YouTube primeiro (melhor qualidade). Se falhar, usa yt-text + Gemini. Último recurso: Whisper API.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">2</span>
+        <h5>Limpar transcrição</h5>
+        <p>Sonnet corrige pontuação, remove muletas verbais, formata em parágrafos.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step highlight">
+        <span class="step-num">3</span>
+        <h5>Extrair átomos</h5>
+        <p>Cada átomo = 1 ideia isolada com potencial viral. Salva em <code>outputs/multiplicar/{slug}/atomos/</code></p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">4</span>
+        <h5>Planejar formatos</h5>
+        <p>Chief decide quais átomos viram: carrosseis (3-5), reels (5-8), stories (2-3 sequências), frases (10-15), e-mails (0-3).</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step highlight">
+        <span class="step-num">5</span>
+        <h5>VOCÊ APROVA O PLANO</h5>
+        <p>Chief mostra o plano completo e PARA. Você revisa e aprova ou ajusta antes de criar as peças.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">6</span>
+        <h5>Criar peças</h5>
+        <p>Cada formato vai pro agente especializado: <code>@carousel-creator</code>, <code>@reels-creator</code>, <code>@stories-strategist</code>, <code>@print-tweet-creator</code>.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">7</span>
+        <h5>Validar tudo (Anti-IA + Oráculo + tom)</h5>
+        <p><code>@content-validator</code> roda em cada peça. Reprovados voltam pra reescrita.</p>
+      </div>
+    </div>
+
+    <h4>Onde fica o resultado</h4>
+    <pre><code>outputs/multiplicar/{nome-da-pregacao}/
+├── transcricao.md
+├── atomos/
+│   ├── 01-autoridade-no-cotidiano.md
+│   ├── 02-filho-nao-mendigo.md
+│   └── ...
+├── carrosseis/
+├── reels/
+├── stories/
+├── frases/
+└── emails/</code></pre>
+
+    <!-- ━━━ FLUXO D: GERAR IMAGENS EM LOTE ━━━ -->
+    <h3>D) Gerar imagens em lote (copy já pronta)</h3>
+    <p>Você tem 20 copies prontas em texto e quer transformar em PNG. Há <strong>2 caminhos</strong> dependendo do tipo de imagem:</p>
+
+    <h4>Pré-requisitos locais (instalar 1 vez)</h4>
+    <div class="callout callout-warn">
+      <div class="callout-icon">📦</div>
+      <div class="callout-content">
+        <strong>Cada operador precisa:</strong>
+        <pre style="margin-top:8px"><code>cd ~/claude/castelo-forte/squads/conteudo/app/image-generator
+npm install</code></pre>
+        Instala Sharp (manipulação de imagem). Para gerar com IA também, precisa <code>OPENROUTER_API_KEY</code> no <code>.env</code> raiz.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h4>Caminho 1 — Templates (carrosseis/print-tweets)</h4>
+        <p>Se as imagens são slide de carrossel ou print-tweet (texto bem formatado sobre fundo). Usa template HTML + CSS, renderiza com Sharp. <strong>Rápido e consistente.</strong></p>
+      </div>
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h4>Caminho 2 — IA generativa (capas únicas)</h4>
+        <p>Se a imagem precisa ser <strong>gerada do zero</strong> (capas ilustrativas, cenas únicas, conceitos visuais). Usa Gemini/Nano Banana via OpenRouter. <strong>Criativo mas custa por geração.</strong></p>
+      </div>
+    </div>
+
+    <h4>Caminho 1: Templates em lote</h4>
+    <pre><code># 1. Crie o arquivo de lote (JSON com 1 item por slide)
+cat &gt; /tmp/lote.json &lt;&lt;'EOF'
+{
+  "defaultTemplate": "twitter-branco",
+  "meta": { "author": "Castelo Forte", "handle": "@castelofortemandaqui" },
+  "slides": [
+    { "body": "Você não foi chamado pra **aguentar**.\nFoi chamado pra **reinar**." },
+    { "body": "Filho não pede esmola pro próprio Pai." },
+    { "body": "Sua autoridade não está no púlpito.\nEstá no nome." }
+  ]
+}
+EOF
+
+# 2. Rode o gerador apontando pra pasta de saída
+cd ~/claude/castelo-forte/squads/conteudo/app/image-generator
+node generate.mjs --batch /tmp/lote.json --output ../../../../outputs/frases/dia-15/</code></pre>
+
+    <p><strong>Templates disponíveis:</strong></p>
+    <div class="tag-list">
+      <span class="badge badge-soft">twitter-branco</span>
+      <span class="badge badge-soft">twitter-black</span>
+      <span class="badge badge-soft">imperial-dark</span>
+      <span class="badge badge-soft">claude-azul</span>
+      <span class="badge badge-soft">castelo-forte-editorial</span>
+      <span class="badge badge-soft">castelo-forte-frase</span>
+    </div>
+    <p>Catálogo completo: <code>squads/conteudo/templates/catalog.yaml</code>. Preview navegável: abra <code>squads/conteudo/templates/CATALOGO.html</code> no browser.</p>
+
+    <h4>Caminho 2: IA generativa em lote</h4>
+    <pre><code># 1. Crie o arquivo de lote (JSON com prompts)
+cat &gt; /tmp/lote-ia.json &lt;&lt;'EOF'
+{
+  "items": [
+    {
+      "prompt": "Cinematic photo of an open Bible on dark wood table, warm golden light from above, dust particles, ultra realistic, depth of field",
+      "output": "outputs/capas/dia-15-biblia.png"
+    },
+    {
+      "prompt": "Castle silhouette at dawn, cinematic, warm orange sky, christian church symbolism, ultra realistic",
+      "output": "outputs/capas/dia-15-castelo.png"
+    }
+  ]
+}
+EOF
+
+# 2. Rode o gerador IA
+cd ~/claude/castelo-forte
+bash squads/conteudo/scripts/gerar-imagem-ia.sh --batch /tmp/lote-ia.json --mode production</code></pre>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">💰</div>
+      <div class="callout-content">
+        <strong>Modo test vs production</strong><br>
+        <code>--mode test</code> usa modelo barato (<code>riverflow-v2-fast</code>) pra validar prompts antes de gastar. <code>--mode production</code> usa modelo final. Sempre teste em batch pequeno primeiro.
+      </div>
+    </div>
+
+    <h4>Atalho via squad</h4>
+    <p>Em vez de montar o JSON na mão, rode no Claude Code:</p>
+    <pre><code>@content-chief
+*gerar-imagem-ia
+# ou pra templates:
+*render-slides</code></pre>
+    <p>Os agentes montam o JSON pra você baseado nas copies que você cola e rodam o gerador.</p>
+
+  </div>
+</section>
+
+<!-- ━━━ SECTION 4: PORTAL ━━━ -->
 <section id="portal">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">03 · Operação diária</span>
+      <span class="section-tag">04 · Operação diária</span>
       <h2>Portal de aprovação</h2>
       <p class="section-desc">Como acessar o portal, alterar conteúdos publicados, ver status da fila de aprovação e gerar links mágicos pro aprovador externo.</p>
     </div>
@@ -786,7 +1082,7 @@ vercel --prod --yes</code></pre>
 <section id="criar" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">04 · Produção</span>
+      <span class="section-tag">05 · Produção</span>
       <h2>Criar conteúdo novo</h2>
       <p class="section-desc">Fluxos passo a passo para cada tipo de peça. Todos passam pelo <strong>Content Chief</strong> (orquestrador) que diagnostica e delega.</p>
     </div>
@@ -882,7 +1178,7 @@ claude
 <section id="multiplicar">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">05 · Pipeline avançado</span>
+      <span class="section-tag">06 · Pipeline avançado</span>
       <h2>Multiplicar conteúdo longo</h2>
       <p class="section-desc">Quebrar 1 live, aula ou podcast em 30+ peças (carrosseis, reels, stories, frases, briefs de e-mail). O ativo mais subutilizado da igreja é a pregação gravada — esse fluxo extrai todos os átomos.</p>
     </div>
@@ -979,7 +1275,7 @@ claude
 <section id="publicar" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">06 · Distribuição</span>
+      <span class="section-tag">07 · Distribuição</span>
       <h2>Publicar no Instagram</h2>
       <p class="section-desc">Pipeline automático com cron (LaunchAgent). Posts agendados são publicados nos horários definidos, com filtro Anti-IA bloqueante.</p>
     </div>
@@ -1028,7 +1324,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="regras">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">07 · Compliance</span>
+      <span class="section-tag">08 · Compliance</span>
       <h2>Regras inegociáveis</h2>
       <p class="section-desc">TODO conteúdo gerado deve respeitar essas regras. Sem exceção.</p>
     </div>
@@ -1100,7 +1396,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="agentes" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">08 · Squad</span>
+      <span class="section-tag">09 · Squad</span>
       <h2>Agentes disponíveis</h2>
       <p class="section-desc">Ative qualquer um direto com <code>@nome</code>. O <strong>Content Chief</strong> sabe quando chamar quem, mas você pode ir direto se já sabe o que quer.</p>
     </div>
@@ -1178,7 +1474,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="problemas">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">09 · Quando der errado</span>
+      <span class="section-tag">10 · Quando der errado</span>
       <h2>Problemas comuns</h2>
       <p class="section-desc">Top erros que aparecem na operação diária, com solução direta. Para problemas mais profundos: <code>docs/TROUBLESHOOTING.md</code>.</p>
     </div>
