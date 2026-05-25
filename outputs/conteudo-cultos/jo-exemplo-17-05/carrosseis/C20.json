@@ -1,0 +1,79 @@
+{
+  "id": "C20",
+  "titulo": "Você Conhece Deus ou Só Sabe Sobre Ele?",
+  "tipo": "Imperial",
+  "proporção": "Tensão",
+  "hook": "Diagnóstico do crente de domingo",
+  "tema_central": "Você não pode pular conhecer Deus em casa e esperar intimidade no domingo. Sem leitura, sem oração, não há revelação.",
+  "versiculo_base": "Jó 42:5",
+  "slides": [
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Você conhece Deus ou só SABE sobre ele?",
+      "accent_word": "SABE",
+      "image_hint": "Bíblia fechada com poeira leve, mesa de madeira escura, luz lateral cinematográfica"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Tem uma cena que se repete todo domingo.",
+      "body": "Gente que não abriu a Bíblia a semana inteira chegando na igreja querendo falar com Deus.\n\nE saindo frustrada porque não sentiu nada."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Intimidade não funciona assim.",
+      "body": "Em nenhum relacionamento da sua vida funciona.\n\nVocê não passa a semana sem falar com alguém e espera profundidade no encontro de sábado.\n\nCom Deus é a mesma lógica.",
+      "accent_word": "mesma lógica"
+    },
+    {
+      "n": 4,
+      "tipo": "triade",
+      "personagem": "JÓ",
+      "headline_resto": "Andou anos com Deus. Por isso falou o que era verdade",
+      "sub": "Quando os amigos religiosos vieram acusar, Deus repreendeu eles e disse: orem por Jó, porque ele falou o que é verdade sobre mim. Intimidade dá legitimidade.",
+      "image_hint": "Homem orando sozinho de madrugada, vela acesa, paleta quente"
+    },
+    {
+      "n": 5,
+      "tipo": "texto-midnight",
+      "headline": "Você quer ir falar com Deus.",
+      "body": "Mas não fala aqui na terra.\n\nFala lá no céu. Tá. Vai jogar futebol no céu também.\n\nSó que lá todo jogo acaba empatado pra não dar confusão."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-off",
+      "headline": "Diagnóstico simples, sem rodeio:",
+      "body": "Se você não tira 30 minutos por dia pra ler a Bíblia e orar, você não conhece Deus.\n\nVocê tem opiniões sobre Deus. Que é diferente."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "A boa notícia é que começar é simples.",
+      "body": "Abra a Bíblia hoje. Leia um capítulo de Efésios.\n\nPergunte a Deus o que ele quer te dizer ali. E espere em silêncio dois minutos.\n\nFaz isso 30 dias e vem me contar."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Os meus ouvidos já tinham ouvido a teu respeito, mas agora os meus olhos te veem.",
+      "referencia": "Jó 42:5",
+      "image_hint": "Bíblia aberta com luz natural cruzando a página"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "O crente que conhece Deus pelo ouvido vive de muleta emocional.",
+      "body": "O crente que conhece pelos olhos sustenta a fé na tempestade."
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Tudo que Deus tem pra te dar começa em uma única palavra.",
+      "marca": "EM CRISTO",
+      "data": "07.06 · 09H",
+      "igreja": "Domingo · Igreja Castelo Forte"
+    }
+  ],
+  "legenda_instagram": "Pergunta honesta: quando foi a última vez que você abriu sua Bíblia em casa?\n\nNão julgamento. Só diagnóstico.\n\nPorque tem uma cena que se repete todo domingo: gente que não falou com Deus a semana inteira chegando no culto querendo intimidade. E saindo frustrada porque não sentiu nada.\n\nIntimidade não funciona assim. Em nenhum relacionamento da sua vida funciona.\n\nJó andou anos com Deus. Por isso, quando os amigos religiosos vieram acusar ele, o próprio Deus disse: orem por Jó, porque ele falou o que é verdade sobre mim.\n\nIntimidade dá legitimidade.\n\nComeça simples. Abre Efésios hoje. Lê um capítulo. Pergunta o que Deus quer te dizer ali. Espera dois minutos em silêncio.\n\n30 dias e vem me contar o que mudou.\n\nE no domingo 07.06 começa a série EM CRISTO. Vem.\n\n#IgrejaCasteloForte #EmCristo #Jurerê #Florianópolis"
+}

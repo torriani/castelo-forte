@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modelo 02 — Dark Editorial</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap');
+  @font-face {
+    font-family: 'Fixture Condensed';
+    src: url('fonts/Fixture-CondensedRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Fixture Condensed';
+    src: url('fonts/Fixture-CondensedSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Fixture Condensed';
+    src: url('fonts/Fixture-CondensedBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Fixture Condensed';
+    src: url('fonts/Fixture-CondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#080808;color:#fff;font-family:'Inter',sans-serif;padding:40px 40px 80px;}
+  h1{font-size:28px;font-weight:700;margin-bottom:6px;letter-spacing:-0.5px;}
+  .subtitle{font-size:14px;color:#888;margin-bottom:40px;}
+  .grid{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
+  .card{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .card-label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:1px;}
+  .sf{width:216px;height:270px;border-radius:8px;overflow:hidden;position:relative;box-shadow:0 6px 24px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.06);flex-shrink:0;}
+  .sf>.si{width:1080px;height:1350px;transform:scale(0.2);transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;}
+</style>
+</head>
+<body>
+
+<h1>Modelo 02 — Dark Editorial</h1>
+<p class="subtitle">10 slides · 1080 × 1350 px · escala 0.2</p>
+
+<div class="grid">
+
+<!-- S0 — HOOK -->
+<div class="card">
+  <span class="card-label">S0 — Hook</span>
+  <div class="sf">
+    <div class="si" style="background:#040416;position:relative;">
+      <img src="showcase-assets/tech-1.jpg" style="position:absolute;top:0;left:0;width:1080px;height:1350px;object-fit:cover;" />
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1350px;background:linear-gradient(to bottom, rgba(0,0,0,0) 33%, rgb(0,0,0) 78%);"></div>
+      <div style="position:absolute;top:811px;left:0;width:1080px;text-align:center;">
+        <div style="font-family:'Fixture Condensed',sans-serif;font-weight:600;font-size:40px;text-transform:uppercase;color:#fff;letter-spacing:-2px;line-height:0.85;width:933px;margin:0 auto;">Meu computador começou a trabalhar sem mim e isso faz diferença:</div>
+      </div>
+      <div style="position:absolute;top:876px;left:0;width:1080px;text-align:center;">
+        <div style="font-family:'Fixture Condensed',sans-serif;font-weight:600;font-size:96px;text-transform:uppercase;color:#fff;letter-spacing:-4px;line-height:0.85;width:933px;margin:0 auto;">Abri o notebook, dei um comando e fui tomar café; o contexto executava atenção e precisão sem ser percebido.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S1 — CONTENT (branco, título + foto border-radius topo + seta + body) -->
+<div class="card">
+  <span class="card-label">S1 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <div style="position:absolute;left:36px;top:138px;width:873px;font-family:'Inter',sans-serif;font-weight:800;font-size:96px;color:#040416;letter-spacing:-4.8px;line-height:100px;">A espera fazia parte do conteúdo.</div>
+      <img src="showcase-assets/tech-2.jpg" style="position:absolute;top:479px;left:0;width:1080px;height:871px;object-fit:cover;border-radius:36px 34px 0 0;" />
+      <div style="position:absolute;top:434px;left:0;width:1080px;height:933px;background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);"></div>
+      <div style="position:absolute;left:36px;top:1074px;width:852px;font-family:'Inter',sans-serif;font-weight:600;font-size:43px;color:#fff;letter-spacing:-3px;line-height:1.26;">Abri o notebook de manhã, dei um comando e fui tomar café, reforçando atenção sustentada e tolerância ao 'ainda não'.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S2 — CONTENT (branco, título + foto bottom com gradient + body sobre foto) -->
+<div class="card">
+  <span class="card-label">S2 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <div style="position:absolute;left:36px;top:138px;width:873px;font-family:'Inter',sans-serif;font-weight:800;font-size:96px;color:#040416;letter-spacing:-4.8px;line-height:100px;">Quando voltei, a tela estava viva.</div>
+      <img src="showcase-assets/auto-mode.jpg" style="position:absolute;bottom:0;left:0;width:1080px;height:783px;object-fit:cover;border-radius:36px 34px 0 0;" />
+      <div style="position:absolute;bottom:0;left:0;width:1080px;height:783px;background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);"></div>
+      <div style="position:absolute;bottom:90px;left:36px;width:852px;font-family:'Inter',sans-serif;font-weight:600;font-size:43px;color:#fff;letter-spacing:-3px;line-height:1.26;">A história continuava fora do comando: o agente recriava cenas, preenchia lacunas com imaginação e pensamento preciso.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S3 — CONTENT (fundo escuro, título + foto meio + body) -->
+<div class="card">
+  <span class="card-label">S3 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#040416;position:relative;">
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1350px;background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);"></div>
+      <div style="position:absolute;left:36px;top:106px;width:780px;font-family:'Inter',sans-serif;font-weight:500;font-size:64px;color:#fff;letter-spacing:-2.56px;line-height:1.22;">Não era um vídeo. Não era uma demo ensaiada.</div>
+      <img src="showcase-assets/tech-3.jpg" style="position:absolute;top:398px;left:50%;transform:translateX(-50%);width:1009px;height:536px;object-fit:cover;border-radius:20px;" />
+      <div style="position:absolute;left:36px;top:1005px;width:958px;font-family:'Inter',sans-serif;font-weight:500;font-size:55px;color:#fff;letter-spacing:-2.2px;line-height:1.22;">Era o Playwright controlando a máquina enquanto eu tomava café com leite. Paciência e precisão exercitados pelo fluxo.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S4 — DESTAQUE VERMELHO (foto mix-blend-mode multiply + título serif + body underline) -->
+<div class="card">
+  <span class="card-label">S4 — Destaque</span>
+  <div class="sf">
+    <div class="si" style="background:#f73600;position:relative;">
+      <img src="showcase-assets/tech-1.jpg" style="position:absolute;top:0;left:0;width:1080px;height:1350px;object-fit:cover;mix-blend-mode:multiply;" />
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1350px;background:linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgb(0,0,0) 92%);"></div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:866px;text-align:center;font-family:'Instrument Serif',serif;font-weight:400;font-size:96px;color:#fcffd5;letter-spacing:-4px;line-height:0.94;margin-top:-44px;">O ambiente atual reorganizou o esforço necessário para seguir narrativas.</div>
+      <div style="position:absolute;top:956px;left:50%;transform:translateX(-50%);width:672px;text-align:center;font-family:'Inter',sans-serif;font-weight:700;font-size:35px;color:#fff;letter-spacing:-1.4px;line-height:1.39;text-decoration:underline;">Cortes rápidos, reprodução automática e recompensas imediatas priorizam estímulos constantes e reduzem o custo de sustentar foco por mais tempo.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S5 — CONTENT (branco, igual S1) -->
+<div class="card">
+  <span class="card-label">S5 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <div style="position:absolute;left:36px;top:138px;width:873px;font-family:'Inter',sans-serif;font-weight:800;font-size:96px;color:#040416;letter-spacing:-4.8px;line-height:100px;">Você ainda faz tudo na mão.</div>
+      <img src="showcase-assets/tech-5.jpg" style="position:absolute;top:479px;left:0;width:1080px;height:871px;object-fit:cover;border-radius:36px 34px 0 0;" />
+      <div style="position:absolute;top:434px;left:0;width:1080px;height:933px;background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);"></div>
+      <div style="position:absolute;left:36px;top:1074px;width:852px;font-family:'Inter',sans-serif;font-weight:600;font-size:43px;color:#fff;letter-spacing:-3px;line-height:1.26;">Delegue para uma inteligência que não cansa, não esquece e não pede aumento.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S6 — CONTENT (fundo escuro, igual S3) -->
+<div class="card">
+  <span class="card-label">S6 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#040416;position:relative;">
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1350px;background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);"></div>
+      <div style="position:absolute;left:36px;top:106px;width:780px;font-family:'Inter',sans-serif;font-weight:500;font-size:64px;color:#fff;letter-spacing:-2.56px;line-height:1.22;">Instruções precisas. Fluxo construído com repertório real.</div>
+      <img src="showcase-assets/tech-4.jpg" style="position:absolute;top:398px;left:50%;transform:translateX(-50%);width:1009px;height:536px;object-fit:cover;border-radius:20px;" />
+      <div style="position:absolute;left:36px;top:1005px;width:958px;font-family:'Inter',sans-serif;font-weight:500;font-size:55px;color:#fff;letter-spacing:-2.2px;line-height:1.22;">A máquina não mexeu sozinha por mágica. Mexeu porque recebeu instrução e construiu repertório coletivo no cotidiano.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S7 — CONTENT (branco, título + foto bottom grande, sem body) -->
+<div class="card">
+  <span class="card-label">S7 — Content</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <div style="position:absolute;left:36px;top:138px;width:873px;font-family:'Inter',sans-serif;font-weight:800;font-size:96px;color:#040416;letter-spacing:-4.8px;line-height:100px;">Quem constrói acorda com o trabalho pronto.</div>
+      <img src="showcase-assets/tech-2.jpg" style="position:absolute;bottom:0;left:0;width:1080px;height:780px;object-fit:cover;border-radius:36px 34px 0 0;" />
+    </div>
+  </div>
+</div>
+
+<!-- S8 — CTA (branco, foto grayscale + título + CTA bar) -->
+<div class="card">
+  <span class="card-label">S8 — CTA</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <img src="showcase-assets/tech-3.jpg" style="position:absolute;top:132px;left:45px;width:990px;height:766px;object-fit:cover;border-radius:8px;filter:grayscale(1);" />
+      <div style="position:absolute;left:36px;top:950px;font-family:'Inter',sans-serif;font-weight:600;font-size:80px;color:#040416;letter-spacing:-3.2px;line-height:1.1;">Comenta AGENTES pra começar.</div>
+      <div style="position:absolute;top:1249px;left:36px;width:987px;height:66px;background:#040416;border-radius:33px;display:flex;align-items:center;justify-content:center;">
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:28px;color:#f5f5f5;letter-spacing:-0.56px;">Comente 'AGENTES' para montar o primeiro fluxo que trabalha por você</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S9 — DESTAQUE VERMELHO FINAL (igual S4) -->
+<div class="card">
+  <span class="card-label">S9 — Destaque</span>
+  <div class="sf">
+    <div class="si" style="background:#f73600;position:relative;">
+      <img src="showcase-assets/tech-3.jpg" style="position:absolute;top:0;left:0;width:1080px;height:1350px;object-fit:cover;mix-blend-mode:multiply;" />
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1350px;background:linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgb(0,0,0) 92%);"></div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:866px;text-align:center;font-family:'Instrument Serif',serif;font-weight:400;font-size:96px;color:#fcffd5;letter-spacing:-4px;line-height:0.94;margin-top:-44px;">A diferença entre quem assiste e quem constrói.</div>
+      <div style="position:absolute;top:956px;left:50%;transform:translateX(-50%);width:672px;text-align:center;font-family:'Inter',sans-serif;font-weight:700;font-size:35px;color:#fff;letter-spacing:-1.4px;line-height:1.39;text-decoration:underline;">Quem constrói fluxos acorda com o trabalho pronto. Quem assiste continua fazendo tudo na mão.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

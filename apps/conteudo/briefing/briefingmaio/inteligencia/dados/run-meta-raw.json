@@ -1,0 +1,85 @@
+{
+  "data": {
+    "id": "k3DWsdC29soLZKJWf",
+    "actId": "Y5mzw9TLFReI0d6gQ",
+    "userId": "eXGW5rDbX2j9Bojox",
+    "startedAt": "2026-05-16T13:01:34.950Z",
+    "finishedAt": null,
+    "status": "READY",
+    "meta": {
+      "origin": "API",
+      "userAgent": "curl/8.7.1"
+    },
+    "stats": {
+      "inputBodyLen": 809,
+      "migrationCount": 0,
+      "rebootCount": 0,
+      "restartCount": 0,
+      "resurrectCount": 0,
+      "computeUnits": 0
+    },
+    "options": {
+      "build": "latest",
+      "memoryMbytes": 1024,
+      "timeoutSecs": 3600,
+      "maxTotalChargeUsd": 25.400717,
+      "maxItems": 84669,
+      "diskMbytes": 8192
+    },
+    "buildId": "ybukwKjYqg2a1xQyx",
+    "defaultKeyValueStoreId": "TSKPLhOuxkRMJYhNp",
+    "defaultDatasetId": "2emZO8OJGx7q5gH7e",
+    "defaultRequestQueueId": "6oEdCJgbz0VwmwtNn",
+    "storageIds": {
+      "keyValueStores": {
+        "default": "TSKPLhOuxkRMJYhNp"
+      },
+      "datasets": {
+        "default": "2emZO8OJGx7q5gH7e"
+      },
+      "requestQueues": {
+        "default": "6oEdCJgbz0VwmwtNn"
+      }
+    },
+    "pricingInfo": {
+      "minimalMaxTotalChargeUsd": null,
+      "pricingModel": "PAY_PER_EVENT",
+      "isPriceChangeNotificationSuppressed": false,
+      "reasonForChange": "We are adding a small startup fee per run to help cover the resources required to launch the Actor, while keeping the per-post price unchanged and extremely affordable compared to alternative solutions on the market.",
+      "startedAt": "2026-04-15T18:41:20.583Z",
+      "createdAt": "2026-04-01T18:41:21.223Z",
+      "apifyMarginPercentage": 0.2,
+      "notifiedAboutFutureChangeAt": "2026-04-01T18:41:42.033Z",
+      "pricingPerEvent": {
+        "actorChargeEvents": {
+          "apify-default-dataset-item": {
+            "eventTitle": "post",
+            "eventDescription": "Single post in the default dataset.",
+            "isOneTimeEvent": false,
+            "eventPriceUsd": 0.0003,
+            "isPrimaryEvent": true
+          },
+          "apify-actor-start": {
+            "eventTitle": "Actor Start",
+            "eventDescription": "Charged when the Actor starts running. Number of events charged depends on Actor memory (one event per GB, minimum one event).",
+            "isOneTimeEvent": true,
+            "eventPriceUsd": 0.005
+          }
+        }
+      }
+    },
+    "chargedEventCounts": {
+      "apify-default-dataset-item": 0,
+      "apify-actor-start": 1
+    },
+    "platformUsageBillingModel": "DEVELOPER",
+    "accountedChargedEventCounts": {
+      "apify-default-dataset-item": 0,
+      "apify-actor-start": 0
+    },
+    "generalAccess": "FOLLOW_USER_SETTING",
+    "buildNumber": "1.4.35",
+    "containerUrl": "https://bne2bw5ofsg9.runs.apify.net",
+    "usageTotalUsd": 0
+  }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Brand Bar — Carousel Template</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  :root {
+    --bg-color: {{bg_color}};
+    --text-color: {{text_color}};
+    --accent-color: {{accent_color}};
+    --font-family: {{font_family}};
+  }
+
+  :root {
+    --bg-color: #1E3A5F;
+    --text-color: #FFFFFF;
+    --accent-color: #F39C12;
+    --font-family: 'Inter', sans-serif;
+    --header-height: 120px;
+    --footer-height: 100px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* --- HEADER BAR: brand name + icon --- */
+  .header-bar {
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    flex-shrink: 0;
+  }
+
+  .header-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .header-icon-letter {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--bg-color);
+  }
+
+  .header-brand {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    opacity: 0.9;
+  }
+
+  .header-topic {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-color);
+  }
+
+  /* --- CONTENT AREA --- */
+  .slide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 80px;
+    position: relative;
+  }
+
+  /* --- HOOK slide --- */
+  .slide[data-type="hook"] .slide-text {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  /* --- CONTENT slide --- */
+  .slide[data-type="content"] .slide-number-badge {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-shrink: 0;
+  }
+
+  .slide[data-type="content"] .slide-text {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  /* --- CTA slide --- */
+  .slide[data-type="cta"] {
+    justify-content: center;
+  }
+
+  .slide[data-type="cta"] .slide-text {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 800;
+    padding: 22px 60px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* --- Accent highlight for keywords --- */
+  .highlight {
+    color: var(--accent-color);
+  }
+
+  /* --- FOOTER BAR: pagination + swipe hint --- */
+  .footer-bar {
+    width: 100%;
+    height: var(--footer-height);
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    flex-shrink: 0;
+  }
+
+  .footer-pagination {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    opacity: 0.5;
+    letter-spacing: 2px;
+  }
+
+  .footer-swipe {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.35;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* --- Progress bar inside footer --- */
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--accent-color);
+    /* Width calculated as: (slide_number / total_slides) * 100% */
+    width: 40%;
+    transition: width 0.3s ease;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header-bar">
+    <div class="header-icon">
+      <span class="header-icon-letter">T</span>
+    </div>
+    <span class="header-brand">{{brand_name}}</span>
+    <span class="header-topic">Serie</span>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="slide" data-type="{{slide_type}}">
+    <!-- Uncomment for numbered content slides -->
+    <!-- <div class="slide-number-badge">{{slide_number}}</div> -->
+    <div class="slide-text">{{slide_text}}</div>
+
+    <!-- Uncomment for CTA slides -->
+    <!-- <div class="cta-button">Saiba mais</div> -->
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bar">
+    <span class="footer-pagination">{{slide_number}} / {{total_slides}}</span>
+    <span class="footer-swipe">Deslize →</span>
+    <div class="progress-bar"></div>
+  </div>
+
+</body>
+</html>

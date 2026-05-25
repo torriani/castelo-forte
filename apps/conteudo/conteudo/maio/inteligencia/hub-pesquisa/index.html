@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hub de Pesquisa · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Hub de <em>Pesquisa</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>Hub de Pesquisa</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / Inteligência</div>
+
+
+
+<div class="container">
+
+<div class="intro">
+  <strong>Toda a pesquisa de inteligência competitiva feita pra Castelo Forte.</strong><br>
+  Análise de 8 igrejas referência (Hillsong São Paulo, Family Jesus, Alcance Curitiba, Get Church Floripa, We Are Reino Brava, Abba Pai, Igreja Cristã Maranata, etc.) com scraping de posts, OCR de capas, análise de hooks, versículos, replicáveis e plano de execução de 90 dias.
+</div>
+
+<div class="section" style="margin-bottom:40px">
+  <span class="section-tag dark">5 Relatórios Consolidados</span>
+  <h2 class="section-title">Síntese Geral</h2>
+  <p class="section-desc">Visão geral, frases replicáveis, inteligência verificada, playbook 90 dias e resumo por concorrente.</p>
+  <div class="cards-grid">
+    
+  <a href="RELATORIO-CONSOLIDADO.html" class="card-link">
+    <div class="card-num">Consolidado</div>
+    <div class="card-title">Relatório Consolidado</div>
+    <div class="card-desc">Síntese geral da pesquisa de inteligência competitiva</div>
+  </a>
+  <a href="RELATORIO-V2-FRASES-REPLICAVEIS.html" class="card-link">
+    <div class="card-num">Consolidado</div>
+    <div class="card-title">Frases Replicáveis (V2)</div>
+    <div class="card-desc">Frases de alto engajamento que podem ser adaptadas</div>
+  </a>
+  <a href="RELATORIO-V3-INTELIGENCIA-REAL.html" class="card-link">
+    <div class="card-num">Consolidado</div>
+    <div class="card-title">Inteligência Real (V3)</div>
+    <div class="card-desc">Análise final com dados verificados</div>
+  </a>
+  <a href="PLAYBOOK-90-DIAS.html" class="card-link">
+    <div class="card-num">Consolidado</div>
+    <div class="card-title">Playbook 90 Dias</div>
+    <div class="card-desc">Plano de execução de 90 dias baseado na pesquisa</div>
+  </a>
+  <a href="O-QUE-PEGAR-DE-CADA-IGREJA.html" class="card-link">
+    <div class="card-num">Consolidado</div>
+    <div class="card-title">O Que Pegar de Cada Igreja</div>
+    <div class="card-desc">Resumo por concorrente analisado</div>
+  </a>
+  </div>
+</div>
+
+<div class="section" style="margin-bottom:40px">
+  <span class="section-tag deeper">10 Análises Temáticas</span>
+  <h2 class="section-title">Relatórios Detalhados</h2>
+  <p class="section-desc">Análises temáticas individuais: rankings, posts de maior engajamento, hooks, posts sobre Efésios e versículos, banco temático.</p>
+  <div class="cards-grid">
+    
+  <a href="relatorios/01-ranking-perfis.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">01 · Ranking de Perfis</div>
+  </a>
+  <a href="relatorios/02-top-posts-engajamento.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">02 · Top Posts por Engajamento</div>
+  </a>
+  <a href="relatorios/03-top-reels-views.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">03 · Top Reels por Views</div>
+  </a>
+  <a href="relatorios/04-top-hooks-eng-absoluto.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">04 · Top Hooks (Engajamento Absoluto)</div>
+  </a>
+  <a href="relatorios/05-top-hooks-rate.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">05 · Top Hooks (Taxa de Engajamento)</div>
+  </a>
+  <a href="relatorios/06-posts-efesios.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">06 · Posts sobre Efésios ⭐</div>
+  </a>
+  <a href="relatorios/07-posts-versiculos.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">07 · Posts com Versículos</div>
+  </a>
+  <a href="relatorios/08-replicaveis-top-eng.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">08 · Replicáveis Top Engajamento</div>
+  </a>
+  <a href="relatorios/09-replicaveis-top-rate.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">09 · Replicáveis Top Rate</div>
+  </a>
+  <a href="relatorios/10-banco-tematico.html" class="card-link">
+    <div class="card-num">Relatório</div>
+    <div class="card-title">10 · Banco Temático</div>
+  </a>
+  </div>
+</div>
+
+<div class="section" style="margin-bottom:40px">
+  <span class="section-tag">Painéis HTML originais</span>
+  <h2 class="section-title">Dashboards Visuais</h2>
+  <p class="section-desc">Painéis HTML originais gerados pelos scripts de análise (Python).</p>
+  <div class="cards-grid">
+    <a href="painel-original.html" class="card-link" target="_blank">
+      <div class="card-num">Painel</div>
+      <div class="card-title">Painel Original</div>
+      <div class="card-desc">Painel HTML completo com todos os dados visuais</div>
+    </a>
+    <a href="dashboard-original.html" class="card-link" target="_blank">
+      <div class="card-num">Dashboard</div>
+      <div class="card-title">Dashboard Original</div>
+      <div class="card-desc">Dashboard interativo com métricas</div>
+    </a>
+  </div>
+</div>
+
+
+<div class="section">
+  <span class="section-tag fort">480 capas</span>
+  <h2 class="section-title">Capas Scrapadas</h2>
+  <p class="section-desc">Todas as capas de posts/reels das igrejas analisadas, baixadas via scraping.</p>
+  <div class="capa-grid">
+    <div class="capa-item"><img src="capas/abbapaichurch__DW-VzBljCZx.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DW9-iQytUTL.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DWHSTZMNL1h.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DX1WxAnjrdo.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DX2fXnilo8Q.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DX4RsjlDgP0.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXDGyjYFTkI.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXDYV_rjKE1.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXDb_ipjOxw.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXFapYGlozj.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXHZbZflt_r.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXJt18KlfL_.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXKBi5_DuS9.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXKl406N0Jz.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXM7do9Caps.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXMnybVDrxc.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXN7W08ssnT.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXPK88LjjR9.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXPxZaWlZtb.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXRwTEltWL3.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXTB3tdDeHG.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXU_UOOlf_r.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXXcscqFddB.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXZYDWetBU5.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXb4yGelUtV.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXcogpStGZO.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXet0INDUsN.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXg7yiNlX3O.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXhGCZXFbR8.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXiGUd0DTB0.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXjpv6RlUpi.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXjpy4WBwcW.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXjxRwWFf-X.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXks1_glUKF.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXm8y8WlVjH.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXmNAW5FVHa.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXnCnJbFTLl.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXo0XKyjjY0.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXrXrulDo0o.jpg" loading="lazy" alt=""></div><div class="capa-item"><img src="capas/abbapaichurch__DXsETmHlQcD.jpg" loading="lazy" alt=""></div>
+  </div>
+  <p class="section-desc" style="margin-top:16px">Mostrando 40 de 480. <a href="capas/" target="_blank">Ver todas →</a></p>
+</div>
+
+<div class="section" style="margin-top:40px">
+  <span class="section-tag fort">Dados Raw</span>
+  <h2 class="section-title">Datasets JSON</h2>
+  <p class="section-desc">Dados raw scrapados via API (posts, OCR, metadados das runs).</p>
+  <div class="cards-grid">
+    
+      <a href="dados/ocr-results-raw-v2-igrejas.json" class="card-link" target="_blank">
+        <div class="card-num">JSON</div>
+        <div class="card-title">ocr-results-raw-v2-igrejas.json</div>
+        <div class="card-desc">55.6 KB</div>
+      </a>
+      <a href="dados/posts-raw-v2-igrejas.json" class="card-link" target="_blank">
+        <div class="card-num">JSON</div>
+        <div class="card-title">posts-raw-v2-igrejas.json</div>
+        <div class="card-desc">3418.8 KB</div>
+      </a>
+      <a href="dados/posts-raw.json" class="card-link" target="_blank">
+        <div class="card-num">JSON</div>
+        <div class="card-title">posts-raw.json</div>
+        <div class="card-desc">6134.4 KB</div>
+      </a>
+      <a href="dados/run-meta-raw-v2-igrejas.json" class="card-link" target="_blank">
+        <div class="card-num">JSON</div>
+        <div class="card-title">run-meta-raw-v2-igrejas.json</div>
+        <div class="card-desc">2.7 KB</div>
+      </a>
+      <a href="dados/run-meta-raw.json" class="card-link" target="_blank">
+        <div class="card-num">JSON</div>
+        <div class="card-title">run-meta-raw.json</div>
+        <div class="card-desc">2.7 KB</div>
+      </a>
+  </div>
+</div>
+
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

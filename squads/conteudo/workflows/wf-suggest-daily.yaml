@@ -1,0 +1,119 @@
+name: wf-suggest-daily
+description: Workflow de sugestao diaria de conteudo — consome dados de monitoramento e gera sugestoes rankeadas para aprovacao
+version: "2.0"
+
+phases:
+  - id: consumir_dados
+    name: Consume Monitoring Data
+    agent: content-suggester
+    description: Carregar todos os dados necessarios para gerar sugestoes informadas
+    elicit: false
+    steps:
+      - Ler relatorio diario do daily-monitor (monitoring-report-YYYY-MM-DD.md)
+      - Ler performance-patterns.md (padroes de performance historico interno)
+      - Ler learned-heuristics.md (heuristicas aprendidas com dados acumulados)
+      - Validar que todos os dados foram carregados corretamente
+      - Identificar sinais prioritarios (trends urgentes, gaps criticos)
+    outputs:
+      - dados_monitoramento
+      - padroes_performance
+      - heuristicas_ativas
+      - sinais_prioritarios
+    checkpoint: Dados carregados e validados de todas as 3 fontes
+    veto_condition: Relatorio de monitoramento ausente ou corrompido — nao gerar sugestoes sem dados frescos
+
+  - id: gerar_sugestoes
+    name: Generate Suggestions
+    agent: content-suggester
+    description: Gerar 3 sugestoes de carrossel com configuracao completa e ranking por ROI previsto
+    depends_on: [consumir_dados]
+    elicit: false
+    steps:
+      - Gerar 3 sugestoes de carrossel com configuracao completa para cada uma
+      - Para cada sugestao definir tema, tipo de post, framework de copy, intencao, nivel de consciencia e template
+      - Aplicar proporcao 50/25/25 (educacao/autoridade/conversao)
+      - Calcular ROI previsto com base em padroes historicos
+      - Rankear sugestoes por ROI previsto (maior primeiro)
+      - Incluir justificativa para cada sugestao (qual dado fundamenta)
+    outputs:
+      - sugestao_1
+      - sugestao_2
+      - sugestao_3
+      - ranking_roi
+      - justificativas
+    checkpoint: 3 sugestoes geradas com configuracao completa e ranking
+    veto_condition: Sugestao sem fundamentacao em dados — nao apresentar sugestoes inventadas
+
+  - id: apresentar_aprovacao
+    name: Present for Approval
+    agent: content-chief
+    description: Apresentar sugestoes ao usuario para aprovacao, modificacao ou rejeicao
+    depends_on: [gerar_sugestoes]
+    elicit: true
+    steps:
+      - Apresentar 3 sugestoes com resumo visual (tema, tipo, framework, ROI previsto)
+      - Para cada sugestao permitir aprovar / modificar / rejeitar
+      - Coletar feedback do usuario sobre modificacoes desejadas
+      - Aplicar modificacoes solicitadas
+      - Confirmar lista final de sugestoes aprovadas
+    outputs:
+      - sugestoes_aprovadas
+      - modificacoes_aplicadas
+      - feedback_usuario
+    checkpoint: Sugestoes aprovadas pelo usuario
+    veto_condition: Nenhuma sugestao aprovada — encerrar workflow e registrar feedback para calibrar sugestoes futuras
+
+  - id: rotear_producao
+    name: Route to Production
+    agent: content-chief
+    description: Gerar briefings completos e distribuir para producao via carousel-creator
+    depends_on: [apresentar_aprovacao]
+    elicit: false
+    steps:
+      - Para cada sugestao aprovada gerar briefing completo de producao
+      - Incluir no briefing todos os parametros (tema, tipo, framework, intencao, consciencia, template, hooks sugeridos)
+      - Realizar handoff para carousel-creator com briefing estruturado
+      - Registrar sugestoes aprovadas no historico para feedback loop
+    outputs:
+      - briefings_gerados
+      - handoffs_realizados
+      - historico_atualizado
+    checkpoint: Briefings gerados e distribuidos para carousel-creator
+    veto_condition: Briefing incompleto (faltando parametros obrigatorios) — nao enviar para producao sem configuracao completa
+
+quality_gates:
+  - id: QG_SD_001
+    name: Data Freshness
+    phase: consumir_dados
+    check: "Relatorio de monitoramento tem menos de 24h"
+    threshold: 24
+    unit: hours
+    action_on_fail: HALT
+
+  - id: QG_SD_002
+    name: Suggestion Grounding
+    phase: gerar_sugestoes
+    check: "Cada sugestao tem fundamentacao em dado real (trend, gap ou padrao historico)"
+    threshold: 100
+    action_on_fail: "Descartar sugestao sem fundamentacao"
+
+  - id: QG_SD_003
+    name: Proportion Compliance
+    phase: gerar_sugestoes
+    check: "Mix de sugestoes respeita proporcao 50/25/25 (Tensao/Alinhamento/Demonstracao)"
+    threshold: 100
+    action_on_fail: "Rebalancear sugestoes antes de apresentar"
+
+  - id: QG_SD_004
+    name: Briefing Completeness
+    phase: rotear_producao
+    check: "Briefing contem 6 parametros obrigatorios (tema, publico, intencao, tipo, framework, tamanho)"
+    threshold: 100
+    action_on_fail: HALT
+
+metricas:
+  duracao_estimada: "10-15 min"
+  frequencia: diaria
+  sugestoes_por_dia: 3
+  proporcao_conteudo: "50/25/25"
+  human_review: obrigatorio

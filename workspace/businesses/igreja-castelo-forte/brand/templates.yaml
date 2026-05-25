@@ -1,0 +1,19 @@
+# Templates de carrossel preferidos pelo cliente igreja-castelo-forte
+# Lido dinamicamente pelo comando *templates do Content Chief
+# Catálogo canônico: squads/conteudo/templates/catalog.yaml
+
+cliente: igreja-castelo-forte
+default: T10            # castelo-forte-editorial (padrão oficial)
+permitidos:
+  - T10                 # castelo-forte-editorial — 7 slides editorial magazine
+  - T11                 # castelo-forte-frase — 1 slide, 5 variantes de fundo
+
+aliases:
+  editorial: T10
+  frase: T11
+  padrao: T10
+
+notas:
+  - "T10 é o padrão pra carrosséis completos (capa + tríade + síntese + verso + cta)"
+  - "T11 pra posts avulsos e cards de share (variantes: off-white, midnight, orange, fort-blue, com-imagem)"
+  - "Campanha Em Cristo usa 21 carrosséis T10 + 21 frases T11 (1 por dia)"

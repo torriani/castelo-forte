@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório Consolidado · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Relatório <em>Consolidado</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>Relatório Consolidado</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / <a href="./">Inteligência</a> / Relatório Consolidado</div>
+<div class="container">
+  <a href="./" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>RELATÓRIO DE INTELIGÊNCIA — <a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></h1>
+
+<p><strong>Cliente:</strong> Igreja Castelo Forte Florianópolis (Jurerê Internacional)</p>
+<p><strong>Visão:</strong> "Céu na Terra"</p>
+<p><strong>Data:</strong> 16/05/2026</p>
+<p><strong>Perfis analisados:</strong> 35 (30 maiores igrejas BR + 2 pregadores virais + 3 concorrentes Floripa + você)</p>
+<p><strong>Posts coletados:</strong> 797 (top 30 por perfil, 90 dias)</p>
+<p><strong>Custo do scrape:</strong> US$ 0,24 (Apify lowcost scraper)</p>
+
+<hr>
+
+<h2>DESCOBERTA-MÃE (O que muda tudo)</h2>
+
+<p><strong>O ranking de engagement rate dos 35 perfis analisados:</strong></p>
+
+<table>
+<thead><tr><th>#</th><th>Perfil</th><th>Seguidores</th><th>Eng Rate</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a> (Praia Brava SC)</td><td>4.966</td><td><strong>13,63%</strong></td></tr>
+<tr><td>2</td><td><strong><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></strong></td><td><strong>497</strong></td><td><strong>9,03%</strong></td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>246.000</td><td>3,09%</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a> (concorrente direto)</td><td>145.000</td><td>1,67%</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a> (525k seguidores)</td><td>525.000</td><td>1,33%</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a> (maior pregador do mundo)</td><td>16.600.000</td><td>0,56%</td></tr>
+</tbody></table>
+
+<p><strong>Tradução brutal:</strong> sua igreja já tem o <strong>2° melhor engagement rate</strong> entre 35 igrejas analisadas, incluindo Lagoinha, Bola de Neve, Abba Pai, Hillsong, Zion e o Deive Leonardo.</p>
+
+<p><strong>Isso significa:</strong> o problema NÃO é qualidade de conteúdo. É ESCALA. Seus 497 seguidores estão extremamente engajados (~44 likes médios por post = 9% de quem segue). O que falta é entrar no feed de pessoas que ainda não te conhecem.</p>
+
+<p><strong>Implicação estratégica:</strong> parar de focar em "fazer post bom pra quem já segue" e começar a focar em <strong>alcance frio</strong> (Reels com hook + algoritmo + colaboração + remix de áudio viral). Essa é a única alavanca que importa agora.</p>
+
+<hr>
+
+<h2>MAPA DOS 35 PERFIS ANALISADOS</h2>
+
+<h3>Tier S (engagement rate elite, modelos a estudar)</h3>
+<ol>
+<li><strong><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></strong> — 13,6% rate, igreja jovem Praia Brava, formato dominante: Reels (81%). Modelo direto pra você.</li>
+<li><strong><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></strong> — VOCÊ — 9,03% rate, já está em tier S por engagement, falta escala.</li>
+</ol>
+
+<h3>Tier A (igrejas grandes que VALEM ser estudadas)</h3>
+<ol>
+<li><strong><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></strong> (246k, 3,09% rate, <strong>94% Reels</strong>) — disciplina absoluta em formato. Cita versículos sempre. Solidariedade gera os top posts.</li>
+<li><strong><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></strong> (145k, 1,67%, 78% Reels) — <strong>concorrente direto geográfico.</strong> Hook campeão: "Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥" → 31.799 eng.</li>
+<li><strong><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></strong> (525k, 1,33%, 53% carrossel) — única do top com carrossel dominante. Hook campeão: "Nem todo mundo pode acessar a sua intimidade!" → 132.181 eng.</li>
+<li><strong><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></strong> (238k, 0,92%, 61% Reels) — caso ouro de igreja PEQUENA (1 sede) com alcance gigante.</li>
+</ol>
+
+<h3>Tier B (números altos, engajamento médio — referência de operação, não de copy)</h3>
+<ul>
+<li><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a>, <a href="https://instagram.com/wearereino" target="_blank">@wearereino</a> (matriz), <a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a>, <a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a> (referência de copy, não de igreja).</li>
+</ul>
+
+<h3>Tier C / atenção (alto seguidor, baixo engajamento — não copie)</h3>
+<ul>
+<li><a href="https://instagram.com/universaloficial" target="_blank">@universaloficial</a> (1,5M, 0,0% — posta foto, morto)</li>
+<li><a href="https://instagram.com/iprdoficial" target="_blank">@iprdoficial</a> (375k, 0,01%)</li>
+<li><a href="https://instagram.com/zionchurch" target="_blank">@zionchurch</a> (309k, 0,06%) — apesar do nome forte, performance fraca</li>
+<li><a href="https://instagram.com/lagoinhaalphaville.sp" target="_blank">@lagoinhaalphaville.sp</a> (755k, 0,09%) — bombou só depois da polêmica VIP, alcance morto</li>
+</ul>
+
+<p><strong>Insight crítico:</strong> "igreja grande" não é sinônimo de "perfil que funciona". Universal, Zion e Lagoinha Alpha estão zumbis. NÃO copie esses.</p>
+
+<hr>
+
+<h2>TOP 10 POSTS VIRAIS — PADRÕES IDENTIFICADOS</h2>
+
+<h3>Padrão #1: Deive Leonardo domina (28 dos top 50 são dele)</h3>
+
+<p>Fórmula replicada quase idêntica: <strong>frase imperativa curta + "AMEMMM!?"</strong></p>
+
+<p><code>`</code></p>
+<p>"Esta palavra é pra você. AMEMMM!??"               → 220k eng</p>
+<p>"Por favor assista isso até o final! AMEMM!?"       → 219k eng</p>
+<p>"Se eu fosse você já começaria agradecer! AMEMM!?"  → 171k eng</p>
+<p>"Eu tenho uma palavra de Jesus pra você!"           → 155k eng</p>
+<p>"Algumas perdas são livramentos de Deus! AMEMM!?"   → 135k eng</p>
+<p><code>`</code></p>
+
+<p><strong>Anatomia:</strong> comando direto + pedido de continuar assistindo + AMEMMM como gatilho de identificação evangélica. Funciona porque dá identidade de tribo.</p>
+
+<h3>Padrão #2: Frase contraintuitiva curta (Abba Pai Church)</h3>
+
+<p><code>`</code></p>
+<p>"Nem todo mundo pode acessar a sua intimidade!"           → 132k eng</p>
+<p>"Que as pessoas estranhem você!"                          → 26k eng</p>
+<p>"Quando você ora por quem te persegue, você fica mais</p>
+<p>parecido com Jesus!"                                       → 26k eng</p>
+<p><code>`</code></p>
+
+<p><strong>Anatomia:</strong> afirmação que quebra senso comum + ensino curto + sem hashtag. Posts de 7-15 palavras dominam.</p>
+
+<h3>Padrão #3: Pergunta reflexiva + emoji fogo (Get Church Floripa)</h3>
+
+<p><code>`</code></p>
+<p>"Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥" → 31.799 eng</p>
+<p><code>`</code></p>
+
+<p>Único post deles no top 50 — mas é da igreja vizinha e provou que pergunta + 🔥 funciona em Florianópolis.</p>
+
+<h3>Padrão #4: Versículo + interpretação prática (Igreja Cristã Maranata)</h3>
+
+<p>3 dos top posts da Maranata são posts de SOLIDARIEDADE em enchente (não devocional). Confirma: notícias/emergências geram mais engajamento que devocional puro.</p>
+
+<hr>
+
+<h2>SOBRE EFÉSIOS (sua pergunta específica)</h2>
+
+<p><strong>Dado bruto:</strong> em 797 posts analisados (90 dias, 35 perfis), <strong>apenas 2 posts citam Efésios explicitamente</strong>:</p>
+
+<ol>
+<li><strong><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></strong> — Efésios 6:2 ("Honra teu pai e tua mãe") → no contexto Dia das Mães → 1.797 likes (performance média)</li>
+<li><strong><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></strong> — Efésios 3:18-19 ("para que possam compreender a largura, comprimento, altura e profundidade do amor de Cristo") → 1.467 likes (médio)</li>
+</ol>
+
+<p><strong>Conclusão dura:</strong> Efésios NÃO é o livro que bomba no Instagram cristão. Os versículos mais usados (e que performam) são:</p>
+<ul>
+<li><strong>Isaías 49:15</strong> ("Pode uma mãe esquecer...") — 166k likes no Deive</li>
+<li><strong>Salmos 46:1</strong> (refúgio em adversidades) — 13k+ likes na Maranata</li>
+<li><strong>João 15:13</strong> ("Maior amor não há...") — 10k likes</li>
+<li><strong>1 Pedro 5:7</strong> ("Lançando sobre Ele toda a vossa ansiedade") — 9k likes</li>
+<li><strong>João 4:24</strong> ("adorar em espírito e em verdade") — 9k likes</li>
+</ul>
+
+<p><strong>Mas isso não significa abandonar Efésios.</strong> Significa: você pode DOMINAR Efésios porque ninguém está fazendo. Veja a oportunidade na seção "Plano".</p>
+
+<hr>
+
+<h2>SEU PERFIL DENTRO DO RANKING</h2>
+
+<p><strong><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a> — métricas atuais:</strong></p>
+<ul>
+<li>497 seguidores</li>
+<li>36 posts coletados (últimos 90 dias)</li>
+<li>Avg likes: 44 | Avg comments: 3 | Avg views: 481</li>
+<li>Eng rate: <strong>9,03%</strong> (top 2 do estudo)</li>
+<li>Formato dominante: Reels (47%) + Carrossel (igual peso)</li>
+</ul>
+
+<p><strong>Seus 10 melhores posts próprios por rate:</strong></p>
+
+<table>
+<thead><tr><th>Hook</th><th>Fmt</th><th>Rate</th></tr></thead><tbody>
+<tr><td>"Queremos compartilhar com vocês a palavra sobre o nosso culto..."</td><td>reel</td><td>24,5%</td></tr>
+<tr><td>"Florianópolis vai viver um dia de alinhamento, visão e ativação 🔥"</td><td>foto</td><td>24,1%</td></tr>
+<tr><td>"Feliz dia das mães ❤️"</td><td>reel</td><td>18,1%</td></tr>
+<tr><td>"Um pouco do que vivemos em família no último domingo 🤍"</td><td>carrossel</td><td>16,1%</td></tr>
+<tr><td>"Um coração sábio gera resultados eternos!"</td><td>carrossel</td><td>15,3%</td></tr>
+<tr><td>"A oração constrói o fundamento para que os planos de Deus..."</td><td>reel</td><td>14,1%</td></tr>
+<tr><td>"Neste sábado teremos uma Noite de Adoração muito especial."</td><td>foto</td><td>13,3%</td></tr>
+<tr><td>"Hoje celebramos mulheres que carregam mais do que filhos…"</td><td>reel</td><td>11,7%</td></tr>
+<tr><td>"Neste domingo damos início à nossa nova série: Céu na Terra..."</td><td>carrossel</td><td>11,5%</td></tr>
+<tr><td>"E Jesus aproximou-se e disse: Toda autoridade me foi dada..." (Mateus 28:18)</td><td>reel</td><td>10,9%</td></tr>
+</tbody></table>
+
+<p><strong>Padrão SEU:</strong> mistura saudável de eventos + frase reflexiva + versículo + bastidor. A copy é boa. O que falta:</p>
+<ul>
+<li><strong>Hook no estilo Deive</strong> (imperativo + AMEM) — você não tem nenhum desses</li>
+<li><strong>Hook no estilo Abba Pai</strong> (contraintuitivo curto) — você não tem nenhum desses</li>
+<li><strong>Frequência</strong> (36 posts em 90 dias = 1 a cada 2,5 dias. Top performers fazem 30 posts em 30 dias = 1/dia)</li>
+<li><strong>Reels com pregação cortada</strong> (formato vencedor do mercado, ausente no seu perfil)</li>
+</ul>
+
+<hr>
+
+<h2>GAPS E OPORTUNIDADES DE DOMINAÇÃO</h2>
+
+<h3>Gap #1 — Ninguém dominou EFÉSIOS no Instagram</h3>
+<p>Só 2 posts em 797 citaram. Você tem "Céu na Terra" como visão, e Efésios é LITERALMENTE o livro do Céu na Terra (sentar nas regiões celestiais com Cristo, batalha espiritual, identidade em Cristo). <strong>Oportunidade:</strong> série "30 Reels de Efésios" — um por dia, frase curta + interpretação prática. Vira sua assinatura.</p>
+
+<h3>Gap #2 — Pregação masculina jovem em Florianópolis está vazia</h3>
+<p>Get Church domina o público jovem secular. Reino domina público adoração. Castelo Forte pode dominar <strong>público que quer profundidade teológica em linguagem direta</strong> (lacuna real na cidade).</p>
+
+<h3>Gap #3 — Ninguém usa Reels de pregação CORTADA com legenda grande</h3>
+<p>Todo mundo posta louvor cortado. Mas trecho de pregação (10s, 1 ideia forte, legenda branca grande tipo CapCut) é o formato que MAIS converte fora do nicho. Igreja nenhuma do top 30 está fazendo bem.</p>
+
+<h3>Gap #4 — Stories de bastidor + Q&amp;A semanal</h3>
+<p>Não-mensurável no scrape (Stories somem), mas Família JesusCopy e Abba Pai usam Stories de forma consistente. Castelo Forte provavelmente não está usando.</p>
+
+<h3>Gap #5 — Colaborações com perfis maiores</h3>
+<p><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a> marcou <a href="https://instagram.com/felipeluzpr" target="_blank">@felipeluzpr</a> (visitante) em um dos top posts. Esse é o modelo: trazer pregadores convidados maiores, postar trecho deles na sua conta, eles republicam = você herda audiência deles instantaneamente.</p>
+
+<hr>
+
+<h2>PLANO DE AÇÃO — 90 DIAS PARA SAIR DE 500 PARA 5.000</h2>
+
+<h3>Mês 1: Fundação (490 → 1.500 seguidores)</h3>
+
+<p><strong>Frequência:</strong> 1 post/dia mínimo (vs atual 1 a cada 2,5 dias) + 3 Stories/dia</p>
+
+<p><strong>Mix:</strong></p>
+<ul>
+<li><strong>3 Reels/semana</strong> (formato vencedor)</li>
+<li><strong>2 Carrosséis/semana</strong> (ensino profundo)</li>
+<li><strong>2 Posts foto/semana</strong> (eventos + bastidores)</li>
+</ul>
+
+<p><strong>Conteúdo prioritário:</strong></p>
+<ol>
+<li><strong>Série "Céu na Terra em 30 dias"</strong> baseada em Efésios — 1 Reel/dia com 1 verso + 1 frase imperativa. Use os padrões do Deive e Abba Pai.</li>
+<li><strong>3 Reels/semana</strong> de trecho de pregação do Felipe Luz cortado com legenda grande</li>
+<li><strong>1 Carrossel/semana</strong> "DNA Castelo Forte" — quem somos, o que cremos, por que diferente</li>
+<li><strong>Stories diários</strong> com bastidor: equipe de louvor ensaiando, oração antes do culto, café da equipe, intercessão</li>
+</ol>
+
+<h3>Mês 2: Alavancagem (1.500 → 3.000)</h3>
+
+<ul>
+<li>Pegar <strong>1 pregador convidado/mês</strong> com perfil &gt; 50k e fazer culto + cortar trecho + pedir repost</li>
+<li>Lançar <strong>Reels Q&amp;A semanal</strong> "Pergunte ao pastor" — pergunta no Stories vira Reel</li>
+<li>Reels com áudio viral cristão (toda semana o algoritmo destaca novos)</li>
+<li>Colaboração formal com <a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a> (maior eng rate do estudo, mesma região)</li>
+</ul>
+
+<h3>Mês 3: Escala (3.000 → 5.000+)</h3>
+
+<ul>
+<li>Pelo menos <strong>1 Reel/semana mirando viralizar fora do nicho</strong> (pergunta provocativa + visual forte + dura 10s)</li>
+<li>Considerar criar <a href="https://instagram.com/castelofortejovens" target="_blank">@castelofortejovens</a> (perfil paralelo só pra Reels rápidos)</li>
+<li>Stories de discipulado em sequência (5 Stories/dia conta minihistória da semana)</li>
+</ul>
+
+<hr>
+
+<h2>10 SUGESTÕES DE POSTS PRONTAS (próximos 10 dias)</h2>
+
+<p>Baseadas nos padrões vencedores adaptados pro tom Castelo Forte ("Céu na Terra"):</p>
+
+<table>
+<thead><tr><th>#</th><th>Tema</th><th>Fmt</th><th>Hook</th><th>Modelo seguido</th></tr></thead><tbody>
+<tr><td>1</td><td>Efésios 2:6 (assentados em regiões celestiais)</td><td>Reel</td><td>"Você não tá lutando POR vitória. Você tá lutando A PARTIR da vitória."</td><td>Abba Pai (contraintuitivo)</td></tr>
+<tr><td>2</td><td>Identidade em Cristo (Ef 1)</td><td>Reel</td><td>"Antes da fundação do mundo, Ele já sabia seu nome. AMÉM?"</td><td>Deive (comando + AMÉM)</td></tr>
+<tr><td>3</td><td>Céu na Terra (visão da igreja)</td><td>Carrossel 7 slides</td><td>"Igreja não é prédio. É portal."</td><td>Tom imperial</td></tr>
+<tr><td>4</td><td>Bastidor de oração antes do culto</td><td>Reel 30s</td><td>"Antes da gente abrir as portas, isso aqui acontece. 🔥"</td><td>Bastidor + curiosidade</td></tr>
+<tr><td>5</td><td>Felipe Luz pregando (trecho cortado)</td><td>Reel 45s</td><td>Cortar 1 frase impacto + legenda branca grande</td><td>Pregação cortada</td></tr>
+<tr><td>6</td><td>Ef 4:11-12 (cinco ministérios)</td><td>Carrossel 5 slides</td><td>"A igreja moderna está doente porque cortou 3 dos 5 ministérios de Cristo."</td><td>Abba Pai + crença</td></tr>
+<tr><td>7</td><td>Testemunho de membro (1 min)</td><td>Reel</td><td>"Ela entrou na igreja sem fé. Olha o que aconteceu."</td><td>Storytelling</td></tr>
+<tr><td>8</td><td>Pergunta provocativa</td><td>Reel 15s</td><td>"Por que você foi pra igreja domingo passado?" (corte de várias respostas reais)</td><td>Get Church</td></tr>
+<tr><td>9</td><td>Versículo de Efésios + ilustração</td><td>Carrossel 4 slides</td><td>"Efésios 6:12 não está falando de pessoas."</td><td>Quebra de senso comum</td></tr>
+<tr><td>10</td><td>Convite culto da semana</td><td>Stories sequência (4)</td><td>"Domingo 9:30. Reino vai descer aqui. Quer ver?"</td><td>Curiosidade + comando</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>CHECKLIST EXECUTIVO PRA SEMANA QUE VEM</h2>
+
+<ul>
+<li>[ ] Criar série "30 dias em Efésios — Céu na Terra" (calendário com 30 Reels planejados)</li>
+<li>[ ] Gravar 5 Reels com hook de Deive (imperativo + AMÉM) — pode usar voice de pastor + texto</li>
+<li>[ ] Cortar 3 Reels de pregações antigas com legenda CapCut grande</li>
+<li>[ ] Postar Stories diários começando segunda — bastidor real, sem produção</li>
+<li><a href="https://instagram.com/wearereino.brava" target="_blank"> ] DM pra [@wearereino.brava</a> propondo colaboração (mesma região, maior eng rate)</li>
+<li>[ ] Mapear 3 pregadores convidados pros próximos 90 dias com perfil &gt; 50k</li>
+<li>[ ] Trocar bio do Instagram pra ter CTA claro + frase identitária "Céu na Terra"</li>
+<li>[ ] Definir 1 pessoa responsável por publicar 1x/dia (sem isso nada acima funciona)</li>
+</ul>
+
+<hr>
+
+<h2>ARQUIVOS DE DADOS GERADOS</h2>
+
+<p>Toda a inteligência bruta está em <code>/inteligencia/</code>:</p>
+
+<ul>
+<li><code>raw/posts.json</code> — 797 posts crus (6MB) com likes, comments, captions, URLs</li>
+<li><code>relatorios/01-ranking-perfis.md</code> — ranking completo</li>
+<li><code>relatorios/02-top-posts-engajamento.md</code> — top 50 posts virais detalhados</li>
+<li><code>relatorios/03-top-reels-views.md</code> — top 30 reels por views</li>
+<li><code>relatorios/04-top-hooks-eng-absoluto.md</code> — top 40 hooks por eng absoluto</li>
+<li><code>relatorios/05-top-hooks-rate.md</code> — top 40 hooks por rate (% sobre seguidores)</li>
+<li><code>relatorios/06-posts-efesios.md</code> — todos os posts citando Efésios</li>
+<li><code>relatorios/07-posts-versiculos.md</code> — top 30 posts com versículos por engajamento</li>
+<li><code>alvos.yaml</code> — lista mestre dos 35 perfis com metadados</li>
+<li><code>run-scraper.sh</code> — script reutilizável pra rodar novo scrape no futuro</li>
+</ul>
+
+<p><strong>Pra rodar novo scrape (atualização mensal):</strong></p>
+<p><code>`</code>bash</p>
+<p>cd /Users/julianotorriani/claude/legacy/outputs/copys/igreja-castelo-forte/inteligencia</p>
+<p>bash run-scraper.sh &amp;&amp; python3 analyze.py</p>
+<p><code>`</code></p>
+<p>Custo: ~US$ 0,25 por rodada.</p>
+
+<hr>
+
+<h2>DECISÃO QUE PRECISO DE VOCÊ AGORA</h2>
+
+<p>Tenho 3 caminhos prontos pra rodar a seguir, escolhe:</p>
+
+<p><strong>(A) Calendário editorial 30 dias</strong> — eu redijo o calendário completo da série "30 dias em Efésios" com hook, copy e formato de cada post. Você só executa.</p>
+
+<p><strong>(B) Carrosséis prontos</strong> — eu gero 5 carrosséis completos (copy slide-a-slide) usando o gerador PNG do squad. Você publica.</p>
+
+<p><strong>(C) Aprofundar inteligência</strong> — segunda rodada do Apify mirando os top 5 perfis (Get Church, Abba Pai, Reino Brava, Família JesusCopy, Maranata) com 100 posts cada pra dissecar profundamente padrões de copy. Custo ~US$ 0,40.</p>
+
+<p>Manda A, B ou C (ou múltiplos).</p>
+</article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

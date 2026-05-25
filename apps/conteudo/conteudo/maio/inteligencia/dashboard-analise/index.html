@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Análise · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+:root {
+  --azul: #1e3a8a;
+  --azul-claro: #3b82f6;
+  --bg: #fafafa;
+  --texto: #0a0a0a;
+  --cinza: #e5e5e5;
+  --cinza2: #737373;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--texto); line-height: 1.4; }
+header { background: var(--azul); color: white; padding: 24px 32px; border-bottom: 4px solid var(--azul-claro); }
+header h1 { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+header p { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 32px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+.stat { background: white; padding: 20px; border-left: 4px solid var(--azul); }
+.stat .num { font-size: 32px; font-weight: 900; color: var(--azul); }
+.stat .lbl { font-size: 12px; text-transform: uppercase; color: var(--cinza2); margin-top: 4px; }
+section { background: white; margin-bottom: 32px; padding: 24px; }
+h2 { font-size: 22px; font-weight: 900; color: var(--azul); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--cinza); }
+h3 { font-size: 16px; font-weight: 700; margin: 20px 0 12px; }
+.grid-capas { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.capa { position: relative; aspect-ratio: 4/5; background: var(--cinza); overflow: hidden; }
+.capa img { width: 100%; height: 100%; object-fit: cover; }
+.capa .info { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.85)); color: white; padding: 12px 10px 8px; font-size: 11px; }
+.capa .info .eng { font-weight: 900; font-size: 13px; color: #fbbf24; }
+.capa .info .ig { opacity: 0.8; }
+.capa .info .txt { font-weight: 600; margin-top: 4px; line-height: 1.2; max-height: 4em; overflow: hidden; }
+.capa a { color: white; text-decoration: none; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--cinza); }
+th { background: var(--azul); color: white; font-weight: 700; text-transform: uppercase; font-size: 11px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.handle { color: var(--azul); font-weight: 600; text-decoration: none; }
+.handle:hover { text-decoration: underline; }
+.tag { display: inline-block; padding: 2px 8px; background: var(--cinza); font-size: 10px; border-radius: 4px; text-transform: uppercase; }
+.tag.reel { background: #fef3c7; color: #92400e; }
+.tag.carrossel { background: #dbeafe; color: #1e40af; }
+.tag.foto { background: #f3e8ff; color: #6b21a8; }
+footer { text-align: center; padding: 32px; color: var(--cinza2); font-size: 12px; }
+
+
+/* === REBRAND CASTELO FORTE === */
+:root {
+  --azul: #153247 !important;
+  --azul2: #c89545 !important;
+  --bg: #efefef !important;
+  --bg2: #f5f5f5 !important;
+  --txt: #153247 !important;
+  --txt2: #5a6068 !important;
+  --bord: #d4d4d4 !important;
+  --gold: #c89545 !important;
+}
+body { font-family: 'Inter', sans-serif !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Override original header/topbar (esconde) */
+
+/* Esconde header e nav originais */
+body > header:first-of-type { display: none !important; }
+body > nav:first-of-type { display: none !important; }
+/* Ajuste cores em elementos comuns */
+header { background: #153247 !important; border-bottom-color: #c89545 !important; }
+nav a { color: #153247 !important; }
+nav a:hover { background: #fff3ec !important; }
+.stat { border-left-color: #c89545 !important; }
+.stat .num { color: #153247 !important; }
+section h2 { color: #153247 !important; }
+.fmt-badge.reel { background: #fff3ec !important; color: #c89545 !important; }
+.fmt-badge.carrossel { background: #e8edf2 !important; color: #153247 !important; }
+@media (max-width: 720px) {
+  
+  
+  
+  
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Dashboard de <em>Análise</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>Dashboard de Análise</div>
+
+<div class="migrated-content">
+
+  
+</div>
+
+
+
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><div class="num">480</div><div class="lbl">Posts coletados</div></div>
+    <div class="stat"><div class="num">395</div><div class="lbl">Posts replicáveis</div></div>
+    <div class="stat"><div class="num">154</div><div class="lbl">Capas com texto OCR</div></div>
+    <div class="stat"><div class="num">8</div><div class="lbl">Igrejas analisadas</div></div>
+  </div>
+
+  <section>
+    <h2>🥇 Top 24 capas por engajamento (com hook visual real)</h2>
+    <p style="color:var(--cinza2); font-size:13px; margin-bottom:16px;">Cada capa abaixo TEM texto visual extraído por OCR. Clique pra ver no Instagram.</p>
+    <div class="grid-capas">
+      <div class="capa">
+        <a href="https://www.instagram.com/p/C-F2StmxMOc/" target="_blank">
+          <img src="https://instagram.flim15-1.fna.fbcdn.net/v/t51.71878-15/502342436_1410499029977183_6948647295694416769_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=MzQyNDM4MTg3MjExNjEyMjUyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjMzNzYuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=Ubx-vYyvZLYQ7kNvwGjVi_T&_nc_oc=AdoA6Cf_AHN00GVkrKTnGaunS6QC4Qa9J2YJtscWA57hk9U02b8FXbdrmXDlvQ5zNN0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.flim15-1.fna&_nc_gid=RfbL5f1KaU4jXwU9vv4FVA&_nc_ss=7a22e&oh=00_Af6fhegA9P4fOmcV-ZGEjHpO4zzV6VgGhBA1wEXQ5h7zXQ&oe=6A0E688B" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">36,765 eng · 23.269%</div>
+            <div class="ig">@wearereino · reel</div>
+            <div class="txt">= W fe ii ee E à SSS. E E QS = = ~ Be ae cd ae uni ret aie ene Gea eer Edo SC pa</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DSfOEpnjjt7/" target="_blank">
+          <img src="https://instagram.fscl4-1.fna.fbcdn.net/v/t51.82787-15/603827987_18293622136279744_272965218091028935_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzc5MTgxMTI5MTU3MzU1Nzg0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GH2_3GmK9cEQ7kNvwGiJ6A_&_nc_oc=AdqseAgBqVE4By0yzbdZQFsLCRa7C-8tcnjVcuwf_F5VkCUrDrKpagcddgkHGzi00IA&_nc_ad=z-m&_nc_cid=1364&_nc_zt=23&_nc_ht=instagram.fscl4-1.fna&_nc_gid=xv7CszW7uJ4Ip7zVoQ1zTg&_nc_ss=7a22e&oh=00_Af6FsLDlcnKV0q2J8vzophUPWpc_MGyHQ0Ew6QNx0bLIgw&oe=6A0E3D87" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">20,522 eng · 8.342%</div>
+            <div class="ig">@igrejacristamaranata_oficial · carrossel</div>
+            <div class="txt">IGREJA CRISTÃ MARANATA LEMA DO ANO / \ J “E havera um tabernaculo para sombra co</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWeP1d4Bpsc/" target="_blank">
+          <img src="https://instagram.fscl4-1.fna.fbcdn.net/v/t51.71878-15/657358335_3604478229714587_1336404070554571730_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzg2MzU5NTE3NTIzODg2Nzc0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=bRcBSTjz96gQ7kNvwHLCNxe&_nc_oc=AdprWch0fedYA0SDlbOhGoGgqxTjXZ4z5jy6cBeNV35iLzSZbUjiHWUn3VEGRDcs2JI&_nc_ad=z-m&_nc_cid=1364&_nc_zt=23&_nc_ht=instagram.fscl4-1.fna&_nc_gid=UWRH6Y8GmIFj2KP-J5X4jw&_nc_ss=7a22e&oh=00_Af5DX5in96Dm-gFWq_N0vqeLqMtdNwZgLr4adIMglvAkSQ&oe=6A0E6ADD" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">14,868 eng · 6.247%</div>
+            <div class="ig">@familiajesuscopy · reel</div>
+            <div class="txt">CE NENA RESPECT TIS td o Cou d Astor =. Te x a rca GBR astor o rp . RAS yt ai \ </div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DUij_PVEf86/" target="_blank">
+          <img src="https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/629096593_18360736681201857_4776948343633950187_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzgyODc4MDkxMDYzMjg5NDI2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=0JhxrVM8ZmMQ7kNvwGCWjg_&_nc_oc=Adp4gaEwA-tQ8ydXDUTtUW4NC_olmjNpNCuyDVuXzPWefo6cYTJ9fe5LuCN0EK1td6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=UmKkAJujlkD79aruBj_qWQ&_nc_ss=7a22e&oh=00_Af6gDVRisNU5coRC0rPkFmERlHciztq7KTp9cdWhR8hPEQ&oe=6A0E4694" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">13,230 eng · 5.559%</div>
+            <div class="ig">@familiajesuscopy · foto</div>
+            <div class="txt">: CI 4 Je F z KK R ey X ss &quot;Combati o bom combate, farina! acorrida, guardei a f</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DUQ8rC5iuo3/" target="_blank">
+          <img src="https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/625053126_18298801477279744_2712152537921110756_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=MzgyMzgyMjkyNDQ3ODYwNTg3OTE4Mjk4ODAxNDc0Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=3M6Lpg65NFIQ7kNvwE4-0Qg&_nc_oc=AdquF9OqZgFUEDLoo_cNmQPilT0IYyQqdPs7VYpjqyrSBrvKkr-h29uvnCtK3pxEP20&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_gid=7wEzAJaKtGJ7mtOSiQlU9Q&_nc_ss=7a22e&oh=00_Af6ni5tUQvSHcsO00pA_xRtxUg1fwCe_4TvYsYzEdEQ2TQ&oe=6A0E35D5" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">12,717 eng · 5.17%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">Uma palavra de esperança para você Palavra para começar a semana AMA IGREJA CRIS</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DU14Q30jo_i/" target="_blank">
+          <img src="https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/633805646_18300688975279744_1563342384543829583_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=MzgzNDIxODEwNzgyOTY1MzQ3NDE4MzAwNjg4OTY5Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=uFshD8nNEaMQ7kNvwErwZNi&_nc_oc=AdqXdgNTIYeTtWA7lF5oja0NTsMzXUrENnWiNY5VOv35-Ms-0irBKm10mzfEyfvDzQ8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_gid=7wEzAJaKtGJ7mtOSiQlU9Q&_nc_ss=7a22e&oh=00_Af5JSVX453nDOUhLTTClt444l9YogtzjaztQRnjSp74Fiw&oe=6A0E64AB" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">11,409 eng · 4.638%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">NI END Uy arg Fa ares Ot Na RR “even PMIN minha voz Tec PS do Eepugs</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DXdB3PviUox/" target="_blank">
+          <img src="https://instagram.fscl4-1.fna.fbcdn.net/v/t51.82787-15/670786976_18309618004279744_1881348416413233210_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzg4MTI2NjY0ODM4NDYyMTEwNTE4MzA5NjE4MDAxMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=YUkM4YpfwWEQ7kNvwF0cMr6&_nc_oc=AdpPOGB0Xxm-Qo7QsMRmjIlQEWmrF0YW2MAeLSXFCjlM0jGqyf_1PJVQ00vYv6TaHoM&_nc_ad=z-m&_nc_cid=1364&_nc_zt=23&_nc_ht=instagram.fscl4-1.fna&_nc_gid=xv7CszW7uJ4Ip7zVoQ1zTg&_nc_ss=7a22e&oh=00_Af6tob6hzi8152iNopKZm0-i1k-QQhww60aNELI_tmCUsA&oe=6A0E6AB7" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">10,851 eng · 4.411%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">VOCÊ TEM UM AMIGO: JESUS AW</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/C9N1BEcRHA8/" target="_blank">
+          <img src="https://instagram.flim15-1.fna.fbcdn.net/v/t51.71878-15/502209186_2505791089774049_8653922930314322221_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=MzQwODYxMzY2Mjk0MzExMzI3Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyODguc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=yJfDhOlcbscQ7kNvwFKKgNK&_nc_oc=AdqWGKVS7hKLV6mE9ZFQatoh4KUt7IsoqGU5Uf2c4z0dKVaDpjVtupQQbSrN5LB4PT4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.flim15-1.fna&_nc_gid=tS5A1FvauYTvA0RwuLU97Q&_nc_ss=7a22e&oh=00_Af4ZsgncmlWXABUUyd7Aey1FI7vhevPc6lZGbG0dWLCHng&oe=6A0E62BA" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">10,198 eng · 6.454%</div>
+            <div class="ig">@wearereino · reel</div>
+            <div class="txt">6 ~< “HR x NU) | <> 3G ‘ we 7 With q | SQ by) Y SEJEUINÃO TIVESSE/ || CONHEGIDO </div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWShqxyDt9L/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/656318368_18305982517279744_2114740868384373243_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg2MDI5NTkwNTgxNjAxMDU3MTE4MzA1OTgyNTE0Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=u5eoH4xE7ykQ7kNvwG2Bvif&_nc_oc=AdouCxaMu4Zv_q9KsXAOHjH5_SjUxLY2Kvjfuh-PnL0uo-X2pCji5sNE9mZFfD5qnZM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af6CAkveDVlAD5-tL9WAnwIIt4ofhzYSPwxN2j8KHPSjNw&oe=6A0E401C" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">10,133 eng · 4.119%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">RESPOSTA DE DEUS SOBRE ANSIEDAD CLIQUE AQUI E ASSISTA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWrgR4fiNG_/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/658045180_18307300555279744_6364335623454759809_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=Mzg2NzMyNjY3MTQwNTc2NTA1NTE4MzA3MzAwNTUyMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=vQp-nsGcTfIQ7kNvwFrfdMm&_nc_oc=AdqFHaBusAISiH5SnXVnkJeQp1siusc16k6YMtdZ1ARIE_zJBngCqQiGM3BmyvA2TsI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af5M8ygeHDvLSDUY6zZRmsr9ziO3I-xk1tOTsN8NBgTNRA&oe=6A0E51F6" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">9,683 eng · 3.936%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Porque Deus nos ama Trecho do Louvor AMA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWjCDjHDjRm/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/656411556_18306884905279744_453630790675860423_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg2NDk0MTk0NTE2NDgwNTIyMjE4MzA2ODg0ODk5Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=w8y6pVvsI7cQ7kNvwGRloBG&_nc_oc=AdpQb_paSgSwIXlOypdwR1Dz3xBlO25_n7ONTt2zCnU5UimVq6WmE8dMVV8bEkOGEug&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af4ov0_gEBhLC3uJP_KdDqlJlnuYb6vJd4asJcOVD-kAEg&oe=6A0E522F" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">9,649 eng · 3.922%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">DUE q DEUS PENSI SOBRE = VOCÊ?</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWryi8KCPKM/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/657598062_18307312105279744_6006324481069948883_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg2NzQwNzAwODQwODMzNDk4ODE4MzA3MzEyMTAyMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=OLLVRGryhbsQ7kNvwGyHruz&_nc_oc=AdpY9P5vUCWYO3yYQ2l3UklXnak1-0cnxsE-AW7D_S1r92GYdBmIkks6OLzUb9QuL8Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af6lyJ8Rb3Fh50ZPfaFM75z8Erhd_YwQ0e3-JzT0h6cduw&oe=6A0E6737" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">9,294 eng · 3.778%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Obedecer Trecho do Louvor Ame</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DTRcyqKEqC9/" target="_blank">
+          <img src="https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/610726298_18295696702279744_2995003667320349294_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=MzgwNTk0OTc4NjY0NzA3NzA1MzE4Mjk1Njk2Njk5Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=FXzH_z5-9yoQ7kNvwE6VE9E&_nc_oc=AdoH4jD5oES0p--DvYgq9J_HTl9Jtko4r1vtUry1f_l921KuG7VvuRjoE1jnfL0RStI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=zTnX0bsQrs7dXhvJ5a5z4A&_nc_ss=7a22e&oh=00_Af5ePM7FQ1hxsoAVAiCPsxzjGw9vBUZss_XhN5p5ee7o-A&oe=6A0E40F1" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">8,920 eng · 3.626%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">ye | Assista este video PM NM an we vw NH sw ns dag rae de NO A raw sea</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWrN_k7jhOQ/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/657950138_18307281412279744_3951463086832713727_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg2NzI0NjI0ODYxMzI1NDAzMjE4MzA3MjgxNDA5Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=3iGQbOZsT24Q7kNvwEO9vyL&_nc_oc=AdpG1-AeaP43ho2I1dOiyR-NM3D0YEntXstAwGtUeeS_muoTSciE5p0bTJImZNkz5pE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af7MhGkGVLmxuq2ZHnJMr_3TnVWvaQcFrSZ3cHGprN03Lw&oe=6A0E6D49" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">8,491 eng · 3.452%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Buscar-te-el, Senhor! Trecho do Louvor AMA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DXFW392iG1u/" target="_blank">
+          <img src="https://instagram.fscl4-1.fna.fbcdn.net/v/t51.82787-15/670266449_18308502316279744_5809744236978968529_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg3NDYwMzY1NzQyOTgwNjQ0NjE4MzA4NTAyMzEwMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=-I0cVEIS4j8Q7kNvwFqNrC5&_nc_oc=Adr4MffOk0tjtCuNfBeFUqKIXi7O1OkMp35Hu3s3NFjTDZPs1nnVlkHnjnheZxjiBy8&_nc_ad=z-m&_nc_cid=1364&_nc_zt=23&_nc_ht=instagram.fscl4-1.fna&_nc_gid=xv7CszW7uJ4Ip7zVoQ1zTg&_nc_ss=7a22e&oh=00_Af5GgP3eloPBEqDTLYbjKfzVcPClwHSUcrKhAn1x7jO__w&oe=6A0E409E" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">7,950 eng · 3.232%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Será ws Deus esquecem de mim AIN</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DU7AHUfDNTZ/" target="_blank">
+          <img src="https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/639561448_18300906877279744_2274576874667043493_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=MzgzNTY2MDAxMDY2ODIxNzU2MTE4MzAwOTA2ODc0Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=t1HAgmXJPxEQ7kNvwEov_L6&_nc_oc=AdpPK10J6dvREU3fTXrp7rMtD6P_QqDItFylRPAY6Gs8SFQcaQ_hbvCe_neYTbpI-Sk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_gid=7wEzAJaKtGJ7mtOSiQlU9Q&_nc_ss=7a22e&oh=00_Af6VtzarJFViQUs-Bq5LCeEJcFDegllCqzdZHl8XU8EYSg&oe=6A0E4F82" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">7,862 eng · 3.196%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">O Senhor é o san fito O KA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DUTakj7jfwo/" target="_blank">
+          <img src="https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/625546151_18299072899279744_4664686759830819496_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=MzgyNDUxNzM3MDI1ODI1ODk4NDE4Mjk5MDcyODkzMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=zFi_3kaO-lsQ7kNvwHQ3Ps1&_nc_oc=AdqlGv_ZBJEQar4dAe2i2M6MwD5tIhKDbYs3NB0oO5HVRv_DReZPIsu7zDgZw3l_sPU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_gid=7wEzAJaKtGJ7mtOSiQlU9Q&_nc_ss=7a22e&oh=00_Af5WAuJsrbaAnrOWDXibrwnY2VwyEJxH9HvuC3k279gchQ&oe=6A0E3BDF" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">7,594 eng · 3.087%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Como é importante Trecho do Louvor IGREJA CRISTÃ MARANATA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWB9Zv1Dm3a/" target="_blank">
+          <img src="https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/653063534_18304624219279744_936436527014293600_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg1NTYzMjgwNjE4NTk1NDc3ODE4MzA0NjI0MjEzMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=sOA4MHqNYEQQ7kNvwHvuMS-&_nc_oc=AdqOi5VFUAWu66F4Dj2VYu-MQ6et4ljb8ePjGPZojKgiLW_yBAqOtZ7y7XvF9DhvdlE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=EI9V3DGJiWmK-hFEgcIdeg&_nc_ss=7a22e&oh=00_Af4kgA5831rdW2v00tZPD-HrJIZVA37ad2MUI3vCGVfm4A&oe=6A0E3743" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">7,515 eng · 3.055%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">QUEM NOS CONHECE E O ESPIRITO SANTO DE DEUS CLIQUE AQUI E ASSISTA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DT6dDfvjuhC/" target="_blank">
+          <img src="https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/622128919_18297383614279744_1073797387834024899_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzgxNzQ5MTQxNzc0MTA2MDE2MjE4Mjk3MzgzNjA4Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=cuQqb0QG2WgQ7kNvwHI6EQN&_nc_oc=Adoy3gV3ay2tLm_LvASd5QUA1NgqPZxowSKViE6H6Y_hAuX8JIR9qlAUVeKeADSYwEE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=zTnX0bsQrs7dXhvJ5a5z4A&_nc_ss=7a22e&oh=00_Af727TUIG92GOm0cDHiEJaijzExS29q7jr9btMbS4EIxdQ&oe=6A0E4AC7" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">7,143 eng · 2.904%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">VOCÊ É POR DEUS! CLIQUE AQUI E ASSISTA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DVzrdnojfxz/" target="_blank">
+          <img src="https://scontent-cdg6-1.cdninstagram.com/v/t51.82787-15/651008069_18303611134279744_974833161073300823_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg1MTYxMzI1Nzc1MzAzMzg0MzE4MzAzNjExMTI4Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=z60btJr1n58Q7kNvwFi11-U&_nc_oc=Ado0h5fBDHJQFlN27w5aeLvzurXrPForTPcr0lrhBVR2g0LghnzI-3ADLp_v1y7-hKM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=EI9V3DGJiWmK-hFEgcIdeg&_nc_ss=7a22e&oh=00_Af5jyg9mWUKD3wR2tStbmCC18tVN2vvXkaqi3U3AVue8Cg&oe=6A0E501B" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">6,810 eng · 2.768%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">JESUS É °/ caminho, AMA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWrXEZ3jmsX/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/656919863_18307291519279744_8388292317897488932_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg2NzI4NjE2Mjc1MDk5MTEyNzE4MzA3MjkxNTE2Mjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=_M5QCvUASQEQ7kNvwEhJw61&_nc_oc=AdpSI5HYXtboCimqMQPs7QSP9y_7cEq7g6XY5X6oYFb32hN6roBlTv57LLCZnpO2EZo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af4IlHx8GR116chThtnZDi-4pFxUugXR6Jt53_ek8RuIxw&oe=6A0E5B56" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">6,797 eng · 2.763%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Tabernáculo Trecho do Louvor AMO</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DUkuzZMDjhz/" target="_blank">
+          <img src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/628192541_18299956888279744_2578403310987043700_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=MzgyOTM5MTQyNTA1MDM5MjY5MTE4Mjk5OTU2ODgyMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=EsIs1-gGQsoQ7kNvwFjAbm6&_nc_oc=AdoJ7lTR15wSyQa_MGxWhlFrabB4kYfvEERTb6EpDvnWoJa9Tb5AglBgepEJWdOC4rM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=7wEzAJaKtGJ7mtOSiQlU9Q&_nc_ss=7a22e&oh=00_Af6_SpZ8F691Z1lVUSiWGQ1s-LPSSYi26DTTT8n7uv547A&oe=6A0E3FB1" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">6,783 eng · 2.757%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA &quot;Maravilhoso! Trecho do Louvor AMA</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DYQjZdyAT1t/" target="_blank">
+          <img src="https://instagram.fzcl4-1.fna.fbcdn.net/v/t51.82787-15/671760328_17990055527990105_2043645012325341476_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg5NTc2OTM1OTI2Nzc0MTAzNzE3OTkwMDU1NTI0OTkwMTA1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEyMTYuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=9ErIBow9QekQ7kNvwGxYEfS&_nc_oc=Adr9Uh6j0MFL9asqz5XL7Z5iose0ggrtuQT2pFFJblRX5uSaJXXqlUe4VGIQR6iXd6g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fzcl4-1.fna&_nc_gid=ii4ZKB2wEKrcvAYeDzNt1Q&_nc_ss=7a22e&oh=00_Af55rUpBHh1TFxkivEWVCYFukUIZkq1uHpq6hiHAWL_JhQ&oe=6A0E5996" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">6,650 eng · 4.586%</div>
+            <div class="ig">@getchurchfloripa · reel</div>
+            <div class="txt">ad de Sa 2 , = o ERRA OS nagar sews PEA o DPI gee A fato</div>
+          </div>
+        </a>
+      </div>
+      <div class="capa">
+        <a href="https://www.instagram.com/p/DWyy1EBjtxb/" target="_blank">
+          <img src="https://instagram.fybz1-1.fna.fbcdn.net/v/t51.82787-15/660054408_18307665376279744_6442554779781480662_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg2OTM3ODU3ODY0MzYwNjYxOTE4MzA3NjY1MzczMjc5NzQ0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=ojLz_JAs7y0Q7kNvwF-2Jmq&_nc_oc=AdpgVNfcS5Pig0-Q0Qm_TflA_e5ERhz27oVYmgND940Z2WSTOifbeHxsIINd5nstnk4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fybz1-1.fna&_nc_gid=6faCeMSgRdOriUVjmvDdGg&_nc_ss=7a22e&oh=00_Af4wuh50HfrA-4UBJfHr5rp5bsIItni2pRgZhio4rv7apQ&oe=6A0E63EC" alt="" loading="lazy" onerror="this.style.background='#ccc';this.src='';">
+          <div class="info">
+            <div class="eng">6,541 eng · 2.659%</div>
+            <div class="ig">@igrejacristamaranata_oficial · reel</div>
+            <div class="txt">CLIQUE AQUI E ASSISTA Cristo, o Cordeiro Trecho do Louvor AW</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔠 Palavras mais usadas nas capas top</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      <span style="font-size:26px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">DEUS <small style="font-size:10px; color:var(--cinza2);">(14)</small></span>
+      <span style="font-size:25px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">IGREJA <small style="font-size:10px; color:var(--cinza2);">(13)</small></span>
+      <span style="font-size:24px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">LOUVOR <small style="font-size:10px; color:var(--cinza2);">(12)</small></span>
+      <span style="font-size:22px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">VOCÊ <small style="font-size:10px; color:var(--cinza2);">(10)</small></span>
+      <span style="font-size:22px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">TRECHO <small style="font-size:10px; color:var(--cinza2);">(10)</small></span>
+      <span style="font-size:21px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">JESUS <small style="font-size:10px; color:var(--cinza2);">(9)</small></span>
+      <span style="font-size:21px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">SENHOR <small style="font-size:10px; color:var(--cinza2);">(9)</small></span>
+      <span style="font-size:19px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">PALAVRA <small style="font-size:10px; color:var(--cinza2);">(7)</small></span>
+      <span style="font-size:19px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">CRISTO <small style="font-size:10px; color:var(--cinza2);">(7)</small></span>
+      <span style="font-size:18px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">MARTINELLO <small style="font-size:10px; color:var(--cinza2);">(6)</small></span>
+      <span style="font-size:17px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">ALCANCE <small style="font-size:10px; color:var(--cinza2);">(5)</small></span>
+      <span style="font-size:17px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">ONLINE <small style="font-size:10px; color:var(--cinza2);">(5)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">ESPERANÇA <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">SÉRIE <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">CURITIBA <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">SEMANA <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">CASA <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">PRESENCIAL <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">COMEÇAR <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+      <span style="font-size:16px; font-weight:900; color:var(--azul); padding:4px 12px; background:#eff6ff;">NOVO <small style="font-size:10px; color:var(--cinza2);">(4)</small></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>📊 Igrejas analisadas</h2>
+    <table>
+      <thead><tr><th>Igreja</th><th>Seguidores</th><th>Posts replicáveis</th><th>Capas OCR válidas</th><th>Formato dominante</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a><br><small style="color:var(--cinza2)">Igreja Cristã Maranata</small></td>
+          <td class="num">246,000</td>
+          <td class="num">49</td>
+          <td class="num">38</td>
+          <td><span class="tag reel">reel (98%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a><br><small style="color:var(--cinza2)">Abba Pai Church</small></td>
+          <td class="num">525,000</td>
+          <td class="num">50</td>
+          <td class="num">16</td>
+          <td><span class="tag carrossel">carrossel (56%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a><br><small style="color:var(--cinza2)">Família JesusCopy</small></td>
+          <td class="num">238,000</td>
+          <td class="num">44</td>
+          <td class="num">12</td>
+          <td><span class="tag reel">reel (64%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a><br><small style="color:var(--cinza2)">Reino Praia Brava</small></td>
+          <td class="num">4,966</td>
+          <td class="num">54</td>
+          <td class="num">19</td>
+          <td><span class="tag reel">reel (76%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a><br><small style="color:var(--cinza2)">Get Church Floripa</small></td>
+          <td class="num">145,000</td>
+          <td class="num">52</td>
+          <td class="num">13</td>
+          <td><span class="tag reel">reel (79%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/wearereino" target="_blank">@wearereino</a><br><small style="color:var(--cinza2)">Reino (matriz BC)</small></td>
+          <td class="num">158,000</td>
+          <td class="num">58</td>
+          <td class="num">20</td>
+          <td><span class="tag reel">reel (79%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/hillsongsaopaulo" target="_blank">@hillsongsaopaulo</a><br><small style="color:var(--cinza2)">Hillsong São Paulo</small></td>
+          <td class="num">175,000</td>
+          <td class="num">42</td>
+          <td class="num">19</td>
+          <td><span class="tag carrossel">carrossel (67%)</span></td>
+        </tr>
+        <tr>
+          <td><a class="handle" href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a><br><small style="color:var(--cinza2)">Alcance Curitiba</small></td>
+          <td class="num">141,000</td>
+          <td class="num">46</td>
+          <td class="num">17</td>
+          <td><span class="tag reel">reel (52%)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>📖 Versículos mais citados (top 10)</h2>
+    <table>
+      <thead><tr><th>#</th><th>Versículo</th><th>Citações</th><th>Eng médio</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>jeremias 29:11</strong></td><td class="num">2</td><td class="num">9,284</td></tr>
+        <tr><td>2</td><td><strong>mateus 6:6</strong></td><td class="num">1</td><td class="num">127</td></tr>
+        <tr><td>3</td><td><strong>isaias 4:6</strong></td><td class="num">1</td><td class="num">20,522</td></tr>
+        <tr><td>4</td><td><strong>apocalipse 3:11</strong></td><td class="num">1</td><td class="num">4,010</td></tr>
+        <tr><td>5</td><td><strong>gênesis 32:24</strong></td><td class="num">1</td><td class="num">3,203</td></tr>
+        <tr><td>6</td><td><strong>joão 15:13</strong></td><td class="num">1</td><td class="num">10,851</td></tr>
+        <tr><td>7</td><td><strong>apocalipse 22:12</strong></td><td class="num">1</td><td class="num">7,793</td></tr>
+        <tr><td>8</td><td><strong>salmo 99:5</strong></td><td class="num">1</td><td class="num">1,684</td></tr>
+        <tr><td>9</td><td><strong>joão 10:9</strong></td><td class="num">1</td><td class="num">2,865</td></tr>
+        <tr><td>10</td><td><strong>salmos 133:1</strong></td><td class="num">1</td><td class="num">141</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🧬 Estruturas de título que se repetem</h2>
+    <table>
+      <thead><tr><th>Padrão</th><th>Vezes</th><th>Eng médio</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Comando 'Clique aqui'</strong></td><td class="num">16</td><td class="num">6,968</td></tr>
+        <tr><td><strong>Frase com Deus</strong></td><td class="num">14</td><td class="num">4,736</td></tr>
+        <tr><td><strong>Frase com Jesus</strong></td><td class="num">9</td><td class="num">3,601</td></tr>
+        <tr><td><strong>Frase com Senhor</strong></td><td class="num">9</td><td class="num">4,990</td></tr>
+        <tr><td><strong>Pergunta direta (?)</strong></td><td class="num">3</td><td class="num">3,712</td></tr>
+        <tr><td><strong>Versículo citado na capa</strong></td><td class="num">3</td><td class="num">7,070</td></tr>
+        <tr><td><strong>Você é / Você não é</strong></td><td class="num">2</td><td class="num">3,623</td></tr>
+        <tr><td><strong>Comando assista/escute/veja</strong></td><td class="num">1</td><td class="num">1,510</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎯 Conclusões para Castelo Forte</h2>
+    <ol style="padding-left:20px; line-height:1.7;">
+      <li><strong>Fórmula Maranata (a que mais escala):</strong> Reel curto + capa com "CLIQUE AQUI E ASSISTA" + tema de 2-4 palavras. Exemplo: <em>"VOCÊ É POR DEUS! CLIQUE AQUI E ASSISTA"</em></li>
+      <li><strong>Reels dominam.</strong> Acima de 70% das top capas são Reels. Carrossel só funciona pra ensino profundo (Abba Pai).</li>
+      <li><strong>Hook na ARTE, não na legenda.</strong> A capa precisa ter texto bold gigante centralizado. Ninguém lê legenda primeiro.</li>
+      <li><strong>Pergunta direta funciona.</strong> Capas terminando com "?" performam bem em 5 das 8 igrejas.</li>
+      <li><strong>'VOCÊ É / VOCÊ NÃO É' + afirmação identitária</strong> é estrutura ganhadora multi-igreja.</li>
+    </ol>
+  </section>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

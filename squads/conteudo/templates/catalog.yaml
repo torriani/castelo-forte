@@ -1,0 +1,130 @@
+# Catálogo canônico de templates de carrossel
+# Fonte única da verdade. Lido pelos comandos *templates e *carrossel.
+# Squad Conteúdo operador — compartilhado entre máquinas via git.
+
+version: 1
+updated: 2026-05-16
+
+templates:
+
+  T01:
+    name: imperial
+    family: imperial
+    title: "Imperial — Base Sci-Fi"
+    description: "Default histórico do squad. Sci-Fi noise, 9 slides com 7 variantes (cover, internal A-E, CTA). Funciona pra qualquer tema imperial/doutrina."
+    showcase: templates/carousel/SHOWCASE-IMPERIAL.html
+    source: templates/carousel/imperial/
+    slides: 9
+    tags: [imperial, doutrina, autoridade, sci-fi]
+
+  T02:
+    name: modelo-01
+    family: twitter
+    title: "Modelo 01 — Editorial Magazine"
+    description: "Editorial bold com Times New Roman + Inter. 10 slides. Fundo claro/escuro com accent azul. Bom pra teses e ensaios."
+    showcase: templates/carousel/SHOWCASE-MODELO01.html
+    slides: 10
+    tags: [editorial, magazine, tese, ensaio]
+
+  T03:
+    name: modelo-02
+    family: twitter
+    title: "Modelo 02 — Dark Editorial"
+    description: "Dark com Fixture Condensed uppercase. 10 slides. Fundo preto + accent azul. Tom mais agressivo que o Modelo 01."
+    showcase: templates/carousel/SHOWCASE-MODELO02.html
+    slides: 10
+    tags: [editorial, dark, agressivo]
+
+  T04:
+    name: modelo-05
+    family: twitter
+    title: "Modelo 05 — Sci-Fi Noise"
+    description: "Roboto + grain texture. 9 slides estilo futurista com background secundário. Variante mais técnica da família castelo-forte."
+    showcase: templates/carousel/SHOWCASE-MODELO05.html
+    slides: 9
+    tags: [sci-fi, tecnico, futurista]
+
+  T05:
+    name: claude-01
+    family: claude
+    title: "Claude 01 — Editorial Magazine"
+    description: "Versão Editorial Magazine no brandkit Anthropic (coral D97757). Times New Roman bold. 10 slides."
+    showcase: templates/carousel/SHOWCASE-CLAUDE-01.html
+    slides: 10
+    tags: [claude, anthropic, editorial]
+
+  T06:
+    name: claude-02
+    family: claude
+    title: "Claude 02 — Dark Editorial"
+    description: "Dark com Fixture Condensed. 10 slides. Coral quente em fundo escuro. Versão Claude do Modelo 02."
+    showcase: templates/carousel/SHOWCASE-CLAUDE-02.html
+    slides: 10
+    tags: [claude, anthropic, dark]
+
+  T07:
+    name: claude-05
+    family: claude
+    title: "Claude 05 — Warm Noise"
+    description: "Roboto + grain. 9 slides. Coral aquecido + secondary brown. Versão Claude do Modelo 05."
+    showcase: templates/carousel/SHOWCASE-CLAUDE-05.html
+    slides: 9
+    tags: [claude, anthropic, warm]
+
+  T08:
+    name: twitter-dark
+    family: twitter
+    title: "Twitter Dark"
+    description: "Print-tweet style dark. 6 layouts (impact, text-top, image-top, bubble-bottom, bubble-top, list). Avatar + handle verificado."
+    showcase: templates/carousel/SHOWCASE-TWITTER-DARK.html
+    source: templates/carousel/twitter/
+    layouts: [impact, text-top, image-top, bubble-bottom, bubble-top, list]
+    tags: [print-tweet, dark, social]
+
+  T09:
+    name: twitter-light
+    family: twitter
+    title: "Twitter Light"
+    description: "Print-tweet style light. Mesmos 6 layouts do Twitter Dark em paleta branca. Versão usada na fila atual do publisher (twitter-branco)."
+    showcase: templates/carousel/SHOWCASE-TWITTER-LIGHT.html
+    source: templates/carousel/twitter/
+    layouts: [impact, text-top, image-top, bubble-bottom, bubble-top, list]
+    aliases: [twitter-branco]
+    tags: [print-tweet, light, social, default-castelo-forte]
+
+  T10:
+    name: castelo-forte-editorial
+    family: castelo-forte
+    title: "Castelo Forte — Editorial Magazine"
+    description: "Padrão oficial pra carrosséis da Igreja Castelo Forte. Inspirado no Modelo 01 (Editorial Magazine) com paleta oficial e Archivo Black. Capa com posição de título adaptativa (topo/centro/embaixo conforme imagem). 7 slides: capa + tríade + síntese + verso + cta."
+    showcase: templates/carousel/castelo-forte-editorial/SHOWCASE.html
+    source: templates/carousel/castelo-forte-editorial/
+    slides: 7
+    cliente: igreja-castelo-forte
+    tags: [castelo-forte, editorial, padrão-oficial, igreja]
+
+  T11:
+    name: castelo-forte-frase
+    family: castelo-forte
+    title: "Castelo Forte — Frase Única"
+    description: "Frase única em 4 variações de fundo (off white, midnight, orange, fort blue) + versão com imagem. Paleta oficial Castelo Forte. Versículo bíblico opcional no rodapé. Usado pra posts avulsos e cards de share."
+    showcase: templates/carousel/castelo-forte-frase/SHOWCASE.html
+    source: templates/carousel/castelo-forte-frase/
+    slides: 1
+    cliente: igreja-castelo-forte
+    variantes: [off-white, midnight, orange, fort-blue, com-imagem]
+    tags: [castelo-forte, frase, peça-única, igreja]
+
+families:
+  imperial:
+    description: "Base sci-fi do squad. Doutrinação e autoridade."
+  twitter:
+    description: "Print-tweets e variantes editoriais. Família castelo-forte principal."
+  claude:
+    description: "Brandkit Anthropic (coral). Para conteúdo sobre Claude Code/IA."
+  castelo-forte:
+    description: "Identidade oficial Igreja Castelo Forte. Paleta Orange Fort + Midnight Blue + Off White. Tipografia Archivo Black."
+
+# Arquivados em templates/_arquivo/ — não usar:
+# bold-gradient, brand-bar, brandsdecoded-01, editorial-clean, minimal-dark,
+# split-accent, template-modelo-01 (duplicata do modelo-01)

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<title>INSPECT — Todos os templates de carrossel</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0a0a0a; color:#eee; font:14px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; }
+  header { position:sticky; top:0; background:#000; padding:16px 24px; border-bottom:1px solid #222; z-index:10; }
+  header h1 { margin:0 0 4px; font-size:18px; }
+  header p { margin:0; color:#888; font-size:13px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap:20px; padding:24px; }
+  .card { background:#111; border:1px solid #222; border-radius:8px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.orphan { border-color:#5a3a1a; }
+  .meta { padding:12px 14px; border-bottom:1px solid #222; }
+  .num { display:inline-block; background:#222; color:#fff; padding:2px 8px; border-radius:4px; font-weight:600; font-size:12px; margin-right:8px; }
+  .num.orphan { background:#7a4a1a; }
+  .title { font-weight:600; font-size:14px; display:inline; }
+  .family { font-size:11px; color:#999; text-transform:uppercase; letter-spacing:0.05em; margin-top:4px; }
+  .path { font-family:"SF Mono",monospace; font-size:11px; color:#666; margin-top:4px; word-break:break-all; }
+  iframe { width:100%; height:520px; border:0; background:#fff; }
+  .actions { padding:10px 14px; display:flex; gap:8px; border-top:1px solid #222; }
+  .actions a { color:#4af; text-decoration:none; font-size:12px; }
+  .legend { padding:0 24px 24px; color:#888; font-size:12px; }
+  .legend b { color:#fff; }
+  .legend .o { color:#c89a5a; }
+</style>
+</head>
+<body>
+<header>
+  <h1>INSPECT — Todos os templates de carrossel (16)</h1>
+  <p>Squad Conteúdo operador. Decida para cada um: <b>promover</b> (vira oficial Txx) · <b>renomear</b> (qual nome) · <b>arquivar</b> (vai pra <code>_arquivo/</code>).</p>
+</header>
+
+<div class="legend">
+  <p><b>Oficiais (9):</b> têm SHOWCASE no <code>config.yaml</code>. &nbsp;·&nbsp; <span class="o"><b>Órfãos (7):</b></span> HTMLs soltos sem referência canônica.</p>
+</div>
+
+<div class="grid">
+
+  <!-- ============ OFICIAIS ============ -->
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">01</span><span class="title">Imperial</span>
+      <div class="family">Família: Imperial · Brand: castelo-forte · DEFAULT do squad</div>
+      <div class="path">templates/carousel/SHOWCASE-IMPERIAL.html</div>
+    </div>
+    <iframe src="SHOWCASE-IMPERIAL.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-IMPERIAL.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">02</span><span class="title">Modelo 01 — Editorial Magazine</span>
+      <div class="family">Família: Twitter · Brand: castelo-forte</div>
+      <div class="path">templates/carousel/SHOWCASE-MODELO01.html</div>
+    </div>
+    <iframe src="SHOWCASE-MODELO01.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-MODELO01.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">03</span><span class="title">Modelo 02 — Dark Editorial</span>
+      <div class="family">Família: Twitter · Brand: castelo-forte</div>
+      <div class="path">templates/carousel/SHOWCASE-MODELO02.html</div>
+    </div>
+    <iframe src="SHOWCASE-MODELO02.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-MODELO02.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">04</span><span class="title">Modelo 05 — Sci-Fi Noise</span>
+      <div class="family">Família: Twitter · Brand: castelo-forte</div>
+      <div class="path">templates/carousel/SHOWCASE-MODELO05.html</div>
+    </div>
+    <iframe src="SHOWCASE-MODELO05.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-MODELO05.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">05</span><span class="title">Claude 01 — Editorial Magazine</span>
+      <div class="family">Família: Claude · Brand: claude-code</div>
+      <div class="path">templates/carousel/SHOWCASE-CLAUDE-01.html</div>
+    </div>
+    <iframe src="SHOWCASE-CLAUDE-01.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-CLAUDE-01.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">06</span><span class="title">Claude 02 — Dark Editorial</span>
+      <div class="family">Família: Claude · Brand: claude-code</div>
+      <div class="path">templates/carousel/SHOWCASE-CLAUDE-02.html</div>
+    </div>
+    <iframe src="SHOWCASE-CLAUDE-02.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-CLAUDE-02.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">07</span><span class="title">Claude 05 — Warm Noise</span>
+      <div class="family">Família: Claude · Brand: claude-code</div>
+      <div class="path">templates/carousel/SHOWCASE-CLAUDE-05.html</div>
+    </div>
+    <iframe src="SHOWCASE-CLAUDE-05.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-CLAUDE-05.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">08</span><span class="title">Twitter Dark</span>
+      <div class="family">Família: Twitter · Brand: castelo-forte · 6 layouts</div>
+      <div class="path">templates/carousel/SHOWCASE-TWITTER-DARK.html</div>
+    </div>
+    <iframe src="SHOWCASE-TWITTER-DARK.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-TWITTER-DARK.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card">
+    <div class="meta">
+      <span class="num">09</span><span class="title">Twitter Light</span>
+      <div class="family">Família: Twitter · Brand: castelo-forte · 6 layouts</div>
+      <div class="path">templates/carousel/SHOWCASE-TWITTER-LIGHT.html</div>
+    </div>
+    <iframe src="SHOWCASE-TWITTER-LIGHT.html" loading="lazy"></iframe>
+    <div class="actions"><a href="SHOWCASE-TWITTER-LIGHT.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <!-- ============ ÓRFÃOS ============ -->
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">10</span><span class="title">bold-gradient</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/bold-gradient.html</div>
+    </div>
+    <iframe src="bold-gradient.html" loading="lazy"></iframe>
+    <div class="actions"><a href="bold-gradient.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">11</span><span class="title">brand-bar</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/brand-bar.html</div>
+    </div>
+    <iframe src="brand-bar.html" loading="lazy"></iframe>
+    <div class="actions"><a href="brand-bar.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">12</span><span class="title">brandsdecoded-01</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/brandsdecoded-01.html</div>
+    </div>
+    <iframe src="brandsdecoded-01.html" loading="lazy"></iframe>
+    <div class="actions"><a href="brandsdecoded-01.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">13</span><span class="title">editorial-clean</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/editorial-clean.html</div>
+    </div>
+    <iframe src="editorial-clean.html" loading="lazy"></iframe>
+    <div class="actions"><a href="editorial-clean.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">14</span><span class="title">minimal-dark</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/minimal-dark.html</div>
+    </div>
+    <iframe src="minimal-dark.html" loading="lazy"></iframe>
+    <div class="actions"><a href="minimal-dark.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">15</span><span class="title">split-accent</span>
+      <div class="family">Órfão · família desconhecida</div>
+      <div class="path">templates/carousel/split-accent.html</div>
+    </div>
+    <iframe src="split-accent.html" loading="lazy"></iframe>
+    <div class="actions"><a href="split-accent.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+  <div class="card orphan">
+    <div class="meta">
+      <span class="num orphan">16</span><span class="title">template-modelo-01 (possível duplicata de #02)</span>
+      <div class="family">Órfão · possível duplicata de Modelo 01</div>
+      <div class="path">templates/carousel/template-modelo-01.html</div>
+    </div>
+    <iframe src="template-modelo-01.html" loading="lazy"></iframe>
+    <div class="actions"><a href="template-modelo-01.html" target="_blank">abrir cheio ↗</a></div>
+  </div>
+
+</div>
+
+<div class="legend">
+  <p>Quando terminar, me responda assim por linha: <code>NN: promover [nome novo opcional] | arquivar</code>. Ex: <code>10: arquivar</code> · <code>13: promover editorial-light</code>.</p>
+</div>
+
+</body>
+</html>

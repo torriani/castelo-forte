@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Editorial Clean — Carousel Template</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+  :root {
+    --bg-color: {{bg_color}};
+    --text-color: {{text_color}};
+    --accent-color: {{accent_color}};
+    --font-family: {{font_family}};
+  }
+
+  :root {
+    --bg-color: #F5F3EF;
+    --text-color: #1A1A1A;
+    --accent-color: #C0392B;
+    --font-family: 'Inter', sans-serif;
+    --font-display: 'Playfair Display', serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 120px 100px 80px 120px;
+    position: relative;
+  }
+
+  /* --- Left accent line decoration --- */
+  .accent-bar {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    bottom: 120px;
+    width: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+
+  /* --- Header bar with category/topic --- */
+  .header {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent-color);
+    margin-bottom: 60px;
+  }
+
+  /* --- HOOK slide: large serif title --- */
+  .slide[data-type="hook"] .slide-text {
+    font-family: var(--font-display);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /* --- CONTENT slide: readable body text --- */
+  .slide[data-type="content"] .slide-text {
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 40px;
+  }
+
+  .slide[data-type="content"] .slide-title {
+    font-family: var(--font-display);
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 30px;
+  }
+
+  /* --- CTA slide --- */
+  .slide[data-type="cta"] {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .slide[data-type="cta"] .slide-text {
+    font-family: var(--font-display);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 50px;
+  }
+
+  .slide[data-type="cta"] .cta-action {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  /* --- Pagination: bottom-right --- */
+  .pagination {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.3;
+    letter-spacing: 2px;
+  }
+
+  /* --- Brand: bottom-left --- */
+  .brand {
+    position: absolute;
+    bottom: 48px;
+    left: 120px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.3;
+    letter-spacing: 1px;
+  }
+
+  /* --- Decorative bottom line --- */
+  .bottom-line {
+    position: absolute;
+    bottom: 90px;
+    left: 120px;
+    right: 60px;
+    height: 1px;
+    background-color: var(--text-color);
+    opacity: 0.1;
+  }
+</style>
+</head>
+<body>
+
+  <div class="accent-bar"></div>
+
+  <div class="slide" data-type="{{slide_type}}">
+    <div class="header">{{brand_name}}</div>
+    <div class="slide-text">{{slide_text}}</div>
+
+    <!-- Uncomment for CTA slides -->
+    <!-- <div class="cta-action">Saiba mais →</div> -->
+  </div>
+
+  <div class="bottom-line"></div>
+  <div class="brand">{{brand_name}}</div>
+  <div class="pagination">{{slide_number}} / {{total_slides}}</div>
+
+</body>
+</html>

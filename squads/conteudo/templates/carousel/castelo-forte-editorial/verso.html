@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Castelo Forte Editorial - Verso</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: #252f38;
+    color: #efefef;
+    font-family: 'Inter', sans-serif;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ref {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fe5b06;
+    margin-bottom: 56px;
+  }
+  .versiculo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 88px;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="ref">{{referencia}}</div>
+  <div class="versiculo">"{{versiculo}}"</div>
+</body>
+</html>

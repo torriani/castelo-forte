@@ -1,0 +1,115 @@
+name: wf-analytics-review
+description: Workflow de revisao analitica — coleta metricas, compara benchmarks, detecta padroes e gera relatorio de performance
+version: "2.0"
+
+phases:
+  - id: coletar_metricas
+    name: Collect Metrics
+    agent: performance-tracker
+    description: Coletar insights de todos os posts recentes via Instagram Graph API
+    elicit: false
+    steps:
+      - Conectar via ig-mcp para buscar insights dos posts
+      - Coletar metricas das ultimas 24h, 48h e 7 dias
+      - Extrair reach, impressions, likes, comments, saves e shares por post
+      - Calcular engagement rate por post (interactions / reach)
+      - Armazenar metricas em formato estruturado com timestamp
+    outputs:
+      - metricas_24h
+      - metricas_48h
+      - metricas_7d
+      - engagement_rates
+    checkpoint: Metricas coletadas com sucesso para todos os posts no periodo
+    veto_condition: Falha na API ou dados incompletos para mais de 30% dos posts — nao analisar com dados parciais
+
+  - id: comparar_benchmarks
+    name: Compare Benchmarks
+    agent: performance-tracker
+    description: Comparar performance de cada post contra benchmarks por formato e tipo
+    depends_on: [coletar_metricas]
+    elicit: false
+    steps:
+      - Carregar benchmarks por tipo (formato + tipo de post + nivel de consciencia)
+      - Comparar cada post contra seu benchmark correspondente
+      - Classificar como winner (2x+ acima do benchmark)
+      - Classificar como normal (dentro do range do benchmark)
+      - Classificar como loser (50%- abaixo do benchmark)
+      - Registrar classificacao com justificativa por post
+    outputs:
+      - winners
+      - normais
+      - losers
+      - classificacao_completa
+    checkpoint: Todos os posts classificados contra benchmarks
+    veto_condition: Benchmarks desatualizados (mais de 30 dias sem atualizacao) — recalcular benchmarks antes de classificar
+
+  - id: detectar_padroes
+    name: Detect Patterns
+    agent: performance-tracker
+    description: Agrupar dados e detectar padroes estatisticamente significativos
+    depends_on: [comparar_benchmarks]
+    elicit: false
+    steps:
+      - Agrupar posts por tipo de post, hook utilizado, CTA, template e horario
+      - Calcular correlacoes entre variaveis e performance
+      - Identificar padroes com significancia estatistica (minimo 5 posts no grupo)
+      - Registrar padroes confirmados com confianca e sample size
+      - Atualizar data/performance-patterns.md com novos padroes
+      - Invalidar padroes anteriores que perderam significancia
+    outputs:
+      - padroes_confirmados
+      - correlacoes_encontradas
+      - performance_patterns_atualizado
+    checkpoint: Padroes atualizados com minimo de 5 posts por grupo
+    veto_condition: Sample size insuficiente para qualquer conclusao — registrar dados sem criar padroes falsos
+
+  - id: gerar_relatorio
+    name: Generate Report
+    agent: performance-tracker
+    description: Gerar relatorio analitico consolidado com recomendacoes acionaveis
+    depends_on: [detectar_padroes]
+    elicit: false
+    steps:
+      - Consolidar winners da semana com analise do que funcionou
+      - Consolidar losers com hipoteses de melhoria
+      - Listar padroes novos descobertos neste ciclo
+      - Gerar recomendacoes acionaveis para proximos conteudos
+      - Gerar arquivo analytics-report-YYYY-MM-DD.md
+      - Realizar handoff para content-suggester (padroes alimentam sugestoes futuras)
+    outputs:
+      - analytics_report
+      - winners_semana
+      - losers_semana
+      - padroes_novos
+      - recomendacoes
+    checkpoint: Relatorio gerado e handoff para content-suggester realizado
+    veto_condition: Dados inconsistentes entre classificacao e padroes — revisar antes de gerar relatorio
+
+quality_gates:
+  - id: QG_AR_001
+    name: Data Completeness
+    phase: coletar_metricas
+    check: "Metricas coletadas para >= 70% dos posts no periodo"
+    threshold: 70
+    action_on_fail: "Nao analisar com dados parciais"
+  - id: QG_AR_002
+    name: Benchmark Freshness
+    phase: comparar_benchmarks
+    check: "Benchmarks atualizados nos ultimos 30 dias"
+    threshold: 30
+    unit: days
+    action_on_fail: "Recalcular benchmarks antes de classificar"
+  - id: QG_AR_003
+    name: Pattern Significance
+    phase: detectar_padroes
+    check: "Padroes baseados em minimo 5 posts por grupo"
+    threshold: 5
+    action_on_fail: "Registrar dados sem criar padroes falsos"
+
+metricas:
+  duracao_estimada: "10-15 min"
+  frequencia: diaria
+  periodos_analise: ["24h", "48h", "7d"]
+  threshold_winner: "2x benchmark"
+  threshold_loser: "50% benchmark"
+  min_sample_padrao: 5

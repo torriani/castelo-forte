@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>07 · Posts com Versículos · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">07 · Posts com <em>Versículos</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Relatórios técnicos</a><span class="sep">›</span>07 · Posts com Versículos</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="../../">Briefing Maio</a> / <a href="/conteudo/maio/inteligencia/hub-pesquisa/">Inteligência</a> / 07 · Posts com Versículos</div>
+<div class="container">
+  <a href="/conteudo/maio/inteligencia/hub-pesquisa/" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>Posts citando VERSÍCULOS bíblicos — top 30 por engajamento</h1>
+
+
+<p><strong>Total encontrado:</strong> 65 posts</p>
+
+
+<h2>1. <a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a> — 166,256 likes (Isaías 49:15)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYKGNntPLLZ/</p>
+
+<p><code>`</code></p>
+<p>Feliz dia das mães!! ❤️🙌🏻</p>
+<p>Existe um amor que a própria Bíblia usa para tentar explicar o amor de Deus: o amor de mãe. ❤️</p>
+
+<p>Um amor que cuida sem ser visto.</p>
+<p>Que ora em silêncio.</p>
+<p>Que sente a dor antes mesmo da lágrima cair.</p>
+<p>Que nunca desiste, mesmo cansado.</p>
+
+<p>“Pode uma mãe esquecer do filho que ainda mama? Ainda que ela se esqueça, Eu jamais me esquecerei de você.” — Isaías 49:15</p>
+
+<p>Talvez seja por isso que abraço de mãe tem cheiro de refúgio… porque lembra, mesmo que de longe, o cuidado do céu sobre </p>
+<p><code>`</code></p>
+
+<h2>2. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 13,727 likes (Salmos 46:1)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVThmV1jpz8/</p>
+
+<p><code>`</code></p>
+<p>🤝 Solidariedade em Ação</p>
+
+<p>Diante das recentes enchentes em Juiz de Fora e Ubá/MG, a Igreja Cristã Maranata, por meio do seu Conselho Presbiteral e da Diretoria Operacional, mobilizou esforços para auxiliar irmãos e comunidades atingidas.</p>
+
+<p>Em meio às adversidades, a Igreja se une para servir, apoiar e estender a mão àqueles que mais precisam. Essa iniciativa reflete o compromisso cristão de cuidado, amor e responsabilidade com o próximo.</p>
+
+<p>Seguimos em oração por todas as famílias afetadas, pedindo </p>
+<p><code>`</code></p>
+
+<h2>3. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 13,299 likes (Salmos 46:1)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVSGfsPDolH/</p>
+
+<p><code>`</code></p>
+<p>🤝 Solidariedade em Ação</p>
+
+<p>Diante das recentes enchentes em Juiz de Fora e Ubá/MG, a Igreja Cristã Maranata, por meio do seu Conselho Presbiteral e da Diretoria Operacional, mobilizou esforços para auxiliar irmãos e comunidades atingidas.</p>
+
+<p>Em meio às adversidades, a Igreja se une para servir, apoiar e estender a mão àqueles que mais precisam. Essa iniciativa reflete o compromisso cristão de cuidado, amor e responsabilidade com o próximo.</p>
+
+<p>Seguimos em oração por todas as famílias afetadas, pedindo </p>
+<p><code>`</code></p>
+
+<h2>4. <a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a> — 12,663 likes (Coríntios 15:20)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DUij_PVEf86/</p>
+
+<p><code>`</code></p>
+<p>Hoje parte para estar com o Senhor nosso amado irmão Harold Walker. </p>
+
+<p>Harold trabalhou toda a sua vida na edificação da igreja de Cristo junto com sua família. Atualmente liderava a Tikkun Brasil e também acompanhava de perto o presbitério da Família JesusCopy e de várias outras igrejas ao redor do Brasil. </p>
+
+<p>Até o fim de sua jornada ele esteve engajado em discipular e treinar líderes tendo deixado um grande legado para as próximas gerações. </p>
+
+<p>Agora ele está com o Senhor. Naquele grande dia o ver</p>
+<p><code>`</code></p>
+
+<h2>5. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 10,446 likes (João 15:13)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DXdB3PviUox/</p>
+
+<p><code>`</code></p>
+<p>Jesus é o Amigo que nunca falha.</p>
+
+<p>Ele não abandona, não se esquece, não muda.</p>
+<p>Na alegria ou na dor — Ele permanece.</p>
+
+<p>📖 “Maior amor não há do que este: dar alguém a vida pelos seus amigos.” (João 15:13)</p>
+
+<p>📲 Envia para alguém que precisa lembrar que não está sozinho.</p>
+
+<p>#JesusÉAmigo #AmigoFiel #Maranata #JesusVem</p>
+<p><code>`</code></p>
+
+<h2>6. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 9,952 likes (João 4:24)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWouHZ0jtBK/</p>
+
+<p><code>`</code></p>
+<p>Seminário de Louvor</p>
+
+<p>Um tempo especial de aprendizado, edificação e busca na presença do Senhor através do louvor.</p>
+
+<p>Nos dias sexta e sábado, estaremos reunidos para aprender, aperfeiçoar e, acima de tudo, adorar ao Senhor com entendimento e entrega.</p>
+
+<p>📖 “Deus é Espírito, e importa que os que o adoram o adorem em espírito e em verdade.”</p>
+<p>(João 4:24)</p>
+
+<p>Participe conosco e viva esse momento de crescimento e comunhão!</p>
+
+<p>Maranata! O Senhor Jesus vem!</p>
+
+<p>#SeminárioDeLouvor #Adoração #Louvor</p>
+<p><code>`</code></p>
+
+<h2>7. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 9,832 likes (Pedro 5:7)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWShqxyDt9L/</p>
+
+<p><code>`</code></p>
+<p>Resposta de Deus para a ansiedade</p>
+
+<p>A mente se agita…</p>
+<p>o coração acelera…</p>
+<p>e a ansiedade tenta tomar conta.</p>
+
+<p>Mas Deus responde:</p>
+
+<p>📖 “Lançando sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós.”</p>
+<p>(1 Pedro 5:7)</p>
+
+<p>Você não precisa carregar tudo sozinho.</p>
+<p>Há um Deus que cuida, que sustenta e que acalma.</p>
+
+<p>Se essa palavra falou ao seu coração, compartilhe com alguém que precisa de paz hoje.</p>
+
+<p>#Ansiedade #DeusCuida</p>
+<p><code>`</code></p>
+
+<h2>8. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 9,344 likes (Jeremias 29:11)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWjCDjHDjRm/</p>
+
+<p><code>`</code></p>
+<p>O que Deus pensa sobre você?</p>
+
+<p>Talvez você se veja fraco, falho ou insuficiente…</p>
+<p>Mas Deus te vê com amor, propósito e valor eterno.</p>
+
+<p>📖 “Porque eu bem sei os pensamentos que tenho a vosso respeito… pensamentos de paz, e não de mal.”</p>
+<p>(Jeremias 29:11)</p>
+
+<p>Você não é esquecido.</p>
+<p>Você não é comum.</p>
+<p>Você é conhecido, amado e escolhido por Deus.</p>
+
+<p>Se essa palavra falou ao seu coração, compartilhe com alguém que precisa lembrar disso.</p>
+
+<p>#Maranata #Pensamentos #Deus</p>
+<p><code>`</code></p>
+
+<h2>9. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 9,466 likes (Provérbios 22:6)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWKwCOSjlj-/</p>
+
+<p><code>`</code></p>
+<p>Filhos não precisam apenas de palavras…</p>
+<p>Precisam de presença, cuidado e renúncia.</p>
+
+<p>📖 “Instrui o menino no caminho em que deve andar…”</p>
+<p>(Provérbios 22:6)</p>
+
+<p>Que o Senhor dê sabedoria a cada família para cuidar bem daquilo que Ele confiou.</p>
+
+<p>#Família #CuidadoComOsFilhos</p>
+<p><code>`</code></p>
+
+<h2>10. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 8,471 likes (Salmos 46:1)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVOQtv9jnKY/</p>
+
+<p><code>`</code></p>
+<p>🤝 Solidariedade em Ação</p>
+
+<p>Diante das recentes enchentes em Juiz de Fora e Ubá/MG, a Igreja Cristã Maranata, por meio do seu Conselho Presbiteral e da Diretoria Operacional, mobilizou esforços para auxiliar irmãos e comunidades atingidas.</p>
+
+<p>Em meio às adversidades, a Igreja se une para servir, apoiar e estender a mão àqueles que mais precisam. Essa iniciativa reflete o compromisso cristão de cuidado, amor e responsabilidade com o próximo.</p>
+
+<p>Seguimos em oração por todas as famílias afetadas, pedindo </p>
+<p><code>`</code></p>
+
+<h2>11. <a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a> — 8,365 likes (Jeremias 3:15)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYI6NMKjvTS/</p>
+
+<p><code>`</code></p>
+<p>UM DIA DE CELEBRAÇÃO PARA A NOSSA IGREJA</p>
+
+<p>Hoje celebramos, com alegria e gratidão, a ordenação pastoral de Elto Junio.</p>
+
+<p>Este é um momento precioso para a Igreja da Cidade e para todos que têm acompanhado sua caminhada de fé, serviço e entrega ao Reino de Deus. Vemos neste dia a confirmação de um chamado e a beleza de uma vida que tem sido formada para cuidar, conduzir e servir pessoas.</p>
+
+<p>À frente da juventude Eleve, junto a sua esposa <a href="https://instagram.com/rachelsribeiro" target="_blank">@rachelsribeiro</a>, Elto já tem sido instrumento de Deus para abe</p>
+<p><code>`</code></p>
+
+<h2>12. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 8,357 likes (Salmos 42:2)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWrN_k7jhOQ/</p>
+
+<p><code>`</code></p>
+<p>🙏 Buscar-te-ei, Senhor</p>
+
+<p>Mais do que palavras…</p>
+<p>é uma decisão diária.</p>
+<p>Buscar ao Senhor acima de tudo, em todo tempo, em todo lugar.</p>
+
+<p>📖 “A minha alma tem sede de Deus, do Deus vivo…”</p>
+<p>(Salmos 42:2)</p>
+
+<p>Mesmo em meio às lutas,</p>
+<p>mesmo em meio às distrações,</p>
+<p>há um desejo que permanece:</p>
+<p>Estar na presença do Senhor.</p>
+
+<p>Que esse seja o nosso clamor todos os dias: Buscar-Te-ei, Senhor.</p>
+
+<p>#SeminariodeLouvor #BuscarADeus #PresençaDoSenhor</p>
+<p><code>`</code></p>
+
+<h2>13. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 7,531 likes (Apocalipse 22:12)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DXQVcE5jnKJ/</p>
+
+<p><code>`</code></p>
+<p>A mensagem não mudou: o Senhor Jesus vem.</p>
+
+<p>O tempo passa, o mundo muda…</p>
+<p>mas a promessa permanece.</p>
+
+<p>Jesus voltará. 🙌</p>
+
+<p>📖 “Eis que cedo venho.” (Apocalipse 22:12)</p>
+
+<p>👉 Esteja preparado.</p>
+<p>Não deixe para depois aquilo que precisa ser decidido hoje.</p>
+<p><code>`</code></p>
+
+<h2>14. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 6,690 likes (Isaías 30:21)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVzrdnojfxz/</p>
+
+<p><code>`</code></p>
+<p>“Este é o caminho, andai nele.”</p>
+
+<p>Em meio a tantas vozes e direções neste mundo, Deus continua falando ao coração daqueles que O buscam.</p>
+
+<p>📖 “E os teus ouvidos ouvirão a palavra que está por detrás de ti, dizendo: Este é o caminho, andai nele.”</p>
+<p>(Isaías 30:21)</p>
+
+<p>Quando ouvimos a voz do Senhor e seguimos Sua direção, encontramos segurança, paz e propósito.</p>
+<p>Confie na direção de Deus e caminhe no caminho que Ele preparou para você.</p>
+
+<p>#EsteÉOCaminho #ICM #Maranata</p>
+<p><code>`</code></p>
+
+<h2>15. <a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a> — 5,745 likes (Timóteo 2:1)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DX4sPRwp1Sb/</p>
+
+<p><code>`</code></p>
+<p>“Admoesto-te, pois, antes de tudo, que se façam deprecações, orações, intercessões e ações de graças por todos os homens, pelos reis e por todos os que estão em eminência, para que tenhamos uma vida quieta e sossegada, em toda a piedade e honestidade. Porque isto é bom e agradável diante de Deus, nosso Salvador, que quer que todos os homens se salvem e venham ao conhecimento da verdade. Porque há um só Deus e um só mediador entre Deus e os homens, Jesus Cristo, homem,</p>
+
+<p>1 Timóteo 2:1-5”</p>
+<p><code>`</code></p>
+
+<h2>16. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 5,689 likes (Isaías 55:6)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVjufmjgrP9/</p>
+
+<p><code>`</code></p>
+<p>Buscai ao Senhor</p>
+<p>Em meio às preocupações da vida, às decisões e aos desafios, há um convite que permanece:</p>
+<p>📖 “Buscai ao Senhor enquanto se pode achar, invocai-o enquanto está perto.”</p>
+<p>(Isaías 55:6)</p>
+<p>Quando buscamos ao Senhor, encontramos direção, paz e esperança.</p>
+<p>Ele está perto de todo aquele que o invoca com sinceridade.</p>
+<p>Se essa palavra falou ao seu coração, compartilhe com alguém que também precisa buscar ao Senhor.</p>
+<p><code>`</code></p>
+
+<h2>17. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 5,570 likes (Salmos 37:5)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DVqPHdnDvi5/</p>
+
+<p><code>`</code></p>
+<p>Comece a semana da melhor forma: entregando tudo nas mãos do Senhor.</p>
+<p>As incertezas, os medos, os planos, as decisões…</p>
+<p>Nada é mais seguro do que confiar n’Ele.</p>
+
+<p>“Entrega o teu caminho ao Senhor; confia n’Ele, e Ele tudo fará.”</p>
+<p>(Salmos 37:5)</p>
+
+<p>Hoje, faça essa oração:</p>
+<p>“Senhor, minha vida está nas Tuas mãos.”</p>
+<p>Maranata! O Senhor Jesus vem!</p>
+
+<p>#Entrega #Confiança #Salmos375</p>
+<p><code>`</code></p>
+
+<h2>18. <a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a> — 4,902 likes (Hebreus 10:39)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DMgzkVXuHVW/</p>
+
+<p><code>`</code></p>
+<p>Não é apenas um tema.</p>
+<p>É um chamado.</p>
+<p>É o som da marcha de um povo que decidiu avançar.</p>
+
+<p>Em 2025, Avante &amp; Sem Parar começou a pulsar nos nossos passos.</p>
+<p>Agora, em 2026, ele será nossa direção — até que o céu se abra e Cristo volte.</p>
+
+<p>Porque enquanto o mundo desacelera…</p>
+<p>A Igreja avança.</p>
+<p>Enquanto muitos recuam…</p>
+<p>Nós fixamos os olhos no Alvo.</p>
+
+<p>📖 Hebreus 10:39</p>
+
+<p>Acesse: www.avantesemparar2026.com.br</p>
+<p><code>`</code></p>
+
+<h2>19. <a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a> — 4,148 likes (Isaías 58:11)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYJ3xEnOenW/</p>
+
+<p><code>`</code></p>
+<p>VENHAM ÀS ÁGUAS 💐</p>
+
+<p>Neste Dia das Mães, celebramos mulheres que aprenderam a florescer mesmo em tempos difíceis. Mulheres que cuidam, servem, oram e derramam amor todos os dias. 🤍</p>
+
+<p>Assim como a promessa de Isaías 58:11, cremos em mães que são como jardins bem regados e fontes que nunca param de jorrar, cheias da graça, da força e do cuidado de Deus. 🌿</p>
+
+<p>Que hoje seja um dia de descanso na presença do Senhor, onde toda sede é saciada e todas as forças são renovadas. Jesus continua sendo a água viva</p>
+<p><code>`</code></p>
+
+<h2>20. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — 3,721 likes (Mateus 28:20)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DWWW-tgDv5q/</p>
+
+<p><code>`</code></p>
+<p>Jesus é com você</p>
+<p>Nos dias bons…</p>
+<p>Nos dias difíceis…</p>
+<p>Nas respostas e nos silêncios…</p>
+<p>Jesus continua com você.</p>
+
+<p>📖 “Eis que estou convosco todos os dias…”</p>
+<p>(Mateus 28:20)</p>
+
+<p>Você não está sozinho.</p>
+
+<p>#Maranata #JesusVem</p>
+<p><code>`</code></p>
+
+<h2>21. <a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a> — 2,795 likes (João 10:9)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DV6OCOIgHzJ/</p>
+
+<p><code>`</code></p>
+<p>“Eu sou a porta.” – João 10:9</p>
+
+<p>Cristo não disse que mostraria apenas um caminho.</p>
+<p>Ele disse que Ele é a porta.</p>
+
+<p>A porta que nos tira da perdição.</p>
+<p>A porta que nos conduz à vida.</p>
+<p>A porta pela qual encontramos salvação, descanso e verdadeira liberdade.</p>
+
+<p>Muitos procuram atalhos, filosofias ou religiões…</p>
+<p>Mas a vida com Deus começa quando passamos pela única porta: Jesus.</p>
+
+<p>Quem entra por Ele encontra pasto, cuidado e direção para viver.</p>
+
+<p>A pergunta não é se a porta existe.</p>
+<p>A pergunta é: você já entrou </p>
+<p><code>`</code></p>
+
+<h2>22. <a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a> — 2,557 likes (Provérbios 31:28)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYKJ3tytUQ8/</p>
+
+<p><code>`</code></p>
+<p>Feliz Dia das Mães!</p>
+
+<p>Hoje celebramos aquelas que foram escolhidas por Deus para gerar, cuidar, amar e ensinar com o coração cheio de fé. Mães são um reflexo do amor divino: fortes, generosas, incansáveis e cheias de graça.</p>
+
+<p>A Palavra nos lembra em Provérbios 31:28: “Seus filhos se levantam e a chamam de abençoada; seu marido também a elogia.”</p>
+
+<p>Que neste dia, possamos honrar não só com palavras, mas com atitudes o dom precioso que é ser mãe. Seja biológica, adotiva, espiritual ou de coração, toda</p>
+<p><code>`</code></p>
+
+<h2>23. <a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a> — 1,858 likes (Timóteo 4:12)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DXyry2yjXFl/</p>
+
+<p><code>`</code></p>
+<p>Parabéns, Adolescente Quadrangular! 🎉</p>
+
+<p>📅 01 de Maio</p>
+<p>Um dia para celebrar uma geração forte, escolhida e cheia de propósito! ❤️💛💙💜</p>
+
+<p>📖 “Ninguém o despreze pelo fato de você ser jovem, mas seja um exemplo para os fiéis na palavra, no procedimento, no amor, na fé e na pureza”. 1 Timóteo 4:12</p>
+
+<p>⬇️ Marque aqui um jovem quadrangular para parabenizar hoje!</p>
+
+<p><a href="https://instagram.com/coordenadoriasnacional" target="_blank">@coordenadoriasnacional</a></p>
+<p><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></p>
+<p><code>`</code></p>
+
+<h2>24. <a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a> — 1,797 likes (Efésios 6:2)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYLKW81FoBK/</p>
+
+<p><code>`</code></p>
+<p>Hoje vivemos um culto especial na presença de Deus! 🙌🏼</p>
+
+<p>Tivemos um momento emocionante de consagração de filhos e fomos edificados por uma palavra poderosa com o Aluízio Silva. 🤍</p>
+
+<p>Fomos lembrados, neste dia das mães, que elas carregam um chamado precioso e merecem ser honradas, valorizadas e amadas todos os dias.</p>
+
+<p>“Honra teu pai e tua mãe…” — Efésios 6:2 📖</p>
+
+<p>Que culto inesquecível vivemos em família! ✨ #DiaDasMães #Família #Honra #ConsagraçãoDeFilhos #IgrejaVideira</p>
+<p><code>`</code></p>
+
+<h2>25. <a href="https://instagram.com/lagoinhaalphaville.sp" target="_blank">@lagoinhaalphaville.sp</a> — 1,706 likes (Mateus 15:21)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYLmsCxjCd3/</p>
+
+<p><code>`</code></p>
+<p>CULTO DE CELEBRAÇÃO | 18H🔥</p>
+
+<p>Com uma palavra intensa, emocionante e confrontadora, o pastor <a href="https://instagram.com/prlucinho" target="_blank">@prlucinho</a> ministrou sobre o tema “Uma mãe louca por Jesus.” Um chamado para viver uma fé perseverante, apaixonada e que não desiste diante dos obstáculos.</p>
+
+<p>Baseado em Mateus 15:21-28, fomos apresentados à história de uma mulher que enfrentou silêncio, rejeição, obstáculos e mesmo assim decidiu não sair da presença de Jesus sem um milagre.</p>
+
+<p>Uma mulher considerada desequilibrada pelos homens, mas chamada po</p>
+<p><code>`</code></p>
+
+<h2>26. <a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a> — 1,588 likes (Provérbios 31:28)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYII3Clji3S/</p>
+
+<p><code>`</code></p>
+<p>Ela ensina.</p>
+<p>Ela cuida.</p>
+<p>Ela ora.</p>
+<p>Ela serve.</p>
+
+<p>Dentro da igreja existem mulheres que carregam mais do que títulos, carregam pessoas, histórias e propósitos. 🤍</p>
+
+<p>Feliz Dia das Mães para cada mulher que tem sido missionária no secreto, pastora no cuidado, diaconisa no serviço e intercessora em oração.</p>
+<p>Vocês deixam marcas eternas em cada vida que tocam.</p>
+
+<p>“Seus filhos se levantam e a chamam bem-aventurada.”</p>
+<p>Provérbios 31:28</p>
+<p><code>`</code></p>
+
+<h2>27. <a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a> — 1,533 likes (Hebreus 13:8)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DXfaSswE-u7/</p>
+
+<p><code>`</code></p>
+<p>Faça isso hoje mesmo e lembre-se: o mesmo Deus que operou no passado continua agindo hoje. Ele não mudou, não perdeu o poder e não chegou atrasado na sua história.</p>
+
+<p>“Jesus Cristo é o mesmo ontem, hoje e para sempre.” - Hebreus 13:8</p>
+
+<p>Amém!?</p>
+<p><code>`</code></p>
+
+<h2>28. <a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a> — 1,535 likes (Salmo 99:5)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DYYQwo1oszY/</p>
+
+<p><code>`</code></p>
+<p>“Exaltai ao Senhor, nosso Deus, e prostrai-vos diante do estrado de seus pés; porque ele é santo.” — Salmo 99:5❤️‍🔥</p>
+
+<p>Mais que um evento, um ambiente inundado pela presença de Deus. O que temos vivido na Conf. Aurora é o cumprimento dessa palavra: mulheres rendidas aos pés Daquele que é Santo🙌🏼🧡</p>
+<p><code>`</code></p>
+
+<h2>29. <a href="https://instagram.com/wearereino" target="_blank">@wearereino</a> — 1,467 likes (Efésios 3:18)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/C_EBEznx_Cg/</p>
+
+<p><code>`</code></p>
+<p>Como ele mesmo disse em Efésios 3:18,19, “para que, com todos os santos, vocês possam compreender a largura, o comprimento, a altura e a profundidade, e conhecer o amor de Cristo, que excede todo o conhecimento”. </p>
+
+<p>É esse amor infinito que nos alcança nas situações mais simples! 🤍🕊️</p>
+<p><code>`</code></p>
+
+<h2>30. <a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a> — 1,163 likes (João 4)</h2>
+
+<p><strong>URL:</strong> https://www.instagram.com/p/DX5d19HDKr2/</p>
+
+<p><code>`</code></p>
+<p>Amados, continuemos a amar uns aos outros, pois o amor vem de Deus. Quem ama é nascido de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor. ⚡️</p>
+<p>1João 4.7,8 </p>
+
+<p>Cresçamos em amor, cresçamos no conhecimento de DEUS! 😭</p>
+
+<p>🔗 o culto de hoje segue disponível no Canal do YouTube do Mevam Global</p>
+<p><code>`</code></p>
+</article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

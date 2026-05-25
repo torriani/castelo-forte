@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Castelo Forte Editorial - Texto Midnight</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: #153247;
+    color: #efefef;
+    font-family: 'Inter', sans-serif;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .headline {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 88px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+  .accent { color: #fe5b06; }
+  .body-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.78;
+    margin-top: 48px;
+  }
+</style>
+</head>
+<body>
+  <div class="headline">{{headline}}</div>
+  <div class="body-text">{{body}}</div>
+</body>
+</html>

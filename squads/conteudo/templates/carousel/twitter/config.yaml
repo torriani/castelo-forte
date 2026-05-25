@@ -1,0 +1,49 @@
+family: twitter
+name: "Template Twitter"
+description: "Estilo tweet/post com avatar, nome verificado, texto direto. 6 layouts com modo dark e light. Inspirado no carrossel-aistudio."
+dimensions: "1080x1350"
+renderer: playwright
+
+layouts:
+  - id: impact
+    file: impact.html
+    name: "Impacto — foto fullbleed + overlay + header com avatar + texto"
+    requires: photo
+    best_for: "CAPA, slides de abertura, statements fortes"
+  - id: text-top
+    file: text-top.html
+    name: "Texto em cima + imagem embaixo"
+    requires: photo_optional
+    best_for: "Slides de argumento com prova visual"
+  - id: image-top
+    file: image-top.html
+    name: "Imagem em cima + texto embaixo"
+    requires: photo_optional
+    best_for: "Slides que mostram antes de explicar"
+  - id: bubble-bottom
+    file: bubble-bottom.html
+    name: "Foto fullbleed + card glassmorphism embaixo"
+    requires: photo
+    best_for: "Slides de impacto com contexto visual"
+  - id: bubble-top
+    file: bubble-top.html
+    name: "Foto fullbleed + card glassmorphism no topo"
+    requires: photo
+    best_for: "Variacao do bubble-bottom"
+  - id: list
+    file: list.html
+    name: "Lista com icones check/X"
+    requires: photo_optional
+    best_for: "Comparacoes, pros/cons, passos, listas"
+
+modes:
+  - dark: "Fundo preto (#000), texto branco"
+  - light: "Fundo branco (#fff), texto preto"
+
+branding:
+  avatar: "{{avatar_url}}"
+  name: "{{brand_name}}"
+  handle: "@{{handle}}"
+  verified: true
+  show_header: true
+  show_pagination: false

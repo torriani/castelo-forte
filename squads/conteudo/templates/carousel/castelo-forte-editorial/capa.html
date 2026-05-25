@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Castelo Forte Editorial - Capa</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Archivo+Black&family=JetBrains+Mono:wght@400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+  }
+  .bg-photo {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('{{image_url}}');
+    background-size: cover;
+    background-position: center;
+  }
+  .overlay {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  /* Overlay TOPO: degrade preto em cima */
+  .overlay.topo {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0) 65%);
+  }
+  /* Overlay CENTRO: radial escurecendo o meio */
+  .overlay.centro {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 45%, rgba(0,0,0,0.15) 100%);
+  }
+  /* Overlay EMBAIXO: degrade preto embaixo (padrao) */
+  .overlay.embaixo {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.95) 75%);
+  }
+  .content {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    z-index: 5;
+    color: #efefef;
+  }
+  .content.topo { top: 100px; }
+  .content.centro { top: 50%; transform: translateY(-50%); text-align: center; }
+  .content.embaixo { bottom: 100px; }
+
+  .headline {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 96px;
+    line-height: 1.06;
+    letter-spacing: -2.5px;
+    text-transform: uppercase;
+  }
+  .accent { color: #fe5b06; }
+</style>
+</head>
+<body>
+  <div class="bg-photo"></div>
+  <div class="overlay {{titulo_posicao}}"></div>
+  <div class="content {{titulo_posicao}}">
+    <div class="headline">{{headline}}</div>
+  </div>
+</body>
+</html>

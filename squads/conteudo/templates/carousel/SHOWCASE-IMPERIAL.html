@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperial — Template Padrão Squad Conteúdo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap');
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#080808;color:#fff;font-family:'Inter',sans-serif;padding:40px 40px 80px;}
+  h1{font-size:28px;font-weight:700;margin-bottom:6px;letter-spacing:-0.5px;}
+  .subtitle{font-size:14px;color:#888;margin-bottom:40px;}
+  .badge{display:inline-block;background:#2B7DE1;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;margin-left:10px;vertical-align:middle;}
+  .grid{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
+  .card{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .card-label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:1px;}
+  .sf{width:216px;height:270px;border-radius:8px;overflow:hidden;position:relative;box-shadow:0 6px 24px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.06);flex-shrink:0;}
+  .sf>.si{width:1080px;height:1350px;transform:scale(0.2);transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;}
+</style>
+</head>
+<body>
+
+<h1>Imperial — Template Padrão Squad Conteúdo<span class="badge">Default</span></h1>
+<p class="subtitle">9 slides &middot; 1080 &times; 1350 px &middot; escala 0.2 &middot; base Sci-Fi Noise (Modelo 05) com imagens em retângulo (Modelo 01, border-radius 8px)</p>
+
+<div class="grid">
+
+<!-- ==================== S0 — HOOK ==================== -->
+<div class="card">
+  <div class="card-label">S0 — Hook</div>
+  <div class="sf">
+    <div class="si" style="background:#343434;position:relative;">
+      <!-- noise overlay -->
+      <div style="position:absolute;inset:0;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);opacity:0.05;mix-blend-mode:overlay;z-index:1;pointer-events:none;"></div>
+      <!-- foto fullbleed -->
+      <img src="showcase-assets/tech-1.jpg" style="position:absolute;inset:0;width:1080px;height:1350px;object-fit:cover;" />
+      <!-- gradient overlay -->
+      <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 66%);z-index:2;"></div>
+      <!-- container -->
+      <div style="position:absolute;left:70px;top:750px;width:941px;display:flex;flex-direction:column;align-items:center;gap:40px;z-index:3;">
+        <!-- título -->
+        <div style="font-family:'Inter',sans-serif;font-weight:900;font-size:84px;color:#fff;letter-spacing:-3.5px;line-height:1.02;text-align:center;width:925px;text-transform:uppercase;">Meu computador começou a trabalhar sem mim e isso faz diferença.</div>
+        <!-- body -->
+        <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:50px;color:#DDE4EC;letter-spacing:-2px;line-height:1.19;text-align:center;width:941px;">Abri o notebook, dei um comando e fui tomar café; o contexto executava atenção e precisão sem ser percebido.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S1 — CONTENT (dark + foto bottom) ==================== -->
+<div class="card">
+  <div class="card-label">S1 — Content</div>
+  <div class="sf">
+    <div class="si" style="background:radial-gradient(ellipse at right center, #003A70 0%, #000000 70%);position:relative;">
+      <!-- noise -->
+      <div style="position:absolute;inset:0;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);opacity:0.05;mix-blend-mode:overlay;z-index:1;pointer-events:none;"></div>
+      <!-- container -->
+      <div style="position:absolute;left:35px;top:142px;width:976px;display:flex;flex-direction:column;gap:65px;z-index:2;">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:96px;color:#2B7DE1;letter-spacing:-4.8px;line-height:1.13;width:801px;">A espera fazia parte do conteúdo.</div>
+        <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:40px;color:#fff;letter-spacing:-2px;line-height:1.23;width:880px;">Abri o notebook de manhã, dei um comando e fui tomar café, reforçando atenção sustentada e tolerância ao 'ainda não'.</div>
+      </div>
+      <!-- foto bottom (retângulo padrão Modelo 01) -->
+      <img src="showcase-assets/tech-2.jpg" style="position:absolute;top:790px;left:35px;width:1010px;height:530px;object-fit:cover;border-radius:8px;z-index:3;" />
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S2 — CONTENT (light + badge pill) ==================== -->
+<div class="card">
+  <div class="card-label">S2 — Content</div>
+  <div class="sf">
+    <div class="si" style="background:#f5f5f5;position:relative;">
+      <!-- badge pill -->
+      <div style="position:absolute;top:210px;left:50%;transform:translateX(-50%);border:1px solid #ccc;border-radius:20px;padding:10px 24px;font-family:'Inter',sans-serif;font-weight:500;font-size:14px;color:#555;">O Contexto</div>
+      <!-- título -->
+      <div style="position:absolute;top:270px;left:50%;transform:translateX(-50%);width:763px;font-family:'Roboto',sans-serif;font-weight:900;font-size:56px;color:#040416;text-transform:uppercase;letter-spacing:2px;text-align:center;">QUANDO VOLTEI A TELA ESTAVA VIVA</div>
+      <!-- foto (retângulo padrão Modelo 01) -->
+      <img src="showcase-assets/auto-mode.jpg" style="position:absolute;top:470px;left:87px;width:893px;height:347px;object-fit:cover;border-radius:8px;" />
+      <!-- body -->
+      <div style="position:absolute;top:900px;left:50%;transform:translateX(-50%);width:726px;font-family:'Inter',sans-serif;font-weight:500;font-size:36px;color:#555;text-align:center;">A história continuava fora da tela: o agente recriava cenas, inventava universos e preenchia lacunas com imaginação e pensamento preciso.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S3 — CONTENT (light + título azul + foto bottom) ==================== -->
+<div class="card">
+  <div class="card-label">S3 — Content</div>
+  <div class="sf">
+    <div class="si" style="background:#f5f5f5;position:relative;">
+      <!-- título + body container -->
+      <div style="position:absolute;left:35px;top:142px;width:900px;display:flex;flex-direction:column;gap:40px;">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:90px;color:#2B7DE1;letter-spacing:-3.5px;line-height:1.13;">Não era um vídeo. Não era uma demo.</div>
+        <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:37px;color:#000000;letter-spacing:-2px;line-height:1.23;">Era o Playwright controlando a máquina enquanto eu tomava café, criando repertório compartilhado com interação constante.</div>
+      </div>
+      <!-- foto bottom (retângulo padrão Modelo 01) -->
+      <img src="showcase-assets/tech-3.jpg" style="position:absolute;bottom:35px;left:35px;width:1010px;height:540px;object-fit:cover;border-radius:8px;" />
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S4 — DESTAQUE (foto fullbleed + overlay) ==================== -->
+<div class="card">
+  <div class="card-label">S4 — Destaque</div>
+  <div class="sf">
+    <div class="si" style="background:#343434;position:relative;">
+      <!-- foto fullbleed -->
+      <img src="showcase-assets/tech-1.jpg" style="position:absolute;inset:0;width:1080px;height:1350px;object-fit:cover;" />
+      <!-- overlay -->
+      <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);z-index:2;"></div>
+      <!-- título -->
+      <div style="position:absolute;top:500px;left:50%;transform:translateX(-50%);width:900px;font-family:'Roboto',sans-serif;font-weight:700;font-size:48px;color:#fff;text-transform:uppercase;text-decoration:underline;letter-spacing:8px;text-align:center;z-index:3;">O AGENTE LEVOU SETE MINUTOS</div>
+      <!-- body -->
+      <div style="position:absolute;top:680px;left:50%;transform:translateX(-50%);width:800px;font-family:'Inter',sans-serif;font-weight:500;font-size:38px;color:rgba(255,255,255,0.8);text-align:center;z-index:3;">Paciência, controle de impulsos e tolerância ao tédio eram exercitados pela estrutura do consumo, não por lições explícitas sobre comportamento.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S5 — DARK STATEMENT ==================== -->
+<div class="card">
+  <div class="card-label">S5 — Statement</div>
+  <div class="sf">
+    <div class="si" style="background:radial-gradient(ellipse at left center, #003A70 0%, #000000 70%);position:relative;">
+      <!-- noise -->
+      <div style="position:absolute;inset:0;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);opacity:0.05;mix-blend-mode:overlay;z-index:1;pointer-events:none;"></div>
+      <!-- título -->
+      <div style="position:absolute;left:35px;top:120px;font-family:'Inter',sans-serif;font-weight:800;font-size:61px;color:#2B7DE1;letter-spacing:-3.5px;line-height:1.13;width:900px;z-index:2;">Não se trata de digitar mais rápido.</div>
+      <!-- body -->
+      <div style="position:absolute;left:35px;bottom:200px;font-family:'Inter',sans-serif;font-weight:500;font-size:61px;color:#ffffff;letter-spacing:-2px;line-height:1.23;width:900px;z-index:2;">Se trata de nunca mais precisar digitar certas coisas. O fluxo executa e reduz o custo de sustentar foco por mais tempo.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S6 — GRADIENT AZUL ==================== -->
+<div class="card">
+  <div class="card-label">S6 — Gradient</div>
+  <div class="sf">
+    <div class="si" style="background:#ffffff;position:relative;">
+      <!-- degradê radial spray topo-direita -->
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at top right, rgba(0,58,112,0.35) 0%, transparent 55%);"></div>
+      <!-- título -->
+      <div style="position:absolute;left:35px;top:420px;font-family:'Inter',sans-serif;font-weight:800;font-size:96px;color:#040416;letter-spacing:-4.8px;line-height:1.13;width:900px;">Você ainda faz tudo na mão.</div>
+      <!-- body -->
+      <div style="position:absolute;left:35px;top:820px;font-family:'Inter',sans-serif;font-weight:500;font-size:36px;color:#040416;opacity:0.7;letter-spacing:-1.8px;line-height:1.23;width:900px;">Delegue para uma inteligência que não cansa, não esquece e não pede aumento.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S7 — DARK COM FOTO ==================== -->
+<div class="card">
+  <div class="card-label">S7 — Dark + Foto</div>
+  <div class="sf">
+    <div class="si" style="background:linear-gradient(135deg, #003A70 0%, #000000 70%);position:relative;">
+      <!-- noise -->
+      <div style="position:absolute;inset:0;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);opacity:0.05;mix-blend-mode:overlay;z-index:1;pointer-events:none;"></div>
+      <!-- título + body container -->
+      <div style="position:absolute;left:35px;top:142px;width:900px;display:flex;flex-direction:column;gap:40px;z-index:2;">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:90px;color:#2B7DE1;letter-spacing:-3.5px;line-height:1.13;">Instruções precisas.</div>
+        <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:37px;color:#ffffff;letter-spacing:-2px;line-height:1.23;">Fluxo construído com repertório real. A máquina não mexeu sozinha por mágica. Mexeu porque recebeu instrução e construiu repertório coletivo.</div>
+      </div>
+      <!-- foto bottom (retângulo padrão Modelo 01) -->
+      <img src="showcase-assets/tech-4.jpg" style="position:absolute;bottom:35px;left:35px;width:1010px;height:540px;object-fit:cover;border-radius:8px;z-index:3;" />
+    </div>
+  </div>
+</div>
+
+<!-- ==================== S8 — STATEMENT FINAL ==================== -->
+<div class="card">
+  <div class="card-label">S8 — Final</div>
+  <div class="sf">
+    <div class="si" style="background:#343434;position:relative;">
+      <!-- foto centralizada (retângulo padrão Modelo 01) -->
+      <img src="showcase-assets/tech-5.jpg" style="position:absolute;top:200px;left:50%;transform:translateX(-50%);width:752px;height:692px;object-fit:cover;border-radius:8px;" />
+      <!-- título bottom -->
+      <div style="position:absolute;top:940px;left:50%;transform:translateX(-50%);width:900px;font-family:'Inter',sans-serif;font-weight:900;font-size:72px;color:#fff;letter-spacing:-3.6px;text-align:center;">Quem constrói acorda com o trabalho pronto.</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- .grid -->
+
+</body>
+</html>

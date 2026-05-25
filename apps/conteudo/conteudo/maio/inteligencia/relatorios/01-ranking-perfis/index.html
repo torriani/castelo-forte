@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 · Ranking de Perfis · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">01 · Ranking de <em>Perfis</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Relatórios técnicos</a><span class="sep">›</span>01 · Ranking de Perfis</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="../../">Briefing Maio</a> / <a href="/conteudo/maio/inteligencia/hub-pesquisa/">Inteligência</a> / 01 · Ranking de Perfis</div>
+<div class="container">
+  <a href="/conteudo/maio/inteligencia/hub-pesquisa/" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>Ranking de Engajamento — 35 perfis analisados</h1>
+
+<p><strong>Métrica:</strong> engagement rate = (avg likes / seguidores) × 100</p>
+
+<p>Acima de 3% = bom. Acima de 5% = excelente. Acima de 10% = excepcional.</p>
+
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Seguidores</th><th>Posts</th><th>Avg Likes</th><th>Avg Comments</th><th>Avg Views</th><th>Eng Rate</th><th>Fmt Dom</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>4,966</td><td>36</td><td>676</td><td>19</td><td>14,734</td><td><strong>13.63%</strong></td><td>reel (81%)</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>497</td><td>36</td><td>44</td><td>3</td><td>481</td><td><strong>9.03%</strong></td><td>reel (47%)</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>246,000</td><td>36</td><td>7,607</td><td>192</td><td>143,722</td><td><strong>3.09%</strong></td><td>reel (94%)</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>145,000</td><td>36</td><td>2,426</td><td>51</td><td>36,399</td><td><strong>1.67%</strong></td><td>reel (78%)</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>525,000</td><td>36</td><td>6,962</td><td>83</td><td>82,601</td><td><strong>1.33%</strong></td><td>carrossel (53%)</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>238,000</td><td>36</td><td>2,197</td><td>36</td><td>26,969</td><td><strong>0.92%</strong></td><td>reel (61%)</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>336,000</td><td>36</td><td>2,923</td><td>63</td><td>35,780</td><td><strong>0.87%</strong></td><td>reel (58%)</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>158,000</td><td>36</td><td>1,291</td><td>31</td><td>69,519</td><td><strong>0.82%</strong></td><td>reel (78%)</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>205,000</td><td>36</td><td>1,435</td><td>26</td><td>14,377</td><td><strong>0.7%</strong></td><td>reel (47%)</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>16,600,000</td><td>36</td><td>93,438</td><td>3,309</td><td>1,937,498</td><td><strong>0.56%</strong></td><td>reel (100%)</td></tr>
+<tr><td>11</td><td><a href="https://instagram.com/igrejarenasceremcristo" target="_blank">@igrejarenasceremcristo</a></td><td>189,000</td><td>36</td><td>969</td><td>55</td><td>12,253</td><td><strong>0.51%</strong></td><td>carrossel (42%)</td></tr>
+<tr><td>12</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>193,000</td><td>36</td><td>953</td><td>39</td><td>11,095</td><td><strong>0.49%</strong></td><td>carrossel (47%)</td></tr>
+<tr><td>13</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>398,000</td><td>36</td><td>1,863</td><td>52</td><td>30,011</td><td><strong>0.47%</strong></td><td>reel (61%)</td></tr>
+<tr><td>14</td><td><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></td><td>274,000</td><td>36</td><td>1,148</td><td>22</td><td>11,092</td><td><strong>0.42%</strong></td><td>reel (56%)</td></tr>
+<tr><td>15</td><td><a href="https://instagram.com/hillsongsaopaulo" target="_blank">@hillsongsaopaulo</a></td><td>175,000</td><td>36</td><td>706</td><td>15</td><td>6,334</td><td><strong>0.4%</strong></td><td>carrossel (58%)</td></tr>
+<tr><td>16</td><td><a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a></td><td>141,000</td><td>36</td><td>532</td><td>12</td><td>7,711</td><td><strong>0.38%</strong></td><td>reel (58%)</td></tr>
+<tr><td>17</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>391,000</td><td>36</td><td>1,308</td><td>54</td><td>12,845</td><td><strong>0.33%</strong></td><td>carrossel (47%)</td></tr>
+<tr><td>18</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>311,000</td><td>36</td><td>999</td><td>19</td><td>6,387</td><td><strong>0.32%</strong></td><td>carrossel (53%)</td></tr>
+<tr><td>19</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>154,000</td><td>35</td><td>230</td><td>8</td><td>2,053</td><td><strong>0.15%</strong></td><td>reel (46%)</td></tr>
+<tr><td>20</td><td><a href="https://instagram.com/lagoinhaalphaville.sp" target="_blank">@lagoinhaalphaville.sp</a></td><td>755,000</td><td>36</td><td>647</td><td>17</td><td>10,777</td><td><strong>0.09%</strong></td><td>reel (58%)</td></tr>
+<tr><td>21</td><td><a href="https://instagram.com/zionchurch" target="_blank">@zionchurch</a></td><td>309,000</td><td>36</td><td>174</td><td>15</td><td>4,481</td><td><strong>0.06%</strong></td><td>reel (50%)</td></tr>
+<tr><td>22</td><td><a href="https://instagram.com/iprdoficial" target="_blank">@iprdoficial</a></td><td>375,000</td><td>36</td><td>44</td><td>1</td><td>1,343</td><td><strong>0.01%</strong></td><td>reel (44%)</td></tr>
+<tr><td>23</td><td><a href="https://instagram.com/universaloficial" target="_blank">@universaloficial</a></td><td>1,500,000</td><td>6</td><td>42</td><td>0</td><td>0</td><td><strong>0.0%</strong></td><td>foto (100%)</td></tr>
+</tbody></table></article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

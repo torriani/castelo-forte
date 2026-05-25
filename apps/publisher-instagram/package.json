@@ -1,0 +1,11 @@
+{
+  "name": "castelo-forte-instagram-publisher",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "publish": "node publisher.mjs",
+    "dry-run": "node publisher.mjs --dry-run"
+  },
+  "dependencies": {}
+}

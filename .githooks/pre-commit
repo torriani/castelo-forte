@@ -1,0 +1,109 @@
+#!/bin/bash
+# pre-commit hook — bloqueia arquivos grandes, secrets, mídia pesada
+# Instalação: git config core.hooksPath .githooks
+
+# Não usamos set -e porque grep retorna 1 quando não encontra match
+# (comportamento esperado, não é erro).
+
+MAX_SIZE_MB=10
+ERRORS=0
+
+# ━━━ 1. Bloquear arquivos > MAX_SIZE_MB MB (exceto apps/conteudo/)
+echo "→ Verificando tamanho dos arquivos..."
+STAGED=$(git diff --cached --name-only --diff-filter=ACM)
+for FILE in $STAGED; do
+  if [ -f "$FILE" ]; then
+    # apps/conteudo/ é o portal Vercel completo, isento do limite
+    case "$FILE" in
+      apps/conteudo/*) continue ;;
+    esac
+    SIZE_BYTES=$(wc -c < "$FILE" | tr -d ' ')
+    SIZE_MB=$((SIZE_BYTES / 1048576))
+    if [ "$SIZE_MB" -gt "$MAX_SIZE_MB" ]; then
+      echo "  ✗ BLOQUEADO: $FILE ($SIZE_MB MB > $MAX_SIZE_MB MB)"
+      echo "    → Mídia pesada vai pro Supabase Archive, não pro Git"
+      echo "    → Use: node squads/conteudo/scripts/upload-archive.mjs"
+      ERRORS=$((ERRORS + 1))
+    fi
+  fi
+done
+
+# ━━━ 2. Bloquear .env (qualquer um exceto .env.example)
+echo "→ Verificando se algum .env está sendo commitado..."
+for FILE in $STAGED; do
+  case "$FILE" in
+    *.env|.env|.env.local|.env.production|.env.development)
+      echo "  ✗ BLOQUEADO: $FILE contém secrets"
+      echo "    → .env NUNCA deve ir pro Git"
+      echo "    → Só commitar .env.example"
+      ERRORS=$((ERRORS + 1))
+      ;;
+  esac
+done
+
+# ━━━ 3. Bloquear extensões de mídia pesada
+echo "→ Verificando extensões binárias..."
+for FILE in $STAGED; do
+  case "$FILE" in
+    *.onnx|*.mp4|*.mov|*.avi|*.mkv|*.psd|*.ai|*.sketch)
+      echo "  ✗ BLOQUEADO: $FILE é mídia pesada"
+      echo "    → Vai pro Supabase Archive"
+      echo "    → Use: node squad/scripts/upload-archive.mjs"
+      ERRORS=$((ERRORS + 1))
+      ;;
+  esac
+done
+
+# ━━━ 4. Detectar padrões de secret (heurística)
+# Estratégia: procura linhas com padrão de secret que NÃO estejam em URL e
+# NÃO estejam num arquivo de raw data (posts.json scraping).
+echo "→ Procurando padrões de secret no conteúdo..."
+for FILE in $STAGED; do
+  # Pula arquivos binários e raw data
+  case "$FILE" in
+    *.png|*.jpg|*.jpeg|*.webp|*.pdf|*.zip|*.tar|*.gz) continue ;;
+    *raw/*|*raw-v*/*) continue ;;
+  esac
+
+  if [ -f "$FILE" ] && file "$FILE" | grep -qE "(text|JSON|YAML|script)"; then
+    # JWT padrão eyJ... é forte indício, exceto se for em URL/raw
+    # OpenAI sk-... apenas se NÃO estiver dentro de uma URL (excluímos "://...sk-")
+    SUSPICIOUS=$(grep -vE "(://|fbcdn|cdninstagram|/imgs?/)" "$FILE" 2>/dev/null | \
+                 grep -E "(^|[^a-zA-Z0-9])(sk-[a-zA-Z0-9]{30,}|EAA[a-zA-Z0-9]{80,}|AKIA[A-Z0-9]{16}|eyJ[a-zA-Z0-9_-]{20,}\.[a-zA-Z0-9_-]{20,}\.[a-zA-Z0-9_-]{20,})" 2>/dev/null)
+
+    # Filtra falsos positivos: chave ANON do Supabase é pública por design (frontend)
+    # JWTs com role=anon NÃO são secret. Só service_role é.
+    if [ -n "$SUSPICIOUS" ]; then
+      # Tenta detectar se é anon key (segura) — payload contém "role":"anon"
+      if echo "$SUSPICIOUS" | grep -oE 'eyJ[a-zA-Z0-9_-]+\.eyJ[a-zA-Z0-9_-]+' | head -1 | cut -d. -f2 | base64 -D 2>/dev/null | grep -q '"role":"anon"'; then
+        # É anon, ignora
+        SUSPICIOUS=""
+      fi
+    fi
+
+    if [ -n "$SUSPICIOUS" ]; then
+      # Confere que não é placeholder vazio
+      if ! grep -E "^[A-Z_]+=$" "$FILE" > /dev/null; then
+        echo "  ⚠ ALERTA: $FILE pode conter secret real"
+        echo "    → Trecho suspeito:"
+        echo "$SUSPICIOUS" | head -2 | sed 's/^/      /'
+        echo "    → Se for falso positivo, use: git commit --no-verify"
+        echo "    → Se for secret real, REMOVA e use .env"
+        ERRORS=$((ERRORS + 1))
+      fi
+    fi
+  fi
+done
+
+if [ "$ERRORS" -gt 0 ]; then
+  echo ""
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "  ✗ COMMIT BLOQUEADO: $ERRORS problema(s)"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "Resolva os problemas acima e tente de novo."
+  echo "Em emergência: git commit --no-verify (NÃO recomendado)"
+  exit 1
+fi
+
+echo "✓ Pre-commit OK"
+exit 0

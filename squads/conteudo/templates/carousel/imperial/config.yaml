@@ -1,0 +1,65 @@
+family: imperial
+name: "Template Imperial"
+description: "Foto fullbleed + titulo grande. Estilo revista/editorial. Capas com foto de pessoa real e titulo impactante. Internas com variacao de layout para dinamismo visual."
+dimensions: "1080x1350"
+renderer: playwright
+
+cover:
+  file: cover.html
+  type: photo-fullbleed
+  requires: photo
+  overlay: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.65) 100%)"
+  text_position: bottom-center
+  text_style: "uppercase, weight 900, branco puro (sem cor de acento), tamanho ~96px"
+  title_only: true  # sem subtitulo, sem descricao — so titulo grande
+  watermark: "@{{instagram}}"
+  watermark_opacity: 0.25
+
+internals:
+  variants:
+    - id: A
+      file: internal-A.html
+      name: "Imagem em cima + texto embaixo"
+      requires: photo
+    - id: B
+      file: internal-B.html
+      name: "Texto em cima + imagem embaixo"
+      requires: photo
+    - id: C
+      file: internal-C.html
+      name: "Imagem no meio (texto acima e abaixo)"
+      requires: photo
+    - id: D
+      file: internal-D.html
+      name: "Foto fullbleed + balao de texto embaixo"
+      requires: photo
+    - id: E
+      file: internal-E.html
+      name: "Foto fullbleed + balao de texto em cima"
+      requires: photo
+  auto_distribute: true
+  distribution_rule: "nunca repetir mesma variante 2x seguida. Para 10 slides, usar pelo menos 3 variantes diferentes."
+  photo_rules:
+    - "Fotos de PESSOAS so podem aparecer quando a pessoa esta na parte INFERIOR do slide"
+    - "Variante D (card embaixo): pessoa OK pois o rosto fica visivel em cima"
+    - "Variante E (card em cima): NUNCA usar foto de pessoa — o card cobre o rosto. Usar paisagem, abstrato, arquitetura, objetos"
+    - "Variante A (imagem topo): se usar pessoa, enquadrar da cintura pra cima para que nao fique cortada"
+    - "Variante B (imagem embaixo): pessoa OK, fica na parte inferior"
+    - "Variante C (imagem meio): evitar pessoa, preferir graficos, objetos, cenarios"
+
+cta:
+  file: cta.html
+  type: photo-fullbleed
+  requires: photo
+
+photos:
+  source: [web-search, unsplash, nano-banana, upload]
+  orientation: portrait
+  selection_rule: "Se tema menciona pessoa conhecida → web search. Se conceito abstrato → unsplash ou nano-banana."
+
+branding:
+  watermark: "@{{instagram}}"
+  watermark_opacity: 0.3
+  watermark_position: bottom-center
+  show_pagination: false
+  show_header: false

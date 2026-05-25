@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>08 · Replicáveis Top Eng · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">08 · Replicáveis <em>Top Eng</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Relatórios técnicos</a><span class="sep">›</span>08 · Replicáveis Top Eng</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="../../">Briefing Maio</a> / <a href="/conteudo/maio/inteligencia/hub-pesquisa/">Inteligência</a> / 08 · Replicáveis Top Engajamento</div>
+<div class="container">
+  <a href="/conteudo/maio/inteligencia/hub-pesquisa/" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>Top 50 Posts REPLICAVEIS por Engajamento Absoluto</h1>
+
+<p>Filtros aplicados: SEM anuncios, datas comemorativas, eventos, obitos, bastidores, mencoes a perfis especificos, solidariedade pontual.</p>
+
+<p>Total apos filtro: 486 (de 761 originais — 275 excluidos).</p>
+
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave replicavel</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>249,346</td><td>reel</td><td>Este é o maior erro que podemos cometer. ⚠️</td><td>https://www.instagram.com/p/DYQglwfsab8/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>220,776</td><td>reel</td><td>Esta palavra é pra você. AMEMMM!??</td><td>https://www.instagram.com/p/DXVTX2njH32/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>219,184</td><td>reel</td><td>Por favor assista isso até o final! Não tenha medo. AMEMM!?</td><td>https://www.instagram.com/p/DXsckoSDMB4/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>171,216</td><td>reel</td><td>Se eu fosse você já começaria agradecer! AMEMM!?</td><td>https://www.instagram.com/p/DXNlAYujFGA/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>155,968</td><td>reel</td><td>Só receba esta palavra e mande pra alguém que você ama!!</td><td>https://www.instagram.com/p/DXIa7hiDG7N/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>155,139</td><td>reel</td><td>Eu tenho uma palavra de Jesus pra você! Veja até o final!AMEMM?!</td><td>https://www.instagram.com/p/DXDQmG3jF_D/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>146,105</td><td>reel</td><td>AMEMMM!? Nosso Deus é maravilhoso!</td><td>https://www.instagram.com/p/DXxnVKZMoSP/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>135,819</td><td>reel</td><td>Algumas perdas são livramentos de Deus! AMEMM!?</td><td>https://www.instagram.com/p/DYLW2xjMx8x/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>135,407</td><td>reel</td><td>Escute isso até o final! Amem??</td><td>https://www.instagram.com/p/DXdAb2PDFEk/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>134,613</td><td>reel</td><td>Essa palavra é de Jesus pra você! AMEMMM!? Tente de novo</td><td>https://www.instagram.com/p/DX5WG_rs-R_/</td></tr>
+<tr><td>11</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>133,361</td><td>reel</td><td>AMEMMM!? Você não perdeu nada ❤️😭</td><td>https://www.instagram.com/p/DYTFiIyM3vd/</td></tr>
+<tr><td>12</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>132,181</td><td>reel</td><td>Nem todo mundo pode acessar a sua intimidade!</td><td>https://www.instagram.com/p/DXzxySNNqix/</td></tr>
+<tr><td>13</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>120,618</td><td>reel</td><td>Recebe aí!!!! AMEMMMM?</td><td>https://www.instagram.com/p/DX8F_scsNVm/</td></tr>
+<tr><td>14</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>105,374</td><td>reel</td><td>Escute isso! Todo o gigante que se levanta é uma oportunidade que Jesus está te dando! Assista até o final e envia para as pessoas que Jesus colocar em seu cora</td><td>https://www.instagram.com/p/DXnURXNDFW0/</td></tr>
+<tr><td>15</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>99,776</td><td>reel</td><td>Deus está chamando você pra seguir em frente! AMEMMM!?</td><td>https://www.instagram.com/p/DYOAFy2sO23/</td></tr>
+<tr><td>16</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>92,537</td><td>reel</td><td>Essa é uma palavra de Jesus pra você. AMEMMM?</td><td>https://www.instagram.com/p/DX0Of07MI9Q/</td></tr>
+<tr><td>17</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>92,329</td><td>reel</td><td>A tempestade que você vive não tem o poder de mudar o destino que Jesus tem pra você! AMEMMM??</td><td>https://www.instagram.com/p/DXX27VfjJ3M/</td></tr>
+<tr><td>18</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>86,839</td><td>reel</td><td>Escute até o final! Deus vai falar com você! AMEMM!!?</td><td>https://www.instagram.com/p/DYBEyyTserV/</td></tr>
+<tr><td>19</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>85,231</td><td>reel</td><td>Marque e envie pra quem você ama!</td><td>https://www.instagram.com/p/DXp309HDHdp/</td></tr>
+<tr><td>20</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>83,434</td><td>reel</td><td>Deus não vai te de deixar desistir! AMEMMM!?</td><td>https://www.instagram.com/p/DX-feN7MsM7/</td></tr>
+<tr><td>21</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>71,888</td><td>reel</td><td>Ouça isso até o final! Amém?</td><td>https://www.instagram.com/p/DYYPCMrJmTn/</td></tr>
+<tr><td>22</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>71,622</td><td>reel</td><td>Por favor escute isso. AMÉM!?</td><td>https://www.instagram.com/p/DXvFdI9Ml-L/</td></tr>
+<tr><td>23</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>64,436</td><td>reel</td><td>Escute isso até o final! Deus vai falar com você! Amém?</td><td>https://www.instagram.com/p/DXF3ThQjIM9/</td></tr>
+<tr><td>24</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>54,842</td><td>reel</td><td>Por favor assista até o final! AMEMMM? As vezes o que divide uma estação ruim para uma tempestade é apenas uma tempestade que vai passar. Envie pra quem você se</td><td>https://www.instagram.com/p/DXabygojPqh/</td></tr>
+<tr><td>25</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>49,487</td><td>reel</td><td>Hoje uma parte importante do nosso sonho pra <a href="https://instagram.com/aedeiveleonardo" target="_blank">@aedeiveleonardo</a> começou! Teremos um caminhão palco que irá rodar o nosso Brasil levando a palavra de Jesus através</td><td>https://www.instagram.com/p/DXAkvDmABM9/</td></tr>
+<tr><td>26</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>46,746</td><td>reel</td><td>Essa palavra é de Jesus pra você! AMÉMMM!???</td><td>https://www.instagram.com/p/DYUsaZluduz/</td></tr>
+<tr><td>27</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>32,491</td><td>reel</td><td>Às vezes, Deus não responde de imediato porque Ele está formando em nós a maturidade necessária para sustentar aquilo que um dia vamos viver! Amémmm!???</td><td>https://www.instagram.com/p/DYSHnCrO5PR/</td></tr>
+<tr><td>28</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>31,799</td><td>reel</td><td>Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥</td><td>https://www.instagram.com/p/DYN_3AjgcND/</td></tr>
+<tr><td>29</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>31,784</td><td>reel</td><td>Quanto mais perto de Deus, mais a gente entende que a verdadeira profundidade está em ser conhecido, amado e cuidado por Jesus! AMÉMMM!???</td><td>https://www.instagram.com/p/DYM9_IVOf5m/</td></tr>
+<tr><td>30</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>26,428</td><td>reel</td><td>Que as pessoas estranhem você!</td><td>https://www.instagram.com/p/DYF5KHOtHHj/</td></tr>
+<tr><td>31</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>26,424</td><td>reel</td><td>Veja isso até o final! Deus não entrega uma visão sem preparar um caminho! AMÉMM!??</td><td>https://www.instagram.com/p/DYXRKKxOpVi/</td></tr>
+<tr><td>32</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>26,423</td><td>reel</td><td>Eu tenho uma palavra de Jesus pra sua vida! AMEMMM!???</td><td>https://www.instagram.com/p/DYM-AzDuhEK/</td></tr>
+<tr><td>33</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>26,260</td><td>reel</td><td>Quando você ora por quem te persegue, você fica mais parecido com Jesus!</td><td>https://www.instagram.com/p/DXsPhvpDRz8/</td></tr>
+<tr><td>34</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>20,522</td><td>carrossel</td><td>Num tempo de incertezas e pressões,</td><td>https://www.instagram.com/p/DSfOEpnjjt7/</td></tr>
+<tr><td>35</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>20,495</td><td>reel</td><td>Existe algo novo de Deus para a sua vida. Você crê? ❤️‍🔥❤️‍🔥❤️‍🔥Compartilhe essa mensagem com alguém que precisa ouvir isso!!!</td><td>https://www.instagram.com/p/DX-bs7hOU1J/</td></tr>
+<tr><td>36</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>19,779</td><td>reel</td><td>Somos igreja porque estamos juntos 💜</td><td>https://www.instagram.com/p/DFfj3ZsxL0D/</td></tr>
+<tr><td>37</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>15,304</td><td>reel</td><td>Avivamento não está em um lugar.</td><td>https://www.instagram.com/p/DXUQKzlivgf/</td></tr>
+<tr><td>38</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>14,867</td><td>reel</td><td>Eles serão o meu povo, e eu serei o seu Deus.</td><td>https://www.instagram.com/p/DWeP1d4Bpsc/</td></tr>
+<tr><td>39</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>14,482</td><td>reel</td><td>Tem cidade aí que Deus já marcou com o Seu nome.</td><td>https://www.instagram.com/p/DX7AiMqA6Tu/</td></tr>
+<tr><td>40</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>13,230</td><td>foto</td><td>Cristo ressuscitou dentre os mortos, sendo Ele as primícias dos que dormem… cada um por sua ordem: Cristo, as primícias; depois, os que são de Cristo, na sua vi</td><td>https://www.instagram.com/p/DUij_PVEf86/</td></tr>
+<tr><td>41</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>13,030</td><td>carrossel</td><td>Oro para que o amor de vocês transborde cada vez mais e que continuem a crescer em conhecimento e discernimento.</td><td>https://www.instagram.com/p/DXnhoK8jFmG/</td></tr>
+<tr><td>42</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>12,515</td><td>reel</td><td>A sintonia (ou a disputa kkkk) que a gente ama!🤭😅</td><td>https://www.instagram.com/p/DYN7zp2gg87/</td></tr>
+<tr><td>43</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>12,417</td><td>carrossel</td><td>Deus não trata como comum aquilo que Ele decidiu investir profundamente.</td><td>https://www.instagram.com/p/DWzz7rWlRFa/</td></tr>
+<tr><td>44</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>11,700</td><td>reel</td><td>Deus ainda faz o impossível 🙌🏻</td><td>https://www.instagram.com/p/DYSte4nNhcA/</td></tr>
+<tr><td>45</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>11,398</td><td>reel</td><td>Que o Senhor vá à sua frente nesta semana, abrindo caminhos, fortalecendo o seu coração e derramando paz sobre cada decisão, apenas se dedique ao Senhor. 🙏</td><td>https://www.instagram.com/p/DVGSdUXDpYY/</td></tr>
+<tr><td>46</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>11,137</td><td>reel</td><td>Esse foi apenas um trecho da nossa Aula 1! ❤️‍🔥</td><td>https://www.instagram.com/p/DXfATmpisEl/</td></tr>
+<tr><td>47</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>11,000</td><td>reel</td><td>Ele vive! 🙏🏻  #AmanhecerEphyBeach #TodoOMundoRumoABC #Amanhecer</td><td>https://www.instagram.com/p/DXzMW9ETc-g/</td></tr>
+<tr><td>48</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>10,851</td><td>reel</td><td>Maior amor não há do que este: dar alguém a vida pelos seus amigos.</td><td>https://www.instagram.com/p/DXdB3PviUox/</td></tr>
+<tr><td>49</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>10,133</td><td>reel</td><td>Lançando sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós.</td><td>https://www.instagram.com/p/DWShqxyDt9L/</td></tr>
+<tr><td>50</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>9,956</td><td>reel</td><td>Comenta aqui no qual a sua cidade!? E assista um pouco de como foi <a href="https://instagram.com/odespertartour" target="_blank">@odespertartour</a> em Divinópolis ontem! Agora partiu</td><td>https://www.instagram.com/p/DXRwrQqgP2j/</td></tr>
+</tbody></table></article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+cliente: igreja-castelo-forte
+perfil_atual:
+  handle: castelofortefloripa
+  seguidores_aproximados: 497
+  localizacao: Jurerê Internacional, Florianópolis SC
+  culto: Domingo 9:30h
+  estado: morto (baixo engajamento, poucos posts)
+
+data_pesquisa: 2026-05-16
+fonte_ranking: Fé em Movimento + Exibir Gospel + Comunhão (set/2025)
+
+# Igrejas alvo — top 30 ranking BR + handles confirmados
+igrejas_top:
+  - { rank: 1,  nome: "Igreja Universal",            handle: "universaloficial",        seguidores: 1500000, tipo: neopentecostal }
+  - { rank: 2,  nome: "Lagoinha BH",                 handle: "lagoinhabh",              seguidores: 818000,  tipo: batista_renovada }
+  - { rank: 3,  nome: "Lagoinha Alphaville",         handle: "lagoinhaalphaville.sp",   seguidores: 755000,  tipo: batista_renovada }
+  - { rank: 4,  nome: "IPP Pinheiros",               handle: "ipppinheiros",            seguidores: 555000,  tipo: presbiteriana }
+  - { rank: 5,  nome: "Bola de Neve",                handle: "igrejaboladeneveoficial", seguidores: 389000,  tipo: neopentecostal_jovem }
+  - { rank: 6,  nome: "Abba Pai Church",             handle: "abbapaichurch",           seguidores: 525000,  tipo: apostolica }
+  - { rank: 7,  nome: "Novos Começos Niterói",       handle: "novoscomecosoficial",     seguidores: 381000,  tipo: apostolica }
+  - { rank: 8,  nome: "Igreja do Amor",              handle: "igrejadoamor",            seguidores: 398000,  tipo: apostolica }
+  - { rank: 9,  nome: "Deus é Amor",                 handle: "iprdoficial",             seguidores: 375000,  tipo: pentecostal }
+  - { rank: 10, nome: "ADVEC",                       handle: "advecoficial",            seguidores: 391000,  tipo: assembleia }
+  - { rank: 11, nome: "Mevam Global",                handle: "mevamglobal",             seguidores: 336000,  tipo: apostolica }
+  - { rank: 12, nome: "Zion Church",                 handle: "zionchurch",              seguidores: 309000,  tipo: neopentecostal_jovem }
+  - { rank: 13, nome: "Batista Atitude",             handle: "ibatitude",               seguidores: 311000,  tipo: batista }
+  - { rank: 14, nome: "Onda Dura",                   handle: "ondaduraoficial",         seguidores: 267000,  tipo: jovem }
+  - { rank: 15, nome: "Igreja Videira",              handle: "igrejavideiraoficial",    seguidores: 274000,  tipo: apostolica }
+  - { rank: 16, nome: "Família JesusCopy",           handle: "familiajesuscopy",        seguidores: 238000,  tipo: apostolica_jovem }
+  - { rank: 17, nome: "Igreja Cristã Maranata",      handle: "igrejacristamaranata_oficial", seguidores: 246000, tipo: maranata }
+  - { rank: 18, nome: "Igreja Casa",                 handle: "igrejacasaoficial",       seguidores: 218000,  tipo: apostolica }
+  - { rank: 19, nome: "Igreja da Cidade",            handle: "ic.igrejadacidade",       seguidores: 205000,  tipo: batista }
+  - { rank: 20, nome: "Quadrangular",                handle: "quadrangularoficial",     seguidores: 193000,  tipo: quadrangular }
+  - { rank: 21, nome: "Renascer em Cristo",          handle: "igrejarenasceremcristo",  seguidores: 189000,  tipo: neopentecostal }
+  - { rank: 22, nome: "Hillsong SP",                 handle: "hillsongsaopaulo",        seguidores: 175000,  tipo: hillsong }
+  - { rank: 23, nome: "Family Church",               handle: "familychurchoficial",     seguidores: 154000,  tipo: apostolica }
+  - { rank: 24, nome: "We Are Reino",                handle: "wearereino",              seguidores: 158000,  tipo: apostolica_jovem }
+  - { rank: 25, nome: "Comunidade das Nações",       handle: "comunidadedasnacoes",     seguidores: 154000,  tipo: apostolica }
+  - { rank: 26, nome: "Igreja Mundial",              handle: "igrejamundialoficial",    seguidores: 151000,  tipo: neopentecostal }
+  - { rank: 27, nome: "Get Church Florianópolis",    handle: "getchurchfloripa",        seguidores: 145000,  tipo: jovem, prioridade: CONCORRENTE_DIRETO_GEOGRAFICO }
+  - { rank: 28, nome: "Alcance Curitiba",            handle: "alcancecuritiba",         seguidores: 141000,  tipo: jovem }
+  - { rank: 29, nome: "YAH Church",                  handle: "yahchurch",               seguidores: 139000,  tipo: apostolica_jovem }
+  - { rank: 30, nome: "Igreja One",                  handle: "igrejaoneoficial",        seguidores: 133000,  tipo: jovem }
+
+# Pregadores virais (referência de copy/hooks, não modelo de perfil de igreja)
+pregadores_referencia:
+  - { nome: "Deive Leonardo",       handle: "deiveleonardo",       seguidores: 16600000, foco: "frases curtas, propósito" }
+  - { nome: "Cláudio Duarte",       handle: "claudioduartepastor", seguidores: 10400000, foco: "família, humor, relacionamento" }
+  - { nome: "Helena Raquel",        handle: "helenaraquel_",       seguidores: 0,        foco: "pregação visceral feminina" }
+  - { nome: "Camila Barros",        handle: "camilabarrospro",     seguidores: 0,        foco: "pregação feminina jovem" }
+
+# Concorrentes geográficos diretos (Florianópolis SC)
+concorrentes_floripa:
+  - { nome: "Get Church Florianópolis", handle: "getchurchfloripa", prioridade: ALTA }
+  - { nome: "Mevam Floripa",            handle: "mevamfloripaoficial" }
+  - { nome: "Reino (Florianópolis)",    handle: "wearereino" }
+  - { nome: "Reino Praia Brava",        handle: "wearereino.brava" }
+
+# Configuração do scrape Apify
+apify:
+  actor: "sones~instagram-posts-scraper-lowcost"
+  custo_por_1000_posts_usd: 0.30
+  posts_por_perfil: 30
+  total_estimado_posts: 1020   # 30 igrejas + 4 pregadores
+  custo_estimado_usd: 0.31
+  campos_coletados:
+    - likes
+    - comments
+    - views
+    - caption
+    - hashtags
+    - timestamp
+    - tipo (carrossel/reel/imagem)
+    - media_urls

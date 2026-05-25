@@ -1,0 +1,12 @@
+# Owner — Dono original do squad
+# Este arquivo identifica o criador/dono do squad.
+# Se o usuário atual NÃO bater com estes dados, o sistema sugere onboarding.
+
+owner:
+  name: "operador da Castelo Forte"
+  git_email: "meu@email.com"
+  username: "castelofortemandaqui"
+  hostname_contains: "Castelo Forte"
+
+# Se qualquer um desses bater, é o owner → pula onboarding
+# Se NENHUM bater → sugere onboarding na primeira interação

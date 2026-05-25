@@ -1,0 +1,59 @@
+# BRAND GUIDE — IGREJA CASTELO FORTE
+# Fonte: Brand Guide oficial PDF (Exodus 2025)
+# Atualizado: 2026-05-16
+
+cliente: igreja-castelo-forte
+nome_oficial: "Igreja Castelo Forte"
+instagram: "@castelofortejurere"  # confirmar
+localizacao: "Jurerê, Florianópolis - SC"
+
+paleta_oficial:
+  orange_fort: "#fe5b06"      # acento principal, destaque, CTA
+  midnight_blue: "#153247"    # fundo dark dominante, headline
+  deeper_blue: "#252f38"      # fundo dark alternativo
+  fort_blue: "#075057"        # fundo dark verde-azulado (raro)
+  off_white: "#efefef"        # fundo claro padrão
+
+tipografia:
+  display:
+    nome: "Nexa Heavy"
+    substituto_web: "Archivo Black"   # google fonts livre
+    uso: "headlines, CTA, números grandes"
+  body:
+    nome: "Nexa Light"
+    substituto_web: "Inter"
+    pesos: [300, 400, 500, 600, 700]
+    uso: "texto corrido, sub-headlines"
+  mono:
+    nome: "JetBrains Mono"
+    uso: "metadados, referências bíblicas, datas"
+
+tom_de_voz:
+  arquetipos:
+    - Mago (Principal) — Transformação & Sobrenatural
+    - Cuidador (Secundário) — Acolhimento & Família
+    - Criador (Terceário) — Expressão & Inovação
+  geral: "Inspirador, acolhedor e criativo. Forte mas sutil. Firme mas familiar. Profundo mas acessível. Criativo mas reverente."
+  evitar:
+    - Travessão (—, –) em qualquer texto
+    - Tom frio ou distante
+    - Termos rebuscados ou genéricos
+  preferir:
+    - "Palavras que empoderam (você foi chamado para algo maior)"
+    - Verdades bíblicas claras e impactantes
+    - Linguagem visual moderna sem perder seriedade
+
+regras_visuais:
+  fotografia:
+    estetica: "Cinematográfica, quente, levemente saturada, espontânea"
+    proibido: "Filtros azuis ou cores frias (igreja é litorânea, quente)"
+    interna: "Cultos espontâneos, adoração, reação das pessoas"
+    externa: "Comunidade, conexão, acolhimento"
+    biblica: "Cenas de época (objetos, paisagens, símbolos), nunca pessoas modernas vestidas de bíblicas"
+  logo:
+    posicao: "Canto superior esquerdo (mas opcional na campanha Em Cristo)"
+    proibido: "Esticar, achatar, rotacionar, inverter, comprimir, inclinar"
+
+templates_aprovados:
+  - T-CF-EDITORIAL  # carrossel editorial magazine (PADRÃO)
+  - T-CF-FRASE       # frase única (com ou sem imagem)

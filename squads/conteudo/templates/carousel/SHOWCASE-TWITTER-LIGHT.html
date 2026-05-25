@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twitter Light — 8 Layouts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#080808;color:#fff;font-family:'Inter',sans-serif;padding:40px 40px 80px;}
+  h1{font-size:28px;font-weight:700;margin-bottom:6px;letter-spacing:-0.5px;}
+  .subtitle{font-size:14px;color:#888;margin-bottom:40px;}
+  .grid{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
+  .card{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .card-label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:1px;}
+  .sf{width:216px;height:270px;border-radius:8px;overflow:hidden;position:relative;box-shadow:0 6px 24px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.06);flex-shrink:0;}
+  .sf>.si{width:1080px;height:1350px;transform:scale(0.2);transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;}
+  .verified{width:24px;height:24px;fill:#1D9BF0;}
+</style>
+</head>
+<body>
+
+<h1>Twitter Light — 8 Layouts</h1>
+<p class="subtitle">8 variantes &middot; 1080 &times; 1350 px &middot; modo claro &middot; cores: #000000 #2B7DE1 #536471</p>
+
+<div class="grid">
+
+<!-- 1. IMPACT -->
+<div class="card">
+  <span class="card-label">Impact</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:80px 64px;gap:40px;">
+        <div style="display:flex;align-items:center;gap:20px;">
+          <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+          <div>
+            <div style="font-size:24px;font-weight:700;color:#000;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+            <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+          </div>
+        </div>
+        <div style="font-size:42px;font-weight:600;line-height:1.4;color:#000;text-align:left;">Meu computador começou a <span style="color:#2B7DE1;font-weight:700;font-style:italic;">trabalhar sem mim</span> e isso faz diferença.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. TEXT-TOP -->
+<div class="card">
+  <span class="card-label">Text Top</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;color:#000;display:flex;flex-direction:column;justify-content:center;padding:64px;gap:32px;">
+      <div style="display:flex;align-items:center;gap:20px;padding-bottom:16px;">
+        <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+        <div>
+          <div style="font-size:24px;font-weight:700;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+          <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+        </div>
+      </div>
+      <div style="font-size:40px;font-weight:600;line-height:1.4;text-align:left;">A espera fazia parte do <span style="color:#2B7DE1;font-weight:700;font-style:italic;">conteúdo</span>. O agente executava enquanto eu tomava café.</div>
+      <div style="width:100%;border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.08);">
+        <img src="showcase-assets/tech-2.jpg" style="width:100%;height:420px;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. IMAGE-TOP -->
+<div class="card">
+  <span class="card-label">Image Top</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;color:#000;display:flex;flex-direction:column;justify-content:center;padding:64px;gap:32px;">
+      <div style="display:flex;align-items:center;gap:20px;padding-bottom:16px;">
+        <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+        <div>
+          <div style="font-size:24px;font-weight:700;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+          <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+        </div>
+      </div>
+      <div style="width:100%;border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.08);">
+        <img src="showcase-assets/auto-mode.jpg" style="width:100%;height:420px;object-fit:cover;display:block;">
+      </div>
+      <div style="font-size:40px;font-weight:600;line-height:1.4;text-align:left;">Quando voltei, a tela estava <span style="color:#2B7DE1;font-weight:700;font-style:italic;">viva</span>. O agente recriava cenas e preenchia lacunas.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. BUBBLE-BOTTOM -->
+<div class="card">
+  <span class="card-label">Bubble Bottom</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <img src="showcase-assets/tech-3.jpg" style="position:absolute;inset:0;width:1080px;height:1350px;object-fit:cover;" />
+      <div style="position:absolute;bottom:68px;left:40px;right:40px;background:rgba(255,255,255,0.95);border:1px solid rgba(0,0,0,0.08);border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:24px;z-index:2;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <img src="showcase-assets/avatar.jpg" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+          <div>
+            <div style="font-size:22px;font-weight:700;color:#000;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg style="width:22px;height:22px;fill:#1D9BF0;" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+            <span style="font-size:18px;color:#536471;">@castelofortemandaqui</span>
+          </div>
+        </div>
+        <div style="font-size:34px;font-weight:600;line-height:1.4;color:#000;text-align:left;">Não era um vídeo. Era o <span style="color:#2B7DE1;font-weight:700;font-style:italic;">Playwright</span> controlando a máquina enquanto eu tomava café.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. BUBBLE-TOP -->
+<div class="card">
+  <span class="card-label">Bubble Top</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;position:relative;">
+      <img src="showcase-assets/tech-4.jpg" style="position:absolute;inset:0;width:1080px;height:1350px;object-fit:cover;" />
+      <div style="position:absolute;top:68px;left:40px;right:40px;background:rgba(255,255,255,0.95);border:1px solid rgba(0,0,0,0.08);border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:24px;z-index:2;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <img src="showcase-assets/avatar.jpg" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+          <div>
+            <div style="font-size:22px;font-weight:700;color:#000;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg style="width:22px;height:22px;fill:#1D9BF0;" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+            <span style="font-size:18px;color:#536471;">@castelofortemandaqui</span>
+          </div>
+        </div>
+        <div style="font-size:34px;font-weight:600;line-height:1.4;color:#000;text-align:left;">O agente levou <span style="color:#2B7DE1;font-weight:700;font-style:italic;">sete minutos</span>. Eu levaria quarenta.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. LIST -->
+<div class="card">
+  <span class="card-label">List</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;color:#000;display:flex;flex-direction:column;justify-content:center;padding:64px;gap:40px;">
+      <div style="display:flex;align-items:center;gap:20px;">
+        <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+        <div>
+          <div style="font-size:24px;font-weight:700;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+          <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div style="display:flex;align-items:flex-start;gap:16px;font-size:34px;font-weight:500;line-height:1.4;"><span style="color:#22C55E;font-size:40px;flex-shrink:0;">✓</span> Delega tarefas repetitivas para agentes</div>
+        <div style="display:flex;align-items:flex-start;gap:16px;font-size:34px;font-weight:500;line-height:1.4;"><span style="color:#22C55E;font-size:40px;flex-shrink:0;">✓</span> Cria fluxos que executam enquanto você dorme</div>
+        <div style="display:flex;align-items:flex-start;gap:16px;font-size:34px;font-weight:500;line-height:1.4;"><span style="color:#22C55E;font-size:40px;flex-shrink:0;">✓</span> Instrução precisa = resultado previsível</div>
+        <div style="display:flex;align-items:flex-start;gap:16px;font-size:34px;font-weight:500;line-height:1.4;"><span style="color:#EF4444;font-size:40px;flex-shrink:0;">✗</span> Fazer tudo na mão como em 2019</div>
+        <div style="display:flex;align-items:flex-start;gap:16px;font-size:34px;font-weight:500;line-height:1.4;"><span style="color:#EF4444;font-size:40px;flex-shrink:0;">✗</span> Ignorar que a máquina já aprendeu</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. TEXT-ONLY -->
+<div class="card">
+  <span class="card-label">Text Only</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;color:#000;display:flex;flex-direction:column;justify-content:center;padding:64px;gap:32px;">
+      <div style="display:flex;align-items:center;gap:20px;padding-bottom:16px;">
+        <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+        <div>
+          <div style="font-size:24px;font-weight:700;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+          <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+        </div>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:40px;font-weight:500;line-height:1.5;color:#536471;text-align:left;">A máquina não mexeu sozinha por mágica. Mexeu porque recebeu instrução e construiu repertório coletivo. Quem constrói fluxos acorda com o <span style="color:#2B7DE1;font-weight:600;">trabalho pronto</span>.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. TEXT + IMAGE -->
+<div class="card">
+  <span class="card-label">Text + Image</span>
+  <div class="sf">
+    <div class="si" style="background:#fff;color:#000;display:flex;flex-direction:column;justify-content:center;padding:64px;gap:32px;">
+      <div style="display:flex;align-items:center;gap:20px;padding-bottom:16px;">
+        <img src="showcase-assets/avatar.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
+        <div>
+          <div style="font-size:24px;font-weight:700;display:flex;align-items:center;gap:8px;">operador da Castelo Forte <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg></div>
+          <span style="font-size:20px;color:#536471;">@castelofortemandaqui</span>
+        </div>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:38px;font-weight:500;line-height:1.5;color:#536471;text-align:left;">Delegue para uma inteligência que não cansa, não esquece e não pede aumento. O fluxo executa e reduz o custo de sustentar <span style="color:#2B7DE1;font-weight:600;">foco por mais tempo</span>.</div>
+      <div style="width:100%;border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.08);">
+        <img src="showcase-assets/tech-5.jpg" style="width:100%;height:380px;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

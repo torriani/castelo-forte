@@ -1,0 +1,232 @@
+name: wf-visual-pipeline
+description: "Pipeline visual completo — gerar imagens + aprovar + publicar no Instagram. Pode ser chamado standalone ou como continuacao do *multiplicar."
+version: "1.0"
+command: "*visual-pipeline"
+trigger: "Quando usuario quer gerar imagens e/ou publicar carrosseis aprovados"
+
+phases:
+  - id: verificar_setup
+    name: Verificar Setup
+    agent: publishing-manager
+    description: Confirmar que APIs estao configuradas antes de iniciar
+    elicit: false
+    steps:
+      - Verificar se .env existe na raiz do squad
+      - Ler .env e checar quais chaves estao preenchidas
+      - "Se NENHUMA chave de publicacao configurada:"
+      - "  Avisar: 'Setup necessario. Execute *setup-publicacao primeiro.'"
+      - "  HALT — nao prosseguir sem setup"
+      - "Se apenas Gemini/OpenRouter configurado: permitir gerar imagens, bloquear publicacao"
+      - "Se Instagram ou Blotato configurado: pipeline completo disponivel"
+      - Mostrar status resumido ao usuario
+    outputs:
+      - setup_status
+      - metodos_disponiveis
+    checkpoint: Pelo menos 1 metodo de geracao ou publicacao configurado
+    veto_condition: Nenhuma API configurada — redirecionar para *setup-publicacao
+
+  - id: selecionar_conteudo
+    name: Selecionar Conteudo
+    agent: content-chief
+    description: Escolher quais carrosseis vao receber imagens e/ou ser publicados
+    depends_on: [verificar_setup]
+    elicit: true
+    steps:
+      - "Listar carrosseis disponiveis:"
+      - "  Opcao A: Carrosseis do ultimo *multiplicar (se acabou de rodar)"
+      - "  Opcao B: Carrossel especifico (usuario indica path)"
+      - "  Opcao C: Todos os carrosseis pendentes de imagem em outputs/"
+      - Apresentar lista com titulo, tipo, status (com imagem / sem imagem / publicado)
+      - Usuario seleciona quais processar (1, 2, 3... ou 'todos')
+    outputs:
+      - carrosseis_selecionados
+      - paths_markdown
+    checkpoint: Pelo menos 1 carrossel selecionado
+    veto_condition: Nenhum carrossel encontrado ou selecionado
+
+  - id: escolher_metodo_imagem
+    name: Escolher Metodo de Imagem
+    agent: publishing-manager
+    description: Definir qual metodo usar para gerar as imagens dos carrosseis
+    depends_on: [selecionar_conteudo]
+    elicit: true
+    steps:
+      - "Apresentar 3 metodos disponiveis:"
+      - ""
+      - "1. Sharp (Rapido, Local)"
+      - "   → Gera PNGs a partir de JSON, sem internet"
+      - "   → 5 templates: twitter-branco, twitter-black, editorial, imagem-capa, imagem-texto"
+      - "   → Ideal para: carrosseis de texto puro, producao em massa"
+      - "   → Custo: gratis, ~2 segundos por carrossel"
+      - ""
+      - "2. HTML + Playwright (Rico, Branded)"
+      - "   → Renderiza templates HTML com CSS customizado"
+      - "   → 5 templates: minimal-dark, editorial-clean, bold-gradient, brand-bar, split-accent"
+      - "   → Usa identidade visual de data/visual-identity.yaml (se configurado)"
+      - "   → Ideal para: carrosseis de marca, visual premium"
+      - "   → Custo: gratis, ~5 segundos por carrossel"
+      - "   → Requer: Playwright MCP"
+      - ""
+      - "3. IA (Gemini/OpenRouter)"
+      - "   → Gera imagens criativas com inteligencia artificial"
+      - "   → Framework SCDS: Subject, Setting, Style, Technical"
+      - "   → Ideal para: headers, backgrounds, imagens de capa, quote cards visuais"
+      - "   → Custo: gratis ate 500/dia (Gemini) ou ~R$0.01-0.08 (OpenRouter)"
+      - "   → Requer: GEMINI_API_KEY ou OPENROUTER_API_KEY"
+      - ""
+      - "Auto-recomendacao baseada no tipo de carrossel:"
+      - "  Carrossel texto puro → Sharp (default)"
+      - "  Carrossel com marca/identidade visual → HTML + Playwright"
+      - "  Carrossel com header visual/capa → IA para capa + Sharp para corpo"
+      - ""
+      - "Usuario escolhe: 1, 2, 3, ou 'misto' (IA para capa + Sharp para corpo)"
+    outputs:
+      - metodo_selecionado
+      - configuracao_metodo
+    checkpoint: Metodo selecionado e confirmado
+    veto_condition: Metodo requer API nao configurada — avisar e oferecer alternativa
+
+  - id: gerar_imagens
+    name: Gerar Imagens
+    agent: publishing-manager
+    description: Executar geracao de imagens no metodo escolhido para cada carrossel
+    depends_on: [escolher_metodo_imagem]
+    elicit: true
+    steps:
+      - "Para cada carrossel selecionado:"
+      - ""
+      - "SE metodo = Sharp:"
+      - "  1. Parsear .md e extrair slides (S1-S10)"
+      - "  2. Gerar slides.json (S1 = twitter-black com hook, S2-S10 = twitter-branco)"
+      - "  3. Executar: node app/image-generator/generate.mjs --batch slides.json --output {path}/"
+      - "  4. Verificar PNGs gerados (1080x1350)"
+      - ""
+      - "SE metodo = HTML + Playwright:"
+      - "  1. Carregar template HTML de templates/carousel/"
+      - "  2. Se data/visual-identity.yaml existe: injetar cores e fontes da marca"
+      - "  3. Injetar copy de cada slide nos placeholders"
+      - "  4. Salvar HTMLs individuais"
+      - "  5. Executar: ./scripts/criar-template-visual.sh (servir HTMLs)"
+      - "  6. Playwright screenshot de cada slide (1080x1350)"
+      - "  7. Parar servidor"
+      - ""
+      - "SE metodo = IA:"
+      - "  1. Construir prompt SCDS para cada imagem necessaria"
+      - "  2. Apresentar prompt ao usuario para aprovacao"
+      - "  3. Executar: ./scripts/gerar-imagem-ia.sh --prompt {scds} --output {path}"
+      - "  4. Mostrar imagem gerada"
+      - "  5. Se insatisfatorio: PRIO (isolar variavel → 3 variacoes)"
+      - ""
+      - "SE metodo = Misto:"
+      - "  1. IA para slide de capa (S1)"
+      - "  2. Sharp para slides de corpo (S2-S10)"
+      - "  3. Combinar na mesma pasta"
+      - ""
+      - "Ao terminar cada carrossel: mostrar preview ao usuario"
+      - "  1. Aprovar"
+      - "  2. Regenerar slide especifico"
+      - "  3. Trocar metodo"
+      - "  4. Ajustar visual identity"
+    outputs:
+      - imagens_geradas
+      - manifesto_por_carrossel
+    checkpoint: Todas as imagens geradas e aprovadas pelo usuario
+    veto_condition: Imagens com dimensao errada ou usuario rejeitou sem oferecer regeneracao
+
+  - id: otimizar_caption
+    name: Otimizar Caption e Hashtags
+    agent: publishing-manager
+    description: Preparar caption otimizada + hashtags para cada carrossel
+    depends_on: [gerar_imagens]
+    elicit: true
+    steps:
+      - Para cada carrossel com imagens aprovadas
+      - Ler caption sugerida do .md original
+      - Otimizar para Instagram (max 2200 chars, hook nos primeiros 125 chars)
+      - Gerar 30 hashtags (10 broad + 10 niche + 10 rotating) via data/hashtag-strategy.md
+      - Posicionar CTA na ultima linha
+      - Apresentar preview ao usuario (caption + hashtags)
+      - Usuario confirma ou ajusta
+    outputs:
+      - captions_otimizadas
+      - hashtags_por_post
+    checkpoint: Captions aprovadas pelo usuario
+    veto_condition: Caption > 2200 chars ou sem CTA
+
+  - id: publicar
+    name: Publicar no Instagram
+    agent: publishing-manager
+    description: Executar publicacao com dry-run obrigatorio e aprovacao explicita
+    depends_on: [otimizar_caption]
+    elicit: true
+    steps:
+      - "Verificar metodo de publicacao disponivel:"
+      - "  Se Blotato + Instagram direto: oferecer escolha"
+      - "  Se apenas um: usar o disponivel"
+      - ""
+      - "PUBLICACAO VIA INSTAGRAM DIRETO:"
+      - "  1. Verificar rate limit (<25 posts/24h)"
+      - "  2. Executar dry-run: node scripts/publicar-instagram.js --dry-run"
+      - "  3. Mostrar preview: slides + caption + conta destino"
+      - "  4. Aguardar aprovacao EXPLICITA do usuario"
+      - "  5. Se aprovado: publicar e capturar URL"
+      - "  6. Se rejeitado: voltar para ajustes"
+      - ""
+      - "PUBLICACAO VIA BLOTATO MCP:"
+      - "  1. Listar contas conectadas via blotato_list_accounts"
+      - "  2. Usuario seleciona conta(s) destino (pode ser multi-plataforma)"
+      - "  3. Upload imagens via blotato_upload_media"
+      - "  4. Mostrar preview com opcao de agendar"
+      - "  5. Se agendar: perguntar data/hora"
+      - "  6. Se publicar agora: blotato_create_post"
+      - "  7. Verificar status via blotato_get_post_status"
+      - "  8. Capturar URL(s) do(s) post(s)"
+      - ""
+      - "Apos publicacao:"
+      - "  Registrar metadata (URL, horario, metodo, conta, hashtags)"
+      - "  Handoff para @performance-tracker com URL + metadata"
+      - "  Marcar carrossel .md com flag 'publicado: true' + URL + data"
+    outputs:
+      - posts_publicados
+      - urls_capturadas
+      - metadata_publicacao
+    checkpoint: Post(s) publicado(s) com URL capturada
+    veto_condition: Publicar sem dry-run ou sem aprovacao do usuario
+
+quality_gates:
+  - id: QG_VP_001
+    name: Setup Validated
+    phase: verificar_setup
+    check: "Pelo menos 1 API de geracao ou publicacao configurada"
+    action_on_fail: "Redirecionar para *setup-publicacao"
+
+  - id: QG_VP_002
+    name: Content Selected
+    phase: selecionar_conteudo
+    check: "Carrosseis selecionados existem e tem slide markers"
+    action_on_fail: "Listar carrosseis disponiveis"
+
+  - id: QG_VP_003
+    name: Images Approved
+    phase: gerar_imagens
+    check: "Todas as imagens aprovadas pelo usuario antes de prosseguir"
+    action_on_fail: "Regenerar ou trocar metodo"
+
+  - id: QG_VP_004
+    name: Dry-Run First
+    phase: publicar
+    check: "Dry-run executado com sucesso antes de publicacao real"
+    action_on_fail: HALT
+
+  - id: QG_VP_005
+    name: User Approval
+    phase: publicar
+    check: "Aprovacao EXPLICITA do usuario antes de publicar"
+    action_on_fail: HALT
+
+metricas:
+  duracao_estimada: "10-30 min por carrossel (depende do metodo)"
+  metodos_suportados: [sharp, html-playwright, ia, misto]
+  publicacao_suportada: [instagram-direto, blotato-mcp]
+  dry_run_obrigatorio: true
+  aprovacao_obrigatoria: true

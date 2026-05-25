@@ -1,0 +1,39 @@
+# Castelo Forte — Frase Única
+# Template renderizável para posts avulsos (1 slide)
+# Usado por scripts/render-carrossel.mjs
+
+template_id: T-CF-FRASE
+name: castelo-forte-frase
+family: castelo-forte
+cliente: igreja-castelo-forte
+
+dimensions:
+  width: 1080
+  height: 1350
+
+variantes:
+  off-white:
+    file: frase-off.html
+    requires: [frase, accent_word]
+    optional: [referencia, image]
+  midnight:
+    file: frase-midnight.html
+    requires: [frase, accent_word]
+    optional: [referencia, image]
+  orange:
+    file: frase-orange.html
+    requires: [frase, accent_word]
+    optional: [referencia, image]
+  fort-blue:
+    file: frase-fort.html
+    requires: [frase, accent_word]
+    optional: [referencia, image]
+  com-imagem:
+    file: frase-imagem.html
+    requires: [frase, accent_word, image]
+    optional: [referencia]
+
+regras:
+  - Apenas a frase (sem header, sem footer, sem logo, sem tags)
+  - Versiculo no rodape APENAS quando vem de versiculo biblico
+  - Versao com-imagem usa overlay escuro para garantir legibilidade

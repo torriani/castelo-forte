@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Que Pegar de Cada Igreja · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">O Que <em>Pegar</em> de Cada Igreja</h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>O Que Pegar de Cada Igreja</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / <a href="./">Inteligência</a> / O Que Pegar de Cada Igreja</div>
+<div class="container">
+  <a href="./" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>O QUE PEGAR DE CADA IGREJA — Guia perfil-a-perfil</h1>
+
+<p><strong>Para:</strong> <a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></p>
+<p><strong>Como usar:</strong> clique no @ pra abrir o perfil. Leia a aba "O que copiar", "O que NÃO copiar" e "1 ação prática". Cada igreja entrega 1 coisa específica.</p>
+
+<p>Ordenado por <strong>utilidade pra você</strong> (não por seguidores).</p>
+
+<hr>
+
+<h2>1. <a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a> — Reino Praia Brava SC</h2>
+<p><strong>4.966 seguidores | Eng rate 13,63% | Reels 81%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Igreja jovem do litoral catarinense (mesma região que você). Tem o MAIOR engagement rate do estudo. Modelo direto: pouca gente, muita conexão, formato Reels disciplinado.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Frases curtíssimas como caption</strong> ("Somos igreja porque estamos juntos 💜", "Ele vive! 🙏🏻", "É um privilégio fazer parte do que Deus está fazendo 💜")</li>
+<li><strong>Identidade local clara</strong> (Praia Brava aparece sempre)</li>
+<li><strong>Reels de comunidade</strong> (gente real, rosto de membro, sem produção de TV)</li>
+<li><strong>Cor identitária</strong> (roxo nas referências visuais)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Frequência baixa de carrosséis profundos (não tem ensino sistemático)</li>
+<li>Hashtags repetitivas</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>DM agora propondo culto colaborativo Castelo Forte + Reino Brava. Mesma região, audiências complementares (vocês = Jurerê + ensino, eles = Praia Brava + comunidade). Republicação cruzada vale muito mais que tráfego pago.</p>
+
+<hr>
+
+<h2>2. <a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a> — Get Church Florianópolis</h2>
+<p><strong>145.000 seguidores | Eng rate 1,67% | Reels 78% | CONCORRENTE DIRETO</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Maior igreja de Floripa no Instagram. Pega o público jovem secular do qual Castelo Forte também depende.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Pergunta-gancho com 🔥</strong> ("Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥") — formato vencedor deles</li>
+<li><strong>Bastidores leves de pastores juntos</strong> ("A sintonia (ou a disputa kkkk) que a gente ama!") — humor + igreja gera 12k+ eng</li>
+<li><strong>Reels com legenda branca grande em CapCut</strong></li>
+<li><strong>Pregação cortada em 30-60s</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts "Mais uma semana começando..." (institucional fraco, 2k eng só)</li>
+<li>Posts de evento próprio com data específica</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Adote a estrutura "pergunta reflexiva + 🔥" como abertura de 1 Reel/semana. Por ser concorrente direto geográfico, você vai aparecer pro mesmo público algorítmico.</p>
+
+<hr>
+
+<h2>3. <a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a> — Abba Pai Church</h2>
+<p><strong>525.000 seguidores | Eng rate 1,33% | Carrossel 53%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Única igreja TOP que tem carrossel como formato dominante. Especialista em frase contraintuitiva curta. Gerou 132k engagement com 7 palavras: "Nem todo mundo pode acessar a sua intimidade!"</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Frases contraintuitivas de 7-15 palavras</strong> como abertura ("Nem todo mundo pode acessar...", "Que as pessoas estranhem você!", "Quando você ora por quem te persegue...")</li>
+<li><strong>Carrosséis de ensino sistemático</strong> (séries temáticas, profundidade teológica)</li>
+<li><strong>Tema dominante:</strong> intimidade com Deus, separação, caráter</li>
+<li><strong>Posts SEM hashtag</strong> (limpos, focam na frase)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Tom apostólico pesado (não combina com "Céu na Terra" se você quer alcançar não-cristão)</li>
+<li>Anúncios de "Tenda" itinerante (eventos próprios)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Criar 5 cards no template Twitter-branco (gerador do squad) com frases no estilo Abba Pai sobre temas seus: Reino, identidade, autoridade, intimidade. Cada card = 1 post + 1 Reel onde você lê + comenta.</p>
+
+<hr>
+
+<h2>4. <a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a> — Deive Leonardo</h2>
+<p><strong>16.600.000 seguidores | Eng rate 0,56% | Reels 100%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Maior pregador individual do mundo no Instagram. 28 dos top 50 posts do estudo são dele. Fórmula de copy quase científica.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Estrutura: "Comando direto + Verbo imperativo + AMEM!?"</strong></li>
+<p>  - "Por favor assista isso até o final! AMEMM!?"</p>
+<p>  - "Recebe aí!!!! AMEMMMM?"</p>
+<p>  - "Eu tenho uma palavra de Jesus pra você!"</p>
+<li><strong>Reflexões com inversão</strong> ("Algumas perdas são livramentos de Deus", "A tempestade que você vive não tem poder de mudar o destino...")</li>
+<li><strong>CTA dentro do Reel falado</strong>: "envie pra alguém que precisa ouvir isso"</li>
+<li><strong>100% Reels — sem foto, sem carrossel</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>O "AMEMMMM!?" exagerado se sua audiência for não-evangélica (vira código de tribo que afasta)</li>
+<li>Volume de produção (ele tem equipe full-time)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Pegar 5 das frases reflexivas dele (Tier 2 do Banco V2) e gravar 5 Reels seus de 30s onde Felipe Luz lê + comenta. Use legenda branca grande na tela. Frequência: 1 por dia útil.</p>
+
+<hr>
+
+<h2>5. <a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a> — Família JesusCopy</h2>
+<p><strong>238.000 seguidores | Eng rate 0,92% | Reels 61% | CASO-OURO</strong></p>
+
+<h3>Por que estudar</h3>
+<p><strong>1 congregação física, 238k seguidores.</strong> O melhor case de igreja pequena com alcance gigante do Brasil. Modelo exato do que Castelo Forte quer se tornar.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Posicionamento de movimento, não de igreja</strong> ("JesusCopy" = chamado de quem quer ser cópia de Cristo)</li>
+<li><strong>Conteúdo crossover</strong>: ensino + cultura jovem + livros próprios</li>
+<li><strong>Versículos curtos como caption</strong> ("Eles serão o meu povo, e eu serei o seu Deus")</li>
+<li><strong>Vídeos de pregação cortada com identidade visual forte</strong></li>
+<li><strong>Diversificação de produto</strong> (canal YouTube + podcast + livros + capas de Bíblia próprias)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts internos de células (T2, treinamentos próprios)</li>
+<li>Anúncios de eventos institucionais</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Estudar a bio + os 10 últimos Reels deles. Identificar como eles transformaram "ser igreja pequena" em VANTAGEM (acesso direto, intimidade, exclusividade) e copiar esse posicionamento adaptado a "Céu na Terra".</p>
+
+<hr>
+
+<h2>6. <a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a> — Igreja Cristã Maranata</h2>
+<p><strong>246.000 seguidores | Eng rate 3,09% | Reels 94%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Disciplina de formato. <strong>94% Reels.</strong> Cita versículo em quase todo post. Top 3 em engagement rate do estudo.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Versículos clássicos com aplicação direta</strong> (1 Pedro 5:7, João 15:13, Jeremias 29:11, Salmo 37:5, Isaías 30:21)</li>
+<li><strong>Carrosséis institucionais bem feitos</strong> ("Resposta de Deus para a ansiedade")</li>
+<li><strong>Estrutura: situação humana → versículo → CTA "envie para alguém"</strong></li>
+<li><strong>Consistência de identidade visual</strong> (sempre o mesmo padrão tipográfico)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts de solidariedade hiperregional (enchente em Juiz de Fora)</li>
+<li>Tom denominacional fechado ("Maranata!", "Senhor Jesus vem")</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Adotar a fórmula: 1 dor humana real (1 frase) → 1 versículo (Tier 4 do Banco V2) → 1 CTA "manda pra quem precisa". Faz 5 desses por semana em formato Reel ou carrossel de 3 slides.</p>
+
+<hr>
+
+<h2>7. <a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a> — Mevam Global</h2>
+<p><strong>336.000 seguidores | Eng rate 0,87% | Reels 58%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Igreja apostólica com linguagem profética acessível. Frase ouro: "Avivamento não está em um lugar." (15k eng).</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Frases proféticas curtas com peso teológico</strong></li>
+<li><strong>Carrosséis de oração intercessória</strong> ("clamamos: que o nosso amor transborde")</li>
+<li><strong>Conexão entre unção e missão</strong> ("A unção não é sobre fama, é sobre missão!")</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Trechos soltos de aula ("Esse foi apenas um trecho da nossa Aula 1!") — só funciona pra base já fiel</li>
+<li>Linguagem apostólica densa</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Estudar 5 captions deles e identificar o padrão de "tese profética curta + desdobramento de 2 linhas". Use essa estrutura pra frases sobre Céu na Terra.</p>
+
+<hr>
+
+<h2>8. <a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a> — Igreja da Cidade</h2>
+<p><strong>205.000 seguidores | Eng rate 0,70% | Reels 47%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Equilíbrio entre teologia batista clássica e linguagem contemporânea. Frase ouro: "Deus nunca nos chamou para uma fé confortável, mas para uma transformação real."</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Construção de tensão "começo vs destino"</strong> ("Crer em Cristo é o começo, mas viver como Ele viveu é o destino")</li>
+<li><strong>Versículos longos com aplicação pastoral</strong> ("Darei a vocês pastores segundo o meu coração...")</li>
+<li><strong>Tom doutrinariamente firme mas acessível</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts genéricos institucionais</li>
+<li>Excesso de versículos sem ponte prática</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Adaptar a estrutura "X é o começo, mas Y é o destino" pra teses de Castelo Forte: "Salvação é o começo, Reino é o destino." / "Crer é o começo, manifestar é o destino."</p>
+
+<hr>
+
+<h2>9. <a href="https://instagram.com/wearereino" target="_blank">@wearereino</a> — Reino (sede Balneário Camboriú)</h2>
+<p><strong>158.000 seguidores | Eng rate 0,82% | Reels 78%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Sede da rede Reino (mesma família da @wearereino.brava). Foco em comunidade, pertencimento e Jesus-cêntrico.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Frases identitárias curtas</strong> ("Ele vive!", "Na Reino você tem uma casa!")</li>
+<li><strong>Posicionamento "comunidade cristocêntrica"</strong></li>
+<li><strong>Versículo Efésios 3:18-19</strong> (único post citando Efésios entre os grandes — usaram bem)</li>
+<li><strong>Reels de testemunho com pessoa real</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Anúncios de eventos próprios (Amanhecer, ABC tour)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Imitar o post deles citando Efésios. Você pode fazer melhor (mais Efésios, mais profundidade). Comece pela série "30 dias em Efésios".</p>
+
+<hr>
+
+<h2>10. <a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a> — Comunidade das Nações</h2>
+<p><strong>154.000 seguidores | Eng rate 0,15% | Reels 46%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Engagement total fraco MAS tem 2 frases-ouro com profundidade teológica rara:</p>
+<ul>
+<li>"A queda no Éden não tirou só o Éden. Tirou a memória de quem você é."</li>
+<li>"A intimidade com Deus não é privilégio de quem já venceu. É a estratégia de quem ainda está no meio da batalha."</li>
+</ul>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Releituras teológicas inesperadas</strong> de passagens bíblicas conhecidas</li>
+<li><strong>Definições contraintuitivas</strong> ("Adoração não é X, é Y")</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>O perfil inteiro como modelo (eles não escalam — engagement fraco mostra que o conteúdo é bom mas a operação não)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Salvar essas 2 frases como REFERÊNCIA DE ESTILO. Quando criar conteúdo sobre identidade ou batalha espiritual, use a mesma profundidade de releitura.</p>
+
+<hr>
+
+<h2>11. <a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a> — ADVEC (Silas Malafaia)</h2>
+<p><strong>391.000 seguidores | Eng rate 0,33% | Carrossel 47%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Conteúdo doutrinariamente firme. Frase ouro: "Você não é um acidente!" (formato Reel curto).</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Afirmações identitárias curtas</strong> ("Você não é um acidente!", "Que você tenha uma semana vitoriosa em Cristo")</li>
+<li><strong>Carrosséis de declaração</strong> ("Minha Casa é Abençoada")</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Tom hipertradicional pentecostal (pode afastar público jovem secular de Jurerê)</li>
+<li>Excesso de carrosséis institucionais</li>
+<li>Tema político (Malafaia carrega isso)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Usar a fórmula "Você não é [coisa ruim]!" como hook de Reel. Variações: "Você não é o que falaram de você. Você é o que Deus disse." / "Você não é o que sente. Você é o que crê."</p>
+
+<hr>
+
+<h2>12. <a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a> — Batista Atitude (Josué Gonçalves)</h2>
+<p><strong>311.000 seguidores | Eng rate 0,32% | Carrossel 53%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Batista urbana com mensagem acessível. Frase ouro: "Nem todo sonho vem de Deus."</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Quebras de paradigma contraintuitivas</strong> ("Nem todo sonho vem de Deus", "O fim faz parte da caminhada, mas não precisa ser o fim da esperança")</li>
+<li><strong>Carrosséis estruturados em "quatro tipos de X"</strong> ("Quatro tipos de perdas")</li>
+<li><strong>Conteúdo prático de discipulado</strong> (Casa de Fé como ferramenta de evangelismo)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts de marketing de evento ("@lucaspaqueta é nossa nova escalação pra essa sexta")</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Adaptar "Nem todo X é Y" como série semanal: "Nem todo sonho vem de Deus", "Nem toda porta aberta é resposta", "Nem todo cansaço é deserto, alguns são monte de transfiguração".</p>
+
+<hr>
+
+<h2>13. <a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a> — Quadrangular Oficial</h2>
+<p><strong>193.000 seguidores | Eng rate 0,49% | Carrossel 47%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Igreja institucional grande com conteúdo desigual. Frase ouro pontual: "Se você não tem história, dá tempo de fazer uma!"</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Convocações motivacionais curtas</strong> ("Cada ano, um novo passo")</li>
+<li><strong>Carrosséis declarativos</strong> ("Eu e minha casa serviremos ao Senhor")</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts denominacionais institucionais (muito chapa-branca)</li>
+<li>Material de tours / palestrantes específicos</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Estudar a estrutura "frase de comando + ano/momento" pra usar em virada de mês/semestre como reset narrativo do feed.</p>
+
+<hr>
+
+<h2>14. <a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a> — Igreja do Amor Global</h2>
+<p><strong>398.000 seguidores | Eng rate 0,47% | Reels 61%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Mensagem afetiva forte. Tem alto comment count (engajamento conversacional). Frase ouro: "Existe algo novo de Deus para a sua vida. Você crê?"</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Pergunta direta seguida de "Você crê?"</strong> (gera resposta nos comentários)</li>
+<li><strong>Tom acolhedor e profético</strong></li>
+<li><strong>CTA "Compartilhe essa mensagem com alguém que precisa ouvir isso"</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Excesso de emoji ❤️‍🔥 (vira maneirismo)</li>
+<li>Posts hiperregionais sobre Pernambuco específico</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Encerrar 1 Reel/semana com pergunta direta "Você crê?" e responder TODOS os comentários nas primeiras 2 horas. Algoritmo recompensa interação rápida.</p>
+
+<hr>
+
+<h2>15. <a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a> — Igreja Videira</h2>
+<p><strong>274.000 seguidores | Eng rate 0,42% | Reels 56%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Igreja apostólica com mensagem teológica clara. Frase ouro: "Igreja não é prédio, é onde o povo de Deus se reúne para buscá-lO de todo coração."</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Definições "X não é Y, é Z"</strong> sobre conceitos eclesiais</li>
+<li><strong>Posts de versículo curto com aplicação</strong> ("A graça não é sobre esforço humano, é sobre a obra completa de Cristo")</li>
+<li><strong>Único post de Efésios do estudo</strong> (Ef 6:2 no Dia das Mães)</li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Recap de culto bastidor ("Hoje vivemos um culto especial...")</li>
+<li>Posts hiperinstitucionais com hashtag da Igreja Videira no fim</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Pegar a estrutura "Igreja não é prédio" e fazer série "Igreja não é X": "Igreja não é evento de domingo, é corpo vivo." / "Igreja não é audiência, é família."</p>
+
+<hr>
+
+<h2>16. <a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a> — Alcance Curitiba</h2>
+<p><strong>141.000 seguidores | Eng rate 0,38% | Reels 58%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Igreja jovem do Sul. Tom acessível, tema de batalha/superação. Frase ouro: "Situações adversas são como flechas lançadas para nos amedrontar..."</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Reflexões sobre adversidade e fé prática</strong></li>
+<li><strong>Posts sobre "a espera" e propósito</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Posts de eventos próprios (Alcance Inside)</li>
+<li>Recap de noite específica</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Apenas referência tonal. Não é prioridade alta de estudo.</p>
+
+<hr>
+
+<h2>17. <a href="https://instagram.com/hillsongsaopaulo" target="_blank">@hillsongsaopaulo</a> — Hillsong SP</h2>
+<p><strong>175.000 seguidores | Eng rate 0,40% | Carrossel 58%</strong></p>
+
+<h3>Por que estudar</h3>
+<p>Identidade visual top tier (referência mundial em branding). MAS engajamento fraco no Brasil.</p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Identidade visual minimalista preto+tipografia</strong></li>
+<li><strong>Carrosséis com fotografia de qualidade</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>Copy genérica ("Este domingo está sendo inesquecível!")</li>
+<li>Modelo de operação (Hillsong global em queda no engajamento)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Inspiração visual para template de carrossel próprio. Tipografia limpa, preto/branco, foco no que está escrito.</p>
+
+<hr>
+
+<h2>18-23. Tier B (estude se sobrar tempo)</h2>
+<p><a href="https://instagram.com/novoscomecosoficial" target="_blank">@novoscomecosoficial</a> | <a href="https://instagram.com/familychurchoficial" target="_blank">@familychurchoficial</a> | <a href="https://instagram.com/yahchurch" target="_blank">@yahchurch</a> | <a href="https://instagram.com/igrejaoneoficial" target="_blank">@igrejaoneoficial</a> | <a href="https://instagram.com/igrejacasaoficial" target="_blank">@igrejacasaoficial</a> | <a href="https://instagram.com/igrejarenasceremcristo" target="_blank">@igrejarenasceremcristo</a></p>
+
+<p>São perfis de tamanho médio com engajamento mediano. Não tiraram nenhuma frase do top 30. Estude apenas se quiser referência de operação institucional.</p>
+
+<hr>
+
+<h2>24. <a href="https://instagram.com/claudioduartepastor" target="_blank">@claudioduartepastor</a> — Pastor Cláudio Duarte</h2>
+<p><strong>10.400.000 seguidores | reels de pregação cortada</strong></p>
+
+<h3>O que copiar</h3>
+<ul>
+<li><strong>Humor + verdade dolorida no casamento/família</strong></li>
+<li><strong>Trecho de pregação cortado de 30s com 1 ideia forte</strong></li>
+</ul>
+
+<h3>O que NÃO copiar</h3>
+<ul>
+<li>O personagem (é único e exige timing cômico próprio)</li>
+</ul>
+
+<h3>1 ação prática pra você</h3>
+<p>Quando Felipe Luz pregar sobre família/relacionamento, cortar o trecho mais humano e postar como Reel solo. Sem produção.</p>
+
+<hr>
+
+<h2>24-30. NÃO COPIE (perfis zumbis, alto seguidor + engagement morto)</h2>
+<ul>
+<li><a href="https://instagram.com/universaloficial" target="_blank">@universaloficial</a> — 1,5M seg, 0,0% eng (postam fotos institucionais sem alma)</li>
+<li><a href="https://instagram.com/iprdoficial" target="_blank">@iprdoficial</a> — Deus é Amor, 0,01% eng</li>
+<li><a href="https://instagram.com/zionchurch" target="_blank">@zionchurch</a> — apesar do nome forte, 0,06% eng</li>
+<li><a href="https://instagram.com/lagoinhaalphaville.sp" target="_blank">@lagoinhaalphaville.sp</a> — 0,09% eng, virou caso negativo (área VIP)</li>
+<li><a href="https://instagram.com/lagoinhabh" target="_blank">@lagoinhabh</a> — perfil grande mas conteúdo institucional fraco</li>
+<li><a href="https://instagram.com/ipppinheiros" target="_blank">@ipppinheiros</a> — IPP presbiteriana, perfil técnico</li>
+<li><a href="https://instagram.com/igrejaboladeneveoficial" target="_blank">@igrejaboladeneveoficial</a> — perdeu o frescor inicial</li>
+<li><a href="https://instagram.com/igrejamundialoficial" target="_blank">@igrejamundialoficial</a></li>
+</ul>
+
+<p><strong>Regra:</strong> seguidor alto NÃO significa modelo. Olhe SEMPRE o engagement rate. Esses perfis viraram zumbis e copiá-los te ensina a errar.</p>
+
+<hr>
+
+<h2>RESUMO EXECUTIVO — TOP 5 PRA ESTUDAR ESSA SEMANA</h2>
+
+<p>Se você só tiver 2 horas, foca aqui:</p>
+
+<ol>
+<li><strong><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></strong> — vizinho geográfico + maior eng rate → mande DM</li>
+<li><strong><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></strong> — masterclass em frases curtas contraintuitivas</li>
+<li><strong><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></strong> — estude 10 Reels e mapeie a fórmula AMEMMM</li>
+<li><strong><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></strong> — modelo exato "igreja pequena, alcance gigante"</li>
+<li><strong><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></strong> — concorrente direto, vigie semanal</li>
+</ol>
+
+<hr>
+
+<h2>ONDE ESTÁ ESSE ARQUIVO</h2>
+
+<p><code>legacy/outputs/copys/igreja-castelo-forte/inteligencia/O-QUE-PEGAR-DE-CADA-IGREJA.md</code></p>
+
+<p>Junto dele, na mesma pasta:</p>
+<ul>
+<li><code>RELATORIO-CONSOLIDADO.md</code> — visão geral V1</li>
+<li><code>RELATORIO-V2-FRASES-REPLICAVEIS.md</code> — banco de frases refiltrado (TIER 1-4)</li>
+<li><code>relatorios/01-10*.md</code> — dados crus</li>
+<li><code>raw/posts.json</code> — 797 posts brutos</li>
+<li><code>alvos.yaml</code> — lista mestre dos 35 perfis</li>
+<li><code>run-scraper.sh</code> — re-rodar scrape (US$0,25)</li>
+<li><code>filter-replicaveis.py</code> — refiltrar com novas regras</li>
+<li><code>add-links.py</code> — re-aplicar links clicáveis</li>
+</ul>
+</article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

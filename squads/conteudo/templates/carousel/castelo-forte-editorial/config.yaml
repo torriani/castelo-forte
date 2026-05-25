@@ -1,0 +1,61 @@
+# Castelo Forte — Editorial Magazine
+# Template renderizável padrão para igreja-castelo-forte
+# Usado por scripts/render-carrossel.mjs
+
+template_id: T-CF-EDITORIAL
+name: castelo-forte-editorial
+family: castelo-forte
+cliente: igreja-castelo-forte
+
+dimensions:
+  width: 1080
+  height: 1350
+
+paleta:
+  orange: "#fe5b06"
+  midnight: "#153247"
+  deeper: "#252f38"
+  off_white: "#efefef"
+  fort_blue: "#075057"
+
+slides:
+  capa:
+    file: capa.html
+    requires: [image, headline, accent_word]
+    optional: [titulo_posicao]  # topo | centro | embaixo (default: auto baseado na imagem)
+  triade:
+    file: triade.html
+    requires: [image, personagem, headline_resto, sub]
+    proportion: photo-medium  # photo-large | photo-medium | photo-small
+  texto_off:
+    file: texto-off.html
+    requires: [headline]
+    optional: [body, accent_word]
+  texto_midnight:
+    file: texto-midnight.html
+    requires: [headline]
+    optional: [body, accent_word]
+  verso:
+    file: verso.html
+    requires: [versiculo, referencia]
+    optional: [image]
+  cta:
+    file: cta.html
+    requires: [intro, marca, data, igreja]
+    defaults:
+      intro: "Tudo que Deus tem pra te dar começa em uma única palavra."
+      marca: "EM CRISTO"
+      data: "07.06 · 09H"
+      igreja: "Domingo · Igreja Castelo Forte"
+
+regras_visuais:
+  - Capa SEMPRE com imagem
+  - Tríade pode ter imagem (recomendado) ou ser só texto
+  - Slides síntese/aplicação geralmente sem imagem
+  - Verso pode ter imagem evocativa de fundo
+  - CTA sempre sem imagem, fundo off-white
+
+regra_titulo_capa:
+  topo: "Quando assunto principal da imagem está no terço inferior"
+  centro: "Quando imagem tem vinheta natural ou objeto isolado"
+  embaixo: "Quando assunto principal está no terço superior"

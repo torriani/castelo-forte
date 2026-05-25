@@ -1,0 +1,159 @@
+name: wf-daily-cycle
+description: Ciclo completo diario de conteudo — monitor, suggest, produce, publish, track com checkpoints humanos automaticos
+version: "2.0"
+
+phases:
+  - id: morning_monitor
+    name: "Morning Monitor (06:00)"
+    agent: daily-monitor
+    description: Monitoramento matinal automatizado de concorrentes e deteccao de trends
+    elicit: false
+    steps:
+      - Trigger wf-daily-monitor (workflow completo)
+      - Executar scraping de concorrentes configurados
+      - Detectar trends e classificar oportunidades
+      - Gerar monitoring-report-YYYY-MM-DD.md
+    trigger: wf-daily-monitor
+    outputs:
+      - monitoring_report
+      - trends_detectados
+      - oportunidades_rankeadas
+    checkpoint: Relatorio de monitoramento pronto e disponivel
+    veto_condition: Falha no monitoramento — nao avancar para sugestoes sem dados frescos do dia
+
+  - id: morning_suggest
+    name: "Morning Suggest (07:00)"
+    agent: content-suggester
+    description: Geracao de sugestoes diarias baseadas no monitoramento com aprovacao humana
+    depends_on: [morning_monitor]
+    elicit: true
+    steps:
+      - Trigger wf-suggest-daily (workflow completo)
+      - Consumir dados do monitoramento matinal
+      - Gerar 3 sugestoes rankeadas por ROI previsto
+      - Apresentar sugestoes ao usuario para aprovacao
+      - Coletar aprovacao/modificacao/rejeicao de cada sugestao
+    trigger: wf-suggest-daily
+    outputs:
+      - sugestoes_aprovadas
+      - briefings_producao
+    checkpoint: Sugestoes aprovadas pelo usuario
+    veto_condition: Usuario nao disponivel para aprovar — pausar ciclo ate aprovacao
+
+  - id: produce_content
+    name: "Produce Content (08:00-12:00)"
+    agent: dynamic
+    description: Producao de conteudo para cada sugestao aprovada — copy e slides sem publicacao
+    depends_on: [morning_suggest]
+    elicit: true
+    steps:
+      - Para cada sugestao aprovada iniciar producao
+      - Trigger wf-create-content para geracao de copy (carousel-creator)
+      - Trigger wf-publish fases 2-3 apenas (gerar slides sem publicar)
+      - Gerar carrosseis completos (copy + imagens renderizadas)
+      - Apresentar conteudo final ao usuario para aprovacao
+      - Coletar aprovacao/ajustes de cada carrossel
+    trigger: wf-create-content + wf-publish (fases 2-3)
+    task_routing:
+      copy: create-carousel
+      slides: publish (fases 2-3)
+    outputs:
+      - carrosseis_prontos
+      - copys_finais
+      - imagens_renderizadas
+    checkpoint: Conteudo final aprovado pelo usuario
+    veto_condition: Usuario rejeitou conteudo — voltar para ajustes antes de publicar
+
+  - id: publish
+    name: "Publish (horario otimo)"
+    agent: publishing-manager
+    description: Publicacao dos conteudos aprovados no horario otimo via Instagram Graph API
+    depends_on: [produce_content]
+    elicit: false
+    steps:
+      - Trigger wf-publish fases 4-5 apenas (caption + publicacao)
+      - Otimizar caption e selecionar hashtags para cada carrossel
+      - Verificar rate limits e selecionar horario otimo
+      - Publicar cada carrossel via ig-mcp
+      - Capturar URLs de todos os posts publicados
+      - Registrar metadata de publicacao
+    trigger: wf-publish (fases 4-5)
+    outputs:
+      - posts_publicados
+      - urls_capturadas
+      - metadata_publicacao
+    checkpoint: Todos os posts publicados e confirmados no Instagram
+    veto_condition: Rate limit atingido ou falha na API — agendar para proximo horario disponivel
+
+  - id: evening_analytics
+    name: "Evening Analytics (21:00)"
+    agent: performance-tracker
+    description: Revisao analitica noturna dos posts com mais de 24h de dados
+    depends_on: [publish]
+    elicit: false
+    steps:
+      - Trigger wf-analytics-review (workflow completo)
+      - Coletar metricas de posts com 24h+ de dados
+      - Comparar contra benchmarks e classificar performance
+      - Detectar padroes e atualizar performance-patterns.md
+      - Gerar analytics-report-YYYY-MM-DD.md
+    trigger: wf-analytics-review
+    outputs:
+      - analytics_report
+      - padroes_atualizados
+      - classificacao_posts
+    checkpoint: Padroes atualizados e relatorio analitico gerado
+    veto_condition: Dados insuficientes (posts com menos de 24h) — aguardar maturacao dos dados
+
+  - id: weekly_learning
+    name: "Weekly Learning (sexta-feira)"
+    agent: performance-tracker
+    description: Aprendizado semanal agregado — atualiza heuristicas e regras do content-suggester
+    depends_on: [evening_analytics]
+    elicit: false
+    steps:
+      - Agregar 7 dias de dados de analytics reports
+      - Identificar padroes consolidados da semana (winners recorrentes, losers recorrentes)
+      - Atualizar learned-heuristics.md com novos aprendizados
+      - Atualizar regras do content-suggester com padroes confirmados
+      - Gerar weekly-learning-report.md com resumo executivo
+      - Recalibrar benchmarks com dados frescos da semana
+    frequency: semanal (sexta-feira)
+    outputs:
+      - weekly_learning_report
+      - heuristicas_atualizadas
+      - benchmarks_recalibrados
+      - regras_suggester_atualizadas
+    checkpoint: Heuristicas e benchmarks atualizados com dados da semana
+    veto_condition: Menos de 5 posts na semana — sample insuficiente para atualizar heuristicas com confianca
+
+quality_gates:
+  - id: QG_DC_001
+    name: Fresh Monitoring Data
+    phase: morning_monitor
+    check: "Relatorio de monitoramento gerado com dados do dia"
+    action_on_fail: "Nao avancar para sugestoes sem dados frescos"
+  - id: QG_DC_002
+    name: Human Approval
+    phase: morning_suggest
+    check: "Sugestoes aprovadas pelo usuario antes de producao"
+    action_on_fail: "Pausar ciclo ate aprovacao"
+  - id: QG_DC_003
+    name: Content Quality
+    phase: produce_content
+    check: "Conteudo final aprovado pelo usuario com score oraculo >= 80%"
+    threshold: 80
+    action_on_fail: "Voltar para ajustes"
+  - id: QG_DC_004
+    name: Weekly Learning Sample
+    phase: weekly_learning
+    check: "Minimo 5 posts na semana para atualizar heuristicas"
+    threshold: 5
+    action_on_fail: "Registrar dados sem atualizar heuristicas"
+
+metricas:
+  duracao_estimada: "full day (automated + checkpoints humanos)"
+  frequencia: diaria (weekly_learning apenas sexta-feira)
+  checkpoints_humanos: 2 (morning_suggest + produce_content)
+  workflows_orquestrados: [wf-daily-monitor, wf-suggest-daily, wf-create-content, wf-publish, wf-analytics-review]
+  min_posts_weekly_learning: 5

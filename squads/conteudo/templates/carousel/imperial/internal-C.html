@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Imperial Internal C — Imagem no Meio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background: #0A0E1A;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px;
+    gap: 32px;
+  }
+
+  .text-primary {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+  }
+
+  .text-primary .highlight {
+    color: #6366F1;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .text-primary strong { font-weight: 800; }
+
+  .photo-zone {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .photo-zone img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .text-secondary {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .text-secondary .highlight {
+    color: #6366F1;
+    font-weight: 600;
+  }
+
+  .watermark {
+    position: absolute;
+    bottom: 32px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+  <p class="text-primary">{{slide_text}}</p>
+
+  <div class="photo-zone">
+    <img src="{{photo_url}}" alt="{{photo_alt}}">
+  </div>
+
+  <p class="text-secondary">{{slide_text_secondary}}</p>
+
+  <div class="watermark">@{{instagram}}</div>
+
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase Completo — Todos os Templates</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #080808; color: #fff; font-family: 'Inter', sans-serif; padding: 40px 40px 120px; }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 4px; }
+  .ps { font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 60px; line-height: 1.6; }
+  .ft { font-size: 20px; font-weight: 700; color: #6366F1; margin-top: 80px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid rgba(99,102,241,0.2); padding-bottom: 8px; }
+  .fd { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 32px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 32px; }
+  .card { display: flex; flex-direction: column; gap: 8px; }
+  .cl { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1.5px; }
+  .cs { font-size: 11px; color: #6366F1; font-weight: 600; }
+  .cd { font-size: 11px; color: rgba(255,255,255,0.25); max-width: 270px; line-height: 1.4; }
+  .sf { width: 270px; height: 337px; border-radius: 12px; overflow: hidden; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.06); }
+  .sf > .si { width: 1080px; height: 1350px; transform: scale(0.25); transform-origin: top left; position: absolute; top: 0; left: 0; overflow: hidden; }
+
+  /* === AVATAR === */
+  .av { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); flex-shrink: 0; }
+  .av-sm { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  .av-dk { border: 3px solid #fff; }
+  .av-lt { border: none; }
+  .vb { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #1D9BF0; border-radius: 50%; margin-left: 8px; flex-shrink: 0; position: relative; }
+  .vb::after { content: ''; position: absolute; top: 6px; left: 9px; width: 5px; height: 9px; border: solid #fff; border-width: 0 2.5px 2.5px 0; transform: rotate(45deg); }
+
+  /* === TWITTER HEADER (reusable) === */
+  .twh { display: flex; align-items: center; gap: 20px; }
+  .twi { display: flex; flex-direction: column; gap: 4px; }
+  .twn { font-size: 24px; font-weight: 700; display: flex; align-items: center; }
+  .twha { font-size: 20px; }
+
+  /* ================================================================
+     1. MINIMAL DARK
+     ================================================================ */
+  .t1 { background: #0A0E1A; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 100px; position: relative; font-family: 'Inter', sans-serif; }
+  .t1 .al { width: 80px; height: 4px; background: #6366F1; margin-bottom: 40px; border-radius: 2px; }
+  .t1 .th { font-size: 64px; font-weight: 900; line-height: 1.15; letter-spacing: -1.5px; text-align: center; }
+  .t1 .tb { font-size: 44px; font-weight: 600; line-height: 1.4; text-align: center; }
+  .t1 .pg { position: absolute; bottom: 48px; right: 60px; font-size: 20px; font-weight: 500; opacity: 0.4; }
+  .t1 .br { position: absolute; bottom: 48px; left: 60px; font-size: 18px; font-weight: 500; opacity: 0.25; text-transform: uppercase; letter-spacing: 1px; }
+  .t1 .cta-btn { display: inline-block; background: #6366F1; padding: 24px 64px; border-radius: 60px; font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-top: 40px; }
+
+  /* ================================================================
+     2. EDITORIAL CLEAN
+     ================================================================ */
+  .t2 { background: #F5F3EF; color: #1A1A1A; display: flex; flex-direction: column; padding: 120px 100px 80px 120px; position: relative; font-family: 'Inter', sans-serif; }
+  .t2 .ab { position: absolute; left: 60px; top: 120px; bottom: 120px; width: 4px; background: #C0392B; border-radius: 2px; }
+  .t2 .hd { font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; color: #C0392B; margin-bottom: 60px; }
+  .t2 .th { font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 700; line-height: 1.2; margin: auto 0; }
+  .t2 .tb { font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 400; line-height: 1.6; margin-top: 40px; }
+  .t2 .bl { position: absolute; bottom: 90px; left: 120px; right: 60px; height: 1px; background: #1A1A1A; opacity: 0.1; }
+  .t2 .pg { position: absolute; bottom: 48px; right: 60px; font-size: 18px; opacity: 0.3; }
+  .t2 .br { position: absolute; bottom: 48px; left: 120px; font-size: 16px; opacity: 0.3; }
+  .t2 .cta-link { font-size: 24px; font-weight: 600; color: #C0392B; border-bottom: 3px solid #C0392B; padding-bottom: 8px; display: inline-block; margin-top: 40px; }
+
+  /* ================================================================
+     3. BOLD GRADIENT
+     ================================================================ */
+  .t3 { background: linear-gradient(160deg, #0F0C29 0%, #302B63 50%, #E040FB 120%); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 90px; position: relative; font-family: 'Inter', sans-serif; }
+  .t3 .gw { position: absolute; bottom: -200px; right: -200px; width: 800px; height: 800px; background: radial-gradient(circle, #E040FB 0%, transparent 70%); opacity: 0.15; }
+  .t3 .th { font-size: 72px; font-weight: 900; line-height: 1.1; letter-spacing: -2px; text-align: center; text-transform: uppercase; position: relative; z-index: 1; }
+  .t3 .tb { font-size: 48px; font-weight: 700; line-height: 1.35; text-align: center; position: relative; z-index: 1; }
+  .t3 .pg { position: absolute; bottom: 48px; left: 50%; transform: translateX(-50%); font-size: 18px; opacity: 0.35; letter-spacing: 4px; z-index: 1; }
+  .t3 .br { position: absolute; top: 48px; left: 60px; font-size: 16px; font-weight: 700; opacity: 0.3; letter-spacing: 3px; text-transform: uppercase; z-index: 1; }
+
+  /* ================================================================
+     4. BRAND BAR
+     ================================================================ */
+  .t4 { background: #1E3A5F; color: #fff; display: flex; flex-direction: column; font-family: 'Inter', sans-serif; }
+  .t4 .hb { height: 120px; background: rgba(0,0,0,0.2); display: flex; align-items: center; padding: 0 60px; flex-shrink: 0; }
+  .t4 .hi { width: 44px; height: 44px; border-radius: 50%; background: #F39C12; display: flex; align-items: center; justify-content: center; margin-right: 20px; font-size: 20px; font-weight: 800; color: #1E3A5F; }
+  .t4 .hn { font-size: 20px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; opacity: 0.9; }
+  .t4 .ht { margin-left: auto; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 3px; color: #F39C12; }
+  .t4 .ca { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 80px; }
+  .t4 .th { font-size: 58px; font-weight: 800; line-height: 1.2; text-align: center; }
+  .t4 .tb { font-size: 40px; font-weight: 600; line-height: 1.45; text-align: center; }
+  .t4 .hl { color: #F39C12; }
+  .t4 .nb { width: 60px; height: 60px; border-radius: 50%; background: #F39C12; color: #1E3A5F; font-size: 28px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 40px; flex-shrink: 0; }
+  .t4 .fb { height: 100px; background: rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: space-between; padding: 0 60px; flex-shrink: 0; position: relative; }
+  .t4 .fp { font-size: 18px; font-weight: 600; opacity: 0.5; }
+  .t4 .fs { font-size: 14px; opacity: 0.35; text-transform: uppercase; }
+  .t4 .pb { position: absolute; bottom: 0; left: 0; height: 4px; background: #F39C12; }
+
+  /* ================================================================
+     5. SPLIT ACCENT
+     ================================================================ */
+  .t5 { position: relative; display: flex; font-family: 'Inter', sans-serif; color: #fff; }
+  .t5 .bdk { position: absolute; top: 0; left: 0; width: 60%; height: 100%; background: #111827; }
+  .t5 .bac { position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: #10B981; }
+  .t5 .dg { position: absolute; top: 0; left: calc(60% - 60px); width: 120px; height: 100%; background: linear-gradient(to right, #111827 0%, #111827 40%, #10B981 60%, #10B981 100%); transform: skewX(-3deg); z-index: 1; }
+  .t5 .cz { width: 60%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 80px 70px; position: relative; z-index: 2; }
+  .t5 .az { width: 40%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 80px 40px; position: relative; z-index: 2; }
+  .t5 .tl { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; color: #10B981; margin-bottom: 30px; }
+  .t5 .th { font-size: 56px; font-weight: 900; line-height: 1.15; }
+  .t5 .tb { font-size: 38px; font-weight: 600; line-height: 1.5; }
+  .t5 .an { font-size: 200px; font-weight: 900; color: #111827; opacity: 0.2; line-height: 1; }
+  .t5 .pg { position: absolute; bottom: 48px; left: 70px; font-size: 18px; opacity: 0.4; z-index: 3; }
+
+  /* ================================================================
+     6-11. TWITTER TEMPLATES
+     ================================================================ */
+  /* --- IMPACT --- */
+  .t6 { position: relative; font-family: 'Inter', sans-serif; }
+  .t6 .bgp { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.45; }
+  .t6.dk { background: #000; color: #fff; }
+  .t6.dk .bgg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.9) 100%); z-index: 1; }
+  .t6.lt { background: #fff; color: #000; }
+  .t6.lt .bgg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.9) 100%); z-index: 1; }
+  .t6 .cw { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; justify-content: center; padding: 80px 64px; gap: 40px; }
+  .t6 .tx { font-size: 42px; font-weight: 600; line-height: 1.4; }
+  .t6 strong { font-weight: 800; }
+  .t6.lt .twha { color: rgba(0,0,0,0.5); }
+  .t6.dk .twha { color: rgba(255,255,255,0.5); }
+  .t6.lt .av { border-color: transparent; }
+
+  /* --- TEXT-TOP --- */
+  .t7 { display: flex; flex-direction: column; justify-content: center; padding: 64px; gap: 32px; font-family: 'Inter', sans-serif; }
+  .t7.dk { background: #000; color: #fff; }
+  .t7.lt { background: #fff; color: #000; }
+  .t7 .tx { font-size: 40px; font-weight: 600; line-height: 1.4; }
+  .t7 .mz { width: 100%; height: 420px; border-radius: 16px; overflow: hidden; flex-shrink: 0; }
+  .t7.dk .mz { border: 1px solid rgba(255,255,255,0.1); }
+  .t7.lt .mz { border: 1px solid rgba(0,0,0,0.05); }
+  .t7 .mz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t7.lt .twha { color: rgba(0,0,0,0.5); }
+  .t7.dk .twha { color: rgba(255,255,255,0.5); }
+  .t7.lt .av { border-color: transparent; }
+
+  /* --- IMAGE-TOP --- */
+  .t8 { display: flex; flex-direction: column; justify-content: center; padding: 64px; gap: 32px; font-family: 'Inter', sans-serif; }
+  .t8.dk { background: #000; color: #fff; }
+  .t8.lt { background: #fff; color: #000; }
+  .t8 .mz { width: 100%; height: 360px; border-radius: 16px; overflow: hidden; flex-shrink: 0; }
+  .t8.dk .mz { border: 1px solid rgba(255,255,255,0.1); }
+  .t8.lt .mz { border: 1px solid rgba(0,0,0,0.05); }
+  .t8 .mz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t8 .tx { font-size: 40px; font-weight: 600; line-height: 1.4; }
+  .t8.lt .twha { color: rgba(0,0,0,0.5); }
+  .t8.dk .twha { color: rgba(255,255,255,0.5); }
+  .t8.lt .av { border-color: transparent; }
+
+  /* --- BUBBLE-BOTTOM --- */
+  .t9 { position: relative; font-family: 'Inter', sans-serif; }
+  .t9 .bgf { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t9 .bgf img { width: 100%; height: 100%; object-fit: cover; }
+  .t9 .crd { position: absolute; bottom: 48px; left: 40px; right: 40px; z-index: 2; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 24px; }
+  .t9.dk .crd { background: rgba(0,0,0,0.92); border: 1px solid rgba(255,255,255,0.15); color: #fff; }
+  .t9.lt .crd { background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,0,0.08); color: #000; }
+  .t9 .tx { font-size: 34px; font-weight: 600; line-height: 1.4; }
+  .t9.lt .twha { color: rgba(0,0,0,0.5); }
+  .t9.dk .twha { color: rgba(255,255,255,0.5); }
+  .t9.lt .av-sm { border-color: transparent; }
+  .t9.dk .av-sm { border: 3px solid #fff; }
+
+  /* --- BUBBLE-TOP --- */
+  .t10 { position: relative; font-family: 'Inter', sans-serif; }
+  .t10 .bgf { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t10 .bgf img { width: 100%; height: 100%; object-fit: cover; }
+  .t10 .crd { position: absolute; top: 48px; left: 40px; right: 40px; z-index: 2; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 24px; }
+  .t10.dk .crd { background: rgba(0,0,0,0.92); border: 1px solid rgba(255,255,255,0.15); color: #fff; }
+  .t10.lt .crd { background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,0,0.08); color: #000; }
+  .t10 .tx { font-size: 34px; font-weight: 600; line-height: 1.4; }
+  .t10.lt .twha { color: rgba(0,0,0,0.5); }
+  .t10.dk .twha { color: rgba(255,255,255,0.5); }
+  .t10.lt .av-sm { border-color: transparent; }
+  .t10.dk .av-sm { border: 3px solid #fff; }
+
+  /* --- LIST --- */
+  .t11 { display: flex; flex-direction: column; justify-content: center; padding: 64px; gap: 40px; font-family: 'Inter', sans-serif; }
+  .t11.dk { background: #000; color: #fff; }
+  .t11.lt { background: #fff; color: #000; }
+  .t11 .li { display: flex; align-items: flex-start; gap: 20px; font-size: 34px; font-weight: 500; line-height: 1.4; margin-bottom: 16px; }
+  .t11 .pos { color: #22C55E; font-size: 36px; flex-shrink: 0; }
+  .t11 .neg { color: #EF4444; font-size: 36px; flex-shrink: 0; }
+  .t11.lt .twha { color: rgba(0,0,0,0.5); }
+  .t11.dk .twha { color: rgba(255,255,255,0.5); }
+  .t11.lt .av { border-color: transparent; }
+
+  /* ================================================================
+     12-18. IMPERIAL TEMPLATES
+     ================================================================ */
+  /* --- COVER --- */
+  .t12 { position: relative; font-family: 'Inter', sans-serif; }
+  .t12 .bgp { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t12 .bgp img { width: 100%; height: 100%; object-fit: cover; }
+  .t12 .ov { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.75) 100%); z-index: 1; }
+  .t12 .ct { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 56px 100px; z-index: 2; text-align: center; }
+  .t12 .ttl { font-size: 72px; font-weight: 800; line-height: 1.08; color: #fff; text-transform: uppercase; letter-spacing: -1px; text-shadow: 3px 3px 16px rgba(0,0,0,0.6); }
+  .t12 .wm { position: absolute; bottom: 40px; left: 0; right: 0; text-align: center; font-size: 16px; font-weight: 500; color: rgba(255,255,255,0.3); z-index: 3; }
+
+  /* --- INTERNAL A (foto em cima + texto embaixo) --- */
+  .t13 { background: #0A0E1A; color: #fff; display: flex; flex-direction: column; font-family: 'Inter', sans-serif; position: relative; }
+  .t13 .pz { width: 100%; height: 55%; overflow: hidden; }
+  .t13 .pz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t13 .tz { flex: 1; padding: 48px 64px; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
+  .t13 .tp { font-size: 38px; font-weight: 600; line-height: 1.4; }
+  .t13 .ts { font-size: 27px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.7); }
+  .t13 .hl { color: #6366F1; font-weight: 700; font-style: italic; }
+  .t13 .wm { position: absolute; bottom: 32px; left: 0; right: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.2); }
+
+  /* --- INTERNAL B (texto em cima + foto embaixo) --- */
+  .t14 { background: #0A0E1A; color: #fff; display: flex; flex-direction: column; font-family: 'Inter', sans-serif; position: relative; }
+  .t14 .tz { padding: 64px 64px 40px; display: flex; flex-direction: column; justify-content: center; gap: 20px; flex: 1; }
+  .t14 .tp { font-size: 38px; font-weight: 600; line-height: 1.4; }
+  .t14 .ts { font-size: 27px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.7); }
+  .t14 .hl { color: #6366F1; font-weight: 700; font-style: italic; }
+  .t14 .pz { width: 100%; height: 45%; overflow: hidden; }
+  .t14 .pz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t14 .wm { position: absolute; bottom: 32px; left: 0; right: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.2); }
+
+  /* --- INTERNAL C (imagem no meio) --- */
+  .t15 { background: #0A0E1A; color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 64px; gap: 32px; font-family: 'Inter', sans-serif; position: relative; }
+  .t15 .tp { font-size: 38px; font-weight: 600; line-height: 1.4; }
+  .t15 .hl { color: #6366F1; font-weight: 700; font-style: italic; }
+  .t15 .pz { width: 100%; height: 380px; border-radius: 12px; overflow: hidden; flex-shrink: 0; }
+  .t15 .pz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t15 .ts { font-size: 27px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.7); }
+  .t15 .wm { position: absolute; bottom: 32px; left: 0; right: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.2); }
+
+  /* --- INTERNAL D (foto fullbleed + balao embaixo) --- */
+  .t16 { position: relative; font-family: 'Inter', sans-serif; }
+  .t16 .bgp { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t16 .bgp img { width: 100%; height: 100%; object-fit: cover; }
+  .t16 .crd { position: absolute; bottom: 48px; left: 40px; right: 40px; z-index: 2; background: rgba(0,0,0,0.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); border-radius: 24px; padding: 48px; display: flex; flex-direction: column; gap: 16px; }
+  .t16 .tp { font-size: 34px; font-weight: 600; line-height: 1.4; color: #fff; }
+  .t16 .hl { color: #6366F1; font-weight: 700; font-style: italic; }
+  .t16 .ts { font-size: 24px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.65); }
+  .t16 .wm { position: absolute; bottom: 16px; left: 0; right: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.2); z-index: 3; }
+
+  /* --- INTERNAL E (foto fullbleed + balao em cima) --- */
+  .t17 { position: relative; font-family: 'Inter', sans-serif; }
+  .t17 .bgp { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t17 .bgp img { width: 100%; height: 100%; object-fit: cover; }
+  .t17 .crd { position: absolute; top: 48px; left: 40px; right: 40px; z-index: 2; background: rgba(0,0,0,0.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); border-radius: 24px; padding: 48px; display: flex; flex-direction: column; gap: 16px; }
+  .t17 .tp { font-size: 34px; font-weight: 600; line-height: 1.4; color: #fff; }
+  .t17 .hl { color: #6366F1; font-weight: 700; font-style: italic; }
+  .t17 .ts { font-size: 24px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.65); }
+  .t17 .wm { position: absolute; bottom: 16px; left: 0; right: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.2); z-index: 3; }
+
+  /* --- CTA --- */
+  .t18 { position: relative; font-family: 'Inter', sans-serif; }
+  .t18 .bgp { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .t18 .bgp img { width: 100%; height: 100%; object-fit: cover; }
+  .t18 .ov { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%); z-index: 1; }
+  .t18 .ct { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 64px 120px; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; }
+  .t18 .ttl { font-size: 52px; font-weight: 900; line-height: 1.1; color: #fff; text-transform: uppercase; text-shadow: 2px 2px 12px rgba(0,0,0,0.6); }
+  .t18 .sub { font-size: 26px; font-weight: 500; color: rgba(255,255,255,0.85); line-height: 1.4; max-width: 800px; }
+  .t18 .acts { display: flex; gap: 48px; margin-top: 12px; }
+  .t18 .act { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .t18 .act .ai { font-size: 44px; }
+  .t18 .act span { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #fff; }
+  .t18 .wm { position: absolute; bottom: 40px; left: 0; right: 0; text-align: center; font-size: 16px; font-weight: 600; color: rgba(255,255,255,0.35); z-index: 3; }
+</style>
+</head>
+<body>
+
+<h1>Showcase Completo — Todos os Templates de Carrossel</h1>
+<p class="ps">Carrossel: "O Dia que Eu Vi Meu Computador Mexendo Sozinho" — 10 slides. Escala 1:4 (real = 1080x1350px).<br>Cada template mostra hook, content e CTA quando aplicavel. Twitter mostra Dark + Light.</p>
+
+<!-- ============================================================ -->
+<!-- STANDALONE                                                    -->
+<!-- ============================================================ -->
+<div class="ft">1. Standalone — Sem foto</div>
+<p class="fd">5 templates. Fundo solido ou gradiente. Hook + Content para cada um.</p>
+
+<div class="grid">
+
+  <!-- MINIMAL DARK -->
+  <div class="card"><div class="cl">Minimal Dark</div><div class="cs">S1 — Hook</div>
+    <div class="sf"><div class="si t1"><div class="al"></div><div class="th">Meu computador comecou a trabalhar sem mim</div><div class="br">CASTELO FORTE</div><div class="pg">1 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Minimal Dark</div><div class="cs">S5 — Content</div>
+    <div class="sf"><div class="si t1"><div class="al"></div><div class="tb">O agente estava executando uma tarefa que eu levaria quarenta minutos para terminar. Ele levou sete.</div><div class="br">CASTELO FORTE</div><div class="pg">5 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Minimal Dark</div><div class="cs">S10 — CTA</div>
+    <div class="sf"><div class="si t1"><div class="al"></div><div class="tb">Comenta AGENTES e descubra como montar o primeiro fluxo que trabalha por voce.</div><div class="cta-btn">AGENTES</div><div class="br">CASTELO FORTE</div><div class="pg">10 / 10</div></div></div></div>
+
+  <!-- EDITORIAL CLEAN -->
+  <div class="card"><div class="cl">Editorial Clean</div><div class="cs">S1 — Hook</div>
+    <div class="sf"><div class="si t2"><div class="ab"></div><div class="hd">CASTELO FORTE</div><div class="th">Meu computador comecou a trabalhar sem mim</div><div class="bl"></div><div class="br">Castelo Forte</div><div class="pg">1 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Editorial Clean</div><div class="cs">S6 — Content</div>
+    <div class="sf"><div class="si t2"><div class="ab"></div><div class="hd">CASTELO FORTE</div><div class="tb">Nesse momento entendi: nao se trata de digitar mais rapido. Se trata de nunca mais precisar digitar certas coisas.</div><div class="bl"></div><div class="br">Castelo Forte</div><div class="pg">6 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Editorial Clean</div><div class="cs">S10 — CTA</div>
+    <div class="sf"><div class="si t2"><div class="ab"></div><div class="hd">CASTELO FORTE</div><div class="th" style="font-size:48px;">Quer construir isso?</div><div class="cta-link">Comenta AGENTES &rarr;</div><div class="bl"></div><div class="br">Castelo Forte</div><div class="pg">10 / 10</div></div></div></div>
+
+  <!-- BOLD GRADIENT -->
+  <div class="card"><div class="cl">Bold Gradient</div><div class="cs">S1 — Hook</div>
+    <div class="sf"><div class="si t3"><div class="gw"></div><div class="th">Meu computador comecou a trabalhar sem mim</div><div class="br">CASTELO FORTE</div><div class="pg">1 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Bold Gradient</div><div class="cs">S7 — Content</div>
+    <div class="sf"><div class="si t3"><div class="gw"></div><div class="tb">Voce ainda faz manualmente o que ja pode ser delegado para uma inteligencia que nao cansa, nao esquece e nao pede aumento.</div><div class="br">CASTELO FORTE</div><div class="pg">7 / 10</div></div></div></div>
+
+  <!-- BRAND BAR -->
+  <div class="card"><div class="cl">Brand Bar</div><div class="cs">S1 — Hook</div>
+    <div class="sf"><div class="si t4"><div class="hb"><div class="hi">T</div><span class="hn">CASTELO FORTE</span><span class="ht">Agentes IA</span></div><div class="ca"><div class="th">Meu computador comecou a <span class="hl">trabalhar sem mim</span></div></div><div class="fb"><span class="fp">1 / 10</span><span class="fs">Deslize &rarr;</span><div class="pb" style="width:10%"></div></div></div></div></div>
+
+  <div class="card"><div class="cl">Brand Bar</div><div class="cs">S5 — Content (numerado)</div>
+    <div class="sf"><div class="si t4"><div class="hb"><div class="hi">T</div><span class="hn">CASTELO FORTE</span><span class="ht">Agentes IA</span></div><div class="ca"><div class="nb">5</div><div class="tb">O agente estava executando uma tarefa que eu levaria <span class="hl">quarenta minutos</span> para terminar. Ele levou sete.</div></div><div class="fb"><span class="fp">5 / 10</span><span class="fs">Deslize &rarr;</span><div class="pb" style="width:50%"></div></div></div></div></div>
+
+  <!-- SPLIT ACCENT -->
+  <div class="card"><div class="cl">Split Accent</div><div class="cs">S1 — Hook</div>
+    <div class="sf"><div class="si t5"><div class="bdk"></div><div class="bac"></div><div class="dg"></div><div class="cz"><div class="tl">CASTELO FORTE</div><div class="th">Meu computador comecou a trabalhar sem mim</div></div><div class="az"><div class="an">01</div></div><div class="pg">1 / 10</div></div></div></div>
+
+  <div class="card"><div class="cl">Split Accent</div><div class="cs">S9 — Content</div>
+    <div class="sf"><div class="si t5"><div class="bdk"></div><div class="bac"></div><div class="dg"></div><div class="cz"><div class="tl">CASTELO FORTE</div><div class="tb">A diferenca entre quem assiste e quem constroi: quem constroi acorda com o trabalho pronto.</div></div><div class="az"><div class="an">09</div></div><div class="pg">9 / 10</div></div></div></div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TWITTER — DARK + LIGHT                                        -->
+<!-- ============================================================ -->
+<div class="ft">2. Twitter — Dark + Light</div>
+<p class="fd">6 layouts x 2 modos = 12 variacoes. Avatar real, selo verificado, handle.</p>
+
+<div class="grid">
+
+  <!-- IMPACT DARK -->
+  <div class="card"><div class="cl">Impact</div><div class="cs">Dark — S1 Hook</div>
+    <div class="sf"><div class="si t6 dk"><div class="bgp" style="background:url('showcase-assets/tech-1.jpg') center/cover;"></div><div class="bgg"></div><div class="cw"><div class="twh"><img class="av av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="tx"><strong>Meu computador comecou a trabalhar sem mim.</strong></div></div></div></div></div>
+
+  <!-- IMPACT LIGHT -->
+  <div class="card"><div class="cl">Impact</div><div class="cs">Light — S1 Hook</div>
+    <div class="sf"><div class="si t6 lt"><div class="bgp" style="background:url('showcase-assets/tech-1.jpg') center/cover;"></div><div class="bgg"></div><div class="cw"><div class="twh"><img class="av av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="tx"><strong>Meu computador comecou a trabalhar sem mim.</strong></div></div></div></div></div>
+
+  <!-- TEXT-TOP DARK -->
+  <div class="card"><div class="cl">Text-Top</div><div class="cs">Dark — S3</div>
+    <div class="sf"><div class="si t7 dk"><div class="twh"><img class="av av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="tx">Quando voltei, a tela estava viva. Clicando, preenchendo campos, cadastrando aplicativos.</div><div class="mz"><img src="showcase-assets/auto-mode.jpg" alt=""></div></div></div></div>
+
+  <!-- TEXT-TOP LIGHT -->
+  <div class="card"><div class="cl">Text-Top</div><div class="cs">Light — S3</div>
+    <div class="sf"><div class="si t7 lt"><div class="twh"><img class="av av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="tx">Quando voltei, a tela estava viva. Clicando, preenchendo campos, cadastrando aplicativos.</div><div class="mz"><img src="showcase-assets/auto-mode.jpg" alt=""></div></div></div></div>
+
+  <!-- IMAGE-TOP DARK -->
+  <div class="card"><div class="cl">Image-Top</div><div class="cs">Dark — S4</div>
+    <div class="sf"><div class="si t8 dk"><div class="twh"><img class="av av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="mz"><img src="showcase-assets/tech-3.jpg" alt=""></div><div class="tx">Nao era um video. Nao era uma demo ensaiada. Era o Playwright controlando a maquina enquanto eu tomava cafe com leite.</div></div></div></div>
+
+  <!-- IMAGE-TOP LIGHT -->
+  <div class="card"><div class="cl">Image-Top</div><div class="cs">Light — S4</div>
+    <div class="sf"><div class="si t8 lt"><div class="twh"><img class="av av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div class="mz"><img src="showcase-assets/tech-3.jpg" alt=""></div><div class="tx">Nao era um video. Nao era uma demo ensaiada. Era o Playwright controlando a maquina enquanto eu tomava cafe com leite.</div></div></div></div>
+
+  <!-- BUBBLE-BOTTOM DARK -->
+  <div class="card"><div class="cl">Bubble-Bottom</div><div class="cs">Dark — S5</div>
+    <div class="sf"><div class="si t9 dk"><div class="bgf"><img src="showcase-assets/tech-2.jpg" alt=""></div><div class="crd"><div class="twh"><img class="av-sm av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn" style="font-size:20px;">operador da Castelo Forte <span class="vb"></span></div><span class="twha" style="font-size:16px;">@jcastelo-forte</span></div></div><div class="tx">O agente estava executando uma tarefa que eu levaria quarenta minutos para terminar. Ele levou sete.</div></div></div></div></div>
+
+  <!-- BUBBLE-BOTTOM LIGHT -->
+  <div class="card"><div class="cl">Bubble-Bottom</div><div class="cs">Light — S5</div>
+    <div class="sf"><div class="si t9 lt"><div class="bgf"><img src="showcase-assets/tech-2.jpg" alt=""></div><div class="crd"><div class="twh"><img class="av-sm av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn" style="font-size:20px;">operador da Castelo Forte <span class="vb"></span></div><span class="twha" style="font-size:16px;">@jcastelo-forte</span></div></div><div class="tx">O agente estava executando uma tarefa que eu levaria quarenta minutos para terminar. Ele levou sete.</div></div></div></div></div>
+
+  <!-- BUBBLE-TOP DARK -->
+  <div class="card"><div class="cl">Bubble-Top</div><div class="cs">Dark — S8</div>
+    <div class="sf"><div class="si t10 dk"><div class="bgf"><img src="showcase-assets/tech-4.jpg" alt=""></div><div class="crd"><div class="twh"><img class="av-sm av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn" style="font-size:20px;">operador da Castelo Forte <span class="vb"></span></div><span class="twha" style="font-size:16px;">@jcastelo-forte</span></div></div><div class="tx">O computador nao mexeu sozinho por magica. Mexeu porque recebeu instrucoes precisas, dentro de um fluxo construido com repertorio real.</div></div></div></div></div>
+
+  <!-- BUBBLE-TOP LIGHT -->
+  <div class="card"><div class="cl">Bubble-Top</div><div class="cs">Light — S8</div>
+    <div class="sf"><div class="si t10 lt"><div class="bgf"><img src="showcase-assets/tech-4.jpg" alt=""></div><div class="crd"><div class="twh"><img class="av-sm av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn" style="font-size:20px;">operador da Castelo Forte <span class="vb"></span></div><span class="twha" style="font-size:16px;">@jcastelo-forte</span></div></div><div class="tx">O computador nao mexeu sozinho por magica. Mexeu porque recebeu instrucoes precisas, dentro de um fluxo construido com repertorio real.</div></div></div></div></div>
+
+  <!-- LIST DARK -->
+  <div class="card"><div class="cl">List</div><div class="cs">Dark — Comparacao</div>
+    <div class="sf"><div class="si t11 dk"><div class="twh"><img class="av av-dk" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div><div class="li"><span class="pos">&#10003;</span> Delega tarefas repetiveis para agentes</div><div class="li"><span class="pos">&#10003;</span> Acorda com o trabalho pronto</div><div class="li"><span class="pos">&#10003;</span> Constroi fluxos que escalam sem equipe</div><div class="li"><span class="neg">&#10007;</span> Faz tudo manualmente todo dia</div><div class="li"><span class="neg">&#10007;</span> Perde 40 minutos em tarefas de 7</div><div class="li"><span class="neg">&#10007;</span> Acha que IA e so chatbot</div></div></div></div></div>
+
+  <!-- LIST LIGHT -->
+  <div class="card"><div class="cl">List</div><div class="cs">Light — Comparacao</div>
+    <div class="sf"><div class="si t11 lt"><div class="twh"><img class="av av-lt" src="showcase-assets/avatar.jpg" alt="JT"><div class="twi"><div class="twn">operador da Castelo Forte <span class="vb"></span></div><span class="twha">@jcastelo-forte</span></div></div><div><div class="li"><span class="pos">&#10003;</span> Delega tarefas repetiveis para agentes</div><div class="li"><span class="pos">&#10003;</span> Acorda com o trabalho pronto</div><div class="li"><span class="pos">&#10003;</span> Constroi fluxos que escalam sem equipe</div><div class="li"><span class="neg">&#10007;</span> Faz tudo manualmente todo dia</div><div class="li"><span class="neg">&#10007;</span> Perde 40 minutos em tarefas de 7</div><div class="li"><span class="neg">&#10007;</span> Acha que IA e so chatbot</div></div></div></div></div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- IMPERIAL — TODOS (7 templates)                                -->
+<!-- ============================================================ -->
+<div class="ft">3. Imperial — Estilo Revista</div>
+<p class="fd">Cover + Internal A, B, C, D, E + CTA = 7 templates. Todos exigem foto.</p>
+
+<div class="grid">
+
+  <!-- COVER -->
+  <div class="card"><div class="cl">Cover</div><div class="cs">S1 — Capa</div>
+    <div class="sf"><div class="si t12"><div class="bgp"><img src="showcase-assets/claude-code-hero.jpg" alt=""></div><div class="ov"></div><div class="ct"><div class="ttl">MEU COMPUTADOR COMECOU A TRABALHAR SEM MIM</div></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- INTERNAL A — foto em cima, texto embaixo -->
+  <div class="card"><div class="cl">Internal A</div><div class="cs">S2 — Foto cima + texto embaixo</div>
+    <div class="sf"><div class="si t13"><div class="pz"><img src="showcase-assets/tech-1.jpg" alt=""></div><div class="tz"><p class="tp">Abri o notebook de manha. Dei um comando. E fui <span class="hl">tomar cafe</span>.</p><p class="ts">Nao imaginava o que ia encontrar quando voltasse.</p></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- INTERNAL B — texto em cima, foto embaixo -->
+  <div class="card"><div class="cl">Internal B</div><div class="cs">S3 — Texto cima + foto embaixo</div>
+    <div class="sf"><div class="si t14"><div class="tz"><p class="tp">Quando voltei, a tela estava <span class="hl">viva</span>. Clicando, preenchendo campos, cadastrando aplicativos.</p><p class="ts">Sem ninguem no teclado. O Playwright estava no controle.</p></div><div class="pz"><img src="showcase-assets/auto-mode.jpg" alt=""></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- INTERNAL C — imagem no meio -->
+  <div class="card"><div class="cl">Internal C</div><div class="cs">S6 — Imagem no meio</div>
+    <div class="sf"><div class="si t15"><p class="tp">Nesse momento entendi: nao se trata de <span class="hl">digitar mais rapido</span>.</p><div class="pz"><img src="showcase-assets/tech-5.jpg" alt=""></div><p class="ts">Se trata de nunca mais precisar digitar certas coisas.</p><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- INTERNAL D — foto fullbleed + balao embaixo -->
+  <div class="card"><div class="cl">Internal D</div><div class="cs">S7 — Foto + balao embaixo</div>
+    <div class="sf"><div class="si t16"><div class="bgp"><img src="showcase-assets/tech-3.jpg" alt=""></div><div class="crd"><p class="tp">Voce ainda faz <span class="hl">manualmente</span> o que ja pode ser delegado para uma inteligencia que nao cansa, nao esquece e nao pede aumento.</p><p class="ts">A pergunta e: ate quando?</p></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- INTERNAL E — foto fullbleed + balao em cima -->
+  <div class="card"><div class="cl">Internal E</div><div class="cs">S9 — Foto + balao em cima</div>
+    <div class="sf"><div class="si t17"><div class="bgp"><img src="showcase-assets/tech-4.jpg" alt=""></div><div class="crd"><p class="tp">A diferenca entre quem assiste e quem <span class="hl">constroi</span>: quem constroi acorda com o trabalho pronto.</p><p class="ts">Voce escolhe de que lado quer estar.</p></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+  <!-- CTA -->
+  <div class="card"><div class="cl">CTA</div><div class="cs">S10 — Call to Action</div>
+    <div class="sf"><div class="si t18"><div class="bgp"><img src="showcase-assets/tech-1.jpg" alt=""></div><div class="ov"></div><div class="ct"><div class="ttl">COMENTA AGENTES</div><p class="sub">Descubra como montar o primeiro fluxo que trabalha por voce.</p><div class="acts"><div class="act"><span class="ai" style="color:#6366F1;">&#9733;</span><span style="color:#6366F1;">SALVAR</span></div><div class="act"><span class="ai" style="color:#fff;">&#9993;</span><span>ENVIAR</span></div><div class="act"><span class="ai" style="color:#EAB308;">&#9829;</span><span style="color:#EAB308;">CURTIR</span></div></div></div><div class="wm">@jcastelo-forte</div></div></div></div>
+
+</div>
+
+<div style="height:120px;"></div>
+</body>
+</html>

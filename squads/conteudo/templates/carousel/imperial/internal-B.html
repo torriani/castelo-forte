@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Imperial Internal B — Texto Cima + Imagem Embaixo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background: {{bg_color}};
+    color: {{text_color}};
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    background: #0A0E1A;
+    color: #ffffff;
+  }
+
+  .text-zone {
+    padding: 64px 64px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+  }
+
+  .text-primary {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+  }
+
+  .text-primary .highlight {
+    color: #6366F1;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .text-primary strong { font-weight: 800; }
+
+  .text-secondary {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .text-secondary .highlight {
+    color: #6366F1;
+    font-weight: 600;
+  }
+
+  .photo-zone {
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+  }
+
+  .photo-zone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .watermark {
+    position: absolute;
+    bottom: 32px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="text-zone">
+    <p class="text-primary">{{slide_text}}</p>
+    <p class="text-secondary">{{slide_text_secondary}}</p>
+  </div>
+
+  <div class="photo-zone">
+    <img src="{{photo_url}}" alt="{{photo_alt}}">
+  </div>
+
+  <div class="watermark">@{{instagram}}</div>
+
+</body>
+</html>

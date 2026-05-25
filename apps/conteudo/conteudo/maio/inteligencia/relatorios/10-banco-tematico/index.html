@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 · Banco Temático · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">10 · Banco <em>Temático</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Relatórios técnicos</a><span class="sep">›</span>10 · Banco Temático</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="../../">Briefing Maio</a> / <a href="/conteudo/maio/inteligencia/hub-pesquisa/">Inteligência</a> / 10 · Banco Temático</div>
+<div class="container">
+  <a href="/conteudo/maio/inteligencia/hub-pesquisa/" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>BANCO TEMATICO — Posts replicaveis agrupados por tema</h1>
+
+<p>Pra cada tema teologico, os melhores posts encontrados.</p>
+
+<p>Use como BIBLIOTECA: pegue a frase-chave, adapte ao tom Castelo Forte.</p>
+
+
+
+<h2>Reino/Autoridade (47 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>8,536</td><td>carrossel</td><td>Darei a vocês pastores segundo o meu coração, que os conduzirão com conhecimento e discernimento.</td><td>https://www.instagram.com/p/DYI6NMKjvTS/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>5,458</td><td>reel</td><td>Essa é a <a href="https://instagram.com/dudakaestner" target="_blank">@dudakaestner</a>, sargento do Exército Alemão.</td><td>https://www.instagram.com/p/DS5wjUJEa9p/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>2,669</td><td>reel</td><td>Cada ano, um novo passo.</td><td>https://www.instagram.com/p/DMgiSvWOyph/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>2,068</td><td>reel</td><td>Em 2024, clamamos: Venha o Teu Reino.</td><td>https://www.instagram.com/p/DMgz54Yu_hr/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>1,786</td><td>carrossel</td><td>Na Reino, conectamos pessoas com pessoas e pessoas com a presença de Jesus. Acreditamos que a vida de Cristo é expressa no relacionamento, no cuidado e na comun</td><td>https://www.instagram.com/p/DSRKIe5kYEU/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>1,356</td><td>foto</td><td>Queridos alunos da T2,</td><td>https://www.instagram.com/p/DSIF3gVkS73/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a></td><td>1,342</td><td>carrossel</td><td>Hoje vivemos uma noite muito especial como igreja, um tempo de festa e muita emoção! ✨</td><td>https://www.instagram.com/p/DYOWikbja2a/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>1,032</td><td>reel</td><td>Na Reino você tem uma casa! 🤍🕊️</td><td>https://www.instagram.com/p/DBg4rSzRxK0/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>981</td><td>reel</td><td>Se você acabou de chegar em Balneário Camboriú, conheça a Reino. Uma comunidade cristocêntrica que mantém Jesus como centro.</td><td>https://www.instagram.com/p/DSF0AMpEYff/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a></td><td>904</td><td>carrossel</td><td>Nosso segundo dia do Alcance Inside trouxe ainda mais aprendizado e reflexão!</td><td>https://www.instagram.com/p/DXx2zq2DcaP/</td></tr>
+</tbody></table>
+
+<h2>Identidade em Cristo (5 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>4,906</td><td>reel</td><td>Deus nunca nos chamou para uma fé confortável, mas para uma transformação real. Crer em Cristo é o começo, mas viver como Ele viveu é o destino. ✨</td><td>https://www.instagram.com/p/DXnVjr0DYQU/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>544</td><td>foto</td><td>Entramos em um novo tempo com o coração firmado em uma única certeza: Jesus continua sendo o centro de tudo.</td><td>https://www.instagram.com/p/DS8jiq3AKNv/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>485</td><td>carrossel</td><td>Sua semana na ADVEC!</td><td>https://www.instagram.com/p/DYNSjNrkbgt/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>236</td><td>reel</td><td>Que você tenha uma semana vitoriosa em Cristo! Não deixe de estar na casa de Deus, acompanhe nossa programação.</td><td>https://www.instagram.com/p/DX7Dz5tNW4K/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>61</td><td>reel</td><td>A queda no Éden não tirou só o Éden. Tirou a memória de quem você é.</td><td>https://www.instagram.com/p/DYSp7SQz5Py/</td></tr>
+</tbody></table>
+
+<h2>Batalha espiritual (5 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>3,299</td><td>carrossel</td><td>Tem gente que já saiu da crise, mas continua contando a própria história como se a dor tivesse vencido. E enquanto você só fala do que perdeu, do que doeu e do</td><td>https://www.instagram.com/p/DXw2SatCX_i/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>1,177</td><td>carrossel</td><td>Eu e minha casa serviremos ao Senhor.</td><td>https://www.instagram.com/p/DYXESSXDotM/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>321</td><td>carrossel</td><td>Desperta, Débora!</td><td>https://www.instagram.com/p/DX-XP2oCT0-/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a></td><td>202</td><td>reel</td><td>Situações adversas são como flechas lançadas para nos amedrontar. Mas a palavra de Deus nos encoraja a silenciar aquilo que nos afronta e entregar tudo Àquele q</td><td>https://www.instagram.com/p/DYLKq_ROdR5/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>139</td><td>reel</td><td>A intimidade com Deus não é privilégio de quem já venceu. É a estratégia de quem ainda está no meio da batalha.</td><td>https://www.instagram.com/p/DYFNdKMTzsV/</td></tr>
+</tbody></table>
+
+<h2>Promessa/Visao (73 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>92,329</td><td>reel</td><td>A tempestade que você vive não tem o poder de mudar o destino que Jesus tem pra você! AMEMMM??</td><td>https://www.instagram.com/p/DXX27VfjJ3M/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>49,487</td><td>reel</td><td>Hoje uma parte importante do nosso sonho pra <a href="https://instagram.com/aedeiveleonardo" target="_blank">@aedeiveleonardo</a> começou! Teremos um caminhão palco que irá rodar o nosso Brasil levando a palavra de Jesus através</td><td>https://www.instagram.com/p/DXAkvDmABM9/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>26,424</td><td>reel</td><td>Veja isso até o final! Deus não entrega uma visão sem preparar um caminho! AMÉMM!??</td><td>https://www.instagram.com/p/DYXRKKxOpVi/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>20,522</td><td>carrossel</td><td>Num tempo de incertezas e pressões,</td><td>https://www.instagram.com/p/DSfOEpnjjt7/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>12,417</td><td>carrossel</td><td>Deus não trata como comum aquilo que Ele decidiu investir profundamente.</td><td>https://www.instagram.com/p/DWzz7rWlRFa/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>9,649</td><td>reel</td><td>Porque eu bem sei os pensamentos que tenho a vosso respeito… pensamentos de paz, e não de mal.</td><td>https://www.instagram.com/p/DWjCDjHDjRm/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>8,536</td><td>carrossel</td><td>Darei a vocês pastores segundo o meu coração, que os conduzirão com conhecimento e discernimento.</td><td>https://www.instagram.com/p/DYI6NMKjvTS/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>7,793</td><td>reel</td><td>A mensagem não mudou: o Senhor Jesus vem.</td><td>https://www.instagram.com/p/DXQVcE5jnKJ/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>7,782</td><td>reel</td><td>Às vezes, as vozes que mais fazem barulho não são as que mais têm poder.</td><td>https://www.instagram.com/p/DXPKRgqAHkX/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>6,810</td><td>reel</td><td>Este é o caminho, andai nele.</td><td>https://www.instagram.com/p/DVzrdnojfxz/</td></tr>
+</tbody></table>
+
+<h2>Intimidade/Oracao (37 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>132,181</td><td>reel</td><td>Nem todo mundo pode acessar a sua intimidade!</td><td>https://www.instagram.com/p/DXzxySNNqix/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>12,417</td><td>carrossel</td><td>Deus não trata como comum aquilo que Ele decidiu investir profundamente.</td><td>https://www.instagram.com/p/DWzz7rWlRFa/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>8,536</td><td>carrossel</td><td>Darei a vocês pastores segundo o meu coração, que os conduzirão com conhecimento e discernimento.</td><td>https://www.instagram.com/p/DYI6NMKjvTS/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>7,950</td><td>reel</td><td>Será que Deus esqueceu de mim?</td><td>https://www.instagram.com/p/DXFW392iG1u/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>5,824</td><td>reel</td><td>Entrega o teu caminho ao Senhor; confia n’Ele, e Ele tudo fará.</td><td>https://www.instagram.com/p/DVqPHdnDvi5/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>2,219</td><td>carrossel</td><td>Minha Casa é Abençoada</td><td>https://www.instagram.com/p/DX2X279CXs0/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>1,970</td><td>carrossel</td><td>Se você não tem história, dá tempo de fazer uma!🔥</td><td>https://www.instagram.com/p/DX8E-N7jmjE/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>1,831</td><td>reel</td><td>Filho, filha: Eu vi você no lugar em que ninguém mais vê.</td><td>https://www.instagram.com/p/DX7o-WQijp6/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>1,502</td><td>reel</td><td>🤝 Ação Social   Maanaim de Vitória</td><td>https://www.instagram.com/p/DV3tt7WDtpX/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>1,497</td><td>carrossel</td><td>Minha Casa é Abençoada</td><td>https://www.instagram.com/p/DYIfafKiQf3/</td></tr>
+</tbody></table>
+
+<h2>Espera/Tempo de Deus (8 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>32,491</td><td>reel</td><td>Às vezes, Deus não responde de imediato porque Ele está formando em nós a maturidade necessária para sustentar aquilo que um dia vamos viver! Amémmm!???</td><td>https://www.instagram.com/p/DYSHnCrO5PR/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>6,619</td><td>reel</td><td>Existem momentos que as palavras não explicam, apenas a presença de Deus confirma. 🔥</td><td>https://www.instagram.com/p/DYQjZdyAT1t/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>3,882</td><td>reel</td><td>Ah, se tu soubesse…</td><td>https://www.instagram.com/p/DYBUjEdO30g/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>860</td><td>carrossel</td><td>UM SÁBADO CHEIO DA PRESENÇA 🔥</td><td>https://www.instagram.com/p/DX2fXnilo8Q/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>744</td><td>carrossel</td><td>A maturidade determina o acesso à herança. Gl 4:1 🕊️</td><td>https://www.instagram.com/p/DD9mYWhRota/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/hillsongsaopaulo" target="_blank">@hillsongsaopaulo</a></td><td>405</td><td>reel</td><td>Amanhã é dia de nos reunirmos em família na igreja! ❤️‍🔥</td><td>https://www.instagram.com/p/DX2hK94NiUz/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/alcancecuritiba" target="_blank">@alcancecuritiba</a></td><td>223</td><td>reel</td><td>A espera tem muitos desafios, mas a motivação errada de nossos corações pode nos levar à frustração e tornar essa fase ainda mais difícil.</td><td>https://www.instagram.com/p/DYVRnVpPKLV/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/iprdoficial" target="_blank">@iprdoficial</a></td><td>23</td><td>foto</td><td>O DEUS QUE MUDA HISTÓRIA LHE ESPERA AMANHÃ PARA TRANSFORMAR A SUA!!!🔥 ÁS 18:00H</td><td>https://www.instagram.com/p/DXSkxPSjtNn/</td></tr>
+</tbody></table>
+
+<h2>Graca/Salvacao (22 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>20,522</td><td>carrossel</td><td>Num tempo de incertezas e pressões,</td><td>https://www.instagram.com/p/DSfOEpnjjt7/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>8,035</td><td>carrossel</td><td>A Tenda está se movendo novamente… 🇵🇹</td><td>https://www.instagram.com/p/DYSKYWoFjFk/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>7,170</td><td>carrossel</td><td>Hoje pela manhã vivemos uma Santa Ceia poderosa, uma festa ordenada pelo Senhor, onde relembramos com reverência o sacrifício de Jesus na cruz.</td><td>https://www.instagram.com/p/DX4fQ8QjXyB/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>4,906</td><td>reel</td><td>Deus nunca nos chamou para uma fé confortável, mas para uma transformação real. Crer em Cristo é o começo, mas viver como Ele viveu é o destino. ✨</td><td>https://www.instagram.com/p/DXnVjr0DYQU/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>2,865</td><td>reel</td><td>“Eu sou a porta.” – João 10:9</td><td>https://www.instagram.com/p/DV6OCOIgHzJ/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>2,192</td><td>reel</td><td>O Casa de Fé é uma ferramenta poderosa para o evangelismo!</td><td>https://www.instagram.com/p/DXxZS0yBZ-H/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>1,970</td><td>carrossel</td><td>Hoje à noite continuamos vivendo uma Santa Ceia poderosa, uma festa ordenada pelo Senhor, onde mais uma vez lembramos com reverência o sacrifício de Jesus na cr</td><td>https://www.instagram.com/p/DX5cZB4DUz3/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></td><td>1,382</td><td>reel</td><td>Não há maior benção do que a salvação! Se ela é de graça, todas as outras são também. Se você crê nessa verdade, compartilhe com outros. 🙌🏼</td><td>https://www.instagram.com/p/DYSUSL8Pt4D/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></td><td>1,351</td><td>foto</td><td>A graça não é sobre esforço humano, é sobre a obra completa de Cristo. ✨</td><td>https://www.instagram.com/p/DYNoriNvZ_a/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>1,222</td><td>carrossel</td><td>Quatro tipo de Perdas</td><td>https://www.instagram.com/p/DX5aNAfCTLO/</td></tr>
+</tbody></table>
+
+<h2>Familia/Casamento (64 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>49,487</td><td>reel</td><td>Hoje uma parte importante do nosso sonho pra <a href="https://instagram.com/aedeiveleonardo" target="_blank">@aedeiveleonardo</a> começou! Teremos um caminhão palco que irá rodar o nosso Brasil levando a palavra de Jesus através</td><td>https://www.instagram.com/p/DXAkvDmABM9/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>13,230</td><td>foto</td><td>Cristo ressuscitou dentre os mortos, sendo Ele as primícias dos que dormem… cada um por sua ordem: Cristo, as primícias; depois, os que são de Cristo, na sua vi</td><td>https://www.instagram.com/p/DUij_PVEf86/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>9,595</td><td>reel</td><td>Instrui o menino no caminho em que deve andar…</td><td>https://www.instagram.com/p/DWKwCOSjlj-/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>8,536</td><td>carrossel</td><td>Darei a vocês pastores segundo o meu coração, que os conduzirão com conhecimento e discernimento.</td><td>https://www.instagram.com/p/DYI6NMKjvTS/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/igrejarenasceremcristo" target="_blank">@igrejarenasceremcristo</a></td><td>3,280</td><td>reel</td><td>Há anos alerto sobre esse tema e encorajo mulheres a saírem de relacionamentos tóxicos. Família é bênção de Deus sim, mas Deus não tem prazer no nosso sofriment</td><td>https://www.instagram.com/p/DX7BT22O1mB/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>2,219</td><td>carrossel</td><td>Minha Casa é Abençoada</td><td>https://www.instagram.com/p/DX2X279CXs0/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/hillsongsaopaulo" target="_blank">@hillsongsaopaulo</a></td><td>2,169</td><td>carrossel</td><td>Este domingo está sendo inesquecível! ❤️‍🔥</td><td>https://www.instagram.com/p/DXUkxTyEWyt/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>2,118</td><td>reel</td><td>Mais uma semana começando e por aqui estamos com uma programação muito especial para receber você e sua família. ✨</td><td>https://www.instagram.com/p/DYJ6PNPhoyr/</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>2,061</td><td>reel</td><td>A igreja também acontece assim: no cuidado que vai até a casa, na presença que alcança quem já não consegue sair, e na mesa repartida com amor. Nossos idosos qu</td><td>https://www.instagram.com/p/DYChi7lHagB/</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>1,844</td><td>reel</td><td>O Pr. Mario de Oliveira tem um recado especial para você!</td><td>https://www.instagram.com/p/DXzN9WGBeWN/</td></tr>
+</tbody></table>
+
+<h2>Quebra de paradigma (8 posts encontrados, top 10)</h2>
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Eng</th><th>Fmt</th><th>Frase-chave</th><th>URL</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>132,181</td><td>reel</td><td>Nem todo mundo pode acessar a sua intimidade!</td><td>https://www.instagram.com/p/DXzxySNNqix/</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>26,428</td><td>reel</td><td>Que as pessoas estranhem você!</td><td>https://www.instagram.com/p/DYF5KHOtHHj/</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>9,649</td><td>reel</td><td>Porque eu bem sei os pensamentos que tenho a vosso respeito… pensamentos de paz, e não de mal.</td><td>https://www.instagram.com/p/DWjCDjHDjRm/</td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>3,798</td><td>carrossel</td><td><a href="https://instagram.com/lucaspaqueta" target="_blank">@lucaspaqueta</a> é nossa nova escalação pra essa sexta💥</td><td>https://www.instagram.com/p/DYUs4UtgBKg/</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></td><td>986</td><td>reel</td><td>Igreja não é prédio, é onde o povo de Deus se reúne para buscá-lO de todo coração. ❤️‍🔥</td><td>https://www.instagram.com/p/DYDe6ngPoQF/</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>583</td><td>reel</td><td>Você não é um acidente!</td><td>https://www.instagram.com/p/DYM9hzYtnYo/</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>492</td><td>reel</td><td>Nem todo sonho vem de Deus.</td><td>https://www.instagram.com/p/DYVcYJ7hoIh/</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>328</td><td>reel</td><td>O fim faz parte da caminhada, mas não precisa ser o fim da esperança.</td><td>https://www.instagram.com/p/DX9hMBtB3gl/</td></tr>
+</tbody></table></article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Imperial Cover</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .bg-photo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('{{photo_url}}');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    padding: 0 56px 100px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.08;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-shadow: 3px 3px 16px rgba(0,0,0,0.6);
+  }
+
+  .watermark {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 1px;
+    z-index: 3;
+  }
+
+  .photo-credit {
+    position: absolute;
+    top: 28px;
+    right: 36px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255,255,255,0.45);
+    z-index: 3;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-photo"></div>
+  <div class="overlay"></div>
+
+  <div class="photo-credit">{{photo_credit}}</div>
+
+  <div class="content">
+    <h1 class="title">{{slide_text}}</h1>
+  </div>
+
+  <div class="watermark">@{{instagram}}</div>
+
+</body>
+</html>

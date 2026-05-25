@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frases Autorais · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<link rel="stylesheet" href="/assets/aprovacao/inline.css">
+<style>
+.peca-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.peca-card { background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e0ddd5; }
+.peca-card .thumb { aspect-ratio: 4/5; overflow: hidden; }
+.peca-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.peca-card .meta { padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 5px; }
+.peca-card .day { font-weight: 700; font-family: 'Archivo Black'; font-size: 0.95rem; letter-spacing: 0.3px; }
+.peca-card .verse { font-size: 0.7rem; color: #888; font-family: 'JetBrains Mono'; letter-spacing: 1px; text-transform: uppercase; }
+.sub-tabs {
+  display: flex; gap: 6px; margin: 0 0 22px;
+  background: #ecebe6; padding: 4px; border-radius: 999px; width: fit-content;
+}
+.sub-tabs a {
+  text-decoration: none; padding: 8px 18px; border-radius: 999px;
+  font-family: 'Inter'; font-size: 13px; font-weight: 600; color: #4b4842;
+}
+.sub-tabs a.active { background: #152347; color: white; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">Castelo Forte<small>Jurerê · SC</small></div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/">Inteligência</a></li>
+      <li><a href="/conteudo/maio/carrosseis/">Carrosséis</a></li>
+      <li><a href="/conteudo/maio/frases/" class="active">Frases</a></li>
+      <li><a href="/conteudo/maio/reels/">Reels</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+<h2 class="page-title">Frases <em>Autorais</em></h2>
+<p class="page-subtitle">21 frases autorais · 1 por dia · 7h · Template Casa Isabel</p>
+
+<div class="tabs">
+    <a href="/conteudo/maio/carrosseis/">Carrosséis</a>
+    <a href="/conteudo/maio/frases/literais/">Frases Literais</a>
+    <a href="/conteudo/maio/frases/autorais/" class="active">Frases Autorais</a>
+  </div>
+
+<div class="peca-grid" id="grid"></div>
+
+</main>
+
+<footer><strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H</footer>
+
+<script>
+const grid = document.getElementById("grid");
+for (let i = 1; i <= 21; i++) {
+  const n = String(i).padStart(2, "0");
+  const card = document.createElement("div");
+  card.className = "peca-card";
+  card.id = `p-${n}`;
+  card.dataset.aprovacao = `frase-autoral-${n}`;
+  card.innerHTML = `
+    <div class="thumb"><img src="/img/cf-frases-autorais/frase-${n}.png" alt="Frase ${n}" loading="lazy"></div>
+    <div class="meta">
+      <div class="day">Frase ${n}</div>
+      <div class="verse">Dia ${n}</div>
+    </div>`;
+  grid.appendChild(card);
+}
+</script>
+
+<script type="module" src="/assets/aprovacao/inline.js"></script>
+<script defer src="/assets/sub-menu.js"></script>
+</body>
+</html>

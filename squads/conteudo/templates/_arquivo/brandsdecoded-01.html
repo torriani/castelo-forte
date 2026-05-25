@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>BrandsDecoded 01 — Editorial Magazine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+  }
+
+  /* === HEADER BAR (todos os slides) === */
+  .header-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .header-bar.on-white { color: #000; }
+  .header-bar.on-dark  { color: #fff; }
+  .header-bar.on-red   { color: #000; }
+
+  /* === TYPOGRAPHY === */
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
+
+  .body-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .highlight-bar {
+    background: #fff;
+    color: #fff;
+    display: inline;
+    padding: 4px 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  /* === AVATAR BADGE === */
+  .avatar-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .avatar-badge img {
+    width: 48px; height: 48px;
+    border-radius: 50%; object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  .avatar-badge .handle {
+    font-size: 20px; font-weight: 600; color: #000;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .avatar-badge .vcheck {
+    width: 20px; height: 20px; background: #1D9BF0;
+    border-radius: 50%; display: inline-flex;
+    align-items: center; justify-content: center;
+    position: relative;
+  }
+  .avatar-badge .vcheck::after {
+    content: ''; position: absolute;
+    top: 5px; left: 7px;
+    width: 4px; height: 8px;
+    border: solid #fff; border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  /* === CTA BAR === */
+  .cta-bar {
+    position: absolute;
+    bottom: 40px; left: 40px; right: 40px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px 32px;
+    text-align: center;
+    z-index: 10;
+  }
+  .cta-bar span {
+    font-size: 20px; font-weight: 500;
+    color: #fff; letter-spacing: 0.5px;
+  }
+  .cta-bar strong {
+    font-weight: 800; color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     SLIDE 0 — HOOK/CAPA
+     Foto 60% superior + avatar + handle + titulo + body
+     ============================================================ -->
+<!--
+<div style="width:1080px;height:1350px;background:#fff;position:relative;">
+  <div class="header-bar on-white">
+    <span>@{{instagram}}</span>
+    <span>{{brand_name}} TM</span>
+    <span>&copy;COPYRIGHT 2026</span>
+  </div>
+
+  <div style="position:absolute;top:0;left:0;width:100%;height:60%;overflow:hidden;">
+    <img src="{{photo_url}}" style="width:100%;height:100%;object-fit:cover;" alt="">
+  </div>
+
+  <div style="position:absolute;bottom:0;left:0;right:0;height:40%;background:#fff;padding:40px 40px 60px;display:flex;flex-direction:column;gap:20px;">
+    <div class="avatar-badge">
+      <img src="{{avatar_url}}" alt="">
+      <span class="handle">@{{instagram}} <span class="vcheck"></span></span>
+    </div>
+    <h1 class="title" style="font-size:52px;color:#000;">{{slide_title}}</h1>
+    <p class="body-text" style="font-size:22px;color:#444;">{{slide_body}}</p>
+  </div>
+</div>
+-->
+
+<!-- ============================================================
+     SLIDE 1 — CONTENT: Titulo topo + foto meio + body embaixo
+     ============================================================ -->
+<!--
+<div style="width:1080px;height:1350px;background:#fff;position:relative;">
+  <div class="header-bar on-white">
+    <span>@{{instagram}}</span>
+    <span>{{brand_name}} TM</span>
+    <span>&copy;COPYRIGHT 2026</span>
+  </div>
+
+  <div style="padding:80px 40px 0;display:flex;flex-direction:column;height:100%;">
+    <h1 class="title" style="font-size:56px;color:#000;margin-bottom:32px;">{{slide_title}}</h1>
+    <div style="flex:1;overflow:hidden;margin:0 -40px;">
+      <img src="{{photo_url}}" style="width:100%;height:100%;object-fit:cover;" alt="">
+    </div>
+    <p class="body-text" style="font-size:22px;color:#444;padding:32px 0 48px;">{{slide_body}}</p>
+  </div>
+</div>
+-->
+
+<!-- ============================================================
+     SLIDE 5 — DESTAQUE: Fundo vermelho, titulo preto, body branco highlight
+     ============================================================ -->
+<!--
+<div style="width:1080px;height:1350px;background:#E8220B;position:relative;">
+  <div class="header-bar on-red">
+    <span>@{{instagram}}</span>
+    <span>{{brand_name}} TM</span>
+    <span>&copy;COPYRIGHT 2026</span>
+  </div>
+
+  <div style="padding:100px 40px;display:flex;flex-direction:column;justify-content:space-between;height:100%;">
+    <h1 class="title" style="font-size:72px;color:#000;">{{slide_title}}</h1>
+    <p style="font-family:'Inter',sans-serif;font-size:28px;font-weight:600;line-height:1.5;">
+      <span style="background:#fff;color:#fff;padding:6px 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">
+        {{slide_body}}
+      </span>
+    </p>
+  </div>
+</div>
+-->
+
+<!-- ============================================================
+     SLIDE 9 — CTA: Foto 70% + titulo + CTA bar
+     ============================================================ -->
+<!--
+<div style="width:1080px;height:1350px;background:#fff;position:relative;">
+  <div class="header-bar on-white">
+    <span>@{{instagram}}</span>
+    <span>{{brand_name}} TM</span>
+    <span>&copy;COPYRIGHT 2026</span>
+  </div>
+
+  <div style="position:absolute;top:0;left:0;width:100%;height:70%;overflow:hidden;">
+    <img src="{{photo_url}}" style="width:100%;height:100%;object-fit:cover;" alt="">
+  </div>
+
+  <div style="position:absolute;bottom:80px;left:0;right:0;padding:0 40px;">
+    <h1 class="title" style="font-size:52px;color:#000;margin-bottom:24px;">{{slide_title}}</h1>
+  </div>
+
+  <div class="cta-bar">
+    <span>Comente '<strong>{{cta_keyword}}</strong>' para {{cta_text}}</span>
+  </div>
+</div>
+-->
+
+<!-- ============================================================
+     DEMO — Todos os 10 slides com conteudo real
+     ============================================================ -->
+
+<!-- S0 — HOOK -->
+<div id="slide-0" style="width:1080px;height:1350px;background:#fff;position:relative;">
+  <div class="header-bar on-dark" style="z-index:10;">
+    <span>@jcastelo-forte</span>
+    <span>CASTELO FORTE TM</span>
+    <span>&copy;2026</span>
+  </div>
+
+  <!-- Foto topo 60% -->
+  <div style="position:absolute;top:0;left:0;width:100%;height:58%;overflow:hidden;">
+    <img src="showcase-assets/tech-1.jpg" style="width:100%;height:100%;object-fit:cover;" alt="">
+  </div>
+
+  <!-- Conteudo embaixo -->
+  <div style="position:absolute;bottom:0;left:0;right:0;height:42%;background:#fff;padding:32px 40px 48px;display:flex;flex-direction:column;gap:16px;">
+    <div class="avatar-badge">
+      <img src="showcase-assets/avatar.jpg" alt="JT">
+      <span class="handle">@jcastelo-forte <span class="vcheck"></span></span>
+    </div>
+    <h1 class="title" style="font-size:50px;color:#000;">Meu computador começou a trabalhar sem mim.</h1>
+    <p class="body-text" style="font-size:21px;color:#555;">Abri o notebook, dei um comando e fui tomar café. Quando voltei, a tela estava viva — clicando, preenchendo, executando.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<title>Castelo Forte — Editorial Magazine (SHOWCASE)</title>
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; padding:20px; background:#efefef; font:14px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; color:#153247; }
+  h1 { margin:0 0 4px; font-size:18px; }
+  .sub { color:#666; font-size:12px; margin-bottom:18px; }
+  .note { background:#fff; border-left:3px solid #fe5b06; padding:10px 14px; font-size:12px; color:#555; margin-bottom:18px; border-radius:0 4px 4px 0; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:14px; }
+  .item { background:#fff; border:1px solid #ddd; border-radius:6px; overflow:hidden; }
+  .label { padding:8px 12px; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#666; border-bottom:1px solid #eee; background:#fafafa; }
+  img { width:100%; aspect-ratio:1080/1350; object-fit:cover; display:block; background:#000; }
+  .meta { padding:8px 12px; font-size:11px; color:#888; background:#fafafa; border-top:1px solid #eee; }
+</style>
+</head>
+<body>
+<h1>Castelo Forte — Editorial Magazine</h1>
+<div class="sub">7 slides · paleta Orange + Midnight + Off White · Archivo Black. Preview real da campanha <i>Em Cristo</i> (post 02 — "Você foi escolhido antes").</div>
+
+<div class="note">Os HTMLs em <code>castelo-forte-editorial/</code> são templates com placeholders Mustache ({{image_url}}, {{headline}}, etc) renderizados via <code>scripts/render-carrossel.mjs</code>. As imagens abaixo são PNGs reais já gerados.</div>
+
+<div class="grid">
+  <div class="item"><div class="label">Slide 1 · Capa</div><img src="preview/slide-01-capa.png" alt="capa" /><div class="meta">capa.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 2 · Tríade</div><img src="preview/slide-02-triade.png" alt="triade" /><div class="meta">triade.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 3 · Tríade</div><img src="preview/slide-03-triade.png" alt="triade" /><div class="meta">triade.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 4 · Tríade</div><img src="preview/slide-04-triade.png" alt="triade" /><div class="meta">triade.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 5 · Texto Midnight</div><img src="preview/slide-05-texto-midnight.png" alt="texto" /><div class="meta">texto-midnight.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 6 · Verso</div><img src="preview/slide-06-verso.png" alt="verso" /><div class="meta">verso.html → PNG</div></div>
+  <div class="item"><div class="label">Slide 7 · CTA</div><img src="preview/slide-07-cta.png" alt="cta" /><div class="meta">cta.html → PNG</div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Minimal Dark — Carousel Template</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --bg-color: {{bg_color}};
+    --text-color: {{text_color}};
+    --accent-color: {{accent_color}};
+    --font-family: {{font_family}};
+  }
+
+  /* Defaults when no placeholders replaced */
+  :root {
+    --bg-color: #0A0E1A;
+    --text-color: #FFFFFF;
+    --accent-color: #6366F1;
+    --font-family: 'Inter', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    position: relative;
+  }
+
+  /* --- HOOK slide: larger, bolder text --- */
+  .slide[data-type="hook"] .slide-text {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+
+  /* --- CONTENT slide: standard readable text --- */
+  .slide[data-type="content"] .slide-text {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  /* --- CTA slide: accent highlight, different layout --- */
+  .slide[data-type="cta"] {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide[data-type="cta"] .slide-text {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .slide[data-type="cta"] .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: 700;
+    padding: 24px 64px;
+    border-radius: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* --- Accent underline for emphasis --- */
+  .accent-line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-bottom: 40px;
+    border-radius: 2px;
+  }
+
+  /* --- Pagination: bottom-right, subtle --- */
+  .pagination {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.4;
+    letter-spacing: 2px;
+  }
+
+  /* --- Brand watermark: bottom-left, very subtle --- */
+  .brand {
+    position: absolute;
+    bottom: 48px;
+    left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* --- Subtle noise texture overlay --- */
+  .noise-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+  <div class="noise-overlay"></div>
+
+  <div class="slide" data-type="{{slide_type}}">
+    <div class="accent-line"></div>
+    <div class="slide-text">{{slide_text}}</div>
+
+    <!-- CTA button only visible on CTA slides -->
+    <!-- <div class="cta-button">Saiba mais</div> -->
+  </div>
+
+  <div class="brand">{{brand_name}}</div>
+  <div class="pagination">{{slide_number}} / {{total_slides}}</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "id": "C08",
+  "titulo": "Quem Cuida do Caráter Não Corre Atrás de Reputação",
+  "tipo": "Imperial",
+  "proporção": "Tensão",
+  "hook": "Você está cobrindo buracos que nem deveria ter cavado",
+  "tema_central": "Inversão de prioridade: a maior parte da igreja gasta a vida tentando gerenciar imagem. Quem trabalha o caráter elimina a necessidade da cobertura.",
+  "versiculo_base": "Provérbios 22:1",
+  "slides": [
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Você está cobrindo buracos que nem deveria ter cavado",
+      "accent_word": "cavado",
+      "image_hint": "Mãos limpando ou tentando tampar um buraco em parede antiga, luz lateral dramática"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Reputação consome o tempo que deveria estar formando o seu caráter.",
+      "accent_word": "consome"
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "O ciclo invisível que rouba sua paz",
+      "body": "Você fala uma coisa. Faz outra. Depois corre pra justificar. Inventa explicação. Cuida da imagem. E no fim do dia está cansado de uma vida que nem viveu de verdade."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-off",
+      "headline": "A frase que o Pastor Jacob deixou no culto",
+      "body": "Quando o homem não cuida do seu caráter, ele tem que correr atrás da sua reputação e ficar cobrindo buracos. Quem cuida do caráter não precisa se preocupar com a reputação. Ela responde por ele."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-midnight",
+      "headline": "Caráter constrói. Reputação só maquia.",
+      "accent_word": "maquia"
+    },
+    {
+      "n": 6,
+      "tipo": "triade",
+      "personagem": "Jó",
+      "headline_resto": "O homem que não precisou se defender",
+      "sub": "Perdeu tudo. Foi acusado pelos amigos. E provou o caráter sem precisar gritar. Porque o caráter dele já falava antes dele.",
+      "image_hint": "Vaso de barro antigo intacto sobre mesa de pedra, luz suave do amanhecer"
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "Trabalhar o caráter é mais barato",
+      "body": "Cuida pouco hoje, paga muito amanhã. Caráter cuidado economiza desculpa, economiza encenação, economiza relacionamento perdido. É um investimento silencioso com juros compostos."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Mais vale o bom nome do que muitas riquezas, e o ser estimado é melhor do que a prata e o ouro.",
+      "referencia": "Provérbios 22:1",
+      "image_hint": "Moedas antigas de prata espalhadas sobre tecido escuro"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Pare de gerenciar imagem. Comece a formar o homem.",
+      "accent_word": "formar"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Domingo, 09h. Volte pra Castelo Forte. Volte pra trabalhar o que dura.",
+      "marca": "DOMINGO",
+      "data": "09H · CULTO",
+      "igreja": "Castelo Forte · Jurerê"
+    }
+  ],
+  "legenda_instagram": "Você passa o dia consertando imagem. Inventando explicação. Cobrindo buraco que nem deveria ter cavado.\n\nO Pastor Jacob falou ontem: quem cuida do caráter não precisa correr atrás da reputação. Ela responde sozinha.\n\nReputação maquia. Caráter constrói.\n\nDomingo, 09h, Castelo Forte. Vem trabalhar o que dura.\n\n#castelofortejurere #jo #carater #pastorjacobanijar #provacao #floripa #jurere"
+}

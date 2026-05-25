@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa de Isabel · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header { background: #153247; color: #efefef; padding: 30px 40px 40px; display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545; }
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+
+
+
+
+.nav-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; font-weight: 600; }
+.nav-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+.nav-desc { font-size: 11px; line-height: 1.5; opacity: .8; }
+.container { max-width: 1400px; margin: 0 auto; padding: 50px 40px; }
+.intro { background: #ede6d6; border-left: 4px solid #2c2e2f; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.65; color: #2c2e2f; font-style: italic; }
+.intro strong { font-style: normal; color: #153247; }
+.section { margin-bottom: 50px; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #ede6d6; color: #2c2e2f; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; border: 1px solid #d4cdb8; }
+h2 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; max-width: 800px; }
+.combo-card { background: #fff; border-radius: 8px; padding: 24px; margin-bottom: 24px; border: 1px solid #d4d4d4; box-shadow: 0 2px 8px rgba(21,50,71,.04); }
+.combo-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #ececec; }
+.combo-title { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 800; color: #153247; letter-spacing: -.3px; }
+.combo-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5a6068; letter-spacing: 1px; text-transform: uppercase; }
+.slides-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 12px; -webkit-overflow-scrolling: touch; }
+.slide-wrap { flex-shrink: 0; width: 240px; }
+.slide-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #888; margin-bottom: 6px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+.slide-img { width: 100%; aspect-ratio: 4/5; background: #ede6d6; border-radius: 4px; overflow: hidden; border: 1px solid #d4cdb8; }
+.slide-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.frases-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+hr { border: none; border-top: 2px solid #d4d4d4; margin: 50px 0; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/" class="active">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Casa de <em>Isabel</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/templates/">Templates</a><span class="sep">›</span>Casa de Isabel</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / Casa de Isabel</div>
+
+
+
+<div class="container">
+
+<div class="intro">
+  <strong>Estilo Casa de Isabel adaptado pra Castelo Forte.</strong> Fundo bege/papel quente, mistura de sans-serif (Inter) com <em>serifa itálica Playfair Display</em> pra dar ênfase em palavras-chave. Logo Castelo Forte no canto direito. Tom conversacional e contemplativo. <strong>Carrosséis sem fotos nas internas</strong> conforme você pediu, foco total no texto.
+</div>
+
+<div class="section">
+  <span class="section-tag">5 Frases Únicas</span>
+  <h2>Frases avulsas no estilo Casa de Isabel</h2>
+  <p class="section-desc">5 frases das 21 da campanha, renderizadas no formato Casa de Isabel pra você comparar com as outras versões (Padrão B Noite de Adoração e literais).</p>
+  <div class="combo-card">
+    <div class="frases-grid">
+  <div>
+    <div class="slide-label" style="margin-bottom:6px">ESCOLHIDOS ANTES · EFÉSIOS 1.4</div>
+    <div class="slide-img" style="aspect-ratio:4/5"><img src="/img/casa-isabel-frases/frase-02.png" loading="lazy"></div>
+  </div>
+
+  <div>
+    <div class="slide-label" style="margin-bottom:6px">O MURO CAIU · EFÉSIOS 2.14</div>
+    <div class="slide-img" style="aspect-ratio:4/5"><img src="/img/casa-isabel-frases/frase-05.png" loading="lazy"></div>
+  </div>
+
+  <div>
+    <div class="slide-label" style="margin-bottom:6px">AMOR DE CRISTO · EFÉSIOS 3.19</div>
+    <div class="slide-img" style="aspect-ratio:4/5"><img src="/img/casa-isabel-frases/frase-09.png" loading="lazy"></div>
+  </div>
+
+  <div>
+    <div class="slide-label" style="margin-bottom:6px">CASAMENTO · EFÉSIOS 5.25</div>
+    <div class="slide-img" style="aspect-ratio:4/5"><img src="/img/casa-isabel-frases/frase-17.png" loading="lazy"></div>
+  </div>
+
+  <div>
+    <div class="slide-label" style="margin-bottom:6px">ARMADURA · EFÉSIOS 6.13</div>
+    <div class="slide-img" style="aspect-ratio:4/5"><img src="/img/casa-isabel-frases/frase-20.png" loading="lazy"></div>
+  </div>
+</div>
+  </div>
+</div>
+
+<hr>
+
+<div class="section">
+  <span class="section-tag">5 Carrosséis Completos</span>
+  <h2>Carrosséis no estilo Casa de Isabel · internas sem foto</h2>
+  <p class="section-desc">5 das 21 peças da campanha completas (7 slides cada): capa + 3 tríades + síntese + verso + CTA. Todas as internas sem foto, só texto fluido com mistura tipográfica.</p>
+  <div class="combo-card"><div class="combo-header"><div class="combo-title">Você foi escolhido antes</div><div class="combo-meta">Efésios 1.4</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 1</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-2-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 2</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-3-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 3</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-4-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p02/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">O muro caiu</div><div class="combo-meta">Efésios 2.14</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 1</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-2-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 2</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-3-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 3</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-4-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p05/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">Unidade não é uniformidade</div><div class="combo-meta">Efésios 4.4-5</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 1</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-2-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 2</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-3-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 3</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-4-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p10/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">Casamento espelha Cristo</div><div class="combo-meta">Efésios 5.25</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 1</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-2-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 2</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-3-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 3</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-4-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p17/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">Vista a armadura. Toda.</div><div class="combo-meta">Efésios 6.13</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 1</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-2-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 2</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-3-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">TRÍADE 3</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-4-triade.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/casa-isabel-carrosseis/p20/slide-7-cta.png" loading="lazy"></div></div></div></div>
+</div>
+
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin · Aprovação de Conteúdo</title>
+<link rel="stylesheet" href="/assets/aprovacao/styles.css" />
+</head>
+<body class="page-admin">
+
+<section id="login" class="login-card">
+  <h1>Admin · Aprovação</h1>
+  <p class="muted">Acesso restrito.</p>
+  <label>Email
+    <input type="email" id="email" autocomplete="username" />
+  </label>
+  <label>Senha
+    <input type="password" id="senha" autocomplete="current-password" />
+  </label>
+  <button class="btn btn-primary" id="btnLogin">Entrar</button>
+  <div class="err" id="loginErr" hidden></div>
+</section>
+
+<section id="painel" hidden>
+  <header class="topbar">
+    <div class="brand"><strong>ADMIN</strong> <span class="dot">·</span> <span>Aprovação de Conteúdo</span></div>
+    <div>
+      <select id="selCliente"></select>
+      <button class="btn btn-ghost" id="btnExport">Exportar reprovados (JSON)</button>
+      <button class="btn btn-ghost" id="btnLink">Copiar link aprovador</button>
+      <button class="btn btn-ghost" id="btnLogout">Sair</button>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><b id="sTotal">0</b><span>posts</span></div>
+    <div class="stat pendente"><b id="sPend">0</b><span>pendentes</span></div>
+    <div class="stat aprovado"><b id="sAprov">0</b><span>aprovados</span></div>
+    <div class="stat ajustar"><b id="sAjust">0</b><span>ajustar</span></div>
+    <div class="stat reprovado"><b id="sRep">0</b><span>reprovados</span></div>
+    <div class="stat"><b id="sCorrig">0</b><span>já corrigidos</span></div>
+  </section>
+
+  <main id="lista" class="grid admin"></main>
+</section>
+
+<script type="module" src="/assets/aprovacao/admin.js"></script>
+</body>
+</html>

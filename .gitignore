@@ -1,0 +1,103 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Castelo Forte — Estrutura completa
+# apps/ + squads/ + workspace/ + outputs/
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Secrets (NUNCA commitar)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+credentials/
+
+# Dependências
+node_modules/
+.pnp.*
+package-lock.json.bak
+yarn-error.log
+npm-debug.log*
+
+# Build / Cache
+.next/
+.vercel/
+.turbo/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Mídia muito pesada (vídeos, modelos ML)
+*.onnx
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.psd
+*.ai
+*.sketch
+
+# ━━━ outputs/ — mídia fica no Supabase Archive ━━━
+# Imagens em outputs/ não vão pro Git (gere via squad, suba pro archive)
+outputs/**/*.png
+outputs/**/*.jpg
+outputs/**/*.jpeg
+outputs/**/*.webp
+
+# ━━━ apps/conteudo/ — portal Vercel, TUDO vai pro Git ━━━
+# (não tem regra de bloqueio aqui, permite tudo)
+
+# ━━━ workspace/ — identidade visual leve permitida ━━━
+!workspace/businesses/igreja-castelo-forte/brand/**/*.png
+!workspace/businesses/igreja-castelo-forte/brand/**/*.jpg
+
+# ━━━ squads/conteudo/templates/ — previews leves permitidos ━━━
+!squads/conteudo/templates/**/preview-*.png
+
+# Publisher Instagram — fila gerada dinamicamente
+apps/publisher-instagram/publicar/*/
+apps/publisher-instagram/publicado/*/
+apps/publisher-instagram/logs/
+apps/publisher-instagram/queue.json
+!apps/publisher-instagram/publicar/.gitkeep
+!apps/publisher-instagram/publicado/.gitkeep
+
+# Playwright / testes
+.playwright-mcp/
+test-results/
+playwright-report/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+venv-*/
+.venv/
+*.egg-info/
+
+# Sessões temporárias
+.claude/session.md
+**/.claude/session.md
+CHECKPOINT.md
+ENTREGA.md

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 · Top Hooks por Rate · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">05 · Top Hooks por <em>Rate</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Relatórios técnicos</a><span class="sep">›</span>05 · Top Hooks por Rate</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="../../">Briefing Maio</a> / <a href="/conteudo/maio/inteligencia/hub-pesquisa/">Inteligência</a> / 05 · Top Hooks (Taxa de Engajamento)</div>
+<div class="container">
+  <a href="/conteudo/maio/inteligencia/hub-pesquisa/" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>Top 40 Hooks por Rate (% sobre seguidores)</h1>
+
+
+<table>
+<thead><tr><th>#</th><th>@</th><th>Rate %</th><th>Fmt</th><th>Hook</th></tr></thead><tbody>
+<tr><td>1</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>398.288</td><td>reel</td><td>Somos igreja porque estamos juntos 💜</td></tr>
+<tr><td>2</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>25.177</td><td>reel</td><td>Nem todo mundo pode acessar a sua intimidade!</td></tr>
+<tr><td>3</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>24.547</td><td>reel</td><td>Queremos compartilhar com vocês a palavra sobre o nosso culto no domingo com o pastor <a href="https://instagram.com/felipeluzpr" target="_blank">@felipeluzpr</a></td></tr>
+<tr><td>4</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>24.145</td><td>foto</td><td>Florianópolis vai viver um dia de alinhamento, visão e ativação 🔥</td></tr>
+<tr><td>5</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>21.93</td><td>reel</td><td>Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥</td></tr>
+<tr><td>6</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>18.109</td><td>reel</td><td>Feliz dia das mães ❤️</td></tr>
+<tr><td>7</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>16.097</td><td>carrossel</td><td>Um pouco do que vivemos em família no último domingo 🤍</td></tr>
+<tr><td>8</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>15.292</td><td>carrossel</td><td>Um coração sábio gera resultados eternos!</td></tr>
+<tr><td>9</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>15.163</td><td>reel</td><td>Cada detalhe, cada sorriso, cada serviço tem um propósito maior: revelar Jesus. 🕊️</td></tr>
+<tr><td>10</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>14.085</td><td>reel</td><td>A oração constrói o fundamento para que os planos de Deus se concretizem na terra. 🙏</td></tr>
+<tr><td>11</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>13.28</td><td>foto</td><td>Neste sábado teremos uma Noite de Adoração muito especial.</td></tr>
+<tr><td>12</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>12.948</td><td>reel</td><td>É um privilégio fazer parte do que Deus está fazendo 💜</td></tr>
+<tr><td>13</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>12.475</td><td>carrossel</td><td>Um pouco do nosso domingo em família na casa do Pai 🧡</td></tr>
+<tr><td>14</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>11.67</td><td>reel</td><td>Hoje celebramos mulheres que carregam mais do que filhos…</td></tr>
+<tr><td>15</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>11.469</td><td>carrossel</td><td>Neste domingo damos início à nossa nova série: Céu na Terra. Uma jornada para entender, viver e manifestar aquilo que Je</td></tr>
+<tr><td>16</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>10.865</td><td>reel</td><td>“E Jesus aproximou-se e disse: Toda autoridade me foi dada no céu e na terra.” Mateus 28:18</td></tr>
+<tr><td>17</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>10.262</td><td>carrossel</td><td>Alegramo-nos ao nos reunir como igreja a cada domingo.</td></tr>
+<tr><td>18</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.859</td><td>carrossel</td><td>“Porque um menino nos nasceu, um filho nos foi dado…” (Isaías 9:6)</td></tr>
+<tr><td>19</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.457</td><td>reel</td><td>Toda terça às 07h, culto de oração não igreja castelo forte. 🏰 💪</td></tr>
+<tr><td>20</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.256</td><td>reel</td><td>A rosa mais linda 🌹</td></tr>
+<tr><td>21</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.256</td><td>reel</td><td>“Sou eu apenas um Deus de perto”, diz o Senhor,</td></tr>
+<tr><td>22</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.256</td><td>carrossel</td><td>Santificação é processo, não um atalho.</td></tr>
+<tr><td>23</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.256</td><td>carrossel</td><td>Deus se manifestou de forma poderosa neste domingo!</td></tr>
+<tr><td>24</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>9.054</td><td>carrossel</td><td>Domingo foi um marco de rendição e transformação.</td></tr>
+<tr><td>25</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>8.631</td><td>reel</td><td>A sintonia (ou a disputa kkkk) que a gente ama!🤭😅</td></tr>
+<tr><td>26</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>8.451</td><td>reel</td><td>Às vezes a gente chega cansado, com o coração pesado, tentando manter a fé em pé enquanto tudo parece dizer o contrário.</td></tr>
+<tr><td>27</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>8.342</td><td>carrossel</td><td>Num tempo de incertezas e pressões,</td></tr>
+<tr><td>28</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.646</td><td>reel</td><td>Um pouco do que vivemos domingo 🧡</td></tr>
+<tr><td>29</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.646</td><td>carrossel</td><td>O culto do último domingo foi marcado por um mover especial de Deus entre nós.</td></tr>
+<tr><td>30</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>7.469</td><td>reel</td><td>Com pesar comunicamos o passamento da irmã Sara Gueiros Dodd, serva muito usada pelo Senhor na Sua Obra.</td></tr>
+<tr><td>31</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.445</td><td>carrossel</td><td>Nosso Espaço Kids e berçário 🧡</td></tr>
+<tr><td>32</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.243</td><td>reel</td><td>No culto de ontem, encerramos a série Céu na Terra entendendo que o Reino não é apenas uma mensagem — é uma realidade qu</td></tr>
+<tr><td>33</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.243</td><td>carrossel</td><td>Deus tem nos tocado de forma real e transformadora em cada culto.</td></tr>
+<tr><td>34</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>7.042</td><td>reel</td><td>Na segunda parte da nossa série Céu na Terra, fomos lembrados de que o Reino não começa no público, mas no privado.</td></tr>
+<tr><td>35</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>6.962</td><td>reel</td><td>Ele vive! 🙏🏻</td></tr>
+<tr><td>36</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>6.841</td><td>reel</td><td>Culto em 1 minuto.</td></tr>
+<tr><td>37</td><td><a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a></td><td>6.585</td><td>carrossel</td><td>Faz 2 anos que o extraordinário chegou na Praia Brava 💜</td></tr>
+<tr><td>38</td><td><a href="https://instagram.com/familiajesuscopy" target="_blank">@familiajesuscopy</a></td><td>6.247</td><td>reel</td><td>“Eles serão o meu povo, e eu serei o seu Deus.”</td></tr>
+<tr><td>39</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>6.237</td><td>reel</td><td>Essa é a decisão mais importante da sua vida.</td></tr>
+<tr><td>40</td><td><a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></td><td>6.237</td><td>reel</td><td>1/3 da série “Céu na terra”.</td></tr>
+</tbody></table></article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

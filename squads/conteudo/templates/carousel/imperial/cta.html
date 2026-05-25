@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Imperial CTA</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+  }
+
+  .bg-photo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('{{photo_url}}');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    padding: 0 64px 120px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .cta-title {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+    letter-spacing: -1px;
+  }
+
+  .cta-title .highlight {
+    color: {{accent_color}};
+  }
+  .cta-title .highlight { color: #6366F1; }
+
+  .cta-subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    max-width: 800px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 40px;
+    margin-top: 16px;
+  }
+
+  .cta-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cta-action svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .cta-action span {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .watermark {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 1px;
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-photo"></div>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1 class="cta-title">{{slide_text}}</h1>
+    <p class="cta-subtitle">{{subtitle}}</p>
+
+    <div class="cta-actions">
+      <div class="cta-action">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span style="color: #6366F1;">SALVAR</span>
+      </div>
+      <div class="cta-action">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span style="color: #ffffff;">ENVIAR</span>
+      </div>
+      <div class="cta-action">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#EAB308" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span style="color: #EAB308;">CURTIR</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="watermark">@{{instagram}}</div>
+
+</body>
+</html>

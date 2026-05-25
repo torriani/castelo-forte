@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ============ PLANO ESPECIFICO ============ */
+.plano-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 56px;
+  align-items: start;
+}
+
+aside.plano-toc {
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+aside.plano-toc .toc-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--glory);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+aside.plano-toc ul { list-style: none; padding: 0; }
+aside.plano-toc li { margin-bottom: 2px; }
+aside.plano-toc a {
+  display: block;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: var(--muted);
+  border-radius: 4px;
+  font-weight: 500;
+  border-left: 2px solid transparent;
+  transition: all .15s ease;
+}
+aside.plano-toc a:hover {
+  color: var(--midnight);
+  background: var(--parchment);
+  border-left-color: var(--glory);
+}
+aside.plano-toc a .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--glory);
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+/* ============ MODULOS DO PLANO ============ */
+.modulo {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 36px 40px;
+  margin-bottom: 24px;
+  scroll-margin-top: 80px;
+}
+
+.modulo .modulo-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  color: var(--glory);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modulo h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 28px;
+  letter-spacing: -.8px;
+  color: var(--midnight);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.modulo h2 em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--glory);
+  text-transform: none;
+}
+
+.modulo .modulo-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.modulo h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--midnight);
+  margin: 26px 0 12px;
+}
+.modulo h3 em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--glory);
+  text-transform: none;
+}
+
+.modulo p { font-size: 14px; line-height: 1.6; color: var(--midnight); margin-bottom: 12px; }
+.modulo ul, .modulo ol { padding-left: 22px; margin-bottom: 16px; }
+.modulo li { margin-bottom: 8px; font-size: 14px; line-height: 1.55; }
+.modulo strong { color: var(--midnight); font-weight: 700; }
+
+/* Callout/quote */
+.callout {
+  background: var(--parchment);
+  border-left: 3px solid var(--glory);
+  padding: 20px 24px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.callout.dark {
+  background: var(--ink);
+  color: var(--parchment);
+  border-left-color: var(--glory);
+}
+.callout.dark strong { color: var(--glory); }
+
+/* Tag missao */
+.tag-missao {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.tag-missao.theo { background: var(--blood); color: var(--parchment); }
+.tag-missao.igreja { background: #075057; color: var(--parchment); }
+.tag-missao.reter { background: var(--deep); color: var(--parchment); }
+.tag-missao.posicionar { background: var(--midnight); color: var(--parchment); }
+.tag-missao.captar { background: var(--glory); color: var(--ink); }
+
+/* Linhas editoriais */
+.linhas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+.linha-card {
+  background: var(--parchment);
+  padding: 22px;
+  border-radius: 8px;
+  border-top: 3px solid var(--glory);
+}
+.linha-card.l2 { border-top-color: #075057; }
+.linha-card.l3 { border-top-color: var(--deep); }
+.linha-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--glory);
+  font-weight: 700;
+}
+.linha-titulo {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 6px 0 10px;
+  letter-spacing: -.3px;
+  color: var(--midnight);
+}
+.linha-desc { font-size: 13px; line-height: 1.5; color: var(--midnight); }
+
+/* Tabela cronograma */
+.crono-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.crono-table th {
+  background: var(--ink);
+  color: var(--glory);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 14px 12px;
+  text-align: left;
+}
+.crono-table td {
+  padding: 14px 12px;
+  border-top: 1px solid var(--line);
+  vertical-align: middle;
+}
+.crono-table tr:hover td { background: var(--parchment); }
+.crono-table .dia {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  color: var(--midnight);
+  font-size: 13px;
+  letter-spacing: -.2px;
+}
+.destaque {
+  background: var(--glory);
+  color: var(--ink);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Grid formatos */
+.grid-formatos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.formato-card {
+  background: var(--parchment);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  transition: all .2s ease;
+}
+.formato-card:hover {
+  background: #fff;
+  border-color: var(--glory);
+  transform: translateY(-2px);
+}
+.formato-id {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--glory);
+  letter-spacing: 1.5px;
+}
+.formato-nome {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 14px;
+  margin: 4px 0 6px;
+  letter-spacing: -.3px;
+  color: var(--midnight);
+  text-transform: uppercase;
+}
+.formato-meta {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: .5px;
+}
+.formato-desc { font-size: 12px; line-height: 1.45; color: var(--midnight); }
+
+/* KPIs */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.kpi-card {
+  background: var(--parchment);
+  border-left: 3px solid var(--glory);
+  padding: 20px 18px;
+  border-radius: 0 8px 8px 0;
+}
+.kpi-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.kpi-valor {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 32px;
+  letter-spacing: -1px;
+  color: var(--midnight);
+  line-height: 1;
+}
+.kpi-valor em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--glory);
+}
+.kpi-meta {
+  font-size: 11px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+@media (max-width: 1000px) {
+  .plano-layout { grid-template-columns: 1fr; }
+  aside.plano-toc { position: static; max-height: none; margin-bottom: 24px; }
+  .linhas { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .modulo { padding: 24px 22px; }
+  .modulo h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/" >Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/" >Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" >Inteligência</a></li>
+      <li><a href="/conteudo/maio/analise/" >Análise</a></li>
+      <li><a href="/conteudo/maio/carrosseis/" >Carrosséis</a></li>
+      <li><a href="/conteudo/maio/frases/" >Frases</a></li>
+      <li><a href="/conteudo/maio/reels/" >Reels</a></li>
+      <li><a href="/conteudo/maio/templates/" >Templates</a></li>
+      <li><a href="/conteudo/maio/plano/" class="active">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+<h2 class="page-title">Plano da <em>Campanha</em></h2>
+<p class="page-subtitle">Reunião 17.05 · Inteligência 480 posts · Código Maranata</p>
+
+<div class="plano-layout">
+
+  <!-- ============ CONTEUDO ============ -->
+  <div>
+
+    <div class="modulo" id="estrategia">
+      <div class="modulo-num">01 · Visão geral</div>
+      <h2>Estratégia <em>Macro</em></h2>
+      <div class="modulo-sub">O que vamos construir em 1 frase</div>
+
+      <div class="callout dark">
+        <strong>Construir a única igreja apostólica jovem de Florianópolis</strong> que ensina "Na Terra como no Céu" com formato Reel curto, capa bold, e história pessoal Israel + Teo como prova social — escalando de 497 pra 1.500+ seguidores em 30 dias e lotando o evento do Teo.
+      </div>
+
+      <h3>Por que vai <em>funcionar</em></h3>
+      <p>A inteligência mostrou que <strong>Castelo Forte já tem o 2º melhor engagement rate</strong> entre 35 igrejas analisadas (9,03%), maior que Lagoinha, Bola de Neve, Abba Pai e Hillsong. <strong>O problema nunca foi qualidade — é escala.</strong> Agora vamos resolver escala.</p>
+
+      <h3>O Código <em>Maranata</em></h3>
+      <p>18 dos top 30 posts do estudo são da Igreja Cristã Maranata. Não por ser grande (é a 5ª maior). Por ter uma fórmula:</p>
+      <ul>
+        <li>Reel de 8 a 15 segundos</li>
+        <li>Trecho de louvor ou pregação cortado</li>
+        <li>Capa com 1 frase bold centralizada</li>
+        <li>CTA "OUÇA ATÉ O FIM" ou "ASSISTA AGORA" no topo</li>
+        <li>Caption curta com versículo</li>
+      </ul>
+      <p>Vamos adaptar essa fórmula pro DNA Castelo Forte. Sem inventar formato novo nos próximos 60 dias.</p>
+    </div>
+
+    <div class="modulo" id="missoes">
+      <div class="modulo-num">02 · Foco</div>
+      <h2>Missão <em>Dupla</em></h2>
+      <div class="modulo-sub">Duas metas paralelas que se reforçam</div>
+
+      <h3><span class="tag-missao theo">Missão 1</span> Lotar evento <em>Teo</em></h3>
+      <p><strong>Formatos-chave:</strong> F08 (Anúncio Netflix) · F09 (Conta Regressiva) · F10 (Cortes Teo) · F13 (História Israel+Teo)</p>
+      <p><strong>Investimento:</strong> R$3.000 em tráfego pago concentrado nas 3 semanas pré-evento.</p>
+      <p><strong>KPI:</strong> 200 inscritos confirmados + 50 lista de espera + buzz orgânico.</p>
+
+      <h3 style="margin-top:32px"><span class="tag-missao igreja">Missão 2</span> Lotar igreja com gente <em>nova</em></h3>
+      <p><strong>Formatos-chave:</strong> F01 (Reels Louvor) · F03 (Frases-Reel) · F04 (Frases-Imagem) · F05 (Chamada Quinta) · F06 (Aviso Sábado) · F12 (Manifesto) · F13 (História)</p>
+      <p><strong>Frequência:</strong> 1 post/dia mínimo + 3 Stories/dia + chamadas de quinta e sábado fixas.</p>
+      <p><strong>KPI:</strong> 497 → 1.500 seguidores em 30 dias + 25+ visitantes novos por culto.</p>
+
+      <div class="callout">
+        <strong>Por que dupla:</strong> a missão 1 (Teo) gera o pico de atenção que a missão 2 (igreja) capitaliza. Teo lota um evento. A operação diária converte esse interesse em membros.
+      </div>
+    </div>
+
+    <div class="modulo" id="linhas">
+      <div class="modulo-num">03 · Editorial</div>
+      <h2>Três Linhas <em>Editoriais</em></h2>
+      <div class="modulo-sub">Definidas na reunião de 17/05</div>
+
+      <div class="linhas">
+        <div class="linha-card">
+          <div class="linha-num">LINHA 01</div>
+          <div class="linha-titulo">Historial Básica</div>
+          <div class="linha-desc">Vida real da igreja, cultos, bastidores, batismos. <strong>Pra dentro</strong> — quem já conhece. Resp: Frank + Helena + Rick.</div>
+        </div>
+        <div class="linha-card l2">
+          <div class="linha-num">LINHA 02</div>
+          <div class="linha-titulo">Posicionamento Pra Fora</div>
+          <div class="linha-desc">Ensino + manifesto + identidade "Céu na Terra". <strong>Alcance frio</strong>. Resp: Juliano + Felipe + Israel.</div>
+        </div>
+        <div class="linha-card l3">
+          <div class="linha-num">LINHA 03</div>
+          <div class="linha-titulo">Ferramenta Compartilhável</div>
+          <div class="linha-desc">Conteúdo que o membro pega e manda pro colega. Frase contraintuitiva, versículo aplicado. Resp: Juliano + Israel.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modulo" id="serie">
+      <div class="modulo-num">04 · Em Cristo</div>
+      <h2>Série <em>Em Cristo</em></h2>
+      <div class="modulo-sub">4 semanas · Efésios · Junho</div>
+
+      <h3>Os 4 pilares (1 por semana)</h3>
+      <table class="crono-table">
+        <thead>
+          <tr><th>Semana</th><th>Tema</th><th>Efésios</th><th>Hook visual</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="dia">1</td><td>Quem você é em Cristo (identidade)</td><td>1-2</td><td>"Antes de você existir, Deus já tinha decidido te chamar de filho"</td></tr>
+          <tr><td class="dia">2</td><td>O que Cristo fez por você (graça)</td><td>2:1-10</td><td>"Pela graça sois salvos — não pelo que você fez"</td></tr>
+          <tr><td class="dia">3</td><td>Como você vive em Cristo (vivência)</td><td>4-5</td><td>"Não é sobre tentar mais. É sobre andar diferente"</td></tr>
+          <tr><td class="dia">4</td><td>Como você permanece em Cristo</td><td>6</td><td>"Você não luta sozinho. Luta a partir da vitória"</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Operação em <em>4 frentes</em></h3>
+      <ul>
+        <li><strong>Pregação dominical</strong> — 4 cultos consecutivos (Israel)</li>
+        <li><strong>Campanha digital</strong> — 1 post/dia + anúncios pagos</li>
+        <li><strong>Discipulado</strong> — linha paralela aprofundada pra líderes</li>
+        <li><strong>Devocional WhatsApp</strong> — grupo "Em Cristo" administrado pela Lídia, Felipe escreve</li>
+      </ul>
+
+      <h3>Lead magnet: <em>Workbook</em> PDF</h3>
+      <p>4 páginas (1 por semana) com versículo-chave + reflexão. Disparado por ManyChat quando alguém comenta <strong>"EM CRISTO"</strong>. Quem pega o PDF entra automaticamente no grupo WhatsApp.</p>
+    </div>
+
+    <div class="modulo" id="evento">
+      <div class="modulo-num">05 · Evento</div>
+      <h2>Evento <em>Teófilo Hayashi</em></h2>
+      <div class="modulo-sub">Líderes do Reino · evento-âncora</div>
+
+      <h3>Por que isso é ouro <em>estratégico</em></h3>
+      <ul>
+        <li>Teófilo Hayashi é apóstolo do Dunamis (referência apostólica BR)</li>
+        <li>Israel passou 6 anos discipulado por ele</li>
+        <li>Teo nunca foi a outras igrejas pequenas de ex-discípulos</li>
+        <li><strong>Validação pública de altíssima ordem</strong></li>
+        <li>Cria buzz orgânico — "por que o Teo vai numa igreja com menos de 100 membros?"</li>
+      </ul>
+
+      <h3>3 semanas <em>pré-evento</em></h3>
+      <ul>
+        <li>Criativos estilo "Netflix": "LÍDERES DO REINO — Teófilo Hayashi em Florianópolis"</li>
+        <li>Tráfego pago R$3.000 segmentando Floripa + público Dunamis</li>
+        <li>5-6 cortes do Teo (autorização prévia)</li>
+        <li>Avisos no púlpito 3 domingos consecutivos</li>
+        <li>Stories diários com countdown sticker</li>
+      </ul>
+
+      <h3>Dia do <em>evento</em></h3>
+      <ul>
+        <li>Rick captação completa do workshop</li>
+        <li>Painel de 10 min no início (Israel + Teo, 2 poltronas)</li>
+        <li>Vlog café da manhã com Israel (bastidor)</li>
+        <li>Almoço pós-evento (mais bastidor)</li>
+        <li>Possível podcast em áudio na viagem</li>
+      </ul>
+
+      <h3>1 semana <em>pós-evento</em></h3>
+      <ul>
+        <li>Cortes do workshop (mínimo 5 Reels)</li>
+        <li>Carrossel "5 coisas que aprendi com o Teo"</li>
+        <li>Post bastidor + CTA: "se isso impactou, vem conhecer a igreja"</li>
+      </ul>
+    </div>
+
+    <div class="modulo" id="storytelling">
+      <div class="modulo-num">06 · Storytelling</div>
+      <h2>História <em>Israel + Teo</em></h2>
+      <div class="modulo-sub">Carrossel fixado · prova social</div>
+
+      <p>Quando alguém abre o perfil pela primeira vez, precisa entender em 60 segundos quem é o pastor e por que confiar. Essa história entrega isso.</p>
+
+      <h3>Estrutura do carrossel (10 slides)</h3>
+      <ol>
+        <li><strong>Hook:</strong> "Em 2014, Deus me disse que eu andaria com um futuro apóstolo. Em 2026, ele veio à minha igreja."</li>
+        <li><strong>2014:</strong> Ouvindo pregação Dunamis, Deus fala: "Teo é apóstolo, vai andar com ele"</li>
+        <li><strong>2017:</strong> Teo vem ministrar em Floripa. Imposição de mãos: "Transfiro tudo que recebi"</li>
+        <li><strong>2018:</strong> Israel vira pastor sênior. Sente que não sabe o que faz. Manda mensagem pro Teo do nada.</li>
+        <li><strong>Coincidência divina:</strong> Teo tinha acabado de reabrir mentoria esperando "mais alguém"</li>
+        <li><strong>Igreja fecha:</strong> semanas depois, Israel fecha. Teo insiste pra continuar.</li>
+        <li><strong>Convite Dunamis:</strong> 4 meses depois, Teo convida Israel pra liderar área digital em São Paulo</li>
+        <li><strong>Alana já tinha recebido a palavra</strong> no mesmo dia</li>
+        <li><strong>6 anos de discipulado:</strong> Israel virou o que anotava tudo. Sócrates/Platão.</li>
+        <li><strong>Retorno:</strong> Deus chama Israel pra voltar. Teo apoia. Castelo Forte nasce em Floripa.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>CTA do carrossel:</strong> "Em junho, o Teo vai estar na nossa igreja. Comenta REINO se quiser estar lá."
+      </div>
+    </div>
+
+    <div class="modulo" id="formatos">
+      <div class="modulo-num">07 · Produção</div>
+      <h2>15 <em>Formatos</em> de Conteúdo</h2>
+      <div class="modulo-sub">Sistema padronizado · 1 fórmula · 1 template · 1 horário</div>
+
+      <div class="grid-formatos">
+
+        <div class="formato-card">
+          <div class="formato-id">F01</div>
+          <div class="formato-nome">Reels de Louvor</div>
+          <div class="formato-meta">3x/sem · 8-15s · Rick+Helena</div>
+          <div class="formato-desc">Trecho de louvor cortado, capa com frase do hino, CTA "OUÇA ATÉ O FIM". <span class="tag-missao igreja">Igreja</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F02</div>
+          <div class="formato-nome">Reels de Bastidor</div>
+          <div class="formato-meta">1x/sem · 15-30s · Frank+Helena</div>
+          <div class="formato-desc">Oração antes do culto, ensaio de louvor, café da equipe. <span class="tag-missao reter">Reter</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F03</div>
+          <div class="formato-nome">Frases-Reel</div>
+          <div class="formato-meta">2x/sem · 10-20s · Israel grava</div>
+          <div class="formato-desc">Israel narra 1 frase impactante. Legenda CapCut bold. <span class="tag-missao igreja">Igreja</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F04</div>
+          <div class="formato-nome">Frases em Imagem</div>
+          <div class="formato-meta">1x/dia · print-tweet · Juliano</div>
+          <div class="formato-desc">Card branco com frase bold centralizada. Template fixo. <span class="tag-missao igreja">Igreja</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F05</div>
+          <div class="formato-nome">Chamada de Quinta</div>
+          <div class="formato-meta">Quinta 19h · carrossel · Sued</div>
+          <div class="formato-desc">1ª chamada do culto. Save the Date + tema + endereço. <span class="tag-missao igreja">Igreja</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F06</div>
+          <div class="formato-nome">Aviso de Sábado</div>
+          <div class="formato-meta">Sáb 20h · imagem ou Reel · Sued</div>
+          <div class="formato-desc">Última chamada. Foto culto + "AMANHÃ 9H30". <span class="tag-missao igreja">Igreja</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F07</div>
+          <div class="formato-nome">Stories Tempo Real</div>
+          <div class="formato-meta">Dom · 8-12 Stories · Helena/Frank</div>
+          <div class="formato-desc">Cobertura ao vivo do culto. Chegada, louvor, comunhão. <span class="tag-missao reter">Reter</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F08</div>
+          <div class="formato-nome">Anúncio Evento Teo</div>
+          <div class="formato-meta">3 sem pré · Reel · Sued+Juliano</div>
+          <div class="formato-desc">Estilo trailer Netflix. Preto + tipografia gigante. Peça-mãe do tráfego. <span class="tag-missao theo">Teo</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F09</div>
+          <div class="formato-nome">Conta Regressiva</div>
+          <div class="formato-meta">2 sem pré · Stories+posts · Frank</div>
+          <div class="formato-desc">Countdown sticker + número grande. Urgência crescente. <span class="tag-missao theo">Teo</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F10</div>
+          <div class="formato-nome">Cortes do Teo</div>
+          <div class="formato-meta">5-6 nas 3 sem · Reels · Juliano</div>
+          <div class="formato-desc">Trechos de pregações públicas. Fecha sempre com "Teo em Castelo Forte". <span class="tag-missao theo">Teo</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F11</div>
+          <div class="formato-nome">Discipulado Quinta</div>
+          <div class="formato-meta">1-2x/sem · 30-60s · Israel</div>
+          <div class="formato-desc">Israel ensinando 1 ideia profunda. Posiciona como referência. <span class="tag-missao reter">Reter</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F12</div>
+          <div class="formato-nome">Manifesto da Igreja</div>
+          <div class="formato-meta">Fixado · Reel + carrossel + 1.987 chars</div>
+          <div class="formato-desc">"Existe uma igreja que eu sonho em ver..." Israel narra com teleprompter. <span class="tag-missao posicionar">Posicionar</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F13</div>
+          <div class="formato-nome">História Israel + Teo</div>
+          <div class="formato-meta">Fixado · carrossel 10 slides + Reel</div>
+          <div class="formato-desc">Storytelling de autoridade. Prova social máxima pra visitante novo. <span class="tag-missao posicionar">Posicionar</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F14</div>
+          <div class="formato-nome">Carrossel de Ensino</div>
+          <div class="formato-meta">2x/sem · 7-10 slides · Felipe+Juliano</div>
+          <div class="formato-desc">Ensino aplicado de Efésios. Capa com pergunta forte. CTA grupo WhatsApp. <span class="tag-missao posicionar">Posicionar</span></div>
+        </div>
+
+        <div class="formato-card">
+          <div class="formato-id">F15</div>
+          <div class="formato-nome">Lead Magnet Workbook</div>
+          <div class="formato-meta">PDF 4 páginas · ManyChat</div>
+          <div class="formato-desc">Usuário comenta "EM CRISTO" → recebe PDF + entra no grupo WhatsApp. <span class="tag-missao captar">Captar</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modulo" id="cronograma">
+      <div class="modulo-num">08 · Operação</div>
+      <h2>Cronograma <em>Semanal</em></h2>
+      <div class="modulo-sub">1 fórmula · 1 template · 1 horário · repetição</div>
+
+      <table class="crono-table">
+        <thead>
+          <tr><th>Dia</th><th>Manhã</th><th>Tarde</th><th>Noite</th><th>Stories</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="dia">Segunda</td><td>F01 Reel Louvor</td><td>F14 Carrossel Ensino</td><td>—</td><td>3 motivação</td></tr>
+          <tr><td class="dia">Terça</td><td>F04 Frase-Imagem</td><td>F03 Frase-Reel</td><td>—</td><td>3 bastidor</td></tr>
+          <tr><td class="dia">Quarta</td><td>F04 Frase-Imagem</td><td>F02 Reel Bastidor</td><td>—</td><td>3 Kids/família</td></tr>
+          <tr><td class="dia">Quinta</td><td>F04 Frase-Imagem</td><td>F14 Carrossel</td><td><span class="destaque">F05 Chamada Culto</span></td><td>3 + countdown</td></tr>
+          <tr><td class="dia">Sexta</td><td>F01 Reel Louvor</td><td>F03 Frase-Reel</td><td>—</td><td>3 preparo</td></tr>
+          <tr><td class="dia">Sábado</td><td>F04 Frase-Imagem</td><td>—</td><td><span class="destaque">F06 Aviso Amanhã</span></td><td>5 última chamada</td></tr>
+          <tr><td class="dia">Domingo</td><td><span class="destaque">F07 Stories Ao Vivo</span></td><td>F01 Reel pós-culto</td><td>F02 Bastidor</td><td>Cobertura completa</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Total semanal:</strong> 7 posts no feed + 6 Reels + 25+ Stories + 2 chamadas críticas (quinta + sábado).<br>
+        <strong>Evento Teo:</strong> nas 3 semanas pré-evento, F08, F09 e F10 entram <em>por cima</em> do cronograma fixo.
+      </div>
+    </div>
+
+    <div class="modulo" id="funil">
+      <div class="modulo-num">09 · Conversão</div>
+      <h2>Funil de <em>Canalização</em></h2>
+      <div class="modulo-sub">Do alcance frio ao discípulo maduro</div>
+
+      <ol>
+        <li><strong>Topo:</strong> alcance frio (Instagram orgânico + anúncio pago)</li>
+        <li><strong>Captação:</strong> entra no grupo WhatsApp via comentário</li>
+        <li><strong>Conversão 1:</strong> vem ao culto presencial (domingo 9h30)</li>
+        <li><strong>Conversão 2:</strong> aceita Jesus + batismo</li>
+        <li><strong>Conversão 3:</strong> membresia</li>
+        <li><strong>Conversão 4:</strong> voluntariado + célula</li>
+        <li><strong>Conversão 5:</strong> discípulo maduro + liderança</li>
+      </ol>
+
+      <h3>Recepção modelo <em>Hillsong</em></h3>
+      <p>A recepção é treinada pra <strong>conectar pessoas entre si</strong>, não só dar boas-vindas. Recepcionista puxa um membro, apresenta os dois, sai fora pra conectar outros.</p>
+      <p><strong>Próximos Passos:</strong> estação no fim do culto onde quem aceitou Jesus, quer batismo ou conhecer melhor é canalizado.</p>
+    </div>
+
+    <div class="modulo" id="destaques">
+      <div class="modulo-num">10 · Perfil</div>
+      <h2>Destaques do <em>Instagram</em></h2>
+      <div class="modulo-sub">O que cada visitante novo precisa achar em 10s</div>
+
+      <ol>
+        <li><strong>LOCAL</strong> — endereço Jurerê + horário culto + Google Maps (crítico)</li>
+        <li><strong>KIDS</strong> — fotos espaço infantil, idade, segurança (maior dor das mães)</li>
+        <li><strong>BATISMO</strong> — fotos batismos, próximos passos</li>
+        <li><strong>FAMÍLIA</strong> — DNA igreja, casais, momentos família</li>
+        <li><strong>SOBRE NÓS</strong> — manifesto do Israel resumido</li>
+        <li><strong>EM CRISTO</strong> — destaques da série atual (atualiza por semana)</li>
+        <li><strong>PRÓXIMOS PASSOS</strong> — formulário pra novos cristãos, batismo, célula</li>
+      </ol>
+    </div>
+
+    <div class="modulo" id="kpis">
+      <div class="modulo-num">11 · Métricas</div>
+      <h2>KPIs e <em>Metas</em></h2>
+      <div class="modulo-sub">30 dias mensurados</div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Seguidores</div>
+          <div class="kpi-valor">1.500<em>+</em></div>
+          <div class="kpi-meta">Atual 497 · meta +1.000</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Posts/semana</div>
+          <div class="kpi-valor">7<em>+</em></div>
+          <div class="kpi-meta">Sustentado por 4 semanas</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Engagement rate</div>
+          <div class="kpi-valor"><em>&gt;</em>5%</div>
+          <div class="kpi-meta">Atual 9,03% · manter acima de 5%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Grupo WhatsApp</div>
+          <div class="kpi-valor">300<em>+</em></div>
+          <div class="kpi-meta">Membros do grupo "Em Cristo"</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Visitantes novos</div>
+          <div class="kpi-valor">25<em>+</em></div>
+          <div class="kpi-meta">Por culto via digital</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Inscritos Teo</div>
+          <div class="kpi-valor">200</div>
+          <div class="kpi-meta">Lotado + lista espera 50</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modulo" id="proximos">
+      <div class="modulo-num">12 · Início</div>
+      <h2>Próximos <em>Passos</em></h2>
+      <div class="modulo-sub">Checklist de segunda-feira</div>
+
+      <h3>Operacional</h3>
+      <ul>
+        <li>Definir 1 pessoa única responsável por publicar (sem isso, nada funciona)</li>
+        <li>Lídia (agente WhatsApp) configurada e testada no grupo</li>
+        <li>Template-padrão de capa de Reel finalizado</li>
+        <li>Bio do Instagram atualizada com CTA claro</li>
+        <li>Destaques do perfil criados (Local, Kids, Família, Sobre)</li>
+      </ul>
+
+      <h3>Conteúdo</h3>
+      <ul>
+        <li>Manifesto Israel — script pronto pra gravar terça</li>
+        <li>Carrossel História Israel+Teo — finalizado</li>
+        <li>7 frases da semana — geradas pelo squad</li>
+        <li>7 carrosséis da semana — gerados pelo squad</li>
+        <li>Calendário visual da série Em Cristo</li>
+      </ul>
+
+      <h3>Externo</h3>
+      <ul>
+        <li>DM enviado pra @wearereino.brava</li>
+        <li>Lista de 5 pregadores convidados pros próximos 90 dias</li>
+        <li>Aprovação tráfego pago (R$3.000)</li>
+        <li>Pré-aprovação criativos com Sued</li>
+      </ul>
+
+      <div class="callout dark">
+        <strong>Princípio inegociável:</strong> 1 fórmula. 1 template. 1 horário. Repetição implacável. Quem inventa muito formato no início, morre. Em 30 dias, quando alguém vir a estética Castelo Forte, vai lembrar de você.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ TOC DIREITO ============ -->
+  <aside class="plano-toc">
+    <div class="toc-label">Navegação rápida</div>
+    <ul>
+      <li><a href="#estrategia"><span class="num">01</span>Estratégia macro</a></li>
+      <li><a href="#missoes"><span class="num">02</span>Missão dupla</a></li>
+      <li><a href="#linhas"><span class="num">03</span>Linhas editoriais</a></li>
+      <li><a href="#serie"><span class="num">04</span>Série Em Cristo</a></li>
+      <li><a href="#evento"><span class="num">05</span>Evento Teo</a></li>
+      <li><a href="#storytelling"><span class="num">06</span>Storytelling</a></li>
+      <li><a href="#formatos"><span class="num">07</span>15 formatos</a></li>
+      <li><a href="#cronograma"><span class="num">08</span>Cronograma</a></li>
+      <li><a href="#funil"><span class="num">09</span>Funil</a></li>
+      <li><a href="#destaques"><span class="num">10</span>Destaques IG</a></li>
+      <li><a href="#kpis"><span class="num">11</span>KPIs</a></li>
+      <li><a href="#proximos"><span class="num">12</span>Próximos passos</a></li>
+    </ul>
+  </aside>
+
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Plano da Campanha · 18.05.2026
+</footer>
+
+<script defer src="/assets/sub-menu.js"></script>
+</body>
+</html>

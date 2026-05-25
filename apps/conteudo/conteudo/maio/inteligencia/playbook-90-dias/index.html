@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook 90 Dias · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Playbook <em>90 Dias</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>Playbook 90 Dias</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / <a href="./">Inteligência</a> / Playbook 90 Dias</div>
+<div class="container">
+  <a href="./" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>PLAYBOOK 90 DIAS — Castelo Forte vai escalar</h1>
+<p><strong>Inteligência destilada de 480 posts · 8 igrejas · OCR de capas · 16/05/2026</strong></p>
+
+<hr>
+
+<h2>A verdade que ninguém te conta</h2>
+
+<p>Você analisou 480 posts. Tirou Deive Leonardo da equação. Cruzou texto de capa com engajamento. O resultado é desconfortável:</p>
+
+<p><strong>Nas 8 igrejas analisadas, UMA SÓ é responsável por 18 dos top 30 posts: a Igreja Cristã Maranata.</strong></p>
+
+<p>E ela não bomba por ser grande (tem 246k, é a 5ª maior do estudo). Ela bomba porque <strong>descobriu uma fórmula que ninguém mais usa de forma sistemática</strong>.</p>
+
+<p>É essa fórmula que você vai roubar.</p>
+
+<hr>
+
+<h2>OS 5 PADRÕES QUE FUNCIONAM (com prova nos dados)</h2>
+
+<h3>PADRÃO 1 — O "Trecho do Louvor" cortado em loop</h3>
+
+<p><strong>O que é:</strong> Reel de 8 a 15 segundos com o trecho mais emocional de um louvor, capa com a frase central do hino estampada em tipografia bold, e o CTA "CLIQUE AQUI E ASSISTA" no topo ou lado.</p>
+
+<p><strong>Quantas vezes apareceu no top 30:</strong> <strong>9 posts</strong>, todos da Maranata.</p>
+
+<p><strong>Exemplos reais (clique pra ver):</strong></p>
+<ul>
+<li><a href="https://www.instagram.com/p/DWrN_k7jhOQ/" target="_blank">"Buscar-te-ei, Senhor! Trecho do Louvor"</a> → 8.491 eng</li>
+<li><a href="https://www.instagram.com/p/DWrgR4fiNG_/" target="_blank">"Porque Deus nos ama — Trecho do Louvor"</a> → 9.683 eng</li>
+<li><a href="https://www.instagram.com/p/DUkuzZMDjhz/" target="_blank">"Maravilhoso! Trecho do Louvor"</a> → 6.783 eng</li>
+<li><a href="https://www.instagram.com/p/DWyy1EBjtxb/" target="_blank">"Cristo, o Cordeiro — Trecho do Louvor"</a> → 6.541 eng</li>
+<li><a href="https://www.instagram.com/p/DX-no-completo/" target="_blank">"O Rei Vem! Trecho do Louvor"</a> → 5.617 eng</li>
+</ul>
+
+<p><strong>Por que funciona:</strong> louvor já mobiliza emoção. O corte de 10s é o "trailer" da música. CTA na capa converte view passiva em ação (assistir/salvar).</p>
+
+<p><strong>Como Castelo Forte faz:</strong></p>
+<ul>
+<li>Grave 3 trechos curtos do seu louvor ao vivo todo domingo (já tem câmera no culto, certo?)</li>
+<li>Crie 1 template de capa: foto do momento + frase do louvor centralizada + "OUÇA ATÉ O FIM" no topo</li>
+<li>Publique 3x por semana</li>
+</ul>
+
+<hr>
+
+<h3>PADRÃO 2 — "VOCÊ É / VOCÊ TEM" + frase identitária</h3>
+
+<p><strong>O que é:</strong> Capa com frase curta direta ao espectador, segunda pessoa, declaração de identidade ou promessa.</p>
+
+<p><strong>Exemplos reais:</strong></p>
+<ul>
+<li><a href="https://www.instagram.com/p/DT6dDfvjuhC/" target="_blank">"VOCÊ É POR DEUS! CLIQUE AQUI E ASSISTA"</a> → 7.143 eng</li>
+<li><a href="https://www.instagram.com/p/DXdB3PviUox/" target="_blank">"VOCÊ TEM UM AMIGO: JESUS"</a> → 10.851 eng</li>
+<li><a href="https://www.instagram.com/p/jovem-conv/" target="_blank">"Jovem, Deus te chama! Esse convite é para você"</a> → 5.087 eng</li>
+</ul>
+
+<p><strong>Por que funciona:</strong> o usuário rola o feed em modo automático. Quando lê "VOCÊ", o cérebro para. É interrupção neurológica.</p>
+
+<p><strong>A estrutura é:</strong> <code>VOCÊ [verbo simples] [conceito de Deus]</code> em 4-7 palavras.</p>
+
+<p><strong>Como Castelo Forte faz (10 hooks já adaptados pro tom Céu na Terra):</strong></p>
+<ol>
+<li>"VOCÊ NÃO ENTROU AQUI POR ACASO"</li>
+<li>"VOCÊ FOI CRIADO PARA REINAR"</li>
+<li>"VOCÊ TEM AUTORIDADE NO NOME DE JESUS"</li>
+<li>"VOCÊ NÃO É O QUE FALARAM DE VOCÊ"</li>
+<li>"VOCÊ É CASA DO ESPÍRITO"</li>
+<li>"DEUS JÁ DECIDIU SOBRE VOCÊ"</li>
+<li>"VOCÊ NASCEU PRA MAIS"</li>
+<li>"JESUS ESTÁ ORANDO POR VOCÊ AGORA"</li>
+<li>"VOCÊ NÃO LUTA SOZINHO"</li>
+<li>"O CÉU ESTÁ TE OBSERVANDO HOJE"</li>
+</ol>
+
+<hr>
+
+<h3>PADRÃO 3 — A PERGUNTA QUE OBRIGA RESPOSTA</h3>
+
+<p><strong>O que é:</strong> Capa termina com ponto de interrogação. Pergunta direta, retórica, provocativa.</p>
+
+<p><strong>Exemplos reais:</strong></p>
+<ul>
+<li><a href="https://www.instagram.com/p/DWjCDjHDjRm/" target="_blank">"O QUE DEUS PENSA SOBRE VOCÊ?"</a> → 9.649 eng</li>
+<li><a href="https://www.instagram.com/p/DXFW392iG1u/" target="_blank">"Será que Deus esqueceu de mim?"</a> → 7.950 eng</li>
+<li><a href="https://www.instagram.com/p/DYN_3AjgcND/" target="_blank">"Já parou para pensar que, se não fosse Ele, estaríamos perdidos?"</a> → 31.799 eng (Get Church Floripa)</li>
+</ul>
+
+<p><strong>Por que funciona:</strong> pergunta cria loop aberto no cérebro. Você precisa da resposta. Algoritmo lê isso como "tempo de permanência alto".</p>
+
+<p><strong>Como Castelo Forte faz (10 perguntas pra usar nos próximos 30 dias):</strong></p>
+<ol>
+<li>"VOCÊ JÁ SE SENTIU LONGE DE DEUS HOJE?"</li>
+<li>"POR QUE A SUA ORAÇÃO PARECE NÃO SUBIR?"</li>
+<li>"DEUS TE PROMETEU OU VOCÊ INVENTOU?"</li>
+<li>"VOCÊ SABE QUEM VOCÊ É EM CRISTO?"</li>
+<li>"QUAL FOI A ÚLTIMA VEZ QUE VOCÊ OUVIU A VOZ DELE?"</li>
+<li>"O QUE TE TIRA DO CÉU TODO DIA?"</li>
+<li>"POR QUE VOCÊ INSISTE EM LUTAR SOZINHO?"</li>
+<li>"VOCÊ TÁ NA IGREJA OU TÁ ESCONDIDO NELA?"</li>
+<li>"QUEM SERIA VOCÊ SEM A GRAÇA?"</li>
+<li>"POR QUE VOCÊ DUVIDA DAQUILO QUE DEUS JÁ DISSE?"</li>
+</ol>
+
+<hr>
+
+<h3>PADRÃO 4 — CTA DENTRO DA ARTE (não só na legenda)</h3>
+
+<p><strong>O que é:</strong> A capa tem texto fixo de comando: "CLIQUE AQUI E ASSISTA", "COMPARTILHE", "ENVIE PRA QUEM PRECISA". Esse texto fica no topo, lado ou rodapé do post.</p>
+
+<p><strong>Frequência no top 30:</strong> 12 dos 30 melhores têm CTA na arte. Todos da Maranata.</p>
+
+<p><strong>Por que funciona:</strong> o cérebro vê o comando antes de processar o conteúdo. Quem rola feed precisa de instrução clara. Sem CTA na arte, view não vira ação.</p>
+
+<p><strong>Como Castelo Forte faz:</strong></p>
+<ul>
+<li>Crie um template fixo de Reel: barra azul Castelo Forte no rodapé com "OUÇA ATÉ O FIM" ou "COMPARTILHE COM 1 PESSOA"</li>
+<li>Aplique em 100% dos Reels publicados</li>
+<li>Varie só o CTA: "ASSISTA AGORA", "SALVA PRA DEPOIS", "COMENTA AMÉM"</li>
+</ul>
+
+<hr>
+
+<h3>PADRÃO 5 — REELS dominam tudo</h3>
+
+<p><strong>Distribuição real dos top 30 posts:</strong></p>
+
+<table>
+<thead><tr><th>Formato</th><th>Quantidade no top 30</th></tr></thead><tbody>
+<tr><td>Reels</td><td><strong>26 (87%)</strong></td></tr>
+<tr><td>Carrossel</td><td>3 (10%)</td></tr>
+<tr><td>Foto</td><td>1 (3%)</td></tr>
+</tbody></table>
+
+<p><strong>Por igreja analisada:</strong></p>
+
+<table>
+<thead><tr><th>Igreja</th><th>% de Reels nos posts coletados</th></tr></thead><tbody>
+<tr><td>Maranata</td><td><strong>94%</strong></td></tr>
+<tr><td>Get Church Floripa</td><td>78%</td></tr>
+<tr><td>Reino Brava</td><td>81%</td></tr>
+<tr><td>Reino BC</td><td>78%</td></tr>
+<tr><td>Família JesusCopy</td><td>61%</td></tr>
+<tr><td>Alcance Curitiba</td><td>58%</td></tr>
+<tr><td>Hillsong SP</td><td>27% (e é a com menor eng rate)</td></tr>
+<tr><td>Abba Pai</td><td>47% (compensa com carrossel forte)</td></tr>
+</tbody></table>
+
+<p><strong>Conclusão:</strong> se você não está produzindo Reels, está fora do jogo. Carrossel só vale quando é ensino profundo (estilo Abba Pai). Foto está oficialmente morta.</p>
+
+<hr>
+
+<h2>A FÓRMULA UNIFICADA (O CÓDIGO MARANATA)</h2>
+
+<p>Cruzando os 5 padrões, esta é a <strong>única fórmula que aparece em 18 dos top 30 posts</strong>:</p>
+
+<p><code>`</code></p>
+<p>═══════════════════════════════════════════════</p>
+<p>   REEL DE 8-15 SEGUNDOS</p>
+<p>   + TRECHO DE LOUVOR OU PREGAÇÃO CORTADO</p>
+<p>   + CAPA COM 1 FRASE BOLD CENTRALIZADA</p>
+<p>   + CTA "CLIQUE AQUI" OU "OUÇA ATÉ O FIM" NO TOPO</p>
+<p>   + CAPTION CURTA COM VERSÍCULO + "AMÉM?"</p>
+<p>═══════════════════════════════════════════════</p>
+<p><code>`</code></p>
+
+<p>Essa é a fórmula. Não invente outra agora. Execute.</p>
+
+<hr>
+
+<h2>PLANO 90 DIAS — execução semana a semana</h2>
+
+<h3>Mês 1: Dominar a fórmula (semanas 1-4)</h3>
+
+<p><strong>Meta:</strong> 500 → 1.500 seguidores. Eng rate de 9% se mantém (já é elite).</p>
+
+<p><strong>Operação:</strong></p>
+<ul>
+<li><strong>Frequência:</strong> 1 Reel/dia (mínimo 5/semana) + 3 Stories/dia + 1 carrossel/semana</li>
+<li><strong>Conteúdo:</strong></li>
+<p>  - 3 Reels de "Trecho do Louvor" (do culto de domingo)</p>
+<p>  - 2 Reels de "Trecho da pregação" (Felipe Luz cortado em 15s, 1 ideia forte)</p>
+<p>  - 1 Reel de "Você É / Você tem" (use os 10 hooks acima)</p>
+<p>  - 1 carrossel/semana de ensino sobre Céu na Terra (estilo Abba Pai)</p>
+<li><strong>Template fixo:</strong> definir UMA capa-padrão hoje. Fundo branco + frase em preto bold + barra azul Castelo Forte com CTA. Sem variação.</li>
+<li><strong>Horários:</strong> segunda 19h, quarta 12h, sexta 19h, sábado 20h, domingo 11h (logo após culto)</li>
+</ul>
+
+<p><strong>Quem executa:</strong></p>
+<ul>
+<li>1 pessoa grava no culto domingo (celular bom, tripé, sem produção)</li>
+<li>1 pessoa corta os trechos na segunda (CapCut, 1 hora)</li>
+<li>1 pessoa aprova as capas + posta (você + 1 pastor)</li>
+</ul>
+
+<p><strong>Métrica de sucesso semana 4:</strong></p>
+<ul>
+<li>4 Reels com 1.000+ views</li>
+<li>1 Reel com 5.000+ views</li>
+<li>200+ seguidores novos no mês</li>
+</ul>
+
+<hr>
+
+<h3>Mês 2: Alavancar tração (semanas 5-8)</h3>
+
+<p><strong>Meta:</strong> 1.500 → 4.000 seguidores. Começa a viralizar fora da bolha de Floripa.</p>
+
+<p><strong>Operação:</strong></p>
+<ul>
+<li>Mesma frequência diária</li>
+<li><strong>Adicionar:</strong></li>
+<p>  - 1 colaboração/mês com <a href="https://instagram.com/wearereino.brava" target="_blank">@wearereino.brava</a> (vizinho geográfico, maior eng rate do estudo) — DM hoje</p>
+<p>  - 1 pregador convidado/mês com &gt;50k seguidores (Felipe Luz negocia)</p>
+<p>  - Trecho do convidado vira Reel, ele republica = você herda audiência</p>
+<li><strong>Testar:</strong> 1 Reel/semana com áudio viral cristão do momento (TikTok trends)</li>
+<li><strong>Stories sequenciais:</strong> "Pergunta de domingo" — pastor responde 1 pergunta complexa por semana em 5 Stories</li>
+</ul>
+
+<p><strong>Métrica semana 8:</strong></p>
+<ul>
+<li>Pelo menos 1 Reel passou de 20.000 views</li>
+<li>Eng rate sustenta acima de 5%</li>
+<li>Lista de 3 convidados pros próximos 90 dias agendada</li>
+</ul>
+
+<hr>
+
+<h3>Mês 3: Escalar (semanas 9-12)</h3>
+
+<p><strong>Meta:</strong> 4.000 → 8.000 seguidores. Castelo Forte vira referência regional.</p>
+
+<p><strong>Operação:</strong></p>
+<ul>
+<li>2 Reels/dia (manhã e noite)</li>
+<li><strong>Lançar série de 30 dias em Efésios</strong> ("Céu na Terra na prática")</li>
+<p>  - 1 Reel/dia citando 1 versículo de Efésios</p>
+<p>  - Usar a fórmula "VOCÊ É" (Ef 1) + pergunta retórica (Ef 4) + pregação cortada (Ef 6)</p>
+<p>  - <strong>Você dominaria Efésios</strong> no Instagram cristão BR — só 2 posts em 480 citaram, é gap aberto</p>
+<li>Considerar @castelofortejovens (perfil paralelo só pra Reels rápidos, foco público jovem secular de Jurerê)</li>
+</ul>
+
+<p><strong>Métrica semana 12:</strong></p>
+<ul>
+<li>8.000+ seguidores</li>
+<li>Sua igreja entra no radar quando alguém pesquisa "igreja Florianópolis" no Instagram</li>
+<li>Pelo menos 1 visitante novo por culto vem dizendo "vi vocês no Instagram"</li>
+</ul>
+
+<hr>
+
+<h2>A REGRA DE OURO PARA OS PRÓXIMOS 90 DIAS</h2>
+
+<p><strong>1 fórmula. 1 template. 1 horário. Repetição implacável.</strong></p>
+
+<p>Você não vai inventar nada novo nos próximos 90 dias. Vai executar <strong>o código Maranata adaptado pro DNA Castelo Forte ("Céu na Terra")</strong>. Quem inventa muito formato no início, morre.</p>
+
+<p>A Maranata postou nos últimos 90 dias <strong>56 dos 60 posts no MESMO formato</strong> (Reel curto + capa padronizada + CTA). É monotonia visual. Mas é exatamente isso que treina o algoritmo a entender o que você é.</p>
+
+<p>Castelo Forte vai ser <strong>a igreja apostólica jovem de Florianópolis que faz Reels curtos de Céu na Terra com tipografia bold preto e branco e barra azul no rodapé</strong>. Em 90 dias, quando alguém ver essa estética, vai lembrar de você.</p>
+
+<hr>
+
+<h2>CHECKLIST PRA SEGUNDA-FEIRA (06h)</h2>
+
+<ul>
+<li>[ ] Definir 1 pessoa única responsável por publicar (sem isso, nada acontece)</li>
+<li>[ ] Criar template-padrão de capa de Reel (Canva, 5 min)</li>
+<li>[ ] Gravar 3 trechos de louvor do culto deste domingo</li>
+<li>[ ] Cortar 1 trecho de 15s da pregação do Felipe (frase mais forte)</li>
+<li>[ ] Publicar 1º Reel com fórmula completa (capa + CTA + trecho + versículo na legenda)</li>
+<li><a href="https://instagram.com/wearereino.brava" target="_blank"> ] DM pra [@wearereino.brava</a> propondo café/colaboração</li>
+<li>[ ] Listar 5 pregadores convidados pros próximos 90 dias</li>
+</ul>
+
+<hr>
+
+<h2>ONDE ESTÁ TUDO</h2>
+
+<p>Pasta: <code>legacy/outputs/copys/igreja-castelo-forte/inteligencia/</code></p>
+
+<ul>
+<li><code>painel.html</code> — dashboard visual (já aberto no browser)</li>
+<li><strong><code>PLAYBOOK-90-DIAS.md</code></strong> ← este arquivo</li>
+<li><code>RELATORIO-V3-INTELIGENCIA-REAL.md</code> — dados crus</li>
+<li><code>O-QUE-PEGAR-DE-CADA-IGREJA.md</code> — guia perfil-a-perfil</li>
+<li><code>raw-v2-igrejas/posts.json</code> — 480 posts brutos</li>
+<li><code>raw-v2-igrejas/ocr-results.json</code> — todo OCR</li>
+<li><code>raw-v2-igrejas/capas/</code> — 480 imagens</li>
+</ul>
+
+<hr>
+
+<p><strong>O segredo pra viralizar nos próximos 90 dias não é inteligência nova. É disciplina pra executar o código Maranata adaptado a "Céu na Terra", com 1 Reel/dia, mesmo template, no mesmo horário, sem inventar nada antes da semana 8.</strong></p>
+</article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Templates · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #efefef;
+  color: #153247;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* ====== HEADER COM IDENTIDADE OFICIAL ====== */
+header.brand-header {
+  background: #153247;
+  color: #efefef;
+  padding: 40px 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #c89545;
+}
+header .logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .logo {
+  width: 64px;
+  height: 64px;
+  filter: invert(1) brightness(1.1);
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+header .brand-name {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -.4px;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+header .brand-name small {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: .6;
+  margin-top: 4px;
+}
+header .title-block {
+  text-align: right;
+  flex: 1;
+  min-width: 300px;
+}
+header h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+header .sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: .65;
+  margin-top: 10px;
+}
+
+.container { max-width: 1800px; margin: 0 auto; padding: 50px 40px; }
+
+.intro {
+  background: #fff;
+  border-left: 4px solid #c89545;
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #252f38;
+}
+
+.palette-row {
+  display: flex;
+  gap: 10px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.swatch {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+.section-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #c89545;
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+
+/* NAV PRINCIPAL */
+
+
+
+
+.nav-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: .65;
+  font-weight: 600;
+}
+.nav-title {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -.4px;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+.nav-desc {
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: .8;
+  margin-top: 4px;
+}
+
+h2 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -.6px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #153247;
+}
+
+.section-desc {
+  color: #5a6068;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.combo-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 2px 8px rgba(21,50,71,.04);
+}
+.combo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ececec;
+}
+.combo-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #153247;
+  letter-spacing: -.3px;
+}
+.combo-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #5a6068;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.slides-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+.slide-wrap { flex-shrink: 0; width: 240px; }
+.slide-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: #888;
+  margin-bottom: 6px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.slide-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #d4d4d4;
+  margin: 60px 0;
+}
+
+footer {
+  background: #153247;
+  color: #efefef;
+  padding: 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+footer .logo-foot {
+  width: 48px;
+  height: 48px;
+  filter: invert(1) brightness(1.1);
+  margin: 0 auto 16px;
+}
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+@media (max-width: 720px) {
+  header.brand-header { padding: 30px 24px; }
+  header h1 { font-size: 28px; }
+  .container { padding: 30px 20px; }
+  .slide-wrap { width: 200px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/" >Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/" >Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" >Inteligência</a></li>
+      <li><a href="/conteudo/maio/analise/" >Análise</a></li>
+      <li><a href="/conteudo/maio/carrosseis/" >Carrosséis</a></li>
+      <li><a href="/conteudo/maio/frases/" >Frases</a></li>
+      <li><a href="/conteudo/maio/reels/" >Reels</a></li>
+      <li><a href="/conteudo/maio/templates/" class="active">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/" >Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+
+
+<h2 class="page-title">Templates</h2>
+<div class="migrated-content">
+<div class="container">
+
+<div class="intro">
+  <strong>Galeria de templates pra escolher o padrão oficial da série Em Cristo.</strong><br>
+  Compare visualmente cada versão e me responde qual fechamos pra produção das 42 peças (21 carrosséis + 21 frases) da campanha de antecipação que começa em 18/05 e termina no domingo 07/06 (primeiro culto da série às 09h).
+</div>
+
+<div class="palette-row">
+  <div class="swatch" style="background:#efefef;color:#153247;border:1px solid #d4d4d4"><strong>OFF WHITE</strong><br>#efefef</div>
+  <div class="swatch" style="background:#153247;color:#fff"><strong>MIDNIGHT BLUE</strong><br>#153247</div>
+  <div class="swatch" style="background:#252f38;color:#fff"><strong>DEEPER BLUE</strong><br>#252f38</div>
+  <div class="swatch" style="background:#075057;color:#fff"><strong>FORT BLUE</strong><br>#075057</div>
+  <div class="swatch" style="background:#c89545;color:#fff"><strong>ORANGE FORT</strong><br>#c89545</div>
+</div>
+
+<div class="section">
+  <span class="section-tag dark">Carrosséis</span>
+  <h2>9 combinações da peça #02</h2>
+  <p class="section-desc">Cada combinação tem 7 slides (capa, Jeremias, Davi, Maria, síntese, verso, CTA). Role lateralmente em cada linha pra ver todos.</p>
+  <div class="combo-card"><div class="combo-header"><div class="combo-title">V-A1</div><div class="combo-meta">T10 · Grossa · Fundo claro · Sem destaque colorido</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-A1-T10-ArchivoBlack-lightbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-A2</div><div class="combo-meta">T10 · Grossa · Fundo claro · Destaque Deeper Blue</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-A2-T10-ArchivoBlack-lightbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-A3</div><div class="combo-meta">T10 · Grossa · Fundo claro · Destaque Fort Blue</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-A3-T10-ArchivoBlack-lightbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-A4</div><div class="combo-meta">T10 · Grossa · Fundo escuro · Destaque Fort Blue</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-A4-T10-ArchivoBlack-darkbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-A5</div><div class="combo-meta">T10 · Grossa · Fundo escuro · Itálico em vez de cor</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-A5-T10-ArchivoBlack-darkbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-B1</div><div class="combo-meta">T10 · Fina · Fundo claro · Destaque Fort Blue</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-B1-T10-Archivo-lightbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-B2</div><div class="combo-meta">T10 · Fina · Fundo escuro · Destaque Fort Blue</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-B2-T10-Archivo-darkbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-C1</div><div class="combo-meta">T12 Noite de Adoração · Fundo claro</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-C1-T12-ArchivoBlack-lightbg/slide-7-cta.png" loading="lazy"></div></div></div></div><div class="combo-card"><div class="combo-header"><div class="combo-title">V-C2</div><div class="combo-meta">T12 Noite de Adoração · Fundo escuro</div></div><div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-C2-T12-ArchivoBlack-darkbg/slide-7-cta.png" loading="lazy"></div></div></div></div>
+</div>
+
+<hr>
+
+<div class="section">
+  <span class="section-tag deeper">Novo · V-D</span>
+  <h2>Estilo Casa de Isabel</h2>
+  <p class="section-desc">Fundo bege/papel quente, mistura de sans-serif (Inter) com serifa itálica (Playfair Display) pra ênfase. Logo Castelo Forte no canto direito. Tom conversacional, contemplativo.</p>
+  <div class="combo-card">
+    <div class="slides-row"><div class="slide-wrap"><div class="slide-label">CAPA</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-1-capa.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">JEREMIAS</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-2-jeremias.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">DAVI</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-3-davi.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">MARIA</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-4-maria.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">SÍNTESE</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-5-sintese.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">VERSO</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-6-verso.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CTA</div><div class="slide-img"><img src="/img/V-D-casa-isabel/slide-7-cta.png" loading="lazy"></div></div></div>
+  </div>
+</div>
+
+<hr>
+
+<div class="section">
+  <span class="section-tag">Capas Avulsas</span>
+  <h2>Capa Padrão A — 3 variações</h2>
+  <p class="section-desc">Fundo cinza + texto azul-marinho centralizado, só texto. Sem logo, sem foto, sem distração.</p>
+  <div class="combo-card">
+    <div class="slides-row"><div class="slide-wrap"><div class="slide-label">COMPLETA</div><div class="slide-img"><img src="/img/capa-padrao-A/capa-peca-02.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">CURTA</div><div class="slide-img"><img src="/img/capa-padrao-A/capa-peca-02-curta.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">ULTRACURTA</div><div class="slide-img"><img src="/img/capa-padrao-A/capa-peca-02-ultracurta.png" loading="lazy"></div></div></div>
+  </div>
+</div>
+
+<hr>
+
+<div class="section">
+  <span class="section-tag fort">21 Frases · 21 Dias</span>
+  <h2>Frases Padrão B — Noite de Adoração</h2>
+  <p class="section-desc">Uma frase pra cada dia da campanha (21 dias). Logo PNG oficial no canto direito, referência bíblica colada na frase, acentuação completa, frase corrida sem múltiplos pontos.</p>
+  <div class="combo-card">
+    <div class="slides-row"><div class="slide-wrap"><div class="slide-label">FRASE 01</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-01.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 02</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-02.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 03</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-03.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 04</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-04.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 05</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-05.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 06</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-06.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 07</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-07.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 08</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-08.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 09</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-09.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 10</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-10.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 11</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-11.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 12</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-12.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 13</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-13.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 14</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-14.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 15</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-15.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 16</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-16.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 17</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-17.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 18</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-18.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 19</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-19.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 20</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-20.png" loading="lazy"></div></div><div class="slide-wrap"><div class="slide-label">FRASE 21</div><div class="slide-img"><img src="/img/frases-noite-adoracao/frase-21.png" loading="lazy"></div></div></div>
+  </div>
+</div>
+
+<div class="intro" style="border-color:#c89545;background:#fff;margin-top:50px">
+  <strong>Próximo passo:</strong> responde qual versão fechamos como oficial.<br><br>
+  1) Qual das 9 combinações de carrossel?<br>
+  2) V-D Casa de Isabel entra como template alternativo ou substitui?<br>
+  3) Qual headline da capa avulsa (completa, curta, ultracurta)?<br>
+  4) Aprovou as 21 frases padrão B?
+</div>
+
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+<script defer src="/assets/sub-menu.js"></script>
+</body>
+</html>

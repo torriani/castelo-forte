@@ -1,0 +1,133 @@
+name: wf-publish
+description: Workflow de publicacao de carrossel — da recepcao do conteudo aprovado ate a publicacao no Instagram via API
+version: "2.0"
+
+phases:
+  - id: receber_conteudo
+    name: Receive Approved Content
+    agent: publishing-manager
+    description: Receber e validar conteudo aprovado antes de iniciar producao de slides
+    elicit: false
+    steps:
+      - Receber copy .md com conteudo aprovado
+      - Receber template selecionado e metadata do carrossel
+      - Validar presenca da flag approved=true no conteudo
+      - Validar que copy tem todos os slides definidos (capa, corpo, CTA)
+      - Validar que template existe na biblioteca
+    outputs:
+      - copy_validada
+      - template_selecionado
+      - metadata_carrossel
+    checkpoint: Conteudo validado com approved=true e template confirmado
+    veto_condition: Flag approved=false ou ausente — HALT imediato, nao produzir slides sem aprovacao
+
+  - id: gerar_slides
+    name: Generate Slides
+    agent: publishing-manager
+    description: Gerar arquivos HTML para cada slide do carrossel usando template da biblioteca
+    depends_on: [receber_conteudo]
+    elicit: false
+    steps:
+      - Ler template HTML da biblioteca (templates/carousel/)
+      - Mapear copy de cada slide para placeholders do template
+      - Injetar conteudo em cada slide (titulo, corpo, CTA, elementos visuais)
+      - Gerar 1 arquivo HTML por slide no formato 1080x1350px
+      - Validar que todos os slides foram gerados corretamente
+    outputs:
+      - htmls_gerados
+      - total_slides
+      - template_utilizado
+    checkpoint: HTMLs gerados para todos os slides do carrossel
+    veto_condition: Template nao encontrado ou placeholders nao mapeados — nao gerar slides com template invalido
+
+  - id: renderizar_imagens
+    name: Render Images
+    agent: publishing-manager
+    description: Renderizar HTMLs em imagens PNG via Playwright screenshot
+    depends_on: [gerar_slides]
+    elicit: false
+    steps:
+      - Servir arquivos HTML via http.server local
+      - Executar Playwright screenshot de cada slide HTML
+      - Gerar 1 arquivo PNG por slide (1080x1350px)
+      - Validar dimensoes de cada PNG (1080x1350)
+      - Validar qualidade visual (sem cortes, sem overflow, texto legivel)
+    outputs:
+      - pngs_renderizados
+      - dimensoes_validadas
+      - qualidade_ok
+    checkpoint: PNGs renderizados com dimensoes corretas (1080x1350)
+    veto_condition: Dimensoes incorretas ou qualidade comprometida — re-renderizar antes de prosseguir
+
+  - id: otimizar_caption
+    name: Optimize Caption
+    agent: publishing-manager
+    description: Gerar caption otimizada com hashtags estrategicas para maximizar alcance
+    depends_on: [renderizar_imagens]
+    elicit: false
+    steps:
+      - Gerar caption otimizada com base em caption-templates.md
+      - Selecionar 30 hashtags estrategicas (10 broad + 10 niche + 10 rotating)
+      - Formatar caption com quebras de linha e emojis estrategicos
+      - Posicionar CTA na ultima linha da caption
+      - Validar tamanho da caption (< 2200 caracteres)
+    outputs:
+      - caption_otimizada
+      - hashtags_selecionadas
+      - caption_formatada
+    checkpoint: Caption e hashtags prontos e dentro dos limites
+    veto_condition: Caption excede limite de caracteres ou hashtags duplicadas — ajustar antes de publicar
+
+  - id: publicar
+    name: Publish
+    agent: publishing-manager
+    description: Publicar carrossel no Instagram via Graph API com verificacao de rate limits
+    depends_on: [otimizar_caption]
+    elicit: false
+    steps:
+      - Verificar rate limits (< 100 posts nas ultimas 24h)
+      - Selecionar horario otimo de publicacao com base em dados historicos
+      - Fazer upload dos PNGs via ig-mcp (Instagram Graph API)
+      - Publicar carousel com caption e hashtags
+      - Capturar URL do post publicado
+      - Registrar metadata de publicacao (horario, hashtags, template)
+      - Realizar handoff para performance-tracker com URL e metadata
+    outputs:
+      - post_url
+      - horario_publicacao
+      - metadata_publicacao
+      - handoff_tracker
+    checkpoint: Post publicado com URL capturada e handoff realizado
+    veto_condition: Rate limit atingido ou falha na API — nao forcar publicacao, agendar para proximo horario disponivel
+
+quality_gates:
+  - id: QG_PB_001
+    name: Content Approved
+    phase: receber_conteudo
+    check: "Flag approved=true presente no conteudo"
+    action_on_fail: HALT
+  - id: QG_PB_002
+    name: Slide Dimensions
+    phase: renderizar_imagens
+    check: "Todos os PNGs em 1080x1350px sem cortes ou overflow"
+    action_on_fail: "Re-renderizar slides"
+  - id: QG_PB_003
+    name: Caption Limits
+    phase: otimizar_caption
+    check: "Caption < 2200 chars com 30 hashtags sem duplicatas"
+    threshold: 2200
+    action_on_fail: "Ajustar caption"
+  - id: QG_PB_004
+    name: Rate Limit
+    phase: publicar
+    check: "< 100 posts nas ultimas 24h"
+    threshold: 100
+    action_on_fail: "Agendar para proximo horario disponivel"
+
+metricas:
+  duracao_estimada: "5-10 min por carrossel"
+  dimensoes_slide: "1080x1350"
+  max_hashtags: 30
+  distribuicao_hashtags: "10 broad + 10 niche + 10 rotating"
+  max_caption_chars: 2200
+  rate_limit_24h: 100

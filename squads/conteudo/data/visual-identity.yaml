@@ -1,0 +1,55 @@
+# Visual Identity — Identidade Visual da Marca
+# Gerado automaticamente pelo onboarding ou pela task criar-template-visual
+# Este arquivo é lido por todos os agents de geração visual
+
+brand:
+  name: "Castelo Forte"
+  handle: "@castelofortemandaqui"
+  instagram: "castelofortemandaqui"
+
+colors:
+  primary: "#2B7DE1"        # Azul marca — títulos, destaques, accent
+  secondary: "#003A70"      # Azul escuro — degradês, fundos alternativos
+  accent: "#DDE4EC"         # Cinza azulado claro — subtextos, handles
+  background_dark: "#000000" # Fundo escuro padrão
+  background_light: "#f5f5f5" # Fundo claro padrão
+  text_dark: "#000000"      # Texto em fundo claro
+  text_light: "#FFFFFF"     # Texto em fundo escuro
+
+fonts:
+  title: "Inter"
+  body: "Inter"
+  display: "Fixture Condensed"  # Usada no Modelo 02
+  alternate: "Roboto"           # Usada no Modelo 05
+
+assets:
+  avatar: "showcase-assets/avatar.jpg"
+  logo: null  # Caminho do logo se existir
+  face_reference:
+    primary: "assets/face-reference/castelo-forte-01.jpg"
+    all:
+      - "assets/face-reference/castelo-forte-01.jpg"
+      - "assets/face-reference/castelo-forte-02.jpg"
+      - "assets/face-reference/castelo-forte-03.jpg"
+      - "assets/face-reference/castelo-forte-04.jpg"
+      - "assets/face-reference/castelo-forte-05.jpg"
+      - "assets/face-reference/castelo-forte-06.jpg"
+      - "assets/face-reference/castelo-forte-07.jpg"
+      - "assets/face-reference/castelo-forte-08.JPG"
+      - "assets/face-reference/castelo-forte-09.jpg"
+    source: "/Users/castelofortemandaqui/Library/CloudStorage/Dropbox/AUTORIDADE/TREINAR IA/"
+
+output:
+  directory: "../../outputs/conteudo"  # Onde os carrosséis renderizados são salvos
+  format: "png"
+  dimensions: "1080x1350"
+
+templates:
+  preferred: "twitter-dark"     # Template padrão quando não especificado
+  fallback: "twitter-dark"      # Fallback se o preferido não existir
+
+# Status do onboarding
+onboarding:
+  completed: true
+  completed_at: "2026-04-21"
+  completed_by: "castelofortemandaqui"

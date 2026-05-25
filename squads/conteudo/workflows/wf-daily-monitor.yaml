@@ -1,0 +1,118 @@
+name: wf-daily-monitor
+description: Workflow automatizado de monitoramento diario — scraping de concorrentes, deteccao de trends e mapeamento de oportunidades
+version: "2.0"
+
+phases:
+  - id: scrape_concorrentes
+    name: Scrape Competitors
+    agent: daily-monitor
+    description: Coletar dados dos principais concorrentes via Apify Instagram scraper
+    elicit: false
+    steps:
+      - Executar Apify Instagram scraper nos top 5-10 concorrentes configurados
+      - Coletar posts das ultimas 24h de cada concorrente
+      - Extrair engagement (likes, comments, saves, shares) por post
+      - Extrair captions completas e hashtags utilizadas
+      - Armazenar dados brutos em formato estruturado
+    outputs:
+      - posts_coletados
+      - engagement_por_post
+      - captions_extraidas
+      - hashtags_extraidas
+    checkpoint: Dados coletados com sucesso de todos os concorrentes configurados
+    veto_condition: Falha no scraping de mais de 50% dos concorrentes — nao avancar com dados incompletos
+
+  - id: detectar_trends
+    name: Detect Trends
+    agent: daily-monitor
+    description: Analisar dados coletados contra baseline de 7 dias para identificar trends emergentes
+    depends_on: [scrape_concorrentes]
+    elicit: false
+    steps:
+      - Calcular baseline de engagement dos ultimos 7 dias por concorrente
+      - Comparar posts das ultimas 24h contra baseline
+      - Identificar topicos com engagement acima de 30% do baseline
+      - Classificar cada topico como trend / noise / oportunidade sazonal
+      - Filtrar falsos positivos (posts virais unicos vs tendencia real)
+    outputs:
+      - trends_detectados
+      - classificacao_por_topico
+      - baseline_atualizado
+    checkpoint: Trends classificados com confianca minima de 70%
+    veto_condition: Baseline insuficiente (menos de 7 dias de dados) — usar classificacao conservadora
+
+  - id: mapear_oportunidades
+    name: Map Opportunities
+    agent: daily-monitor
+    description: Cruzar trends detectados com historico interno para identificar gaps e oportunidades
+    depends_on: [detectar_trends]
+    elicit: false
+    steps:
+      - Carregar historico de posts publicados (ultimos 30 dias)
+      - Cruzar trends detectados com temas ja cobertos
+      - Identificar gaps (trends sem post nosso correspondente)
+      - Identificar oportunidades de reforco (trends com post nosso performando bem)
+      - Rankear oportunidades por urgencia (trend velocity + gap size)
+    outputs:
+      - gaps_identificados
+      - oportunidades_reforco
+      - ranking_urgencia
+    checkpoint: Oportunidades rankeadas por urgencia com justificativa
+    veto_condition: Nenhum trend relevante detectado — gerar relatorio minimo sem oportunidades forjadas
+
+  - id: gerar_relatorio
+    name: Generate Report
+    agent: daily-monitor
+    description: Gerar relatorio diario consolidado com oportunidades e handoff para content-suggester
+    depends_on: [mapear_oportunidades]
+    elicit: false
+    steps:
+      - Consolidar top 5 oportunidades com contexto e justificativa
+      - Incluir trends detectados com classificacao e confianca
+      - Incluir metricas resumidas dos concorrentes (top posts, engagement medio)
+      - Gerar arquivo monitoring-report-YYYY-MM-DD.md
+      - Realizar handoff para content-suggester com dados estruturados
+    outputs:
+      - monitoring_report
+      - top_5_oportunidades
+      - trends_resumo
+      - metricas_concorrentes
+    checkpoint: Relatorio gerado e salvo com sucesso
+    veto_condition: Dados inconsistentes entre fases — revisar pipeline antes de gerar relatorio
+
+quality_gates:
+  - id: QG_DM_001
+    name: Data Completeness
+    phase: scrape_concorrentes
+    check: "Dados coletados de >= 50% dos concorrentes configurados"
+    threshold: 50
+    action_on_fail: HALT
+
+  - id: QG_DM_002
+    name: Trend Confidence
+    phase: detectar_trends
+    check: "Trends classificados com confianca >= 70%"
+    threshold: 70
+    action_on_fail: "Usar classificacao conservadora, marcar trends como LOW_CONFIDENCE"
+
+  - id: QG_DM_003
+    name: Opportunity Integrity
+    phase: mapear_oportunidades
+    check: "Oportunidades tem justificativa baseada em dados reais (trend + gap)"
+    threshold: 100
+    action_on_fail: "Remover oportunidades sem fundamentacao"
+
+  - id: QG_DM_004
+    name: Report Consistency
+    phase: gerar_relatorio
+    check: "Dados do relatorio sao rastreaveis as fases anteriores (zero dados inventados)"
+    threshold: 100
+    action_on_fail: HALT
+
+metricas:
+  duracao_estimada: "15-30 min"
+  frequencia: diaria
+  concorrentes_monitorados: 5-10
+  threshold_trend: 30
+  baseline_dias: 7
+  top_oportunidades: 5

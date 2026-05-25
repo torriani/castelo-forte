@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Split Accent — Carousel Template</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --bg-color: {{bg_color}};
+    --text-color: {{text_color}};
+    --accent-color: {{accent_color}};
+    --font-family: {{font_family}};
+  }
+
+  :root {
+    --bg-color: #111827;
+    --text-color: #FFFFFF;
+    --accent-color: #10B981;
+    --font-family: 'Inter', sans-serif;
+    --split-ratio: 60%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    position: relative;
+  }
+
+  /* --- Split background: 60% dark, 40% accent --- */
+  .bg-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--split-ratio);
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: 0;
+  }
+
+  .bg-accent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - var(--split-ratio));
+    height: 100%;
+    background-color: var(--accent-color);
+    z-index: 0;
+  }
+
+  /* --- Diagonal cut overlay for visual interest --- */
+  .diagonal-cut {
+    position: absolute;
+    top: 0;
+    left: calc(var(--split-ratio) - 60px);
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      var(--bg-color) 0%,
+      var(--bg-color) 40%,
+      var(--accent-color) 60%,
+      var(--accent-color) 100%
+    );
+    z-index: 1;
+    transform: skewX(-3deg);
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* --- Left content zone (60%) --- */
+  .content-zone {
+    width: var(--split-ratio);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 70px 80px 70px;
+  }
+
+  /* --- Right accent zone (40%) --- */
+  .accent-zone {
+    width: calc(100% - var(--split-ratio));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 80px 40px;
+  }
+
+  /* --- HOOK slide --- */
+  .slide[data-type="hook"] .slide-text {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+  }
+
+  .slide[data-type="hook"] .accent-label {
+    font-size: 120px;
+    font-weight: 900;
+    color: var(--bg-color);
+    opacity: 0.15;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+
+  /* --- CONTENT slide --- */
+  .slide[data-type="content"] .slide-text {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .slide[data-type="content"] .accent-number {
+    font-size: 200px;
+    font-weight: 900;
+    color: var(--bg-color);
+    opacity: 0.2;
+    line-height: 1;
+  }
+
+  /* --- CTA slide: full width override --- */
+  .slide[data-type="cta"] {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+  }
+
+  .slide[data-type="cta"] .content-zone {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slide[data-type="cta"] .slide-text {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 800;
+    padding: 24px 64px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* --- Subtle top label --- */
+  .top-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+  }
+
+  /* --- Pagination: bottom-left on dark side --- */
+  .pagination {
+    position: absolute;
+    bottom: 48px;
+    left: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.4;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
+
+  /* --- Brand: bottom-right on accent side --- */
+  .brand {
+    position: absolute;
+    bottom: 48px;
+    right: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg-color);
+    opacity: 0.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-dark"></div>
+  <div class="bg-accent"></div>
+  <div class="diagonal-cut"></div>
+
+  <div class="slide" data-type="{{slide_type}}">
+
+    <div class="content-zone">
+      <div class="top-label">{{brand_name}}</div>
+      <div class="slide-text">{{slide_text}}</div>
+    </div>
+
+    <div class="accent-zone">
+      <!-- For hook: vertical label -->
+      <!-- <div class="accent-label">TEMA</div> -->
+
+      <!-- For content: large number -->
+      <!-- <div class="accent-number">{{slide_number}}</div> -->
+    </div>
+
+  </div>
+
+  <div class="pagination">{{slide_number}} / {{total_slides}}</div>
+  <div class="brand">{{brand_name}}</div>
+
+</body>
+</html>

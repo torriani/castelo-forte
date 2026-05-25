@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conteúdo · Castelo Forte</title>
+<link rel="icon" href="/img/logo-castelo-forte.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+  .hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .hub-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 40px 32px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    display: block;
+    color: var(--midnight);
+  }
+  .hub-card:hover {
+    border-color: var(--glory);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(21, 50, 71, .08);
+  }
+  .hub-card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--glory);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .hub-card h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .hub-card h3 em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--glory);
+    text-transform: none;
+  }
+  .hub-card .desc {
+    color: var(--muted);
+    margin: 16px 0 20px;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  .hub-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--midnight);
+    letter-spacing: 1px;
+  }
+  .hub-card:hover .arrow { color: var(--glory); }
+</style>
+</head>
+<body>
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/" class="active">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+<h2 class="page-title">Hub de <em>Conteúdo</em></h2>
+<p class="page-subtitle">Tudo que a Igreja produz, em um só lugar.</p>
+
+<div class="hub-grid">
+
+  <a href="/conteudo/cultos/" class="hub-card">
+    <div class="kicker">Pregações Multiplicadas</div>
+    <h3>Cu<em>ltos</em></h3>
+    <div class="desc">Cada pregação vira dezenas de peças prontas pra Instagram. Carrosséis e frases organizados por data e pastor.</div>
+    <div class="arrow">→ Ver cultos</div>
+  </a>
+
+  <a href="/conteudo/maio/" class="hub-card">
+    <div class="kicker">Antecipação Série Em Cristo</div>
+    <h3>Cam<em>panhas</em></h3>
+    <div class="desc">Campanha Em Cristo · 21 dias · 63 peças. Antecipação para a série de 4 cultos sobre Efésios.</div>
+    <div class="arrow">→ Ver campanha</div>
+  </a>
+
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar
+</footer>
+</body>
+</html>

@@ -1,0 +1,789 @@
+# CAMPANHA EM CRISTO — Antecipação 21 dias
+# 21 carrosséis (T-CF-EDITORIAL) + 21 frases únicas (T-CF-FRASE) = 42 peças
+# Período: Segunda 18/05/2026 → Domingo 07/06/2026
+# Objetivo: Lotar série Em Cristo (Efésios) — 1º culto 07/06 às 09h
+
+cliente: igreja-castelo-forte
+campanha: em-cristo-antecipacao
+template_carrossel: T-CF-EDITORIAL
+template_frase: T-CF-FRASE
+cta_final:
+  intro: "Tudo que Deus tem pra te dar começa em uma única palavra."
+  marca: "EM CRISTO"
+  data: "07.06 · 09H"
+  igreja: "Domingo · Igreja Castelo Forte"
+
+pecas:
+
+  - dia: 1
+    data: "2026-05-18"
+    horario: "08:00"
+    peca: "01-carrossel"
+    template: T-CF-EDITORIAL
+    titulo: "Deus não depende de você"
+    capa:
+      headline: "Deus não fala. Ele AGE."
+      titulo_posicao: centro
+      image_prompt: "biblical era, ancient stone altar with burning fire at night, dramatic warm light, mystery, no people"
+    triade:
+      - personagem: "Judas"
+        headline_resto: "se perdeu. Matias foi escolhido."
+        sub: "Atos 1 - O lugar do traidor foi preenchido. O plano seguiu."
+        image_prompt: "ancient scroll on stone table, lots dice for casting, dim oil lamp"
+      - personagem: "Saul"
+        headline_resto: "se perdeu. Davi foi escolhido."
+        sub: "1 Samuel 16 - O esquecido virou rei. O coronel virou pó."
+        image_prompt: "abandoned royal crown on rocky ground, sunset light"
+      - personagem: "Moisés"
+        headline_resto: "vacilou. Josué assumiu."
+        sub: "Deuteronômio 34 - O povo precisava entrar. Deus tinha outro líder pronto."
+        image_prompt: "ancient sandals at the foot of a mountain, distant promised land at sunrise"
+    sintese:
+      headline: "O plano não depende de ninguém. Depende da OBEDIÊNCIA."
+      body: "Nenhum de nós é insubstituível. Se não formos obedientes, Ele levanta outros pra pregar, reinar e liderar."
+    verso:
+      referencia: "JOÃO 15.14"
+      versiculo: "Vocês são meus amigos se fizerem o que eu mando."
+    frase_unica:
+      peca: "01-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Deus não depende de você. Mas te chama assim mesmo."
+      accent_word: "depende"
+      referencia: "JOÃO 15.14"
+      tem_imagem: false
+
+  - dia: 2
+    data: "2026-05-19"
+    horario: "08:00"
+    peca: "02-carrossel"
+    template: T-CF-EDITORIAL
+    titulo: "Você foi escolhido antes"
+    capa:
+      headline: "Você acha que precisa ser ESCOLHIDO. Você já foi."
+      titulo_posicao: topo
+      image_prompt: "ancient parchment scroll partially unrolled on wooden table, dramatic light beam from above, dark room"
+      image_existente: assets-visuais/capa-biblica.png
+    triade:
+      - personagem: "Jeremias"
+        headline_resto: "foi escolhido no ventre da mãe."
+        sub: "Antes de nascer, já era profeta. Antes de falar, já tinha propósito."
+        image_existente: assets-visuais/triade-jeremias.png
+      - personagem: "Davi"
+        headline_resto: "foi escolhido no pasto, esquecido pelo pai."
+        sub: "Samuel chamou 7 irmãos antes dele. Deus escolheu o menor de todos."
+        image_existente: assets-visuais/triade-davi.png
+      - personagem: "Maria"
+        headline_resto: "foi escolhida numa vila que ninguém conhecia."
+        sub: "Nazaré não aparecia em mapa. Mas o céu olhava pra lá."
+        image_existente: assets-visuais/triade-maria.png
+    sintese:
+      headline: "Deus escolhe ANTES de você existir."
+      body: "Antes de você acertar. Antes de você se provar. Antes do mundo existir."
+    verso:
+      referencia: "EFÉSIOS 1.4"
+      versiculo: "Nos escolheu nele antes da criação do mundo."
+    frase_unica:
+      peca: "02-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: off-white
+      frase: "Deus escolhe antes de você existir."
+      accent_word: "existir"
+      referencia: "EFÉSIOS 1.4"
+      tem_imagem: false
+
+  - dia: 3
+    data: "2026-05-20"
+    horario: "08:00"
+    peca: "03-carrossel"
+    template: T-CF-EDITORIAL
+    titulo: "Graça é o oposto de mérito"
+    capa:
+      headline: "Você não foi salvo porque MERECEU. Foi salvo porque Ele QUIS."
+      titulo_posicao: embaixo
+      image_prompt: "ancient stone cross on hilltop at golden hour, dramatic backlight"
+    triade:
+      - personagem: "Ladrão na cruz"
+        headline_resto: "não fez nada. Entrou no paraíso."
+        sub: "Lucas 23 - Última hora. Último fôlego. Primeira eternidade."
+      - personagem: "Mefibosete"
+        headline_resto: "era aleijado, inimigo. Sentou na mesa do rei."
+        sub: "2 Samuel 9 - Davi procurou o neto do inimigo pra abençoar."
+      - personagem: "Paulo"
+        headline_resto: "perseguia cristãos. Acordou apóstolo."
+        sub: "Atos 9 - O algoz virou voz. A perseguição virou pregação."
+    sintese:
+      headline: "Graça é ABSURDA. Sempre foi."
+      body: "Por isso ela liberta. Você ainda tenta pagar pelo que já foi pago. Para. Recebe."
+    verso:
+      referencia: "EFÉSIOS 2.8"
+      versiculo: "Pela graça sois salvos, por meio da fé. E isto não vem de vós, é dom de Deus."
+    frase_unica:
+      peca: "03-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Graça não se paga. Graça se RECEBE."
+      accent_word: "RECEBE"
+      referencia: "EFÉSIOS 2.8"
+      tem_imagem: false
+
+  - dia: 4
+    data: "2026-05-21"
+    horario: "08:00"
+    peca: "04-carrossel"
+    template: T-CF-EDITORIAL
+    titulo: "Ressuscitou quem estava morto"
+    capa:
+      headline: "Deus não conserta. Ele RESSUSCITA."
+      titulo_posicao: centro
+      image_prompt: "ancient empty tomb with stone rolled away, morning light entering, biblical scene"
+    triade:
+      - personagem: "Lázaro"
+        headline_resto: "estava 4 dias na tumba. Saiu andando."
+        sub: "João 11 - O corpo já cheirava. O Cristo chamou. Ele veio."
+      - personagem: "Filha de Jairo"
+        headline_resto: "estava fria. Levantou pra almoçar."
+        sub: "Marcos 5 - Jesus pediu comida. A morte virou rotina."
+      - personagem: "Filho da viúva"
+        headline_resto: "estava sendo enterrado. Sentou no caixão."
+        sub: "Lucas 7 - O cortejo parou. A vida começou."
+    sintese:
+      headline: "Sua vida precisa de RESSURREIÇÃO, não de ajuste."
+      body: "Não tem reforma pro velho homem. Tem morte. E vida nova."
+    verso:
+      referencia: "EFÉSIOS 2.5"
+      versiculo: "Estando nós mortos em nossos delitos, nos deu vida juntamente com Cristo."
+    frase_unica:
+      peca: "04-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Deus não conserta. Ele RESSUSCITA."
+      accent_word: "RESSUSCITA"
+      referencia: "EFÉSIOS 2.5"
+      tem_imagem: true
+      image_prompt: "morning light through empty tomb opening"
+
+  - dia: 5
+    data: "2026-05-22"
+    horario: "08:00"
+    peca: "05-carrossel"
+    template: T-CF-EDITORIAL
+    titulo: "O muro caiu"
+    capa:
+      headline: "Tudo que separa você de Deus, Ele JÁ derrubou."
+      titulo_posicao: embaixo
+      image_prompt: "ancient stone wall partially crumbled, light coming through the gap, biblical era"
+    triade:
+      - personagem: "Em Jericó"
+        headline_resto: "o muro caiu antes da batalha."
+        sub: "Josué 6 - Não foi aríete. Foi obediência. E louvor."
+      - personagem: "No templo"
+        headline_resto: "o véu rasgou de cima a baixo."
+        sub: "Mateus 27 - Sem mão humana. Sem permissão religiosa."
+      - personagem: "No sepulcro"
+        headline_resto: "a pedra rolou sem mão humana."
+        sub: "Mateus 28 - O acesso ao impossível foi aberto."
+    sintese:
+      headline: "Deus não pede licença pra derrubar o que SEPARA."
+      body: "Aquele muro que você acha que não cai? Cristo já passou por ele."
+    verso:
+      referencia: "EFÉSIOS 2.14"
+      versiculo: "Ele é a nossa paz, que derrubou a parede da separação."
+    frase_unica:
+      peca: "05-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: off-white
+      frase: "O MURO já caiu. Você ainda está olhando pra ele."
+      accent_word: "MURO"
+      referencia: "EFÉSIOS 2.14"
+      tem_imagem: false
+
+  - dia: 6
+    data: "2026-05-23"
+    horario: "08:00"
+    peca: "06-carrossel"
+    titulo: "Você é obra dele"
+    capa:
+      headline: "Você não é ACIDENTE. Você é PROJETO."
+      titulo_posicao: topo
+      image_prompt: "potter's hands shaping clay on ancient wheel, warm light, biblical era"
+    triade:
+      - personagem: "Adão"
+        headline_resto: "foi modelado do barro."
+        sub: "Gênesis 2 - Mãos de Deus em terra comum."
+      - personagem: "Tabernáculo"
+        headline_resto: "foi desenhado em detalhe no deserto."
+        sub: "Êxodo 25 - Cada cortina, cada pino, planejado."
+      - personagem: "Templo de Salomão"
+        headline_resto: "teve cada pedra cortada antes de chegar."
+        sub: "1 Reis 6 - Silêncio na obra. Nenhum martelo. Só projeto."
+    sintese:
+      headline: "Deus não IMPROVISA. Ele PROJETA."
+      body: "Você foi feito EM Cristo PRA boas obras que Ele preparou antes."
+    verso:
+      referencia: "EFÉSIOS 2.10"
+      versiculo: "Somos feitura sua, criados em Cristo Jesus para as boas obras que Deus preparou."
+    frase_unica:
+      peca: "06-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: fort-blue
+      frase: "Você é PROJETO. Não acidente."
+      accent_word: "PROJETO"
+      referencia: "EFÉSIOS 2.10"
+      tem_imagem: false
+
+  - dia: 7
+    data: "2026-05-24"
+    horario: "08:00"
+    peca: "07-carrossel"
+    titulo: "Estrangeiro virou família"
+    capa:
+      headline: "Você não é mais VISITA. Você é CASA."
+      titulo_posicao: centro
+      image_prompt: "ancient house door opening to warm light from inside, sunset, biblical era"
+    triade:
+      - personagem: "Rute"
+        headline_resto: "era moabita. Virou bisavó do rei Davi."
+        sub: "Rute 4 - A estrangeira entrou na linhagem do Messias."
+      - personagem: "Raabe"
+        headline_resto: "era cananeia. Está na linhagem de Jesus."
+        sub: "Mateus 1 - A prostituta de Jericó virou ancestral do Cristo."
+      - personagem: "Eunuco etíope"
+        headline_resto: "era estrangeiro. Foi batizado no caminho."
+        sub: "Atos 8 - O excluído por sangue, incluído pelo Espírito."
+    sintese:
+      headline: "Deus não tem HÓSPEDES. Quem entra, entra como FILHO."
+      body: "Você ainda anda na ponta do pé na casa do Pai. Senta. Come. Você é da casa."
+    verso:
+      referencia: "EFÉSIOS 2.19"
+      versiculo: "Já não sois estrangeiros, mas concidadãos dos santos e da família de Deus."
+    frase_unica:
+      peca: "07-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Você não é mais VISITA. Você é CASA."
+      accent_word: "CASA"
+      referencia: "EFÉSIOS 2.19"
+      tem_imagem: false
+
+  - dia: 8
+    data: "2026-05-25"
+    horario: "08:00"
+    peca: "08-carrossel"
+    titulo: "Plano oculto desde sempre"
+    capa:
+      headline: "O que parece coincidência é ESTRATÉGIA."
+      titulo_posicao: embaixo
+      image_prompt: "ancient star map on parchment with constellations, candlelight, mystery"
+    triade:
+      - personagem: "José"
+        headline_resto: "foi vendido. Salvou o Egito inteiro da fome."
+        sub: "Gênesis 50 - Vocês intentaram pro mal. Deus, pro bem."
+      - personagem: "Ester"
+        headline_resto: "era órfã estrangeira. Salvou o povo judeu."
+        sub: "Ester 4 - Pra um momento como este você foi colocada."
+      - personagem: "Maria"
+        headline_resto: "era noiva escandalizada. Carregou a salvação do mundo."
+        sub: "Lucas 1 - O ventre virou ponte entre os tempos."
+    sintese:
+      headline: "Deus escreve em CAPÍTULOS. Você só lê o parágrafo de hoje."
+      body: "O capítulo que parece o pior pode ser onde Ele te coloca pra esse momento exato."
+    verso:
+      referencia: "EFÉSIOS 1.9-10"
+      versiculo: "Segundo o seu beneplácito, para a dispensação da plenitude dos tempos."
+    frase_unica:
+      peca: "08-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Não é COINCIDÊNCIA. É estratégia."
+      accent_word: "COINCIDÊNCIA"
+      referencia: "EFÉSIOS 1.9"
+      tem_imagem: false
+
+  - dia: 9
+    data: "2026-05-26"
+    horario: "08:00"
+    peca: "09-carrossel"
+    titulo: "Conhecer o amor que excede"
+    capa:
+      headline: "Tem um AMOR que não cabe na cabeça."
+      titulo_posicao: centro
+      image_prompt: "ancient open hands releasing dove at sunset, biblical era, warm tones"
+    triade:
+      - personagem: "Oseias"
+        headline_resto: "casou com Gômer sabendo que ela traía. Pagou pra resgatar."
+        sub: "Oseias 3 - Não foi metáfora. Foi profecia encarnada."
+      - personagem: "O pai do pródigo"
+        headline_resto: "correu na estrada antes do filho pedir desculpa."
+        sub: "Lucas 15 - O Pai não esperou o discurso. Correu primeiro."
+      - personagem: "Cristo"
+        headline_resto: "morreu por nós quando ainda éramos INIMIGOS."
+        sub: "Romanos 5 - Não foi recompensa. Foi escândalo."
+    sintese:
+      headline: "Amor que cabe na razão NÃO é o amor de Deus."
+      body: "Você ainda acha que precisa se ajeitar pra Ele te amar. Ele já amou antes de você se ajeitar."
+    verso:
+      referencia: "EFÉSIOS 3.19"
+      versiculo: "Conhecer o amor de Cristo que excede todo o entendimento."
+    frase_unica:
+      peca: "09-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Amor que cabe na razão NÃO é o amor de Deus."
+      accent_word: "razão"
+      referencia: "EFÉSIOS 3.19"
+      tem_imagem: false
+
+  - dia: 10
+    data: "2026-05-27"
+    horario: "08:00"
+    peca: "10-carrossel"
+    titulo: "Unidade não é uniformidade"
+    capa:
+      headline: "Igreja não é UNIFORME. Igreja é UNIDA."
+      titulo_posicao: topo
+      image_prompt: "ancient stones of different sizes fitted together perfectly in wall, warm light"
+    triade:
+      - personagem: "12 tribos"
+        headline_resto: "diferentes. Uma nação."
+        sub: "Gênesis 49 - Cada uma com sua bênção. Todas em Israel."
+      - personagem: "12 apóstolos"
+        headline_resto: "diferentes. Uma missão."
+        sub: "Marcos 3 - Pescador, cobrador, zelote. Um só corpo."
+      - personagem: "Antioquia"
+        headline_resto: "tinha judeu, grego, africano, romano. Uma igreja."
+        sub: "Atos 13 - Foi lá que começaram a ser chamados cristãos."
+    sintese:
+      headline: "Deus não fez CLONES. Fez um CORPO."
+      body: "Com membros distintos. Servindo a uma só cabeça."
+    verso:
+      referencia: "EFÉSIOS 4.4-5"
+      versiculo: "Um só corpo, um só Espírito, um só Senhor, uma só fé, um só batismo."
+    frase_unica:
+      peca: "10-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: off-white
+      frase: "Unidade não é UNIFORMIDADE."
+      accent_word: "UNIFORMIDADE"
+      referencia: "EFÉSIOS 4.4"
+      tem_imagem: false
+
+  - dia: 11
+    data: "2026-05-28"
+    horario: "08:00"
+    peca: "11-carrossel"
+    titulo: "Dons diferentes, corpo um"
+    capa:
+      headline: "Deus não distribui IGUAL. Distribui CERTO."
+      titulo_posicao: embaixo
+      image_prompt: "ancient hands holding different gifts: scroll, oil, harp, on stone table"
+    triade:
+      - personagem: "Bezalel"
+        headline_resto: "era artesão. Construiu o Tabernáculo."
+        sub: "Êxodo 31 - Cheio do Espírito pra trabalhar com madeira e ouro."
+      - personagem: "Davi"
+        headline_resto: "era músico. Acalmava reis e escrevia salmos."
+        sub: "1 Samuel 16 - A harpa expulsava o que oração não conseguia."
+      - personagem: "Lucas"
+        headline_resto: "era médico. Escreveu 2 livros do Novo Testamento."
+        sub: "Colossenses 4 - A precisão de um médico narrou o evangelho."
+    sintese:
+      headline: "O dom que você acha PEQUENO é o que falta no corpo."
+      body: "Você não foi feito pra ser o outro. Foi feito pra ser você no lugar certo."
+    verso:
+      referencia: "EFÉSIOS 4.7"
+      versiculo: "A cada um de nós foi dada a graça segundo a medida do dom de Cristo."
+    frase_unica:
+      peca: "11-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: fort-blue
+      frase: "O dom que você acha PEQUENO é o que falta no corpo."
+      accent_word: "PEQUENO"
+      referencia: "EFÉSIOS 4.7"
+      tem_imagem: false
+
+  - dia: 12
+    data: "2026-05-29"
+    horario: "08:00"
+    peca: "12-carrossel"
+    titulo: "Maturidade é parar de criança"
+    capa:
+      headline: "Tempo de igreja NÃO é idade espiritual."
+      titulo_posicao: centro
+      image_prompt: "ancient olive tree with deep roots in rocky ground, weathered and strong"
+    triade:
+      - personagem: "Israel"
+        headline_resto: "reclamou no deserto. 40 anos pra viagem de 11 dias."
+        sub: "Números 14 - Murmurar é viver na entrada da terra prometida."
+      - personagem: "Discípulos"
+        headline_resto: "no barco gritaram com Jesus dormindo."
+        sub: "Marcos 4 - Tinham 3 anos com Cristo. E ainda duvidaram da tempestade."
+      - personagem: "Coríntios"
+        headline_resto: "tinham 5 anos de fé e brigavam por líder favorito."
+        sub: "1 Coríntios 3 - Carnais. Bebês comendo leite quando deveriam comer carne."
+    sintese:
+      headline: "Crescer não é envelhecer. É parar de ser INSTÁVEL."
+      body: "Você ainda muda de doutrina toda vez que aparece vento novo? Cristo te chama pra firmeza."
+    verso:
+      referencia: "EFÉSIOS 4.14"
+      versiculo: "Para que não sejamos mais meninos inconstantes, levados em roda por todo vento de doutrina."
+    frase_unica:
+      peca: "12-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Crescer não é envelhecer. É parar de ser INSTÁVEL."
+      accent_word: "INSTÁVEL"
+      referencia: "EFÉSIOS 4.14"
+      tem_imagem: false
+
+  - dia: 13
+    data: "2026-05-30"
+    horario: "08:00"
+    peca: "13-carrossel"
+    titulo: "Falar a verdade em amor"
+    capa:
+      headline: "Verdade sem amor MACHUCA. Amor sem verdade MENTE."
+      titulo_posicao: topo
+      image_prompt: "ancient mirror of polished bronze on stone surface, reflecting candlelight"
+    triade:
+      - personagem: "Natã"
+        headline_resto: "foi ao rei Davi: 'Tu és o homem.' Davi se quebrou."
+        sub: "2 Samuel 12 - A coragem do profeta restaurou o coração do rei."
+      - personagem: "Paulo"
+        headline_resto: "confrontou Pedro publicamente. Pedro recebeu."
+        sub: "Gálatas 2 - Verdade pública restaurou apóstolo abalado."
+      - personagem: "Jesus"
+        headline_resto: "restaurou Pedro 3 vezes: 'Tu me amas?'"
+        sub: "João 21 - A mesma quantidade da negação. A graça responde."
+    sintese:
+      headline: "Quem te AMA, te diz a verdade. Quem te BAJULA, te mata devagar."
+      body: "Quem você tem ao redor pra te falar o que você não quer ouvir? Igreja existe pra isso."
+    verso:
+      referencia: "EFÉSIOS 4.15"
+      versiculo: "Seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo."
+    frase_unica:
+      peca: "13-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Quem te AMA, te diz a verdade."
+      accent_word: "AMA"
+      referencia: "EFÉSIOS 4.15"
+      tem_imagem: false
+
+  - dia: 14
+    data: "2026-05-31"
+    horario: "08:00"
+    peca: "14-carrossel"
+    titulo: "Tirar o velho. Vestir o novo."
+    capa:
+      headline: "Deus troca seu NOME quando troca sua VIDA."
+      titulo_posicao: embaixo
+      image_prompt: "old worn tunic discarded on ground, new white linen folded nearby, biblical era"
+    triade:
+      - personagem: "Jacó (enganador)"
+        headline_resto: "virou Israel (príncipe de Deus)."
+        sub: "Gênesis 32 - A luta deixou marca. E novo nome."
+      - personagem: "Simão (caniço)"
+        headline_resto: "virou Pedro (pedra)."
+        sub: "Mateus 16 - O instável virou fundamento."
+      - personagem: "Saulo (perseguidor)"
+        headline_resto: "virou Paulo (pequeno)."
+        sub: "Atos 13 - O orgulhoso virou servo. O ego virou apóstolo."
+    sintese:
+      headline: "Novo NOME. Nova NATUREZA."
+      body: "Não dá pra ser o velho vestido de novo. Você ainda chama você pelo nome antigo?"
+    verso:
+      referencia: "EFÉSIOS 4.22, 24"
+      versiculo: "Despojai-vos do velho homem. Revesti-vos do novo."
+    frase_unica:
+      peca: "14-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Novo NOME. Nova NATUREZA."
+      accent_word: "NATUREZA"
+      referencia: "EFÉSIOS 4.22-24"
+      tem_imagem: false
+
+  - dia: 15
+    data: "2026-06-01"
+    horario: "08:00"
+    peca: "15-carrossel"
+    titulo: "Imitar Deus como filho amado"
+    capa:
+      headline: "Filho IMITA pai. Sem esforço. Sem aviso."
+      titulo_posicao: centro
+      image_prompt: "ancient child's footprints next to large adult footprints in desert sand, biblical era"
+    triade:
+      - personagem: "Isaque"
+        headline_resto: "cavou os mesmos poços que Abraão cavou."
+        sub: "Gênesis 26 - O filho repete os atos sem precisar lembrar."
+      - personagem: "Salomão"
+        headline_resto: "pediu sabedoria como o pai Davi pediu coragem."
+        sub: "1 Reis 3 - Reza herdada. Caráter passa em oração."
+      - personagem: "Jesus"
+        headline_resto: "disse: 'Eu só faço o que vejo o Pai fazer.'"
+        sub: "João 5 - O Filho perfeito imitando o Pai eterno."
+    sintese:
+      headline: "Se você é FILHO, você imita. Se você IMITA, você é filho."
+      body: "Olhe pra sua vida. Você imita mais o algoritmo ou mais o Pai?"
+    verso:
+      referencia: "EFÉSIOS 5.1"
+      versiculo: "Sede, pois, imitadores de Deus, como filhos amados."
+    frase_unica:
+      peca: "15-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: off-white
+      frase: "Filho IMITA pai."
+      accent_word: "IMITA"
+      referencia: "EFÉSIOS 5.1"
+      tem_imagem: false
+
+  - dia: 16
+    data: "2026-06-02"
+    horario: "08:00"
+    peca: "16-carrossel"
+    titulo: "Andar como filho da luz"
+    capa:
+      headline: "Deus não te chamou pra FUGIR do escuro. Te chamou pra ser LUZ."
+      titulo_posicao: topo
+      image_prompt: "ancient oil lamp burning bright in dark room, biblical era, warm light"
+    triade:
+      - personagem: "Coluna de fogo"
+        headline_resto: "guiou Israel por 40 anos."
+        sub: "Êxodo 13 - A luz não falava. Só ia na frente."
+      - personagem: "Estrela em Belém"
+        headline_resto: "guiou magos do outro lado do mundo."
+        sub: "Mateus 2 - Luz cósmica pra encontrar o menor dos meninos."
+      - personagem: "Palavra"
+        headline_resto: "é lâmpada pros pés de quem anda."
+        sub: "Salmo 119 - A bússola que não falha quando o caminho some."
+    sintese:
+      headline: "Luz não DISCUTE com escuro. Luz simplesmente ESTÁ."
+      body: "Você se queixa do mundo escuro. Você é a luz que ele precisa ver."
+    verso:
+      referencia: "EFÉSIOS 5.8"
+      versiculo: "Noutro tempo éreis trevas, mas agora sois luz no Senhor. Andai como filhos da luz."
+    frase_unica:
+      peca: "16-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: fort-blue
+      frase: "Luz não DISCUTE com escuro. Luz simplesmente ESTÁ."
+      accent_word: "ESTÁ"
+      referencia: "EFÉSIOS 5.8"
+      tem_imagem: true
+      image_prompt: "single candle in pitch dark room"
+
+  - dia: 17
+    data: "2026-06-03"
+    horario: "08:00"
+    peca: "17-carrossel"
+    titulo: "Casamento espelha Cristo"
+    capa:
+      headline: "Casamento não é CONTRATO. É RETRATO."
+      titulo_posicao: embaixo
+      image_prompt: "two ancient wedding rings on weathered wooden table, biblical era, soft light"
+    triade:
+      - personagem: "Adão"
+        headline_resto: "olhou pra Eva: 'Esta é osso dos meus ossos.'"
+        sub: "Gênesis 2 - O primeiro amor humano. Imagem do amor divino."
+      - personagem: "Boaz"
+        headline_resto: "cobriu Rute com seu manto e a resgatou."
+        sub: "Rute 3 - O resgatador escolheu a estrangeira."
+      - personagem: "Cristo"
+        headline_resto: "cobriu a igreja com seu sangue e a comprou."
+        sub: "Apocalipse 19 - O Cordeiro casa com a noiva preparada."
+    sintese:
+      headline: "Todo casamento que dá certo conta a MESMA história."
+      body: "A história de Cristo se entregando pela igreja. Sua casa é evangelho ou contradição?"
+    verso:
+      referencia: "EFÉSIOS 5.25"
+      versiculo: "Maridos, amai vossas mulheres como Cristo amou a igreja e a si mesmo se entregou por ela."
+    frase_unica:
+      peca: "17-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Casamento não é CONTRATO. É RETRATO."
+      accent_word: "RETRATO"
+      referencia: "EFÉSIOS 5.25"
+      tem_imagem: false
+
+  - dia: 18
+    data: "2026-06-04"
+    horario: "08:00"
+    peca: "18-carrossel"
+    titulo: "Filho obedece. Pai não exaspera."
+    capa:
+      headline: "Família de Deus tem REGRA. Filho HONRA. Pai não DESTRÓI."
+      titulo_posicao: centro
+      image_prompt: "ancient father's hand on son's shoulder under olive tree, golden hour"
+    triade:
+      - personagem: "Isaque"
+        headline_resto: "deitou no altar sem brigar com Abraão."
+        sub: "Gênesis 22 - O filho carregou a lenha da própria morte."
+      - personagem: "Salomão"
+        headline_resto: "pediu sabedoria pra liderar o povo que Davi lhe deixou."
+        sub: "1 Reis 3 - Herança honrada com responsabilidade."
+      - personagem: "Jesus"
+        headline_resto: "no Getsêmani: 'Não a minha, mas a tua vontade.'"
+        sub: "Lucas 22 - O Filho perfeito obedeceu até a cruz."
+    sintese:
+      headline: "Obediência não é FRAQUEZA. É a forma mais alta de AMOR."
+      body: "Pai, você está criando filho ou inimigo? Filho, você está honrando ou só tolerando?"
+    verso:
+      referencia: "EFÉSIOS 6.1, 4"
+      versiculo: "Filhos, obedecei a vossos pais no Senhor. Pais, não provoqueis à ira a vossos filhos."
+    frase_unica:
+      peca: "18-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Obediência não é FRAQUEZA. É AMOR."
+      accent_word: "AMOR"
+      referencia: "EFÉSIOS 6.1"
+      tem_imagem: false
+
+  - dia: 19
+    data: "2026-06-05"
+    horario: "08:00"
+    peca: "19-carrossel"
+    titulo: "Batalha não é contra carne"
+    capa:
+      headline: "Quem você está ODIANDO não é seu inimigo. É a FACHADA dele."
+      titulo_posicao: topo
+      image_prompt: "ancient battlefield at dawn, broken shields and arrows on ground, dramatic"
+    triade:
+      - personagem: "Eliseu em Dotã"
+        headline_resto: "viu carros de fogo invisíveis ao olho do servo."
+        sub: "2 Reis 6 - Os que estão conosco são mais que os que estão contra."
+      - personagem: "Daniel"
+        headline_resto: "orou 21 dias enquanto um anjo lutava."
+        sub: "Daniel 10 - A resposta veio. A guerra invisível atrasou."
+      - personagem: "Jesus no deserto"
+        headline_resto: "não brigou com a fome. Brigou com quem usava a fome."
+        sub: "Mateus 4 - Foco no inimigo real. Não no sintoma."
+    sintese:
+      headline: "Você está cansado de lutar a guerra ERRADA."
+      body: "A verdadeira é espiritual. Aquela pessoa não é o problema. O que está atrás dela é."
+    verso:
+      referencia: "EFÉSIOS 6.12"
+      versiculo: "Não temos que lutar contra carne e sangue, mas contra as hostes espirituais da maldade."
+    frase_unica:
+      peca: "19-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: fort-blue
+      frase: "Sua batalha não é contra CARNE. É contra ESPÍRITO."
+      accent_word: "ESPÍRITO"
+      referencia: "EFÉSIOS 6.12"
+      tem_imagem: false
+
+  - dia: 20
+    data: "2026-06-06"
+    horario: "08:00"
+    peca: "20-carrossel"
+    titulo: "Vista a armadura. Toda."
+    capa:
+      headline: "A ARMADURA existe. Mas Deus não veste por você."
+      titulo_posicao: embaixo
+      image_prompt: "ancient roman armor hanging on stone wall: helmet, shield, sword, breastplate"
+    triade:
+      - personagem: "Davi"
+        headline_resto: "recusou a armadura de Saul. Foi com a de Deus."
+        sub: "1 Samuel 17 - Foi de funda e pedra. Mas era armadura divina."
+      - personagem: "Goliate"
+        headline_resto: "caiu porque desprezou a única arma que importa."
+        sub: "1 Samuel 17 - Toda armadura sem temor de Deus é nada."
+      - personagem: "Cristo"
+        headline_resto: "venceu a cruz com obediência até o fim."
+        sub: "Filipenses 2 - A armadura final foi a entrega total."
+    sintese:
+      headline: "Você não está PERDENDO a guerra. Está sem ARMADURA."
+      body: "Verdade. Justiça. Evangelho. Fé. Salvação. Palavra. Todas. Hoje. Antes de sair de casa."
+    verso:
+      referencia: "EFÉSIOS 6.13"
+      versiculo: "Tomai toda a armadura de Deus, para que possais resistir no dia mau, e havendo feito tudo, ficar firmes."
+    frase_unica:
+      peca: "20-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: midnight
+      frase: "Você não está PERDENDO. Está sem ARMADURA."
+      accent_word: "ARMADURA"
+      referencia: "EFÉSIOS 6.13"
+      tem_imagem: false
+
+  - dia: 21
+    data: "2026-06-07"
+    horario: "08:00"
+    peca: "21-carrossel"
+    titulo: "HOJE COMEÇA"
+    capa:
+      headline: "21 dias atrás eu te contei uma história. Hoje ela CONTINUA."
+      titulo_posicao: centro
+      image_prompt: "ancient temple gates opening at dawn, golden light pouring through"
+    triade:
+      - personagem: "EM CRISTO"
+        headline_resto: "você foi escolhido antes do mundo existir."
+        sub: "Efésios 1 - Sua identidade nasceu antes da criação."
+      - personagem: "EM CRISTO"
+        headline_resto: "o muro caiu e o estrangeiro virou filho."
+        sub: "Efésios 2 - Sua família agora é o povo de Deus."
+      - personagem: "EM CRISTO"
+        headline_resto: "o velho morreu e o novo nasceu pra batalhar."
+        sub: "Efésios 4-6 - Sua nova vida tem missão, casa e armadura."
+    sintese:
+      headline: "TUDO o que Deus tem pra te dar está EM CRISTO. Fora Dele, NADA."
+      body: "Hoje começa a série que vai expor isso ponto a ponto. Carta de Efésios. Sem atalho."
+    verso:
+      referencia: "EFÉSIOS 1.3"
+      versiculo: "Bendito o Deus que nos abençoou com TODAS as bênçãos espirituais EM CRISTO."
+    frase_unica:
+      peca: "21-frase"
+      horario: "19:00"
+      template: T-CF-FRASE
+      variante: orange
+      frase: "Tudo está EM CRISTO. Fora Dele, NADA."
+      accent_word: "EM CRISTO"
+      referencia: "EFÉSIOS 1.3"
+      tem_imagem: false
+
+resumo:
+  total_pecas: 42
+  carrosseis: 21
+  frases_unicas: 21
+  templates_usados:
+    - T-CF-EDITORIAL (carrosseis)
+    - T-CF-FRASE (frases unicas)
+  imagens_a_gerar:
+    capas_carrosseis: 19  # 2 ja existem (capa-biblica + carrossel #02)
+    triades: 60  # 20 carrosseis x 3 personagens (carrossel #02 ja tem 3)
+    frases_com_imagem: 2  # apenas peca 04 e 16
+    total_imagens_novas: 81
+  imagens_existentes:
+    - capa-biblica.png (pergaminho com luz)
+    - triade-jeremias.png (berco com luz divina)
+    - triade-davi.png (cajado no pasto)
+    - triade-maria.png (vila ao entardecer)
+
+cta_padrao_todos_carrosseis:
+  intro: "Tudo que Deus tem pra te dar comeca em uma unica palavra."
+  marca: "EM CRISTO"
+  data: "07.06 · 09H"
+  igreja: "Domingo · Igreja Castelo Forte"

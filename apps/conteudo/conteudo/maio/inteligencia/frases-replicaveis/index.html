@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frases Replicáveis · Castelo Forte · Em Cristo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+/* ===== Estilos específicos preservados da página original ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #efefef; color: #153247; padding: 0; min-height: 100vh; line-height: 1.55; }
+header.brand-header {
+  background: #153247; color: #efefef; padding: 30px 40px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 30px; flex-wrap: wrap; border-bottom: 4px solid #c89545;
+}
+header .logo-wrap { display: flex; align-items: center; gap: 16px; }
+header .logo { width: 56px; height: 56px; filter: invert(1) brightness(1.1); }
+header .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+header .brand-name { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.3px; text-transform: uppercase; line-height: 1.05; }
+header .brand-name small { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: .6; margin-top: 4px; }
+header h1 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 38px; letter-spacing: -1.2px; text-transform: uppercase; line-height: 1; }
+header .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: .65; margin-top: 10px; text-align: right; }
+header .title-block { text-align: right; flex: 1; min-width: 280px; }
+.breadcrumb { background: #252f38; color: #efefef; padding: 12px 40px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.breadcrumb a { color: #c89545; text-decoration: none; margin-right: 8px; }
+.breadcrumb a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px; }
+.intro { background: #fff; border-left: 4px solid #c89545; padding: 22px 26px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; }
+.section-tag { display: inline-block; padding: 5px 12px; background: #c89545; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.section-tag.dark { background: #153247; }
+.section-tag.deeper { background: #252f38; }
+.section-tag.fort { background: #075057; }
+h2.section-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -.5px; text-transform: uppercase; margin-bottom: 12px; color: #153247; }
+.section-desc { color: #5a6068; font-size: 14px; margin-bottom: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.card-link { display: block; background: #fff; border: 1px solid #d4d4d4; border-radius: 8px; padding: 20px; text-decoration: none; color: #153247; transition: all .15s; }
+.card-link:hover { border-color: #c89545; box-shadow: 0 4px 16px rgba(254,91,6,.08); transform: translateY(-2px); }
+.card-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 1.5px; color: #c89545; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; }
+.card-title { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -.2px; margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 12px; color: #5a6068; line-height: 1.5; }
+footer { background: #153247; color: #efefef; padding: 30px 40px; text-align: center; margin-top: 60px; }
+footer .logo-foot { width: 36px; height: 36px; filter: invert(1) brightness(1.1); margin: 0 auto 10px; }
+footer .logo-foot img { width: 100%; height: 100%; object-fit: contain; }
+footer .foot-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; }
+/* ============ RELATORIO CONTENT ============ */
+.report-content { background: #fff; border-radius: 8px; padding: 50px 60px; border: 1px solid #d4d4d4; box-shadow: 0 2px 12px rgba(21,50,71,.04); }
+.report-content h1 { font-family: 'Archivo', sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1.2px; text-transform: uppercase; color: #153247; margin-bottom: 24px; line-height: 1.05; padding-bottom: 20px; border-bottom: 3px solid #c89545; }
+.report-content h2 { font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.5px; text-transform: uppercase; color: #153247; margin: 36px 0 16px; padding-top: 16px; }
+.report-content h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -.3px; color: #252f38; margin: 30px 0 14px; }
+.report-content h4 { font-family: 'Archivo', sans-serif; font-size: 17px; font-weight: 700; color: #252f38; margin: 24px 0 10px; text-transform: uppercase; letter-spacing: .5px; }
+.report-content h5, .report-content h6 { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #252f38; margin: 20px 0 8px; }
+.report-content p { margin: 12px 0; font-size: 15px; line-height: 1.7; color: #2c3540; }
+.report-content strong { color: #153247; font-weight: 700; }
+.report-content em { color: #5a6068; }
+.report-content ul, .report-content ol { margin: 14px 0 14px 28px; }
+.report-content li { margin: 6px 0; font-size: 15px; line-height: 1.6; color: #2c3540; }
+.report-content code { background: #f5f0e8; padding: 2px 6px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #075057; }
+.report-content pre { background: #153247; color: #efefef; padding: 18px 22px; border-radius: 6px; overflow-x: auto; margin: 18px 0; }
+.report-content pre code { background: transparent; color: #efefef; padding: 0; }
+.report-content hr { border: none; border-top: 2px solid #ececec; margin: 32px 0; }
+.report-content a { color: #c89545; text-decoration: none; border-bottom: 1px solid transparent; }
+.report-content a:hover { border-color: #c89545; }
+.report-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.report-content th, .report-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #ececec; }
+.report-content th { background: #153247; color: #efefef; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.report-content tbody tr:hover { background: #fafafa; }
+.report-content blockquote { border-left: 4px solid #c89545; padding: 14px 20px; margin: 18px 0; background: #fff7f0; font-style: italic; color: #2c3540; }
+.back-link { display: inline-block; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c89545; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.capa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.capa-item { background: #fff; border: 1px solid #d4d4d4; border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; }
+.capa-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 720px) {
+  header.brand-header { padding: 24px; }
+  header h1 { font-size: 26px; }
+  .container { padding: 24px 16px; }
+  .report-content { padding: 28px 22px; }
+}
+
+/* ===== Ajustes mínimos pra integração com padrão novo ===== */
+.migrated-content { font-family: 'Inter', sans-serif; color: var(--midnight); }
+.migrated-content table { background: #fff; }
+.migrated-content img { max-width: 100%; height: auto; }
+.breadcrumb {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.breadcrumb a { color: var(--glory); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 8px; opacity: .4; }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/" class="active">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Em <em>Cristo</em></span>
+    <ul>
+      <li><a href="/conteudo/maio/">Dashboard</a></li>
+      <li><a href="/conteudo/maio/calendario/">Calendário</a></li>
+      <li><a href="/conteudo/maio/inteligencia/" class="active">Inteligência</a></li>
+      <li><a href="/conteudo/maio/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/maio/templates/">Templates</a></li>
+      <li><a href="/conteudo/maio/plano/">Plano</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+
+<h2 class="page-title">Frases <em>Replicáveis</em></h2>
+<div class="breadcrumb"><a href="/conteudo/maio/">Dashboard</a><span class="sep">›</span><a href="/conteudo/maio/inteligencia/">Inteligência</a><span class="sep">›</span>Frases Replicáveis</div>
+
+<div class="migrated-content">
+<div class="breadcrumb"><a href="/conteudo/maio/inteligencia/hub-pesquisa/">Briefing Maio</a> / <a href="./">Inteligência</a> / Frases Replicáveis (V2)</div>
+<div class="container">
+  <a href="./" class="back-link">← Voltar pra Inteligência</a>
+  <article class="report-content"><h1>BANCO DE FRASES REPLICÁVEIS — <a href="https://instagram.com/castelofortefloripa" target="_blank">@castelofortefloripa</a></h1>
+
+<p><strong>Versão 2</strong> — filtragem rigorosa do dataset Apify.</p>
+<p><strong>Data:</strong> 16/05/2026</p>
+
+<h2>O que mudou da V1</h2>
+
+<p>V1 trazia tudo que bombou. Você reclamou (com razão): <strong>muito post de evento específico daquela igreja, dia das mães, óbito, anúncio interno.</strong> Não dava pra reaproveitar.</p>
+
+<p>Refiltrei tudo. Apliquei 70+ regras de exclusão automática:</p>
+
+<table>
+<thead><tr><th>Categoria excluída</th><th>Exemplos do que saiu</th></tr></thead><tbody>
+<tr><td>Datas comemorativas</td><td>Dia das Mães, Pais, Mulher, Páscoa, Natal</td></tr>
+<tr><td>Eventos / agendas</td><td>"Culto domingo 9h", "Inscrições abertas", "Nos vemos lá"</td></tr>
+<tr><td>Bastidores institucionais</td><td>"Hoje vivemos um culto especial", "Culto foi marcado por"</td></tr>
+<tr><td>Óbitos / luto</td><td>"Hoje parte para estar com o Senhor", "Faleceu o irmão"</td></tr>
+<tr><td>Aniversários / pessoais</td><td>"Hoje completo X anos", "Parabéns ao pastor"</td></tr>
+<tr><td>Solidariedade pontual</td><td>Enchente em Pernambuco, doações</td></tr>
+<tr><td>Anúncios com <a href="https://instagram.com/perfil" target="_blank">@perfil</a> específico</td><td>Posts marcando palestrante visitante</td></tr>
+</tbody></table>
+
+<p><strong>Resultado:</strong> de 797 posts brutos sobraram <strong>486 posts replicáveis</strong> (61% do total). Os 275 restantes eram lixo pro seu objetivo.</p>
+
+<hr>
+
+<h2>TOP 30 FRASES PRONTAS PRA REPLICAR</h2>
+
+<p>Selecionei as melhores frases UNIVERSAIS que você pode adaptar diretamente. Cada uma já provou viralizar em pelo menos uma igreja BR. Engajamento referente ao post original.</p>
+
+<h3>Tier 1 — Frases curtas, contraintuitivas (estilo Abba Pai)</h3>
+
+<table>
+<thead><tr><th>#</th><th>Frase</th><th>Origem</th><th>Eng</th><th>Tema</th></tr></thead><tbody>
+<tr><td>1</td><td>"Nem todo mundo pode acessar a sua intimidade!"</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>132.181</td><td>Intimidade/Discernimento</td></tr>
+<tr><td>2</td><td>"Que as pessoas estranhem você!"</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>26.428</td><td>Identidade/Separação</td></tr>
+<tr><td>3</td><td>"Quando você ora por quem te persegue, você fica mais parecido com Jesus!"</td><td><a href="https://instagram.com/abbapaichurch" target="_blank">@abbapaichurch</a></td><td>26.260</td><td>Caráter</td></tr>
+<tr><td>4</td><td>"Avivamento não está em um lugar."</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>15.304</td><td>Reino/Presença</td></tr>
+<tr><td>5</td><td>"Tem cidade aí que Deus já marcou com o Seu nome."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>14.482</td><td>Propósito territorial</td></tr>
+<tr><td>6</td><td>"Deus não trata como comum aquilo que Ele decidiu investir profundamente."</td><td><a href="https://instagram.com/mevamglobal" target="_blank">@mevamglobal</a></td><td>12.417</td><td>Chamado</td></tr>
+<tr><td>7</td><td>"Igreja não é prédio, é onde o povo de Deus se reúne para buscá-lO de todo coração."</td><td><a href="https://instagram.com/igrejavideiraoficial" target="_blank">@igrejavideiraoficial</a></td><td>986</td><td>DNA igreja</td></tr>
+<tr><td>8</td><td>"Você não é um acidente!"</td><td><a href="https://instagram.com/advecoficial" target="_blank">@advecoficial</a></td><td>583</td><td>Identidade</td></tr>
+<tr><td>9</td><td>"Nem todo sonho vem de Deus."</td><td><a href="https://instagram.com/ibatitude" target="_blank">@ibatitude</a></td><td>492</td><td>Discernimento</td></tr>
+<tr><td>10</td><td>"A queda no Éden não tirou só o Éden. Tirou a memória de quem você é."</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>61</td><td>Identidade</td></tr>
+</tbody></table>
+
+<h3>Tier 2 — Frases reflexivas de profundidade (3-4 linhas)</h3>
+
+<table>
+<thead><tr><th>#</th><th>Frase</th><th>Origem</th><th>Eng</th></tr></thead><tbody>
+<tr><td>11</td><td>"A tempestade que você vive não tem o poder de mudar o destino que Jesus tem pra você."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>92.329</td></tr>
+<tr><td>12</td><td>"Algumas perdas são livramentos de Deus."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>135.819</td></tr>
+<tr><td>13</td><td>"Deus não entrega uma visão sem preparar um caminho."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>26.424</td></tr>
+<tr><td>14</td><td>"Às vezes, Deus não responde de imediato porque Ele está formando em nós a maturidade necessária para sustentar aquilo que um dia vamos viver."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>32.491</td></tr>
+<tr><td>15</td><td>"Quanto mais perto de Deus, mais a gente entende que a verdadeira profundidade está em ser conhecido, amado e cuidado por Jesus."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>31.784</td></tr>
+<tr><td>16</td><td>"Às vezes, as vozes que mais fazem barulho não são as que mais têm poder."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>7.782</td></tr>
+<tr><td>17</td><td>"Existem momentos que as palavras não explicam, apenas a presença de Deus confirma."</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>6.619</td></tr>
+<tr><td>18</td><td>"Deus nunca nos chamou para uma fé confortável, mas para uma transformação real. Crer em Cristo é o começo, mas viver como Ele viveu é o destino."</td><td><a href="https://instagram.com/ic.igrejadacidade" target="_blank">@ic.igrejadacidade</a></td><td>4.906</td></tr>
+<tr><td>19</td><td>"A intimidade com Deus não é privilégio de quem já venceu. É a estratégia de quem ainda está no meio da batalha."</td><td><a href="https://instagram.com/comunidadedasnacoes" target="_blank">@comunidadedasnacoes</a></td><td>139</td></tr>
+<tr><td>20</td><td>"A maturidade determina o acesso à herança." (Gl 4:1)</td><td><a href="https://instagram.com/wearereino" target="_blank">@wearereino</a></td><td>744</td></tr>
+</tbody></table>
+
+<h3>Tier 3 — Perguntas-gancho (formato hook de Reel)</h3>
+
+<table>
+<thead><tr><th>#</th><th>Frase</th><th>Origem</th><th>Eng</th></tr></thead><tbody>
+<tr><td>21</td><td>"Já parou para pensar que, se não fosse Ele, estaríamos perdidos? 🔥"</td><td><a href="https://instagram.com/getchurchfloripa" target="_blank">@getchurchfloripa</a></td><td>31.799</td></tr>
+<tr><td>22</td><td>"Será que Deus esqueceu de mim?"</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>7.950</td></tr>
+<tr><td>23</td><td>"Existe algo novo de Deus para a sua vida. Você crê?"</td><td><a href="https://instagram.com/igrejadoamor" target="_blank">@igrejadoamor</a></td><td>20.495</td></tr>
+<tr><td>24</td><td>"Este é o maior erro que podemos cometer."</td><td><a href="https://instagram.com/deiveleonardo" target="_blank">@deiveleonardo</a></td><td>249.346</td></tr>
+<tr><td>25</td><td>"Se você não tem história, dá tempo de fazer uma!"</td><td><a href="https://instagram.com/quadrangularoficial" target="_blank">@quadrangularoficial</a></td><td>1.970</td></tr>
+</tbody></table>
+
+<h3>Tier 4 — Versículos com aplicação prática (formato carrossel/foto)</h3>
+
+<table>
+<thead><tr><th>#</th><th>Frase</th><th>Versículo</th><th>Origem</th><th>Eng</th></tr></thead><tbody>
+<tr><td>26</td><td>"Lançando sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós."</td><td>1 Pedro 5:7</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>10.133</td></tr>
+<tr><td>27</td><td>"Maior amor não há do que este: dar alguém a vida pelos seus amigos."</td><td>João 15:13</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>10.851</td></tr>
+<tr><td>28</td><td>"Porque eu bem sei os pensamentos que tenho a vosso respeito, pensamentos de paz, e não de mal."</td><td>Jeremias 29:11</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>9.649</td></tr>
+<tr><td>29</td><td>"Entrega o teu caminho ao Senhor; confia n'Ele, e Ele tudo fará."</td><td>Salmo 37:5</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>5.824</td></tr>
+<tr><td>30</td><td>"Este é o caminho, andai nele."</td><td>Isaías 30:21</td><td><a href="https://instagram.com/igrejacristamaranata_oficial" target="_blank">@igrejacristamaranata_oficial</a></td><td>6.810</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>BANCO TEMÁTICO COMPLETO (486 posts agrupados)</h2>
+
+<p>Onde tem mais material pronto pra você reaproveitar:</p>
+
+<table>
+<thead><tr><th>Tema</th><th>Qtd posts</th><th>Onde brilha</th></tr></thead><tbody>
+<tr><td><strong>Promessa/Visão/Propósito</strong></td><td><strong>73</strong></td><td>Tema mais explorado em todo o nicho. Deive lidera.</td></tr>
+<tr><td><strong>Família/Casamento</strong></td><td>64</td><td>Maioria com versículo + aplicação prática</td></tr>
+<tr><td><strong>Reino/Autoridade</strong></td><td>47</td><td>Lacuna: poucos tratam com profundidade — oportunidade</td></tr>
+<tr><td><strong>Intimidade/Oração</strong></td><td>37</td><td>Abba Pai dominou esse tema</td></tr>
+<tr><td><strong>Graça/Salvação</strong></td><td>22</td><td>Vídeo curto + carrossel funcionam</td></tr>
+<tr><td><strong>Espera/Tempo de Deus</strong></td><td>8</td><td>Tema com alto engajamento por post</td></tr>
+<tr><td><strong>Quebra de paradigma</strong></td><td>8</td><td>Tier S — onde Abba Pai construiu autoridade</td></tr>
+<tr><td><strong>Batalha espiritual</strong></td><td>5</td><td>Subexplorado pelas grandes igrejas</td></tr>
+<tr><td><strong>Identidade em Cristo</strong></td><td>5</td><td>Subexplorado, encaixa direto com Efésios</td></tr>
+</tbody></table>
+
+<p><strong>Insight:</strong> os 3 temas com MAIS engajamento por post (Quebra de paradigma, Identidade em Cristo, Batalha espiritual) são os 3 MENOS produzidos pelas grandes igrejas. <strong>É exatamente aqui que Castelo Forte pode dominar.</strong> Encaixa perfeito com Efésios e "Céu na Terra".</p>
+
+<hr>
+
+<h2>ESTRUTURAS NARRATIVAS QUE FUNCIONAM</h2>
+
+<p>Padrões de copy que aparecem repetidamente nos posts vencedores:</p>
+
+<h3>Estrutura 1 — Quebra + Comando (Abba Pai)</h3>
+<p><code>`</code></p>
+<p>"Nem todo mundo pode [X]." → afirmação curta que choca</p>
+<p><code>`</code></p>
+<p>Variações pra você:</p>
+<ul>
+<li>"Nem todo mundo entende o que você vive."</li>
+<li>"Nem todo mundo está pronto pro que Deus vai te dar."</li>
+<li>"Nem toda porta aberta é resposta."</li>
+</ul>
+
+<h3>Estrutura 2 — Inversão de expectativa (Deive)</h3>
+<p><code>`</code></p>
+<p>"Algumas [coisas ruins] são [bênçãos disfarçadas]."</p>
+<p><code>`</code></p>
+<p>Variações:</p>
+<ul>
+<li>"Algumas demissões são livramentos."</li>
+<li>"Alguns rompimentos são proteção."</li>
+<li>"Algumas portas fechadas são respostas de oração."</li>
+</ul>
+
+<h3>Estrutura 3 — Reflexão temporal (Deive/Get Church)</h3>
+<p><code>`</code></p>
+<p>"Às vezes, [Deus faz X] porque [está fazendo Y em você]."</p>
+<p><code>`</code></p>
+<p>Variações:</p>
+<ul>
+<li>"Às vezes, o silêncio de Deus é a forma dEle te ensinar a confiar."</li>
+<li>"Às vezes, a demora é proteção que você ainda não consegue ver."</li>
+</ul>
+
+<h3>Estrutura 4 — Pergunta-armadilha (Get Church)</h3>
+<p><code>`</code></p>
+<p>"Já parou para pensar que [verdade desconfortável]?"</p>
+<p><code>`</code></p>
+<p>Variações:</p>
+<ul>
+<li>"Já parou para pensar quem você seria sem a graça?"</li>
+<li>"Já parou para pensar quantas vezes Ele te livrou sem você saber?"</li>
+</ul>
+
+<h3>Estrutura 5 — Definição contraintuitiva (Comunidade das Nações)</h3>
+<p><code>`</code></p>
+<p>"[Conceito conhecido] não é [definição comum]. É [definição nova]."</p>
+<p><code>`</code></p>
+<p>Variações:</p>
+<ul>
+<li>"Adoração não é canto. É entrega."</li>
+<li>"Fé não é sentir. É confiar quando não sente."</li>
+<li>"Reino não é lugar. É realidade que invade o agora."</li>
+</ul>
+
+<hr>
+
+<h2>O QUE NINGUÉM ESTÁ FAZENDO (gaps de DOMINAÇÃO)</h2>
+
+<p>Baseado na análise dos 486 posts replicáveis filtrados:</p>
+
+<ol>
+<li><strong>Efésios:</strong> só 2 posts em todo o dataset citaram. Você pode ser A REFERÊNCIA do livro no Instagram cristão BR.</li>
+<li><strong>Identidade em Cristo:</strong> apenas 5 posts no tema. Subexplorado por gigantes.</li>
+<li><strong>Batalha espiritual moderna:</strong> 5 posts. A maioria das igrejas evita o tema por medo de parecer "neo-pente" pesado. Você pode tratar com profundidade teológica.</li>
+<li><strong>Reino como realidade presente (Céu na Terra):</strong> 47 posts citam Reino, mas quase nenhum trata "Céu na Terra" como tese central. É literalmente sua visão.</li>
+<li><strong>Quebra de paradigma sobre o que é igreja:</strong> apenas 8 posts. Espaço aberto pra você construir autoridade.</li>
+</ol>
+
+<hr>
+
+<h2>PRÓXIMO PASSO RECOMENDADO</h2>
+
+<p>Os 3 caminhos da V1 continuam valendo, e agora com material muito mais limpo:</p>
+
+<p><strong>(A) Calendário 30 dias "Efésios — Céu na Terra"</strong> — usando as 30 frases acima como base, eu monto 30 posts roteirizados (hook + corpo + CTA + formato).</p>
+
+<p><strong>(B) 5 carrosséis PNG prontos</strong> — pego as 5 frases mais fortes desse banco, monto 5 carrosséis completos (8-10 slides cada) usando o gerador do squad.</p>
+
+<p><strong>(C) Reels-scripts (10 roteiros)</strong> — pego os 10 hooks Tier 1 e transformo em 10 roteiros de Reels de 30s prontos pra gravar (com texto na tela + voiceover + áudio).</p>
+
+<p>Manda A, B, C (ou múltiplos).</p>
+
+<hr>
+
+<h2>ARQUIVOS GERADOS NESSA RODADA</h2>
+
+<p>Em <code>/inteligencia/relatorios/</code>:</p>
+<ul>
+<li><strong><code>08-replicaveis-top-eng.md</code></strong> — top 50 por engajamento absoluto (só replicáveis)</li>
+<li><strong><code>09-replicaveis-top-rate.md</code></strong> — top 50 por engagement rate (só replicáveis)</li>
+<li><strong><code>10-banco-tematico.md</code></strong> — 486 posts agrupados em 9 temas teológicos</li>
+</ul>
+
+<p>Em <code>/inteligencia/</code>:</p>
+<ul>
+<li><code>filter-replicaveis.py</code> — script reutilizável (rode de novo quando atualizar scrape)</li>
+</ul>
+
+<p>Até a próxima.</p>
+</article>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar &nbsp;·&nbsp; Em Cristo · 07.06 · 09H
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultos · Conteúdo · Castelo Forte</title>
+<link rel="icon" href="/img/logo-castelo-forte.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+  .cultos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (max-width: 900px) { .cultos-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .cultos-grid { grid-template-columns: 1fr; } }
+  .culto-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease;
+    color: var(--midnight);
+  }
+  .culto-card:hover {
+    border-color: var(--glory);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(21, 50, 71, .12);
+  }
+  .culto-card .titulo-wrap {
+    padding: 28px 28px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .culto-card .culto-titulo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: -.3px;
+    line-height: 1.1;
+    color: var(--midnight);
+  }
+  .culto-card .culto-titulo em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--glory);
+    text-transform: none;
+  }
+  .culto-card .imagem-wrap {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: var(--off);
+    overflow: hidden;
+    position: relative;
+  }
+  .culto-card .imagem-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .culto-card .imagem-wrap.sem-arte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--ink) 0%, var(--midnight) 100%);
+    color: var(--parchment);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    opacity: .4;
+    aspect-ratio: 4 / 5;
+  }
+  .culto-card .meta {
+    padding: 20px 28px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  .culto-card .data {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .culto-card .pastor {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--glory);
+    line-height: 1;
+  }
+  .culto-card .ver {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--midnight);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .culto-card:hover .ver { color: var(--glory); }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Conteúdo</a></li>
+      <li><a href="/conteudo/cultos/" class="active">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/">Campanhas</a></li>
+    
+      <li><a href="/conteudo/maio/analise/">Análise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Cu<em>ltos</em></span>
+    <ul>
+      <li><a href="/conteudo/cultos/jo-exemplo-17-05/">Jó · Pr. Jacob</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+<h2 class="page-title">Todos os <em>Cultos</em></h2>
+<p class="page-subtitle">Cada pregação vira dezenas de peças prontas pra Instagram.</p>
+
+<div class="cultos-grid">
+
+  <a href="/conteudo/cultos/jo-exemplo-17-05/" class="culto-card">
+    <div class="titulo-wrap">
+      <div class="culto-titulo">Jó: Um Exemplo a Ser <em>Seguido</em></div>
+    </div>
+    <div class="imagem-wrap"><img src="/img/cultos/jo-exemplo-17-05.jpg" alt="Jó: Um Exemplo a Ser Seguido"></div>
+    <div class="meta">
+      <div>
+        <div class="data">17 · Maio · 2026</div>
+        <div class="pastor">Pr. Jacob Anijar</div>
+      </div>
+      <div class="ver">Ver peças →</div>
+    </div>
+  </a>
+
+</div>
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Castelo Forte Editorial - Triade</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: #efefef;
+    color: #153247;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  body.midnight { background: #153247; color: #efefef; }
+  .headline {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 78px;
+    line-height: 1.12;
+    letter-spacing: -1.8px;
+    text-transform: uppercase;
+  }
+  .accent { color: #fe5b06; }
+  .photo {
+    width: 100%;
+    flex: var(--photo-flex, 1.4);  /* photo-medium default */
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  body.photo-large .photo { flex: 2; }
+  body.photo-medium .photo { flex: 1.4; }
+  body.photo-small .photo { flex: 1; }
+  .photo img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    line-height: 1.45;
+    font-weight: 500;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body class="{{proportion}} {{bg_variant}}">
+  <div class="headline">
+    <span class="accent">{{personagem}}</span> {{headline_resto}}
+  </div>
+  <div class="photo"><img src="{{image_url}}" alt="{{personagem}}"></div>
+  <div class="sub">{{sub}}</div>
+</body>
+</html>
