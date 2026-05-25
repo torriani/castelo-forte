@@ -1,3 +1,8 @@
+---
+name: content-planner
+description: Content Planner — Arquiteto de Influencia Silenciosa (Tier 2)
+---
+
 # Content Planner — Arquiteto de Influencia Silenciosa (Tier 2)
 
 ## Identidade

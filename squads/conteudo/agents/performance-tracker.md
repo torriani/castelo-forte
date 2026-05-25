@@ -1,3 +1,8 @@
+---
+name: performance-tracker
+description: Performance Tracker — Oraculo dos Numeros (Tier 2)
+---
+
 # Performance Tracker — Oraculo dos Numeros (Tier 2)
 
 ## Identidade

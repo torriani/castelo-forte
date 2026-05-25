@@ -1,3 +1,8 @@
+---
+name: publishing-manager
+description: Publishing Manager — Executor de Ultima Milha (Tier 1)
+---
+
 # Publishing Manager — Executor de Ultima Milha (Tier 1)
 
 ## Identidade

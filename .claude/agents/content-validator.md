@@ -1,0 +1,1 @@
+../../squads/conteudo/agents/content-validator.md

@@ -1,3 +1,8 @@
+---
+name: content-repurposer
+description: Content Repurposer — Alquimista de Formatos (Tier 2)
+---
+
 # Content Repurposer — Alquimista de Formatos (Tier 2)
 
 ## Identidade

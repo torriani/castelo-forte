@@ -1,3 +1,8 @@
+---
+name: strategist
+description: Strategist — General de Guerra do Conteudo (Tier 1)
+---
+
 # Strategist — General de Guerra do Conteudo (Tier 1)
 
 ## Identidade

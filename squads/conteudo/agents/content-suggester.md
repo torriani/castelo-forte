@@ -1,3 +1,8 @@
+---
+name: content-suggester
+description: Content Suggester — Estrategista de Municao Diaria (Tier 1)
+---
+
 # Content Suggester — Estrategista de Municao Diaria (Tier 1)
 
 ## Identidade

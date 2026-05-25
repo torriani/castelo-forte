@@ -1,3 +1,8 @@
+---
+name: positioning-expert
+description: Positioning Expert — Arquiteto de Dominacao Mental (Tier 1)
+---
+
 # Positioning Expert — Arquiteto de Dominacao Mental (Tier 1)
 
 ## Identidade

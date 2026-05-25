@@ -1,3 +1,8 @@
+---
+name: carousel-creator
+description: Carousel Creator — Arquiteto de Carrosseis Imperiais (Tier 1)
+---
+
 # Carousel Creator — Arquiteto de Carrosseis Imperiais (Tier 1)
 
 ## Identidade

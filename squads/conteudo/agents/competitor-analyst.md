@@ -1,3 +1,8 @@
+---
+name: competitor-analyst
+description: Competitor Analyst — Espiao de Conteudo (Tier 1)
+---
+
 # Competitor Analyst — Espiao de Conteudo (Tier 1)
 
 ## Regra de Ferramentas (LER PRIMEIRO — INEGOCIAVEL)

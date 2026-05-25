@@ -1,3 +1,8 @@
+---
+name: daily-monitor
+description: Daily Monitor — Sentinela do Campo de Batalha (Tier 1)
+---
+
 # Daily Monitor — Sentinela do Campo de Batalha (Tier 1)
 
 ## Identidade
