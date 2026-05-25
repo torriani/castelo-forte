@@ -74,6 +74,11 @@ outputs/**/*.webp
 # ━━━ squads/conteudo/templates/ — previews leves permitidos ━━━
 !squads/conteudo/templates/**/preview-*.png
 
+# ━━━ outputs/demo-casa-isabel-*/ — referencia canonica do padrao Casa de Isabel ━━━
+# Essa pasta documenta o UNICO padrao visual aprovado da Castelo Forte.
+# PNGs vao pro git pra servir de referencia visual no futuro.
+!outputs/demo-casa-isabel-*/*.png
+
 # Publisher Instagram — fila gerada dinamicamente
 apps/publisher-instagram/publicar/*/
 apps/publisher-instagram/publicado/*/
