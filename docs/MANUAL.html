@@ -482,6 +482,7 @@ footer a:hover { text-decoration: underline; }
 <nav class="sticky">
   <ul>
     <li><a href="#comecar">Começar</a></li>
+    <li><a href="#comandos">Comandos</a></li>
     <li><a href="#portal">Portal de aprovação</a></li>
     <li><a href="#criar">Criar conteúdo</a></li>
     <li><a href="#multiplicar">Multiplicar</a></li>
@@ -581,11 +582,88 @@ claude</code></pre>
   </div>
 </section>
 
-<!-- ━━━ SECTION 2: PORTAL ━━━ -->
+<!-- ━━━ SECTION 2: COMANDOS ━━━ -->
+<section id="comandos" class="alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 · Atalhos</span>
+      <h2>Slash commands e agentes (namespace)</h2>
+      <p class="section-desc">Quando você digita <code>/</code> ou <code>@</code> no Claude Code aberto neste repo, aparecem comandos e agentes específicos deste squad. O padrão segue <code>cliente:squad:nome</code> pra você não confundir com squads de outros clientes.</p>
+    </div>
+
+    <h3>Slash commands (<code>/</code>)</h3>
+    <p>Digite <code>/castelo</code> e o autocomplete mostra:</p>
+    <table>
+      <thead>
+        <tr><th>Comando</th><th>O que faz</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>/castelo-forte:conteudo:squad</code></td><td>Mostra status e capacidades deste squad (comece aqui se estiver em dúvida)</td></tr>
+        <tr><td><code>/castelo-forte:conteudo:criar</code></td><td>Cria conteúdo novo (carrossel, reels, stories) via Content Chief</td></tr>
+        <tr><td><code>/castelo-forte:conteudo:multiplicar</code></td><td>Multiplica live, aula ou pregação em 30+ peças</td></tr>
+        <tr><td><code>/castelo-forte:conteudo:validar</code></td><td>Valida texto pelo Anti-IA v3.7 + Oráculo + tom Castelo Forte</td></tr>
+        <tr><td><code>/castelo-forte:conteudo:portal</code></td><td>Operações do portal de aprovação (sync, status, link, corrigir)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <strong>Por que namespace?</strong>
+        Você tem outros squads globais no Claude Code (Hormozi, Movement, AIOX, etc). Sem prefixo, ficavam misturados. Agora o time identifica na hora: tudo que começa com <code>/castelo-forte:</code> é desta operação.
+      </div>
+    </div>
+
+    <h3>Agentes (<code>@</code>)</h3>
+    <p>Ative pelo nome curto OU namespace completo. Os dois funcionam:</p>
+    <table>
+      <thead>
+        <tr><th>Curto</th><th>Namespace completo</th><th>Função</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>@content-chief</code></td><td><code>@castelo-forte:conteudo:content-chief</code></td><td><strong>Imperador, comece aqui</strong></td></tr>
+        <tr><td><code>@carousel-creator</code></td><td><code>@castelo-forte:conteudo:carousel-creator</code></td><td>Carrosseis 1-10 slides</td></tr>
+        <tr><td><code>@reels-creator</code></td><td><code>@castelo-forte:conteudo:reels-creator</code></td><td>Reels 15-90s</td></tr>
+        <tr><td><code>@stories-strategist</code></td><td><code>@castelo-forte:conteudo:stories-strategist</code></td><td>Sequências de Stories</td></tr>
+        <tr><td><code>@print-tweet-creator</code></td><td><code>@castelo-forte:conteudo:print-tweet-creator</code></td><td>Reflexões 3-12 linhas</td></tr>
+        <tr><td><code>@strategist</code></td><td><code>@castelo-forte:conteudo:strategist</code></td><td>Campanhas E1-E8</td></tr>
+        <tr><td><code>@positioning-expert</code></td><td><code>@castelo-forte:conteudo:positioning-expert</code></td><td>Bio, CLC, StoryAds</td></tr>
+        <tr><td><code>@competitor-analyst</code></td><td><code>@castelo-forte:conteudo:competitor-analyst</code></td><td>Análise concorrentes</td></tr>
+        <tr><td><code>@content-planner</code></td><td><code>@castelo-forte:conteudo:content-planner</code></td><td>Calendário editorial</td></tr>
+        <tr><td><code>@content-repurposer</code></td><td><code>@castelo-forte:conteudo:content-repurposer</code></td><td>Adapta entre formatos</td></tr>
+        <tr><td><code>@content-validator</code></td><td><code>@castelo-forte:conteudo:content-validator</code></td><td><strong>Gatekeeper Anti-IA + Oráculo</strong></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Comandos globais do Instagram (sem namespace)</h3>
+    <p>Já existem instalados globalmente no seu Claude Code (não são deste squad, mas funcionam aqui):</p>
+    <table>
+      <thead><tr><th>Comando</th><th>O que faz</th></tr></thead>
+      <tbody>
+        <tr><td><code>/publicar-status</code></td><td>Status da fila Instagram</td></tr>
+        <tr><td><code>/publicar-log</code></td><td>Log do dia</td></tr>
+        <tr><td><code>/publicar-agora N</code></td><td>Força publicação do post #N</td></tr>
+        <tr><td><code>/publicar</code></td><td>Publicar avulso (dry-run + aprovação)</td></tr>
+        <tr><td><code>/publicar-pause</code></td><td>Pausa cron</td></tr>
+        <tr><td><code>/publicar-resume</code></td><td>Reativa cron</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-warn">
+      <div class="callout-icon">🔁</div>
+      <div class="callout-content">
+        <strong>Não vê os comandos?</strong>
+        Reinicie o Claude Code. Ele carrega <code>.claude/commands/</code> no boot — se você adicionou comandos novos na sessão atual, precisa fechar e abrir de novo.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 3: PORTAL ━━━ -->
 <section id="portal">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">02 · Operação diária</span>
+      <span class="section-tag">03 · Operação diária</span>
       <h2>Portal de aprovação</h2>
       <p class="section-desc">Como acessar o portal, alterar conteúdos publicados, ver status da fila de aprovação e gerar links mágicos pro aprovador externo.</p>
     </div>
@@ -708,7 +786,7 @@ vercel --prod --yes</code></pre>
 <section id="criar" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">03 · Produção</span>
+      <span class="section-tag">04 · Produção</span>
       <h2>Criar conteúdo novo</h2>
       <p class="section-desc">Fluxos passo a passo para cada tipo de peça. Todos passam pelo <strong>Content Chief</strong> (orquestrador) que diagnostica e delega.</p>
     </div>
@@ -804,7 +882,7 @@ claude
 <section id="multiplicar">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">04 · Pipeline avançado</span>
+      <span class="section-tag">05 · Pipeline avançado</span>
       <h2>Multiplicar conteúdo longo</h2>
       <p class="section-desc">Quebrar 1 live, aula ou podcast em 30+ peças (carrosseis, reels, stories, frases, briefs de e-mail). O ativo mais subutilizado da igreja é a pregação gravada — esse fluxo extrai todos os átomos.</p>
     </div>
@@ -901,7 +979,7 @@ claude
 <section id="publicar" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">05 · Distribuição</span>
+      <span class="section-tag">06 · Distribuição</span>
       <h2>Publicar no Instagram</h2>
       <p class="section-desc">Pipeline automático com cron (LaunchAgent). Posts agendados são publicados nos horários definidos, com filtro Anti-IA bloqueante.</p>
     </div>
@@ -950,7 +1028,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="regras">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">06 · Compliance</span>
+      <span class="section-tag">07 · Compliance</span>
       <h2>Regras inegociáveis</h2>
       <p class="section-desc">TODO conteúdo gerado deve respeitar essas regras. Sem exceção.</p>
     </div>
@@ -1022,7 +1100,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="agentes" class="alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">07 · Squad</span>
+      <span class="section-tag">08 · Squad</span>
       <h2>Agentes disponíveis</h2>
       <p class="section-desc">Ative qualquer um direto com <code>@nome</code>. O <strong>Content Chief</strong> sabe quando chamar quem, mas você pode ir direto se já sabe o que quer.</p>
     </div>
@@ -1100,7 +1178,7 @@ bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
 <section id="problemas">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">08 · Quando der errado</span>
+      <span class="section-tag">09 · Quando der errado</span>
       <h2>Problemas comuns</h2>
       <p class="section-desc">Top erros que aparecem na operação diária, com solução direta. Para problemas mais profundos: <code>docs/TROUBLESHOOTING.md</code>.</p>
     </div>
