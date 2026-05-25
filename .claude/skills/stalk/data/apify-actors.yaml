@@ -1,0 +1,65 @@
+# Catálogo de Apify Actors usados pela skill stalk
+# Custos baseados no plano STARTER ($29/mês)
+
+actors:
+  instagram_profile:
+    id: apify~instagram-profile-scraper
+    description: Perfil completo (bio, stats, últimos 12 posts)
+    used_by: [profile, mine, dossie, top, snapshot, compare]
+    avg_cost_usd: 0.01
+    input_schema:
+      usernames: [string]  # array de handles sem @
+
+  instagram_search:
+    id: apify~instagram-search-scraper
+    description: Busca por termo em pesquisa global
+    used_by: [search, keyword, competitors]
+    avg_cost_usd: 0.05-0.10
+    input_schema:
+      search: string
+      searchType: hashtag|user|place
+      resultsLimit: int
+
+  instagram_hashtag:
+    id: apify~instagram-hashtag-scraper
+    description: Posts populares de uma hashtag
+    used_by: [search (when # detected), hashtag]
+    avg_cost_usd: 0.03-0.05
+    input_schema:
+      hashtags: [string]  # sem # prefix
+      resultsLimit: int
+
+  instagram_post:
+    id: apify~instagram-post-scraper
+    description: Detalhes de posts específicos por URL
+    used_by: [busca interna pra detalhar top posts]
+    avg_cost_usd: 0.01
+    input_schema:
+      directUrls: [string]
+
+  instagram_comment:
+    id: apify~instagram-comment-scraper
+    description: Comentários de um post
+    used_by: [comments]
+    avg_cost_usd: 0.02
+    input_schema:
+      directUrls: [string]
+      resultsLimit: int
+
+  instagram_reel:
+    id: apify~instagram-reel-scraper
+    description: Reels com views, plays, métricas
+    used_by: [profile --reels, reels]
+    avg_cost_usd: 0.02
+    input_schema:
+      username: [string]
+      resultsLimit: int
+
+  instagram_general:
+    id: apify~instagram-scraper
+    description: Scraper geral (stories, posts diversos)
+    used_by: [profile --stories, stories]
+    avg_cost_usd: 0.02
+    input_schema:
+      directUrls: [string]
+      resultsType: posts|stories|details

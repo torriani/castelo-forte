@@ -1,0 +1,9 @@
+{
+  "source": "preview.mp4",
+  "fps": 30,
+  "duration_seconds": 10,
+  "output_width": 1080,
+  "output_height": 1920,
+  "aspect": "9:16",
+  "_note": "Overwritten by compose_full_layout executor. Using preview.mp4 for Studio."
+}

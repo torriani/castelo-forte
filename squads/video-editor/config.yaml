@@ -1,0 +1,162 @@
+pack:
+  name: video-editor
+  title: "Video Editor — Longform to Shorts Pipeline"
+  version: "0.1.0"
+  description: |
+    Squad híbrido para transformar vídeos longos em shorts/clips editados.
+    3 Tier 0 directors (Pearlman, MrBeast, Murch) decidem o que cortar;
+    7 workers técnicos executam via OpenMontage + Whisper + auto-editor + Remotion.
+  domain: "video-editing"
+  target_user: "Content creators with longform recordings (aulas, podcasts)"
+  slash_prefix: "VideoEditor"
+  pattern_prefix: "VE"
+
+squad:
+  name: video-editor
+  version: 0.1.0
+  domain: "Longform video → shorts editing pipeline"
+  description: |
+    (see pack.description above)
+
+workspace_integration:
+  level: controlled_runtime_consumer
+  client: igreja-castelo-forte
+  rationale: >-
+    video-editor depende de contexto canonico do workspace (brand voice,
+    teologia do reino, voz da igreja Castelo Forte) para que os 3 directors
+    (Pearlman, MrBeast, Murch) apliquem seus frameworks alinhados com a
+    identidade da igreja. Shorts e MDs renderizados sao artefatos
+    externalizados em outputs/ (nao canonicos).
+  read_paths:
+    - workspace/businesses/igreja-castelo-forte/brand/voice/
+    - workspace/businesses/igreja-castelo-forte/
+    - outputs/videos/
+    - outputs/transcriptions/
+  write_paths:
+    - outputs/videos-editados/
+    - outputs/videos-editados/shorts/
+    - outputs/videos-editados/transcricoes/
+  template_namespace: video-editor
+
+squad_extended:
+  description: |
+    Squad híbrido que transforma vídeos longos (aulas, podcasts, palestras) em
+    shorts/clips editados automaticamente com múltiplas durações (1min, 2min, 5min).
+    Combina 3 directors elite (Pearlman, MrBeast, Murch) com workers técnicos
+    baseados em OpenMontage + Whisper + auto-editor + Remotion.
+
+  philosophy: |
+    "Minds decide what to cut, workers execute how."
+    - Directors (Tier 0) aplicam frameworks documentados pra selecionar clips
+    - Workers (tasks) executam pipeline técnico headless
+    - Orchestrator coordena tudo via workflow unidirecional
+
+  keywords:
+    - video editing
+    - shorts generation
+    - longform to short
+    - clip selection
+    - retention optimization
+    - remotion
+    - whisper
+    - auto-editor
+
+orchestrator:
+  agent: video-editor-chief
+
+agents:
+  tier_0:
+    - id: karen-pearlman
+      role: "The Selector"
+      framework: "5-Step Selection Process + 3 Movements"
+      based_on_real_person: true
+      mind_dna: outputs/minds/karen_pearlman/mind_dna.yaml
+
+    - id: mrbeast
+      role: "The Retention Engineer"
+      framework: "Retention-First (CTR/AVD/AVP)"
+      based_on_real_person: true
+      mind_dna: outputs/minds/mrbeast/mind_dna.yaml
+
+    - id: walter-murch
+      role: "The Judge"
+      framework: "Rule of Six (hierarchical)"
+      based_on_real_person: true
+      mind_dna: outputs/minds/walter_murch/mind_dna.yaml
+
+  tier_2:
+    - id: video-editor-chief
+      role: "Squad Orchestrator"
+      based_on_real_person: false
+      coordinates:
+        - all_directors
+        - all_workers
+
+workers:
+  # Executed via tasks, not standalone agents
+  - id: transcriber
+    task: tasks/transcribe.md
+    skill_base: video-understand
+    tool: whisper
+
+  - id: silence-cutter
+    task: tasks/cut-silences.md
+    tool: auto-editor
+
+  - id: hook-detector
+    task: tasks/detect-hooks.md
+    tool: llm (ollama|claude)
+
+  - id: clip-selector
+    task: tasks/select-clips.md
+    tool: openmontage-clip-factory
+
+  - id: caption-generator
+    task: tasks/generate-captions.md
+    tool: remotion
+
+  - id: layout-composer
+    task: tasks/compose-layout.md
+    skill_base: remotion
+    tool: remotion-custom-template
+
+  - id: renderer
+    task: tasks/render.md
+    skill_base: ffmpeg
+    tool: remotion-cli
+
+workflows:
+  - id: wf-longform-to-shorts
+    file: workflows/wf-longform-to-shorts.yaml
+    purpose: "End-to-end: longform video → multi-duration shorts"
+    phases: 7
+
+dependencies:
+  external_tools:
+    - whisper (local)
+    - auto-editor (pip install)
+    - ffmpeg
+    - remotion (npm)
+    - ollama (optional, for local LLM)
+  cloned_repos:
+    - OpenMontage (primary base, 70% reuse)
+    - auto-editor
+    - VideoAgent (patterns only)
+  skills:
+    - video-understand
+    - ffmpeg
+    - remotion
+    - remotion-official
+    - speech-to-text
+    - video-edit
+
+quality_standards:
+  agents:
+    voice_dna: required
+    thinking_dna: required
+    smoke_tests: 3_pass_required
+    heuristics_with_when: required
+  workflow:
+    checkpoints_per_phase: required
+    veto_conditions: required
+    unidirectional_flow: required

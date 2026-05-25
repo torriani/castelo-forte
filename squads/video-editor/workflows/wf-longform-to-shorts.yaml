@@ -1,0 +1,183 @@
+workflow:
+  id: wf-longform-to-shorts
+  name: "Longform → Multi-Duration Shorts Pipeline"
+  version: 0.1.0
+  squad: video-editor
+  orchestrator: video-editor-chief
+  description: |
+    Recebe um vídeo longo (aula, podcast, palestra) e gera N shorts editados em
+    múltiplas durações (1min, 2min, 5min) com layout programático (presenter +
+    captions animados) via Remotion.
+
+  input_contract:
+    video_path: "str (path to mp4/mov)"
+    target_durations: "list[int] (segundos) — ex: [60, 120, 300]"
+    target_counts: "dict — ex: {60: 5, 120: 3, 300: 2}"
+    style_preset: "str (optional) — presenter_bottom | captions_top | fullframe"
+
+  output_contract:
+    shorts:
+      - path: "str"
+        duration: "int"
+        transcript: "str"
+        hook_score: "float"
+        directors_consensus: "dict"
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # PHASES
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  phases:
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 1_transcribe
+      name: "Transcription"
+      executor: transcriber (task)
+      task: tasks/transcribe.md
+      inputs:
+        - video_path
+      outputs:
+        - transcript.json (words + timestamps)
+        - audio_track.wav
+      checkpoint:
+        gate: "Transcript has >95% word-level confidence?"
+        veto: "IF confidence < 85% THEN halt + ask user to improve audio"
+      estimated_duration: "2-5 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 2_cut_silences
+      name: "Silence & Filler Removal"
+      executor: silence-cutter (task)
+      task: tasks/cut-silences.md
+      inputs:
+        - video_path
+        - transcript.json
+      outputs:
+        - segments.json (clean audio segments)
+        - cleaned_timeline.xml
+      tool: "auto-editor --edit audio:-19dB"
+      checkpoint:
+        gate: "Cleaned video has ≥70% of original duration?"
+        veto: "IF <50% remains THEN audio too noisy, halt"
+      estimated_duration: "3-8 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 3_detect_hooks
+      name: "Hook & Highlight Detection"
+      executor: hook-detector (task)
+      task: tasks/detect-hooks.md
+      inputs:
+        - transcript.json
+        - segments.json
+      outputs:
+        - candidates.json (segments with hook_score, emotion_score, rhythm_score)
+      tool: "LLM (Ollama/Claude)"
+      checkpoint:
+        gate: "At least 20 candidates with hook_score > 6/10?"
+        veto: "IF <10 strong candidates THEN video may not have enough material"
+      estimated_duration: "5-10 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 4_directors_council
+      name: "Directors Council (Tier 0 Debate)"
+      type: "multi_agent_consensus"
+      executors:
+        - karen-pearlman (agent)  # The Selector
+        - mrbeast (agent)         # The Retention Engineer
+        - walter-murch (agent)    # The Judge
+      inputs:
+        - candidates.json
+        - target_durations
+        - target_counts
+      process:
+        step_1: "karen-pearlman applies 5-Step Selection Process, proposes initial list"
+        step_2: "mrbeast reviews list, VETOES candidates with projected AVD <50%"
+        step_3: "walter-murch resolves conflicts via Rule of Six (emotion first)"
+        step_4: "Consensus locked, output approved list"
+      outputs:
+        - approved_clips.json (final selections with reasoning from each director)
+      checkpoint:
+        gate: "All target_counts met? Each clip has approval from at least 2/3 directors?"
+        veto: "IF mrbeast vetoes >80% of pearlman's list THEN escalate to user"
+      human_review: "optional — user can override council"
+      estimated_duration: "5-15 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 5_select_clips
+      name: "Timeline Assembly"
+      executor: clip-selector (task)
+      task: tasks/select-clips.md
+      inputs:
+        - approved_clips.json
+        - video_path
+      outputs:
+        - clip_timelines/ (N XML/JSON timelines, one per short)
+      tool: "OpenMontage clip-factory pipeline"
+      checkpoint:
+        gate: "Each timeline has start/end frames, no overlaps with others?"
+        veto: "IF timeline gaps detected THEN rebuild"
+      estimated_duration: "2-5 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 6_compose_layout
+      name: "Layout + Captions Composition"
+      executors:
+        - caption-generator (task)
+        - layout-composer (task)
+      parallel: true
+      inputs:
+        - clip_timelines/
+        - transcript.json
+        - style_preset
+      outputs:
+        - remotion_projects/ (N React projects ready to render)
+      tool: "Remotion custom template (presenter_bottom + karaoke_captions)"
+      checkpoint:
+        gate: "Each project has valid <Composition/> + captions synced to audio?"
+        veto: "IF caption sync drift >200ms THEN fix before render"
+      estimated_duration: "5-10 min"
+
+    # ─────────────────────────────────────────────────────────────────────────
+    - id: 7_render
+      name: "Final Render"
+      executor: renderer (task)
+      task: tasks/render.md
+      inputs:
+        - remotion_projects/
+      outputs:
+        - shorts/ (N final MP4 files)
+        - manifest.json (paths, durations, metadata)
+      tool: "remotion render (CLI) + ffmpeg"
+      checkpoint:
+        gate: "All N shorts rendered without errors?"
+        veto: "IF any render fails THEN retry once, else log and continue"
+      estimated_duration: "10-30 min (depends on duration + count)"
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # FLOW CONTROL
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  flow:
+    type: unidirectional
+    backtracking: forbidden
+    handoffs: automatic
+    parallelism:
+      phase_6: true  # caption-generator + layout-composer run in parallel
+      others: false
+
+  global_veto_conditions:
+    - "IF video_path invalid THEN halt at phase 1"
+    - "IF disk space <5GB THEN halt at phase 7"
+    - "IF LLM unavailable at phase 3 THEN halt"
+    - "IF Remotion project build fails at phase 6 THEN halt with detailed error"
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # QUALITY GATES
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  completion_criteria:
+    - "All N shorts rendered and playable"
+    - "Each short has directors_consensus logged"
+    - "manifest.json generated"
+    - "No phase halted by veto"
+
+  estimated_total_duration: "30-80 min (depends on input video length + target counts)"

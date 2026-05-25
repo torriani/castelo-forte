@@ -1,0 +1,5 @@
+{
+  "image": null,
+  "windows": [],
+  "_note": "Overwritten by compose_full_layout. image=null means no overlay. windows=[{start,end,position}]"
+}

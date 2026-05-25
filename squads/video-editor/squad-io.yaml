@@ -1,0 +1,75 @@
+# Squad IO Contract — video-editor
+# Pattern: GOVERNANCE-WSP-001
+# Created: 2026-04-08
+
+inputs:
+  - "Longform video file (mp4/mov/mkv)"
+  - "Target duration spec (e.g., 60s/120s/300s)"
+  - "Target count per duration"
+  - "Style preset (optional)"
+  - "LLM endpoint config (Ollama local or Claude API)"
+
+outputs:
+  - "N rendered shorts (MP4, 1080x1920 vertical)"
+  - "manifest.json with metadata + directors reasoning"
+  - "transcript.json (word-level)"
+  - "approved_clips.json (council consensus log)"
+
+triggers:
+  - "Manual activation via @video-editor-chief *edit"
+  - "Batch CLI invocation (phase 2)"
+  - "Handoff from content-squad (post-recording)"
+
+dependencies:
+  external_tools:
+    - "Whisper (local)"
+    - "auto-editor (pip)"
+    - "ffmpeg"
+    - "Remotion (npm)"
+    - "Ollama (optional)"
+  skills:
+    - video-understand
+    - ffmpeg
+    - remotion
+    - remotion-official
+    - speech-to-text
+  cloned_repos:
+    - "OpenMontage (70% reuse)"
+    - "auto-editor"
+    - "VideoAgent (patterns)"
+
+artifacts_produced:
+  - "video-short-mp4"
+  - "video-manifest-json"
+  - "transcript-json"
+  - "council-decision-log"
+
+artifacts_consumed:
+  - "longform-video-raw"
+  - "remotion-template-preset"
+
+data_sources:
+  - "outputs/videos/ (user recordings)"
+  - "outputs/transcriptions/ (pre-transcribed content)"
+
+integrations:
+  - squad: content-squad
+    type: upstream
+    purpose: "Receives recorded longform content"
+  - squad: conteudo
+    type: downstream
+    purpose: "Shorts feed content distribution workflows"
+
+observability:
+  quality_threshold: 8.0
+  phase_checkpoints: 7
+  veto_conditions_per_phase: true
+
+workspace_contract:
+  level: read_write
+  template_namespace: video-editor
+  canonical_outputs:
+    - path: "outputs/shorts/{project_slug}/"
+      template: "workspace/_templates/video-editor/short-manifest.yaml"
+    - path: "outputs/videos/{video_slug}/shorts/"
+      template: "workspace/_templates/video-editor/batch-manifest.yaml"

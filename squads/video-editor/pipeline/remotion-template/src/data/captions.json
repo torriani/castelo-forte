@@ -1,0 +1,30 @@
+{
+  "words": [
+    { "text": "O", "start": 0.0, "end": 0.3 },
+    { "text": "SEGREDO", "start": 0.3, "end": 0.8, "emphasis": true },
+    { "text": "PARA", "start": 0.8, "end": 1.1 },
+    { "text": "CRESCER", "start": 1.1, "end": 1.6, "emphasis": true },
+    { "text": "UMA", "start": 1.6, "end": 1.8 },
+    { "text": "EMPRESA", "start": 1.8, "end": 2.3, "emphasis": true },
+    { "text": "NAO", "start": 2.3, "end": 2.6 },
+    { "text": "E", "start": 2.6, "end": 2.8 },
+    { "text": "TRABALHAR", "start": 2.8, "end": 3.4, "emphasis": true },
+    { "text": "MAIS", "start": 3.4, "end": 3.7 },
+    { "text": "E", "start": 3.7, "end": 3.9 },
+    { "text": "TRABALHAR", "start": 3.9, "end": 4.5, "emphasis": true },
+    { "text": "MELHOR", "start": 4.5, "end": 5.0, "emphasis": true },
+    { "text": "VOCE", "start": 5.0, "end": 5.3 },
+    { "text": "PRECISA", "start": 5.3, "end": 5.7 },
+    { "text": "ENTENDER", "start": 5.7, "end": 6.2, "emphasis": true },
+    { "text": "QUE", "start": 6.2, "end": 6.4 },
+    { "text": "O", "start": 6.4, "end": 6.5 },
+    { "text": "RESULTADO", "start": 6.5, "end": 7.1, "emphasis": true },
+    { "text": "VEM", "start": 7.1, "end": 7.4 },
+    { "text": "DA", "start": 7.4, "end": 7.6 },
+    { "text": "CONSISTENCIA", "start": 7.6, "end": 8.3, "emphasis": true },
+    { "text": "E", "start": 8.3, "end": 8.5 },
+    { "text": "DA", "start": 8.5, "end": 8.7 },
+    { "text": "DISCIPLINA", "start": 8.7, "end": 9.5, "emphasis": true }
+  ],
+  "_note": "This file is overwritten per clip by caption-generator. Using demo data for Studio preview."
+}

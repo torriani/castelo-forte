@@ -101,3 +101,17 @@ venv-*/
 **/.claude/session.md
 CHECKPOINT.md
 ENTREGA.md
+
+# ━━━ Runtime de squads (cache de execução, NUNCA commitar) ━━━
+.aiox/
+squad-runtime/
+**/squad-runtime/
+# Arquivos de transcript/áudio gerados durante pipeline de vídeo
+**/audio_track.wav
+**/transcript.json
+**/transcript_translated.json
+**/translate_chunks/
+
+# Caches Apify (stalk skill)
+**/data.json
+!squads/conteudo/data/**/data.json

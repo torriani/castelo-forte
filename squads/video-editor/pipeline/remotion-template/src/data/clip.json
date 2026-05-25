@@ -1,0 +1,8 @@
+{
+  "source": "preview.mp4",
+  "start_frame": 0,
+  "end_frame": 300,
+  "fps": 30,
+  "duration_seconds": 10,
+  "_note": "This file is overwritten per clip by layout-composer. Using preview.mp4 for Studio."
+}
