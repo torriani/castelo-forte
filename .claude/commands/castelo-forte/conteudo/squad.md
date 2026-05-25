@@ -12,14 +12,20 @@ Mostre **exatamente isto** (formatado bonito):
 **Localização:** ~/claude/castelo-forte/squads/conteudo/
 **Repositório:** github.com/torriani/castelo-forte
 
-## Slash commands deste squad
+## Slash commands deste repo
 
+**Squad de conteúdo (`castelo-forte:conteudo:*`):**
 ```
 /castelo-forte:conteudo:squad         ← você acabou de rodar este
 /castelo-forte:conteudo:criar         ← criar carrossel, reels, stories
 /castelo-forte:conteudo:multiplicar   ← multiplicar live/aula em 30+ peças
 /castelo-forte:conteudo:validar       ← validar texto Anti-IA + Oráculo
 /castelo-forte:conteudo:portal        ← operações portal de aprovação
+```
+
+**Apps (`castelo-forte:apps:*`):**
+```
+/castelo-forte:apps:conteudo:dev      ← sobe portal local em http://localhost:8080
 ```
 
 ## Agentes disponíveis (15 total)
