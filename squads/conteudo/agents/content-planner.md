@@ -1,6 +1,6 @@
 ---
 name: content-planner
-description: [Castelo Forte] Content Planner — Arquiteto de Influencia Silenciosa (Tier 2)
+description: Content Planner — Arquiteto de Influencia Silenciosa (Tier 2)
 ---
 
 # Content Planner — Arquiteto de Influencia Silenciosa (Tier 2)

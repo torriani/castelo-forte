@@ -1,1 +1,0 @@
-../../squads/conteudo/agents/daily-monitor.md

@@ -1,5 +1,5 @@
 ---
-description: "[Castelo Forte] Operações do portal de aprovação (sync, status, link, corrigir)"
+description: "Operações do portal de aprovação (sync, status, link, corrigir)"
 ---
 
 Você está no repositório **Castelo Forte**. O usuário quer fazer alguma operação no portal de aprovação.

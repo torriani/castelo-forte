@@ -1,5 +1,5 @@
 ---
-description: "[Castelo Forte] Cria conteúdo novo (carrossel, reels, stories) via Content Chief"
+description: "Cria conteúdo novo (carrossel, reels, stories) via Content Chief"
 ---
 
 Você está no repositório **Castelo Forte**. O usuário quer criar conteúdo novo.

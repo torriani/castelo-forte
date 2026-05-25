@@ -1,5 +1,5 @@
 ---
-description: "[Castelo Forte] Valida texto pelo Anti-IA + Oráculo + tom Castelo Forte"
+description: "Valida texto pelo Anti-IA + Oráculo + tom Castelo Forte"
 ---
 
 Você está no repositório **Castelo Forte**. O usuário quer validar um texto pronto.

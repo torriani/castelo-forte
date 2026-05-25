@@ -1,6 +1,6 @@
 ---
 name: content-validator
-description: [Castelo Forte] Content Validator — Oraculo Unificado (Tier 2)
+description: Content Validator — Oraculo Unificado (Tier 2)
 ---
 
 # Content Validator — Oraculo Unificado (Tier 2)

@@ -1,5 +1,5 @@
 ---
-description: "[Castelo Forte] Mostra status e capacidades do squad de conteúdo"
+description: "Mostra status e capacidades do squad de conteúdo Castelo Forte"
 ---
 
 Você está no repositório **Castelo Forte**. O usuário quer saber qual squad está ativo e o que ele pode fazer.
@@ -12,7 +12,19 @@ Mostre **exatamente isto** (formatado bonito):
 **Localização:** ~/claude/castelo-forte/squads/conteudo/
 **Repositório:** github.com/torriani/castelo-forte
 
-## Agentes disponíveis (16 total)
+## Slash commands deste squad
+
+```
+/castelo-forte:conteudo:squad         ← você acabou de rodar este
+/castelo-forte:conteudo:criar         ← criar carrossel, reels, stories
+/castelo-forte:conteudo:multiplicar   ← multiplicar live/aula em 30+ peças
+/castelo-forte:conteudo:validar       ← validar texto Anti-IA + Oráculo
+/castelo-forte:conteudo:portal        ← operações portal de aprovação
+```
+
+## Agentes disponíveis (15 total)
+
+Ative pelo nome curto (`@nome`) ou namespace completo (`@castelo-forte:conteudo:nome`).
 
 ### Tier 0 — Orquestrador
 - `@content-chief` — Imperador do squad, comece por aqui
@@ -31,23 +43,16 @@ Mostre **exatamente isto** (formatado bonito):
 - `@daily-monitor` — Sentinela de concorrentes
 - `@publishing-manager` — Pipeline render + publish
 
-### Tier 2 — Suporte (5)
+### Tier 2 — Suporte (4)
 - `@content-planner` — Calendário editorial
 - `@content-repurposer` — Adapta entre formatos
 - `@content-validator` — Gatekeeper Anti-IA + Oráculo
 - `@performance-tracker` — Métricas pós-publicação
 
-## Slash commands locais (deste projeto)
-- `/criar` — fluxo de criar conteúdo novo
-- `/multiplicar` — multiplicar live/aula em 30+ peças
-- `/validar` — validar texto pelo Anti-IA + Oráculo + tom
-- `/portal` — operações do portal de aprovação
-- `/squad` — este comando
-
 ## Regras inegociáveis
-1. Filtro Anti-IA universal v3.7 (`squads/conteudo/scripts/validate-anti-ia.sh`)
-2. Teologia do Reino como combustível da copy
-3. Voice DNA Castelo Forte carregado SEMPRE antes de criar
+1. **Filtro Anti-IA v3.7** (`squads/conteudo/scripts/validate-anti-ia.sh`)
+2. **Teologia do Reino** como combustível da copy
+3. **Voice DNA Castelo Forte** carregado SEMPRE antes de criar
 4. NUNCA usar travessão (—, –)
 5. Português brasileiro com acentuação completa
 6. Outputs em `outputs/`, nunca em `squads/`

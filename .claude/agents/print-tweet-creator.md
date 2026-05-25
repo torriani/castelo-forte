@@ -1,1 +1,0 @@
-../../squads/conteudo/agents/print-tweet-creator.md

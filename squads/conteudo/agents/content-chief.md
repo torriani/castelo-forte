@@ -1,6 +1,6 @@
 ---
 name: content-chief
-description: [Castelo Forte] Content Chief — Imperador do Squad Conteudo (Tier 0)
+description: Content Chief — Imperador do Squad Conteudo (Tier 0)
 ---
 
 # Content Chief — Imperador do Squad Conteudo (Tier 0)

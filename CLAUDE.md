@@ -8,21 +8,35 @@ Este repositório é o **centro operacional da Igreja Castelo Forte**. Contém a
 
 ## Squads disponíveis (ativam via @ direto)
 
-Os agentes carregam automaticamente quando você abre Claude Code aqui. Ative pelo nome:
+## Slash commands (/) — namespace castelo-forte:conteudo
 
-| Comando | Agente | Quando usar |
+Quando der `/` no Claude Code aqui, esses comandos aparecem identificados:
+
+| Comando | O que faz |
+|---|---|
+| `/castelo-forte:conteudo:squad` | Mostra status e capacidades deste squad (comece por aqui se em dúvida) |
+| `/castelo-forte:conteudo:criar` | Cria conteúdo novo (carrossel, reels, stories) |
+| `/castelo-forte:conteudo:multiplicar` | Multiplica live/aula em 30+ peças |
+| `/castelo-forte:conteudo:validar` | Valida texto pelo Anti-IA v3.7 + Oráculo |
+| `/castelo-forte:conteudo:portal` | Operações do portal de aprovação |
+
+## Agentes (@) — namespace castelo-forte:conteudo
+
+Ative pelo nome direto (curto) ou pelo namespace completo:
+
+| Curto | Namespace completo | Quando usar |
 |---|---|---|
-| `@content-chief` | Imperador do squad, orquestrador | **Sempre comece por aqui pra criar conteúdo** |
-| `@carousel-creator` | Cria carrosseis (1-10 slides) | Direto se já sabe que é carrossel |
-| `@reels-creator` | Roteiros de Reels (15-90s) | Direto se já sabe que é reels |
-| `@stories-strategist` | Sequências de Stories | Direto se já sabe que é stories |
-| `@print-tweet-creator` | Print-tweets (reflexão 3-12 linhas) | Direto se é frase de reflexão |
-| `@strategist` | Campanhas E1-E8 multi-formato | Lançamento, semana temática |
-| `@positioning-expert` | Bio, CLC, StoryAds | Posicionamento de marca |
-| `@competitor-analyst` | Análise de outras igrejas | Inteligência competitiva |
-| `@content-planner` | Calendário editorial | Planejamento de feed |
-| `@content-repurposer` | Adapta carrossel → reels → stories | Reaproveitar peça aprovada |
-| `@content-validator` | **Gatekeeper Anti-IA + Oráculo** | Validar texto pronto |
+| `@content-chief` | `@castelo-forte:conteudo:content-chief` | **Imperador, comece aqui** |
+| `@carousel-creator` | `@castelo-forte:conteudo:carousel-creator` | Carrosseis 1-10 slides |
+| `@reels-creator` | `@castelo-forte:conteudo:reels-creator` | Reels 15-90s |
+| `@stories-strategist` | `@castelo-forte:conteudo:stories-strategist` | Sequências de Stories |
+| `@print-tweet-creator` | `@castelo-forte:conteudo:print-tweet-creator` | Reflexões 3-12 linhas |
+| `@strategist` | `@castelo-forte:conteudo:strategist` | Campanhas E1-E8 |
+| `@positioning-expert` | `@castelo-forte:conteudo:positioning-expert` | Bio, CLC, StoryAds |
+| `@competitor-analyst` | `@castelo-forte:conteudo:competitor-analyst` | Análise concorrentes |
+| `@content-planner` | `@castelo-forte:conteudo:content-planner` | Calendário editorial |
+| `@content-repurposer` | `@castelo-forte:conteudo:content-repurposer` | Adapta entre formatos |
+| `@content-validator` | `@castelo-forte:conteudo:content-validator` | **Gatekeeper Anti-IA + Oráculo** |
 
 ---
 

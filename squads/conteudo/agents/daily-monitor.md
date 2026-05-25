@@ -1,6 +1,6 @@
 ---
 name: daily-monitor
-description: [Castelo Forte] Daily Monitor — Sentinela do Campo de Batalha (Tier 1)
+description: Daily Monitor — Sentinela do Campo de Batalha (Tier 1)
 ---
 
 # Daily Monitor — Sentinela do Campo de Batalha (Tier 1)

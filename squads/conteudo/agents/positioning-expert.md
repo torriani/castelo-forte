@@ -1,6 +1,6 @@
 ---
 name: positioning-expert
-description: [Castelo Forte] Positioning Expert — Arquiteto de Dominacao Mental (Tier 1)
+description: Positioning Expert — Arquiteto de Dominacao Mental (Tier 1)
 ---
 
 # Positioning Expert — Arquiteto de Dominacao Mental (Tier 1)

@@ -1,6 +1,6 @@
 ---
 name: performance-tracker
-description: [Castelo Forte] Performance Tracker — Oraculo dos Numeros (Tier 2)
+description: Performance Tracker — Oraculo dos Numeros (Tier 2)
 ---
 
 # Performance Tracker — Oraculo dos Numeros (Tier 2)

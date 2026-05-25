@@ -1,6 +1,6 @@
 ---
 name: publishing-manager
-description: [Castelo Forte] Publishing Manager — Executor de Ultima Milha (Tier 1)
+description: Publishing Manager — Executor de Ultima Milha (Tier 1)
 ---
 
 # Publishing Manager — Executor de Ultima Milha (Tier 1)

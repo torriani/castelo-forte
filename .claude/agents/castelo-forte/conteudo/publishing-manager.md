@@ -1,0 +1,1 @@
+../../../../squads/conteudo/agents/publishing-manager.md

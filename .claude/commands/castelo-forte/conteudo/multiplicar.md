@@ -1,5 +1,5 @@
 ---
-description: "[Castelo Forte] Multiplica conteúdo longo (live, aula, pregação) em 30+ peças"
+description: "Multiplica conteúdo longo (live, aula, pregação) em 30+ peças"
 ---
 
 Você está no repositório **Castelo Forte**. O usuário quer multiplicar conteúdo longo (live, aula, pregação, podcast) em 30+ peças.
