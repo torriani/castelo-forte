@@ -14,7 +14,7 @@ Mostre **exatamente isto** (formatado bonito):
 
 ## Slash commands deste repo
 
-**Squad de conteúdo (`castelo-forte:conteudo:*`):**
+**Fluxos (`castelo-forte:conteudo:*`):**
 ```
 /castelo-forte:conteudo:squad         ← você acabou de rodar este
 /castelo-forte:conteudo:criar         ← criar carrossel, reels, stories
@@ -28,32 +28,34 @@ Mostre **exatamente isto** (formatado bonito):
 /castelo-forte:apps:conteudo:dev      ← sobe portal local em http://localhost:8080
 ```
 
-## Agentes disponíveis (15 total)
+## Agentes — ative via slash command ou `@nome`
 
-Ative pelo nome curto (`@nome`) ou namespace completo (`@castelo-forte:conteudo:nome`).
+Cada agente tem slash command próprio no padrão `/castelo-forte:conteudo:<nome>` que ativa a persona completa. Alternativa: `@nome-curto` ou `@castelo-forte:conteudo:nome-completo`.
 
 ### Tier 0 — Orquestrador
-- `@content-chief` — Imperador do squad, comece por aqui
+- `/castelo-forte:conteudo:content-chief` — Imperador do squad, comece por aqui
 
-### Tier 1 — Criadores (7)
-- `@carousel-creator` — Carrosseis 1-10 slides
-- `@reels-creator` — Roteiros de Reels 15-90s
-- `@stories-strategist` — Sequências de Stories
-- `@print-tweet-creator` — Reflexões 3-12 linhas
-- `@strategist` — Campanhas E1-E8 multi-formato
-- `@positioning-expert` — Bio, CLC, StoryAds
-- `@competitor-analyst` — Análise de outras igrejas
+### Tier 1 — Criadores (4)
+- `/castelo-forte:conteudo:carousel-creator` — Carrosseis 1-10 slides
+- `/castelo-forte:conteudo:reels-creator` — Roteiros de Reels 15-90s
+- `/castelo-forte:conteudo:stories-strategist` — Sequências de Stories
+- `/castelo-forte:conteudo:print-tweet-creator` — Reflexões 3-12 linhas
 
-### Tier 1 — Operação (3)
-- `@content-suggester` — Munição diária baseada em dados
-- `@daily-monitor` — Sentinela de concorrentes
-- `@publishing-manager` — Pipeline render + publish
+### Tier 1 — Estrategistas (3)
+- `/castelo-forte:conteudo:strategist` — Campanhas E1-E8 multi-formato
+- `/castelo-forte:conteudo:content-suggester` — Munição diária data-driven
+- `/castelo-forte:conteudo:positioning-expert` — Bio, CLC, StoryAds, 21 dias
+
+### Tier 1 — Pesquisa e Operação (3)
+- `/castelo-forte:conteudo:competitor-analyst` — Análise de outras igrejas
+- `/castelo-forte:conteudo:daily-monitor` — Sentinela diária de concorrentes
+- `/castelo-forte:conteudo:publishing-manager` — Pipeline render + publish
 
 ### Tier 2 — Suporte (4)
-- `@content-planner` — Calendário editorial
-- `@content-repurposer` — Adapta entre formatos
-- `@content-validator` — Gatekeeper Anti-IA + Oráculo
-- `@performance-tracker` — Métricas pós-publicação
+- `/castelo-forte:conteudo:content-planner` — Calendário editorial
+- `/castelo-forte:conteudo:content-repurposer` — Adapta entre formatos
+- `/castelo-forte:conteudo:content-validator` — Gatekeeper Anti-IA + Oráculo
+- `/castelo-forte:conteudo:performance-tracker` — Métricas pós-publicação
 
 ## Regras inegociáveis
 1. **Filtro Anti-IA v3.7** (`squads/conteudo/scripts/validate-anti-ia.sh`)
