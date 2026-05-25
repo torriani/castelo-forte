@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual do Squad — Castelo Forte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange-fort: #fe5b06;
+  --midnight-blue: #153247;
+  --deeper-blue: #252f38;
+  --fort-blue: #075057;
+  --off-white: #efefef;
+  --text-dark: #1a2332;
+  --text-light: #6b7785;
+  --border: #e4e7ec;
+  --bg-soft: #f8f9fb;
+  --green: #10b981;
+  --red: #ef4444;
+  --yellow: #f59e0b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 400;
+  background: var(--off-white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ━━━ HEADER ━━━ */
+header {
+  background: var(--midnight-blue);
+  color: white;
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to right bottom, var(--midnight-blue) 49.5%, var(--off-white) 50%);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--orange-fort);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Archivo Black';
+  color: var(--midnight-blue);
+  font-size: 24px;
+}
+.brand-name {
+  font-family: 'Archivo Black';
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+}
+.brand-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h1 {
+  font-family: 'Archivo Black';
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.85);
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s;
+  font-family: 'Inter';
+  font-size: 15px;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  background: var(--orange-fort);
+  color: white;
+}
+.btn-ghost {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ━━━ NAV STICKY ━━━ */
+nav.sticky {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 16px 0;
+  margin-top: -40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+nav.sticky ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  overflow-x: auto;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav.sticky a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+nav.sticky a:hover { color: var(--orange-fort); border-bottom-color: var(--orange-fort); }
+
+/* ━━━ SECTIONS ━━━ */
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+section.alt { background: white; }
+.section-header {
+  margin-bottom: 48px;
+}
+.section-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(254, 91, 6, 0.1);
+  color: var(--orange-fort);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+h2 {
+  font-family: 'Archivo Black';
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  color: var(--midnight-blue);
+  margin-bottom: 16px;
+}
+.section-desc {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  max-width: 700px;
+}
+h3 {
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--midnight-blue);
+  margin: 32px 0 16px;
+}
+h4 {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--midnight-blue);
+  margin: 24px 0 12px;
+}
+p { margin-bottom: 16px; }
+ul, ol { padding-left: 24px; margin-bottom: 16px; }
+li { margin-bottom: 8px; }
+
+/* ━━━ CODE ━━━ */
+code {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg-soft);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: var(--orange-fort);
+}
+pre {
+  background: var(--midnight-blue);
+  color: #e2e8f0;
+  padding: 20px 24px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 16px 0 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ━━━ STEPS ━━━ */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+}
+.steps > li {
+  counter-increment: step;
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+.steps > li:first-child { border-top: 0; }
+.steps > li::before {
+  content: counter(step);
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--orange-fort);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Archivo Black';
+  font-size: 18px;
+}
+.steps > li > div { flex: 1; }
+.steps h4 { margin: 0 0 8px; }
+
+/* ━━━ CARDS ━━━ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.2s;
+}
+.card:hover {
+  border-color: var(--orange-fort);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(254, 91, 6, 0.1);
+}
+.card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(254, 91, 6, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.card h4 { margin: 0 0 8px; }
+.card p {
+  color: var(--text-light);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ━━━ TABLES ━━━ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+th, td {
+  text-align: left;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+th {
+  background: var(--bg-soft);
+  font-weight: 700;
+  color: var(--midnight-blue);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+tr:last-child td { border-bottom: 0; }
+tr:hover { background: var(--bg-soft); }
+td code { white-space: nowrap; }
+
+/* ━━━ CALLOUTS ━━━ */
+.callout {
+  padding: 20px 24px;
+  border-radius: 8px;
+  margin: 24px 0;
+  border-left: 4px solid;
+  display: flex;
+  gap: 16px;
+}
+.callout-icon { flex-shrink: 0; font-size: 24px; }
+.callout-content { flex: 1; }
+.callout-content strong { display: block; margin-bottom: 4px; }
+.callout-info {
+  background: rgba(21, 50, 71, 0.05);
+  border-color: var(--midnight-blue);
+}
+.callout-warn {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: var(--yellow);
+}
+.callout-danger {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: var(--red);
+}
+.callout-success {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--green);
+}
+
+/* ━━━ BADGES ━━━ */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.badge-primary { background: var(--orange-fort); color: white; }
+.badge-info { background: var(--midnight-blue); color: white; }
+.badge-soft { background: var(--bg-soft); color: var(--text-dark); }
+
+/* ━━━ FLOW DIAGRAM ━━━ */
+.flow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 32px 0;
+}
+.flow-step {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 24px;
+  position: relative;
+}
+.flow-step.highlight {
+  border-color: var(--orange-fort);
+  background: rgba(254, 91, 6, 0.05);
+}
+.flow-step .step-num {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--orange-fort);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'JetBrains Mono';
+}
+.flow-step h5 {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 4px 0 6px;
+  color: var(--midnight-blue);
+}
+.flow-step p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin: 0;
+}
+.flow-arrow {
+  text-align: center;
+  color: var(--orange-fort);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ━━━ FOOTER ━━━ */
+footer {
+  background: var(--midnight-blue);
+  color: white;
+  padding: 60px 0 40px;
+  text-align: center;
+}
+footer p {
+  color: rgba(255,255,255,0.6);
+  margin: 8px 0;
+  font-size: 14px;
+}
+footer a { color: var(--orange-fort); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* ━━━ RESPONSIVE ━━━ */
+@media (max-width: 768px) {
+  nav.sticky ul { gap: 16px; }
+  .steps > li { flex-direction: column; gap: 12px; }
+  pre { font-size: 12px; padding: 14px 16px; }
+}
+
+/* ━━━ UTILITIES ━━━ */
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.text-center { text-align: center; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<!-- ━━━ HEADER ━━━ -->
+<header>
+  <div class="container">
+    <div class="brand">
+      <div class="brand-logo">C</div>
+      <div>
+        <div class="brand-name">Castelo Forte</div>
+        <div class="brand-sub">Squad de Conteúdo</div>
+      </div>
+    </div>
+    <h1>Manual completo da operação de conteúdo</h1>
+    <p class="subtitle">Como usar o squad, criar peças, multiplicar conteúdos longos, publicar no Instagram e operar o portal de aprovação da Igreja Castelo Forte.</p>
+    <div class="cta-row">
+      <a href="#comecar" class="btn btn-primary">Começar agora →</a>
+      <a href="#fluxos" class="btn btn-ghost">Ver fluxos</a>
+    </div>
+  </div>
+</header>
+
+<!-- ━━━ NAV STICKY ━━━ -->
+<nav class="sticky">
+  <ul>
+    <li><a href="#comecar">Começar</a></li>
+    <li><a href="#portal">Portal de aprovação</a></li>
+    <li><a href="#criar">Criar conteúdo</a></li>
+    <li><a href="#multiplicar">Multiplicar</a></li>
+    <li><a href="#publicar">Publicar</a></li>
+    <li><a href="#regras">Regras inegociáveis</a></li>
+    <li><a href="#agentes">Agentes</a></li>
+    <li><a href="#problemas">Problemas</a></li>
+  </ul>
+</nav>
+
+<!-- ━━━ SECTION 1: COMEÇAR ━━━ -->
+<section id="comecar" class="alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 · Primeiro contato</span>
+      <h2>Começar a usar (30 a 45 min)</h2>
+      <p class="section-desc">O que você precisa instalar, clonar e configurar antes de tudo. Faça uma vez e nunca mais precisa.</p>
+    </div>
+
+    <h3>Pré-requisitos</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h4>Node.js 18+</h4>
+        <p><code>brew install node</code> no Mac. Confira com <code>node --version</code>.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h4>Claude Code CLI</h4>
+        <p>Baixe em <a href="https://claude.com/claude-code/quickstart">claude.com/claude-code</a>. Faça login.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🐙</div>
+        <h4>GitHub CLI</h4>
+        <p><code>brew install gh</code> e depois <code>gh auth login</code>.</p>
+      </div>
+      <div class="card">
+        <div class="icon">▲</div>
+        <h4>Vercel CLI</h4>
+        <p><code>npm install -g vercel</code> e <code>vercel login</code> (necessário pra deployar o portal).</p>
+      </div>
+    </div>
+
+    <h3>Passo a passo de instalação</h3>
+    <ol class="steps">
+      <li>
+        <div>
+          <h4>Clone o repositório</h4>
+          <pre><code>cd ~/
+mkdir -p claude && cd claude
+git clone git@github.com:torriani/castelo-forte.git
+cd castelo-forte</code></pre>
+          <p><strong>Tamanho:</strong> ~740MB (inclui portal Vercel completo). Demora 2-5min na primeira vez.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Instale dependências</h4>
+          <pre><code>cd squads/conteudo/app/image-generator && npm install && cd -
+cd squads/conteudo/skills/aprovacoes && npm install && cd -
+cd apps/publisher-instagram && npm install && cd -</code></pre>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Configure o .env (credenciais)</h4>
+          <pre><code>cp .env.example .env
+code .env  # ou: nano .env</code></pre>
+          <p>O administrador entrega os tokens pelo <strong>1Password</strong> no item "Castelo Forte — Squad Conteúdo". Cole na ordem.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Habilite o pre-commit hook</h4>
+          <pre><code>git config core.hooksPath .githooks</code></pre>
+          <p>Esse hook bloqueia commits com arquivos &gt;10MB e secrets. Protege a operação.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Teste de fumaça</h4>
+          <pre><code>node squads/conteudo/scripts/list-archive.mjs</code></pre>
+          <p>Deve listar pastas <code>campanhas/</code>, <code>inteligencia/</code>, <code>multiplicar/</code> etc. Se der erro 401, peça token novo ao admin.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Abra o Claude Code aqui</h4>
+          <pre><code>cd ~/claude/castelo-forte
+claude</code></pre>
+          <p>Dentro do Claude Code, ative o orquestrador:</p>
+          <pre><code>@content-chief</code></pre>
+          <p>Se ele responder ativando o <strong>Imperador do Squad</strong>, está tudo funcionando.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 2: PORTAL ━━━ -->
+<section id="portal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 · Operação diária</span>
+      <h2>Portal de aprovação</h2>
+      <p class="section-desc">Como acessar o portal, alterar conteúdos publicados, ver status da fila de aprovação e gerar links mágicos pro aprovador externo.</p>
+    </div>
+
+    <h3>O que é o portal</h3>
+    <p>Site estático na Vercel que serve <strong>2 públicos</strong>:</p>
+    <ul>
+      <li><strong>Aprovador externo</strong> (pastor/liderança): recebe link mágico, aprova ou reprova peças com clique. Pode deixar observação.</li>
+      <li><strong>Admin</strong> (você): gerencia clientes, vê estatísticas, dispara re-deploys.</li>
+    </ul>
+
+    <h3>URLs em produção</h3>
+    <table>
+      <thead>
+        <tr><th>URL</th><th>Função</th><th>Acesso</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>castelo-forte-ten.vercel.app/aprovar/?cliente=castelo-forte&token=&lt;TOKEN&gt;</code></td><td>Aprovação externa</td><td>Token mágico (gerado pela skill)</td></tr>
+        <tr><td><code>castelo-forte-ten.vercel.app/admin/</code></td><td>Admin</td><td>Login: juliano@castelo-forte.com.br</td></tr>
+        <tr><td><code>castelo-forte-ten.vercel.app/conteudo/maio/</code></td><td>Conteúdo publicável</td><td>Público</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Como acessar pra editar (operador)</h3>
+    <ol class="steps">
+      <li>
+        <div>
+          <h4>Rode o portal localmente</h4>
+          <pre><code>cd apps/conteudo
+python3 -m http.server 8080</code></pre>
+          <p>Abre em <code>http://localhost:8080</code>. Cmd+C pra parar.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Edite os arquivos</h4>
+          <p>Pastas principais:</p>
+          <ul>
+            <li><code>apps/conteudo/aprovar/</code> — interface do aprovador</li>
+            <li><code>apps/conteudo/admin/</code> — painel admin</li>
+            <li><code>apps/conteudo/conteudo/maio/</code> — material publicável do mês</li>
+            <li><code>apps/conteudo/img/cf-carrosseis/dia-NN/</code> — carrosseis por dia (capa + 6 internos)</li>
+            <li><code>apps/conteudo/img/cf-frases/dia-NN/</code> — frase por dia</li>
+            <li><code>apps/conteudo/assets/</code> — CSS, JS, fontes globais</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Deploy pra produção</h4>
+          <pre><code>cd apps/conteudo
+vercel --prod --yes</code></pre>
+          <p>~30s e a mudança está no ar.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3>Fluxo de aprovação completo</h3>
+    <div class="flow">
+      <div class="flow-step">
+        <span class="step-num">1</span>
+        <h5>Operador cria conteúdo via squad</h5>
+        <p><code>@content-chief</code> gera carrossel ou frase. PNGs vão pra <code>outputs/</code></p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">2</span>
+        <h5>Copia pro portal</h5>
+        <p>Move PNGs pra <code>apps/conteudo/img/cf-carrosseis/dia-NN/</code></p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step highlight">
+        <span class="step-num">3</span>
+        <h5>Sincroniza pro Supabase</h5>
+        <p><code>node squads/conteudo/skills/aprovacoes/scripts/publicar.mjs castelo-forte</code></p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">4</span>
+        <h5>Gera link mágico</h5>
+        <p><code>node squads/conteudo/skills/aprovacoes/scripts/link.mjs castelo-forte</code></p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">5</span>
+        <h5>Manda link pro aprovador</h5>
+        <p>WhatsApp, e-mail. Aprovador aprova/reprova com observação.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step highlight">
+        <span class="step-num">6</span>
+        <h5>Corrige reprovados</h5>
+        <p><code>node squads/conteudo/skills/aprovacoes/scripts/corrigir.mjs castelo-forte</code> — Claude Code aplica correções, marca como corrigido, redeploya.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="step-num">7</span>
+        <h5>Aprovador re-aprova</h5>
+        <p>Volta no link com filtro <code>--corrigidos</code></p>
+      </div>
+    </div>
+
+    <h3>Comandos rápidos da skill</h3>
+    <table>
+      <thead><tr><th>Comando</th><th>Função</th></tr></thead>
+      <tbody>
+        <tr><td><code>publicar.mjs castelo-forte</code></td><td>Sincronizar conteúdo novo pro Supabase</td></tr>
+        <tr><td><code>status.mjs castelo-forte</code></td><td>Ver status da fila (pendentes/aprovados/reprovados)</td></tr>
+        <tr><td><code>link.mjs castelo-forte</code></td><td>Gerar link mágico pro aprovador</td></tr>
+        <tr><td><code>link.mjs castelo-forte --corrigidos</code></td><td>Link filtrado nos corrigidos</td></tr>
+        <tr><td><code>corrigir.mjs castelo-forte</code></td><td>Aplicar correções dos reprovados</td></tr>
+      </tbody>
+    </table>
+    <p>Todos rodam em <code>squads/conteudo/skills/aprovacoes/scripts/</code>. Path completo do exemplo:</p>
+    <pre><code>node ~/claude/castelo-forte/squads/conteudo/skills/aprovacoes/scripts/publicar.mjs castelo-forte</code></pre>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 3: CRIAR CONTEÚDO ━━━ -->
+<section id="criar" class="alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 · Produção</span>
+      <h2>Criar conteúdo novo</h2>
+      <p class="section-desc">Fluxos passo a passo para cada tipo de peça. Todos passam pelo <strong>Content Chief</strong> (orquestrador) que diagnostica e delega.</p>
+    </div>
+
+    <h3>Antes de criar (sempre)</h3>
+    <pre><code>cd ~/claude/castelo-forte
+claude
+@content-chief</code></pre>
+    <p>O Chief carrega automaticamente:</p>
+    <ul>
+      <li>Voice DNA da Castelo Forte (<code>workspace/.../brand/voice/</code>)</li>
+      <li>Regras inviolaveis (<code>squads/conteudo/data/regras-inviolaveis.md</code>)</li>
+      <li>Filtro Anti-IA (<code>squads/conteudo/checklists/filtro-anti-ia.md</code>)</li>
+      <li><strong>Teologia do Reino</strong> como combustível da copy</li>
+    </ul>
+
+    <h3>Fluxo 1 — Carrossel</h3>
+    <ol class="steps">
+      <li>
+        <div>
+          <h4>Ative o Chief e peça briefing</h4>
+          <pre><code>@content-chief
+*briefing</code></pre>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Responda 2 perguntas (no máximo)</h4>
+          <ul>
+            <li>"Qual o objetivo?" → atrair / mudar percepção / esquentar / vender</li>
+            <li>"Sobre o que?" → tema central</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Aprove a prescrição</h4>
+          <p>Chief recomenda: Tipo (Imperial/Polêmico/Crença/Problema/História/Oferta), Framework, Tamanho (1-10 slides), Abertura.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Chief delega pro @carousel-creator</h4>
+          <p>Escreve, passa pelo @content-validator (Anti-IA + Oráculo + tom Castelo Forte), gera PNGs.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Onde fica</h4>
+          <pre><code>outputs/campanhas/{campanha}/carrosseis/{slug}/
+├── post.md          # texto fonte
+├── post.json        # dados estruturados
+├── slide-01.png     # ... até slide-10.png
+└── legenda.md       # caption do Instagram</code></pre>
+        </div>
+      </li>
+    </ol>
+
+    <h3>Fluxo 2 — Reels</h3>
+    <pre><code>@content-chief
+*reels</code></pre>
+    <p>Pede: tema, duração (15s/30s/60s/90s), tipo (educativo/inspiracional/convocação/depoimento). O <code>@reels-creator</code> entrega roteiro com timestamps, texto na tela, B-roll, hook dos 2s iniciais, legenda.</p>
+
+    <h3>Fluxo 3 — Stories</h3>
+    <pre><code>@content-chief
+*stories</code></pre>
+    <p>Pede objetivo + quantidade. O <code>@stories-strategist</code> entrega <strong>sequência</strong> (não stories soltos): gancho, desenvolvimento + interações (enquetes, caixinhas), CTA final.</p>
+
+    <h3>Fluxo 4 — Print-tweet (reflexão)</h3>
+    <pre><code>@content-chief
+*briefing  # diz que é print-tweet</code></pre>
+    <p>Ou direto: <code>@print-tweet-creator</code>. Reflexão de 3-12 linhas em fundo branco estilo tweet/X. Template padrão: <code>twitter-branco</code>.</p>
+
+    <h3>Fluxo 5 — Campanha (E1-E8)</h3>
+    <pre><code>@content-chief
+*campanha</code></pre>
+    <p>Pra lançamentos ou semanas temáticas. Chief delega pro <code>@strategist</code> que monta 1 das 8 estratégias:</p>
+    <div class="tag-list">
+      <span class="badge badge-info">E1 — Lançamento de pressão (5 dias)</span>
+      <span class="badge badge-info">E2 — Aquecimento suave (10-14 dias)</span>
+      <span class="badge badge-info">E3 — Doutrina silenciosa</span>
+      <span class="badge badge-info">E4 — Quebra de objeção</span>
+      <span class="badge badge-info">E5 — Lançamento híbrido</span>
+      <span class="badge badge-info">E6 — Reativação de lista</span>
+      <span class="badge badge-info">E7 — Manifesto/posicionamento</span>
+      <span class="badge badge-info">E8 — Convocação para evento</span>
+    </div>
+    <p>Cada campanha distribui peças entre feed + stories + reels ao longo dos dias.</p>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 4: MULTIPLICAR ━━━ -->
+<section id="multiplicar">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 · Pipeline avançado</span>
+      <h2>Multiplicar conteúdo longo</h2>
+      <p class="section-desc">Quebrar 1 live, aula ou podcast em 30+ peças (carrosseis, reels, stories, frases, briefs de e-mail). O ativo mais subutilizado da igreja é a pregação gravada — esse fluxo extrai todos os átomos.</p>
+    </div>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <strong>Por que multiplicar?</strong>
+        Uma live de 1h tem em média 20-30 ideias isoladas com potencial viral. Sem multiplicar, todas morrem na live. O <code>*multiplicar</code> garante que nenhum insight bom é desperdiçado.
+      </div>
+    </div>
+
+    <h3>Como rodar</h3>
+    <ol class="steps">
+      <li>
+        <div>
+          <h4>Ative o Chief e dispare o comando</h4>
+          <pre><code>@content-chief
+*multiplicar</code></pre>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Informe a fonte</h4>
+          <p>Chief pergunta o que é:</p>
+          <ul>
+            <li>URL do YouTube</li>
+            <li>Arquivo de áudio/vídeo local</li>
+            <li>Texto/transcrição já feita</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Deixe o pipeline rodar</h4>
+          <p>O pipeline tem <strong>7 fases automatizadas</strong>:</p>
+          <ol>
+            <li><strong>Transcrever</strong> — Whisper local pra áudio/vídeo</li>
+            <li><strong>Limpar transcrição</strong> — Sonnet corrige</li>
+            <li><strong>Extrair átomos</strong> — cada átomo = 1 ideia isolada com potencial viral</li>
+            <li><strong>Planejar formatos</strong> — Chief decide quais átomos viram quais formatos</li>
+            <li><strong>Pedir aprovação do plano</strong> ← você revisa</li>
+            <li><strong>Criar peças</strong> — cada formato com seu agente especializado</li>
+            <li><strong>Validar</strong> — Anti-IA + Oráculo em cada peça</li>
+            <li><strong>Distribuir no calendário</strong> — datas sugeridas</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Onde fica o resultado</h4>
+          <pre><code>outputs/multiplicar/{nome-conteudo}/
+├── transcricao.md
+├── atomos/
+│   └── {N}-{tema}.md
+├── carrosseis/
+├── reels/
+├── stories/
+├── frases/
+├── tela-dividida/
+└── emails/                  # briefs pra Squad Copywriters</code></pre>
+        </div>
+      </li>
+    </ol>
+
+    <h3>Caso real: pregação de domingo</h3>
+    <p>Uma pregação típica de 50min gera:</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🎠</div>
+        <h4>3-5 carrosseis</h4>
+        <p>Ensinos centrais virados em sequências de 7-10 slides com ganchos próprios.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎬</div>
+        <h4>5-8 reels</h4>
+        <p>Cortes potentes (15-60s) com hooks dos 2 primeiros segundos.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h4>2-3 sequências de stories</h4>
+        <p>Convites pro próximo culto, enquetes de aplicação prática.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💬</div>
+        <h4>10-15 frases</h4>
+        <p>Quote cards de tweets, prints reflexivos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 5: PUBLICAR ━━━ -->
+<section id="publicar" class="alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 · Distribuição</span>
+      <h2>Publicar no Instagram</h2>
+      <p class="section-desc">Pipeline automático com cron (LaunchAgent). Posts agendados são publicados nos horários definidos, com filtro Anti-IA bloqueante.</p>
+    </div>
+
+    <h3>Adicionar post à fila</h3>
+    <p>Cada post é uma pasta dentro de <code>apps/publisher-instagram/publicar/</code> com nome no formato:</p>
+    <pre><code>NN-YYYY-MM-DD-HHMM-slug/</code></pre>
+    <p>Exemplo: <code>15-2026-05-25-1900-domingo-pentecostes/</code></p>
+    <p>Dentro da pasta, exatamente 3 arquivos:</p>
+    <table>
+      <thead><tr><th>Arquivo</th><th>O que é</th></tr></thead>
+      <tbody>
+        <tr><td><code>post.png</code></td><td>Imagem do post (1080x1350 ou 1080x1080)</td></tr>
+        <tr><td><code>post.json</code></td><td>Metadados (tipo, slug, agendado_para, campanha)</td></tr>
+        <tr><td><code>legenda.md</code></td><td>Caption do Instagram (até 2200 chars)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Comandos do dia a dia</h3>
+    <table>
+      <thead><tr><th>Comando</th><th>O que faz</th></tr></thead>
+      <tbody>
+        <tr><td><code>/publicar-status</code></td><td>Status da fila (próximo agendado, falhas, etc)</td></tr>
+        <tr><td><code>/publicar-log</code></td><td>Log do dia</td></tr>
+        <tr><td><code>/publicar-agora N</code></td><td>Força publicação manual do post #N</td></tr>
+        <tr><td><code>/publicar</code></td><td>Publicar post avulso (dry-run + aprovação)</td></tr>
+        <tr><td><code>/publicar-pause</code></td><td>Desativa cron</td></tr>
+        <tr><td><code>/publicar-resume</code></td><td>Reativa cron</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Gate Anti-IA bloqueante</h3>
+    <div class="callout callout-danger">
+      <div class="callout-icon">🚫</div>
+      <div class="callout-content">
+        <strong>Antes de publicar, o publisher roda:</strong>
+        <pre style="margin-top:8px"><code>bash squads/conteudo/scripts/validate-anti-ia.sh legenda.md
+bash squads/conteudo/scripts/validate-anti-ia.sh post.json --json</code></pre>
+        Se falhar: <strong>publicação BLOQUEADA</strong>. Você recebe notificação macOS + erro no log. Corrija a legenda e tente de novo.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 6: REGRAS ━━━ -->
+<section id="regras">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">06 · Compliance</span>
+      <h2>Regras inegociáveis</h2>
+      <p class="section-desc">TODO conteúdo gerado deve respeitar essas regras. Sem exceção.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h4>Filtro Anti-IA (Layer 0, bloqueante)</h4>
+        <p>Toda peça passa antes de publicar. Detecta travessão, sequências genéricas, jargão IA. Sem aprovação = não publica.</p>
+      </div>
+      <div class="card">
+        <div class="icon">👑</div>
+        <h4>Teologia do Reino</h4>
+        <p>Combustível da copy. Filho não serviçal. Reinar agora, não só ir pro céu. Autoridade espiritual no cotidiano.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎙️</div>
+        <h4>Voice DNA da Castelo Forte</h4>
+        <p>Carregado SEMPRE antes de criar. Arquétipos: Mago/Cuidador/Criador. Tom: forte mas sutil, profundo mas acessível.</p>
+      </div>
+      <div class="card">
+        <div class="icon">❌</div>
+        <h4>NUNCA usar travessão (—, –)</h4>
+        <p>Substitua por vírgula, ponto, dois pontos, parênteses ou quebra de linha. Travessão denuncia IA escrevendo PT-BR.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🇧🇷</div>
+        <h4>Português brasileiro completo</h4>
+        <p>Acentuação obrigatória (á, é, ç, ã, õ, ê, í, ó, ú). Escrever sem acento é erro grave.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📁</div>
+        <h4>Outputs no lugar certo</h4>
+        <p>Sempre em <code>outputs/</code>, nunca dentro de <code>squads/</code>.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-warn">
+      <div class="callout-icon">⚖️</div>
+      <div class="callout-content">
+        <strong>O filtro Anti-IA é mecânico, não opinativo.</strong>
+        Roda <code>squads/conteudo/scripts/validate-anti-ia.sh</code> que faz grep determinístico. Exit 0 = aprovado, exit 1 = corrigir. Compliance binário: 1 violação = reprovação total. Sem chance de "quase passou".
+      </div>
+    </div>
+
+    <h3>Teologia do Reino em prática</h3>
+    <p>Vocabulário próprio da Castelo Forte (extraído de <code>workspace/.../brand/voice/expression.md</code>):</p>
+    <div class="tag-list">
+      <span class="badge badge-primary">Reino</span>
+      <span class="badge badge-primary">Reinar</span>
+      <span class="badge badge-primary">Herdeiro</span>
+      <span class="badge badge-primary">Filho</span>
+      <span class="badge badge-primary">Herança</span>
+      <span class="badge badge-primary">Chamado</span>
+      <span class="badge badge-primary">Propósito</span>
+      <span class="badge badge-primary">Posição</span>
+      <span class="badge badge-primary">Autoridade</span>
+      <span class="badge badge-primary">Encontro</span>
+      <span class="badge badge-primary">Presença</span>
+      <span class="badge badge-primary">Intimidade</span>
+      <span class="badge badge-primary">Castelo</span>
+      <span class="badge badge-primary">Fortaleza</span>
+      <span class="badge badge-primary">Refúgio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 7: AGENTES ━━━ -->
+<section id="agentes" class="alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">07 · Squad</span>
+      <h2>Agentes disponíveis</h2>
+      <p class="section-desc">Ative qualquer um direto com <code>@nome</code>. O <strong>Content Chief</strong> sabe quando chamar quem, mas você pode ir direto se já sabe o que quer.</p>
+    </div>
+
+    <h3>Tier 0 — Orquestrador</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">👑</div>
+        <h4>@content-chief</h4>
+        <p><strong>Imperador do squad.</strong> Diagnostica intenção, prescreve formato + tipo + framework, delega pro especialista. Comece sempre por aqui.</p>
+      </div>
+    </div>
+
+    <h3>Tier 1 — Criadores</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🎠</div>
+        <h4>@carousel-creator</h4>
+        <p>Carrosseis de 1 a 10 slides. 7 tipos + 9 frameworks de copy.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎬</div>
+        <h4>@reels-creator</h4>
+        <p>Roteiros de Reels (15-90s). DNA BLAZE completo, 7 padrões virais.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h4>@stories-strategist</h4>
+        <p>Sequências de Stories com intenção de conversão.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💭</div>
+        <h4>@print-tweet-creator</h4>
+        <p>Print-tweets / reflexões de 3-12 linhas estilo X/Twitter.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚔️</div>
+        <h4>@strategist</h4>
+        <p>Campanhas E1-E8 multi-formato com cronograma integrado.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📍</div>
+        <h4>@positioning-expert</h4>
+        <p>Bio Imperial, CLC (Carta de Linha Compactada), StoryAds.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h4>@competitor-analyst</h4>
+        <p>Análise de outras igrejas. Scrape, transcrição, padrões.</p>
+      </div>
+    </div>
+
+    <h3>Tier 2 — Suporte</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">📅</div>
+        <h4>@content-planner</h4>
+        <p>Calendário editorial. 5 níveis de consciência. 25 ideias/ciclo.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔄</div>
+        <h4>@content-repurposer</h4>
+        <p>Adapta entre formatos (carrossel → reel → stories).</p>
+      </div>
+      <div class="card">
+        <div class="icon">✅</div>
+        <h4>@content-validator</h4>
+        <p><strong>Gatekeeper.</strong> Layer 0 (Anti-IA) → Layer 1 (Oráculo) → Layer 2 (tom Castelo Forte).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━ SECTION 8: PROBLEMAS ━━━ -->
+<section id="problemas">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">08 · Quando der errado</span>
+      <h2>Problemas comuns</h2>
+      <p class="section-desc">Top erros que aparecem na operação diária, com solução direta. Para problemas mais profundos: <code>docs/TROUBLESHOOTING.md</code>.</p>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Sintoma</th><th>Causa provável</th><th>Solução</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>"ERRO: .env não encontrado"</td>
+          <td>Não copiou template</td>
+          <td><code>cp .env.example .env</code> e edite</td>
+        </tr>
+        <tr>
+          <td>"Supabase list falhou (401)"</td>
+          <td>Token errado ou expirado</td>
+          <td>Peça token novo ao admin (1Password)</td>
+        </tr>
+        <tr>
+          <td>"@content-chief não responde"</td>
+          <td>Você está fora da pasta do repo</td>
+          <td><code>cd ~/claude/castelo-forte</code> antes</td>
+        </tr>
+        <tr>
+          <td>"Publisher bloqueado" (notificação)</td>
+          <td>Filtro Anti-IA reprovou</td>
+          <td>Veja <code>/publicar-log</code>, corrija legenda, rode <code>validate-anti-ia.sh</code></td>
+        </tr>
+        <tr>
+          <td>"Container error" no Instagram</td>
+          <td>Imagem inválida (aspect ratio errado)</td>
+          <td>PNG deve ser 1080x1350 ou 1080x1080</td>
+        </tr>
+        <tr>
+          <td>"Link mágico não funciona"</td>
+          <td>Token expirou (30 dias)</td>
+          <td>Gere novo: <code>link.mjs castelo-forte</code></td>
+        </tr>
+        <tr>
+          <td>"Mudei portal mas não atualizou"</td>
+          <td>Vercel ainda processando ou cache</td>
+          <td>Aguarde 30s e dê Cmd+Shift+R</td>
+        </tr>
+        <tr>
+          <td>"pre-commit bloqueou meu commit"</td>
+          <td>Arquivo &gt;10MB ou .env staged</td>
+          <td>Mídia vai pro Supabase, .env nunca commita</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ━━━ FOOTER ━━━ -->
+<footer>
+  <div class="container">
+    <p><strong>Squad de Conteúdo — Igreja Castelo Forte</strong></p>
+    <p>Repositório: <a href="https://github.com/torriani/castelo-forte">github.com/torriani/castelo-forte</a></p>
+    <p>Portal: <a href="https://castelo-forte-ten.vercel.app">castelo-forte-ten.vercel.app</a></p>
+    <p>Documentação completa em <code>docs/</code></p>
+    <p style="margin-top:24px; font-size:12px; opacity:0.5">Manual gerado em 2026-05-24</p>
+  </div>
+</footer>
+
+</body>
+</html>
