@@ -155,11 +155,21 @@ code .
 ```
 
 ### 2. Teste localmente
+O portal é HTML/CSS/JS estático puro. **Não tem `npm run dev`** (não é app Node). Use qualquer servidor estático:
 ```bash
+# Opção 1: Python (já vem no Mac)
 cd apps/conteudo
 python3 -m http.server 8080
-# abre http://localhost:8080
+
+# Opção 2: Node sem instalar nada
+cd apps/conteudo
+npx serve -p 8080
+
+# Opção 3: Vercel CLI (simula produção, respeita vercel.json)
+cd apps/conteudo
+vercel dev
 ```
+Abre em `http://localhost:8080`. Pra testar redirects/cache, use `vercel dev`.
 
 ### 3. Deploy
 ```bash

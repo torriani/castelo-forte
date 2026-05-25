@@ -30,11 +30,27 @@ apps/conteudo/
 
 ## Como rodar localmente
 
+Este portal é **HTML/CSS/JS estático puro** (sem Node, sem React, sem build). **Não tem `npm run dev`.** Use qualquer servidor estático:
+
 ```bash
+# Opção 1: Python (já vem no Mac)
 cd apps/conteudo
 python3 -m http.server 8080
-# abre http://localhost:8080
+
+# Opção 2: Node (sem instalar nada)
+cd apps/conteudo
+npx serve -p 8080
+
+# Opção 3: Vercel CLI (simula produção 100%, respeita vercel.json)
+cd apps/conteudo
+vercel dev
 ```
+
+Abre em `http://localhost:8080` (ou a porta que o Vercel escolher).
+
+**Qual usar?**
+- Edição de texto/imagens → qualquer um
+- Teste de redirects/headers/cache (config em `vercel.json`) → `vercel dev` é o único fiel
 
 ---
 

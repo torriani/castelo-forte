@@ -988,9 +988,25 @@ bash squads/conteudo/scripts/gerar-imagem-ia.sh --batch /tmp/lote-ia.json --mode
       <li>
         <div>
           <h4>Rode o portal localmente</h4>
-          <pre><code>cd apps/conteudo
-python3 -m http.server 8080</code></pre>
-          <p>Abre em <code>http://localhost:8080</code>. Cmd+C pra parar.</p>
+          <p><strong>Importante:</strong> o portal é HTML/CSS/JS estático puro. <strong>Não tem <code>npm run dev</code></strong> porque não é app Node/React. Use qualquer servidor estático:</p>
+          <pre><code># Opção 1: Python (já vem no Mac)
+cd apps/conteudo
+python3 -m http.server 8080
+
+# Opção 2: Node (npx, sem instalar nada)
+cd apps/conteudo
+npx serve -p 8080
+
+# Opção 3: Vercel CLI (mais fiel à produção — respeita vercel.json)
+cd apps/conteudo
+vercel dev</code></pre>
+          <p>Abre em <code>http://localhost:8080</code> (ou porta que o Vercel escolher). Cmd+C pra parar.</p>
+          <div class="callout callout-info" style="margin-top:12px">
+            <div class="callout-icon">💡</div>
+            <div class="callout-content">
+              <strong>Qual usar?</strong> Pra editar texto/imagens, qualquer um serve. Pra testar redirects, headers ou cache (config em <code>vercel.json</code>), use <code>vercel dev</code> — é o único que simula 100% o ambiente Vercel real.
+            </div>
+          </div>
         </div>
       </li>
       <li>
