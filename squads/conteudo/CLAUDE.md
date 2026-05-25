@@ -49,6 +49,32 @@ node squads/conteudo/scripts/render-carrossel.mjs <arquivo.md> --template <model
 - `*templates` — lista todos os templates do catálogo
 - `*templates igreja-castelo-forte` — filtra pelos templates definidos em `workspace/businesses/igreja-castelo-forte/brand/templates.yaml` (se existir)
 
+### ⚠️ PADRÃO ÚNICO DE ARTE — CASA DE ISABEL (NÃO NEGOCIÁVEL)
+
+**Existe UM padrão visual aprovado e ele se chama Casa de Isabel.**
+
+Toda arte (carrossel T10, frase T11) DEVE seguir:
+- **Fundo:** off-white (`#efefef`)
+- **Texto principal:** midnight (`#153247`)
+- **Body suave:** cinza (`#5a6068`)
+- **Fonte headline:** Inter 700 (sentence case, NÃO uppercase)
+- **Fonte ênfase:** Playfair Display italic 500 (palavra-chave em italico serifado, NÃO orange, NÃO destaque colorido)
+- **Fonte mono:** JetBrains Mono nas referências bíblicas
+- **Logo Castelo Forte:** sempre no canto superior direito (170px, opacity 0.85)
+- **Divider:** 1px vertical 40px altura entre headline e body
+- **Layout:** centralizado vertical e horizontal
+
+**O QUE NUNCA FAZER:**
+- ❌ Usar `#fe5b06` (orange) como cor de acento em textos
+- ❌ Usar Archivo Black em UPPERCASE no headline
+- ❌ Criar variantes fundo escuro/orange/fort-blue/imagem para frases (descontinuadas em 2026-05-25)
+- ❌ Publicar arte sem o logo no canto superior direito
+- ❌ Publicar arte que fuja do padrão Casa de Isabel — bloqueia publicação
+
+**Referência visual:** `outputs/demo-casa-isabel-2026-05-25/` (8 PNGs aprovados)
+**Templates HTML:** `squads/conteudo/templates/carousel/castelo-forte-editorial/` e `castelo-forte-frase/`
+**Renderizador:** `squads/conteudo/scripts/render-png.mjs` (Playwright + HTML → PNG 1080x1350)
+
 ### 3. Publicar no Instagram
 
 **Pipeline pronto em** `apps/publisher-instagram/`

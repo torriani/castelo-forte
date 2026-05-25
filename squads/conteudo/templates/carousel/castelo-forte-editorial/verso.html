@@ -4,41 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1080">
 <title>Castelo Forte Editorial - Verso</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;600&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     width: 1080px;
     height: 1350px;
-    overflow: hidden;
-    background: #252f38;
-    color: #efefef;
+    background: #efefef;
+    color: #153247;
     font-family: 'Inter', sans-serif;
     padding: 120px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
   }
+  .logo {
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    width: 170px;
+    opacity: 0.85;
+  }
+  .logo img { width: 100%; height: auto; object-fit: contain; display: block; }
   .ref {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 32px;
-    letter-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    color: #153247;
     font-weight: 600;
-    color: #fe5b06;
-    margin-bottom: 56px;
+    opacity: 0.65;
+    margin-bottom: 42px;
   }
-  .versiculo {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 88px;
-    line-height: 1.12;
-    letter-spacing: -2px;
-    text-transform: uppercase;
+  .v {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.24;
+    color: #153247;
+    max-width: 880px;
   }
 </style>
 </head>
 <body>
+  <div class="logo"><img src="{{logo_url}}"></div>
   <div class="ref">{{referencia}}</div>
-  <div class="versiculo">"{{versiculo}}"</div>
+  <div class="v">"{{versiculo}}"</div>
 </body>
 </html>

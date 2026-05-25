@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1080">
-<title>Castelo Forte Frase - Off White</title>
+<title>Castelo Forte Frase</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;600&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     width: 1080px;
     height: 1350px;
-    overflow: hidden;
     background: #efefef;
     color: #153247;
     font-family: 'Inter', sans-serif;
@@ -18,31 +17,56 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
+    text-align: center;
+    overflow: hidden;
   }
-  .frase {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 96px;
-    line-height: 1.08;
-    letter-spacing: -2.5px;
-    text-transform: uppercase;
-  }
-  .accent { color: #fe5b06; }
-  .ref {
+  .logo {
     position: absolute;
-    bottom: 80px;
-    left: 80px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 26px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #fe5b06;
+    top: 48px;
+    right: 48px;
+    width: 170px;
+    opacity: 0.85;
+  }
+  .logo img { width: 100%; height: auto; object-fit: contain; display: block; }
+  .bloco { max-width: 880px; width: 100%; }
+  .frase {
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
+    font-size: 54px;
+    line-height: 1.22;
+    letter-spacing: -1px;
+  }
+  .frase em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .divider {
+    width: 1px;
+    height: 40px;
+    background: #153247;
+    opacity: 0.3;
+    margin: 24px auto;
+  }
+  .ref {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #153247;
+    font-weight: 600;
+    opacity: 0.65;
   }
 </style>
 </head>
 <body>
-  <div class="frase">{{frase}}</div>
-  <div class="ref">{{referencia}}</div>
+  <div class="logo"><img src="{{logo_url}}"></div>
+  <div class="bloco">
+    <div class="frase">{{frase}}</div>
+    <div class="divider"></div>
+    <div class="ref">{{referencia}}</div>
+  </div>
 </body>
 </html>

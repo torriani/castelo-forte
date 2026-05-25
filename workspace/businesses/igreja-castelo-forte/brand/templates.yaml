@@ -1,19 +1,45 @@
-# Templates de carrossel preferidos pelo cliente igreja-castelo-forte
+# Templates de carrossel oficiais do cliente igreja-castelo-forte
 # Lido dinamicamente pelo comando *templates do Content Chief
 # Catálogo canônico: squads/conteudo/templates/catalog.yaml
+#
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# PADRÃO ÚNICO E OBRIGATÓRIO: CASA DE ISABEL
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# Existe UM padrão visual aprovado e ele se chama "Casa de Isabel".
+# Características:
+#   - Fundo off-white (#efefef)
+#   - Texto midnight (#153247)
+#   - Body cinza suave (#5a6068)
+#   - Tipografia: Inter 700 + Playfair Display italic 500 (ênfase) + JetBrains Mono (refs)
+#   - Logo Castelo Forte sempre no canto superior direito
+#   - Layout: centralizado vertical e horizontal, divider 1px vertical entre headline e body
+#   - SEM cor laranja (#fe5b06 NÃO faz mais parte do padrão de artes)
+#   - SEM Archivo Black UPPERCASE (não é o padrão)
+#
+# Qualquer arte gerada FORA desse padrão NÃO PODE ser publicada.
 
 cliente: igreja-castelo-forte
-default: T10            # castelo-forte-editorial (padrão oficial)
+default: T10            # castelo-forte-editorial (Casa de Isabel)
 permitidos:
-  - T10                 # castelo-forte-editorial — 7 slides editorial magazine
-  - T11                 # castelo-forte-frase — 1 slide, 5 variantes de fundo
+  - T10                 # castelo-forte-editorial — carrossel 7 slides
+  - T11                 # castelo-forte-frase — 1 slide (frase única off-white)
 
 aliases:
   editorial: T10
   frase: T11
   padrao: T10
+  casa-isabel: T10
 
 notas:
-  - "T10 é o padrão pra carrosséis completos (capa + tríade + síntese + verso + cta)"
-  - "T11 pra posts avulsos e cards de share (variantes: off-white, midnight, orange, fort-blue, com-imagem)"
+  - "PADRÃO ÚNICO: Casa de Isabel (off-white + midnight + Inter/Playfair italic)"
+  - "T10 é o padrão pra carrosséis completos (capa + interna + tríade + verso + cta)"
+  - "T11 é a versão de frase única (1 slide) no mesmo padrão Casa de Isabel"
+  - "Toda variante anterior (frase-midnight, frase-orange, frase-fort-blue, frase-imagem) foi DESCONTINUADA em 2026-05-25"
   - "Campanha Em Cristo usa 21 carrosséis T10 + 21 frases T11 (1 por dia)"
+
+historico:
+  - data: "2026-05-25"
+    mudanca: "Templates T10 e T11 reescritos no padrão Casa de Isabel (Inter + Playfair italic)"
+    motivo: "Antes estavam no padrão Archivo Black + orange, que NÃO era o padrão aprovado"
+    referencia: "outputs/demo-casa-isabel-2026-05-25/ (artes de referência)"

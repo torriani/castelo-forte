@@ -92,38 +92,61 @@ templates:
     aliases: [twitter-branco]
     tags: [print-tweet, light, social, default-castelo-forte]
 
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # T10 + T11 — PADRÃO ÚNICO CASA DE ISABEL (Castelo Forte)
+  # Atualizado em 2026-05-25 — substitui versão antiga (Archivo Black + orange)
+  # Referência visual: outputs/demo-casa-isabel-2026-05-25/
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
   T10:
     name: castelo-forte-editorial
     family: castelo-forte
-    title: "Castelo Forte — Editorial Magazine"
-    description: "Padrão oficial pra carrosséis da Igreja Castelo Forte. Inspirado no Modelo 01 (Editorial Magazine) com paleta oficial e Archivo Black. Capa com posição de título adaptativa (topo/centro/embaixo conforme imagem). 7 slides: capa + tríade + síntese + verso + cta."
+    title: "Castelo Forte — Casa de Isabel (Carrossel)"
+    description: "PADRÃO ÚNICO da Igreja Castelo Forte. Estilo Casa de Isabel: fundo off-white (#efefef), texto midnight (#153247), Inter 700 + Playfair Display italic 500 nas palavras-chave, logo Castelo Forte no canto superior direito, layout centralizado com divider 1px vertical entre headline e body. 7 slides: capa + interna (3-4) + tríade + verso + cta. NUNCA usar orange como acento, NUNCA usar Archivo Black UPPERCASE."
     showcase: templates/carousel/castelo-forte-editorial/SHOWCASE.html
     source: templates/carousel/castelo-forte-editorial/
     slides: 7
     cliente: igreja-castelo-forte
-    tags: [castelo-forte, editorial, padrão-oficial, igreja]
+    padrao: casa-isabel
+    tipografia:
+      headline: "Inter 700"
+      enfase: "Playfair Display italic 500"
+      mono: "JetBrains Mono 600"
+    cores:
+      bg: "#efefef"
+      txt: "#153247"
+      txt_suave: "#5a6068"
+    tags: [castelo-forte, casa-isabel, padrao-unico, padrão-oficial, igreja]
 
   T11:
     name: castelo-forte-frase
     family: castelo-forte
-    title: "Castelo Forte — Frase Única"
-    description: "Frase única em 4 variações de fundo (off white, midnight, orange, fort blue) + versão com imagem. Paleta oficial Castelo Forte. Versículo bíblico opcional no rodapé. Usado pra posts avulsos e cards de share."
+    title: "Castelo Forte — Casa de Isabel (Frase Única)"
+    description: "PADRÃO ÚNICO da Igreja Castelo Forte pra peças de 1 slide. Mesmo padrão Casa de Isabel do T10. Frase única em fundo off-white com palavra-chave em Playfair italic. Logo no canto superior direito, referência bíblica em JetBrains Mono no rodapé, divider 1px entre frase e ref. NUNCA usar variantes midnight/orange/fort-blue/imagem (descontinuadas em 2026-05-25)."
     showcase: templates/carousel/castelo-forte-frase/SHOWCASE.html
     source: templates/carousel/castelo-forte-frase/
     slides: 1
     cliente: igreja-castelo-forte
-    variantes: [off-white, midnight, orange, fort-blue, com-imagem]
-    tags: [castelo-forte, frase, peça-única, igreja]
+    padrao: casa-isabel
+    variantes: [off-white]
+    tipografia:
+      frase: "Inter 600"
+      enfase: "Playfair Display italic 500"
+      mono: "JetBrains Mono 600"
+    cores:
+      bg: "#efefef"
+      txt: "#153247"
+    tags: [castelo-forte, casa-isabel, padrao-unico, frase, peça-única, igreja]
 
 families:
   imperial:
     description: "Base sci-fi do squad. Doutrinação e autoridade."
   twitter:
-    description: "Print-tweets e variantes editoriais. Família castelo-forte principal."
+    description: "Print-tweets e variantes editoriais. Família legacy."
   claude:
     description: "Brandkit Anthropic (coral). Para conteúdo sobre Claude Code/IA."
   castelo-forte:
-    description: "Identidade oficial Igreja Castelo Forte. Paleta Orange Fort + Midnight Blue + Off White. Tipografia Archivo Black."
+    description: "PADRÃO ÚNICO Igreja Castelo Forte — Casa de Isabel: off-white + midnight + Inter 700 + Playfair italic + logo no canto. Sem orange, sem Archivo Black UPPERCASE."
 
 # Arquivados em templates/_arquivo/ — não usar:
 # bold-gradient, brand-bar, brandsdecoded-01, editorial-clean, minimal-dark,

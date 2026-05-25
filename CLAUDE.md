@@ -84,6 +84,17 @@ Acentuação obrigatória (á, é, ç, ã, õ, ê, í, ó, ú). Escrever sem ace
 
 ### 6. Outputs vão pra `outputs/`, NUNCA dentro de `squads/`
 
+### 7. PADRÃO ÚNICO DE ARTE: CASA DE ISABEL
+Toda arte (carrossel, frase, quote) DEVE seguir o padrão Casa de Isabel:
+- Fundo off-white `#efefef` · Texto midnight `#153247` · Body cinza `#5a6068`
+- Fonte: **Inter 700** (headline) + **Playfair Display italic 500** (ênfase em palavra-chave)
+- Logo Castelo Forte no canto superior direito (170px, opacity 0.85)
+- Divider 1px vertical entre headline e body
+- **NUNCA usar:** orange (`#fe5b06`) como acento, Archivo Black UPPERCASE, fundos escuros/coloridos como variantes
+- Referência visual: `outputs/demo-casa-isabel-2026-05-25/`
+- Templates: `squads/conteudo/templates/carousel/castelo-forte-{editorial,frase}/`
+- Detalhes: `squads/conteudo/CLAUDE.md` (seção PADRÃO ÚNICO DE ARTE)
+
 ---
 
 ## Fluxos rápidos
