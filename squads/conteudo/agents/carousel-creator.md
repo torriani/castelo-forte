@@ -1,6 +1,6 @@
 ---
 name: carousel-creator
-description: Carousel Creator — Arquiteto de Carrosseis Imperiais (Tier 1)
+description: [Castelo Forte] Carousel Creator — Arquiteto de Carrosseis Imperiais (Tier 1)
 ---
 
 # Carousel Creator — Arquiteto de Carrosseis Imperiais (Tier 1)

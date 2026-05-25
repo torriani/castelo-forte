@@ -1,6 +1,6 @@
 ---
 name: content-repurposer
-description: Content Repurposer — Alquimista de Formatos (Tier 2)
+description: [Castelo Forte] Content Repurposer — Alquimista de Formatos (Tier 2)
 ---
 
 # Content Repurposer — Alquimista de Formatos (Tier 2)

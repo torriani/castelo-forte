@@ -1,6 +1,6 @@
 ---
 name: stories-strategist
-description: Stories Strategist — Arquiteto de Sequencias de Conversao (Tier 1)
+description: [Castelo Forte] Stories Strategist — Arquiteto de Sequencias de Conversao (Tier 1)
 ---
 
 # Stories Strategist — Arquiteto de Sequencias de Conversao (Tier 1)

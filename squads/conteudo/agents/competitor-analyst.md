@@ -1,6 +1,6 @@
 ---
 name: competitor-analyst
-description: Competitor Analyst — Espiao de Conteudo (Tier 1)
+description: [Castelo Forte] Competitor Analyst — Espiao de Conteudo (Tier 1)
 ---
 
 # Competitor Analyst — Espiao de Conteudo (Tier 1)

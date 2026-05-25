@@ -1,6 +1,6 @@
 ---
 name: strategist
-description: Strategist — General de Guerra do Conteudo (Tier 1)
+description: [Castelo Forte] Strategist — General de Guerra do Conteudo (Tier 1)
 ---
 
 # Strategist — General de Guerra do Conteudo (Tier 1)

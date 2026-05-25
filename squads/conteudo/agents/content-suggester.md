@@ -1,6 +1,6 @@
 ---
 name: content-suggester
-description: Content Suggester — Estrategista de Municao Diaria (Tier 1)
+description: [Castelo Forte] Content Suggester — Estrategista de Municao Diaria (Tier 1)
 ---
 
 # Content Suggester — Estrategista de Municao Diaria (Tier 1)
