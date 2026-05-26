@@ -16,7 +16,7 @@ Identidade não é construída, é recebida. Você foi escolhido antes da funda�
 
 **1.1, Viktor Frankl em Auschwitz**
 Psiquiatra judeu que sobreviveu a 4 campos de concentração. Nu, sem nome, com número tatuado no braço. Os nazistas tiraram tudo dele, menos uma coisa: a liberdade de decidir quem ele era por dentro. Escreveu depois: "Tudo pode ser tirado de um homem, exceto a última das liberdades humanas: escolher a própria atitude em qualquer conjunto de circunstâncias."
-→ **Ponte:** Paulo escreveu Efésios na prisão. Acorrentado. E começa dizendo: "Bendito seja o Deus que nos abençoou com TODA bênção espiritual." A prisão não definiu Paulo. O campo não definiu Frankl. Ninguém te define. Você foi escolhido ANTES de qualquer circunstância existir (Ef 1.4).
+→ **Ponte:** Paulo escreveu Efésios na prisão, acorrentado, e começa dizendo: "Bendito seja o Deus que nos abençoou com TODA bênção espiritual." A prisão não definiu Paulo, o campo não definiu Frankl, e ninguém te define. Você foi escolhido ANTES de qualquer circunstância existir (Ef 1.4).
 
 **1.2, Louis Zamperini (Inquebrável)**
 Atleta olímpico, caiu no Pacífico na 2ª Guerra, sobreviveu 47 dias num bote, foi capturado pelos japoneses, torturado por 2 anos. Voltou pra casa quebrado, alcoólatra, querendo matar o torturador. Encontrou Cristo num culto de Billy Graham. Voltou ao Japão décadas depois pra perdoar o algoz pessoalmente.
@@ -39,7 +39,7 @@ Atleta olímpico, caiu no Pacífico na 2ª Guerra, sobreviveu 47 dias num bote, 
 **CARROSSEL 1 (10 slides), "O homem que os nazistas não conseguiram apagar"**
 - Slide 1 (hook): "Eles tiraram o nome dele. Trocaram por um número. Mas tem uma coisa que nem Auschwitz conseguiu roubar."
 - Slide 2: Foto/visual de Viktor Frankl. "Viktor Frankl, 1942. Psiquiatra judeu. Auschwitz."
-- Slide 3: "Tiraram a roupa. Tiraram o cabelo. Tiraram a família. Tatuaram um número no braço dele."
+- Slide 3: "Tiraram a roupa, tiraram o cabelo, tiraram a família, e tatuaram um número no braço dele."
 - Slide 4: "Mas Frankl percebeu uma coisa que mudou tudo: 'Eles podem tirar tudo. Menos a liberdade de eu escolher quem eu sou por dentro.'"
 - Slide 5: "Paulo escreveu Efésios também numa prisão. Acorrentado em Roma."
 - Slide 6: "E sabe como ele começa a carta? 'Bendito seja o Deus que nos abençoou com TODA bênção espiritual.'"
@@ -52,7 +52,7 @@ Atleta olímpico, caiu no Pacífico na 2ª Guerra, sobreviveu 47 dias num bote, 
 - 0-3s (hook visual + texto): "Os nazistas tiraram tudo dele. Menos uma coisa."
 - 3-10s: Imagem de Auschwitz, número tatuado, contexto Frankl
 - 10-18s: "Ele descobriu que ninguém pode tirar de você a liberdade de escolher quem você é por dentro."
-- 18-25s: "Paulo entendeu isso 2 mil anos antes. Escreveu Efésios acorrentado. E começou bendizendo Deus."
+- 18-25s: "Paulo entendeu isso 2 mil anos antes, escreveu Efésios acorrentado, e começou a carta bendizendo Deus."
 - 25-30s: "Você foi escolhido antes da fundação do mundo. Efésios 1.4."
 
 ---
@@ -65,17 +65,17 @@ Graça é o oposto de mérito. Você foi salvo quando ainda era inimigo (Ef 2.5,
 ### Histórias-âncora
 
 **2.1, A queda do Muro de Berlim (9 de novembro de 1989)**
-Durante 28 anos um muro separou famílias. Pais não viam filhos. Irmãos viraram estranhos. Quem tentou atravessar foi morto a tiros (mais de 140 pessoas executadas na "faixa da morte"). Numa única noite, sem que ninguém esperasse, o muro caiu. Pessoas que tinham crescido se odiando se abraçaram. Estranhos choraram juntos. Alemães do leste e do oeste, agora, um povo.
+Durante 28 anos um muro separou famílias, Pais não viam filhos. Irmãos viraram estranhos. Quem tentou atravessar foi morto a tiros (mais de 140 pessoas executadas na "faixa da morte"). Numa única noite, sem que ninguém esperasse, o muro caiu. Pessoas que tinham crescido se odiando se abraçaram. Estranhos choraram juntos. Alemães do leste e do oeste, agora, um povo.
 → **Ponte:** Ef 2.14, "Ele é a nossa paz, o qual de ambos fez um, e derrubou a parede da separação que estava no meio." Paulo está falando de judeu e gentio. Mas o princípio é o mesmo: Cristo derruba o muro que você acha intransponível.
 
 **2.2, Immaculée Ilibagiza (sobrevivente do genocídio de Ruanda)**
 Em 1994, Immaculée passou 91 dias escondida num banheiro de 1 metro quadrado com mais 7 mulheres enquanto Hutus matavam Tutsis (sua família foi assassinada). Depois do genocídio, ela voltou à sua aldeia e foi até a prisão olhar no olho do homem que matou sua mãe e irmão. A única palavra que saiu da boca dela: "Eu te perdoo." O assassino caiu de joelhos chorando.
-→ **Ponte:** Ef 2.4-5, "Mas Deus, sendo rico em misericórdia, pelo grande amor com que nos amou, e estando nós ainda mortos em nossos delitos, nos deu vida juntamente com Cristo." Graça é absurda. Sempre foi. Por isso ela liberta.
+→ **Ponte:** Ef 2.4-5, "Mas Deus, sendo rico em misericórdia, pelo grande amor com que nos amou, e estando nós ainda mortos em nossos delitos, nos deu vida juntamente com Cristo." Graça é absurda, sempre foi, e é exatamente por isso que ela liberta.
 
 ### PEÇAS
 
 **FRASE 2.1:**
-> "28 anos de muro. Famílias separadas. Tiros pra quem tentava atravessar.
+> "28 anos de muro, famílias separadas, e tiros pra quem tentava atravessar.
 > Numa noite, o muro caiu.
 > Tem um muro maior que esse: o que separa você de Deus.
 > Cristo derrubou na cruz."
@@ -116,8 +116,8 @@ O mistério revelado: Deus está fazendo algo cósmico, e você é parte do plan
 ### Histórias-âncora
 
 **3.1, O telescópio James Webb e a vastidão do universo**
-Em 2022, o James Webb mandou as primeiras imagens. Galáxias que nenhum humano tinha visto. Estrelas formadas 13 bilhões de anos atrás. Astrônomos chorando ao ver os dados. Um cientista da NASA disse em entrevista: "Não dá pra olhar isso e não pensar que tem propósito."
-→ **Ponte:** Ef 3.9-10, "E demonstrar a todos qual seja a dispensação do mistério que, desde os séculos, esteve oculto em Deus, que tudo criou; para que agora, pela igreja, a multiforme sabedoria de Deus seja conhecida dos principados e potestades nos lugares celestiais."
+Em 2022, o James Webb mandou as primeiras imagens. Galáxias que nenhum humano tinha visto, estrelas formadas 13 bilhões de anos atrás. Astrônomos chorando ao ver os dados. Um cientista da NASA disse em entrevista: "Não dá pra olhar isso e não pensar que tem propósito."
+→ **Ponte:** Ef 3.9-10, "E demonstrar a todos qual seja a dispensação do mistério que, desde os séculos, esteve oculto em Deus, que tudo criou. Para que agora, pela igreja, a multiforme sabedoria de Deus seja conhecida dos principados e potestades nos lugares celestiais."
 
 **3.2, A história de Joseph Lister (descobriu a antissepsia)**
 Antes de Lister, cirurgias eram massacre. 50% dos pacientes morriam de infecção. Médicos riam dele quando ele dizia: "Existe algo invisível matando os pacientes." Hoje, todo médico do mundo lava as mãos. Lister era cristão devoto. Disse uma vez: "Eu sou um crente nos fundamentos do cristianismo, e isso me sustenta no trabalho."
@@ -146,7 +146,7 @@ Antes de Lister, cirurgias eram massacre. 50% dos pacientes morriam de infecçã
 - Slide 5: "Um cientista da NASA disse: 'Não dá pra olhar isso e não pensar que tem propósito.'"
 - Slide 6: "O Deus que sustenta uma galáxia que ninguém nunca viu também escreveu seu nome antes de você nascer."
 - Slide 7 (verso): "'Àquele que é poderoso para fazer infinitamente mais do que tudo quanto pedimos ou pensamos.' Efésios 3.20"
-- Slide 8 (CTA): "Sua vida não é pequena. Você é parte do plano cósmico de Deus. Comenta AMÉM se isso te tocou."
+- Slide 8 (CTA): "Sua vida não é pequena. Você é parte do plano cósmico de Deus. Salva esse post pra lembrar amanhã quando achar que seu dia não conta."
 
 **REEL 30s, "Essa foto mudou a astronomia"**
 - 0-3s (hook visual): Imagem do James Webb. "Essa foto fez cientistas chorarem."
@@ -159,7 +159,7 @@ Antes de Lister, cirurgias eram massacre. 50% dos pacientes morriam de infecçã
 ## ONDA 4, EFÉSIOS 4: "Dá pra mudar de verdade?"
 
 ### Tese central
-O velho homem morre. O novo nasce. Mudança radical é real (Ef 4.22-24).
+O velho homem morre, O novo nasce. Mudança radical é real (Ef 4.22-24).
 
 ### Histórias-âncora
 
@@ -168,7 +168,7 @@ Filho do fundador do Stormfront, maior fórum neonazista do mundo. Preparado des
 → **Ponte:** Ef 4.22-24, "Que vos despojeis do velho homem... e vos revistais do novo homem."
 
 **4.2, Mitsuo Fuchida (piloto que liderou o ataque a Pearl Harbor)**
-Liderou os 360 aviões japoneses que atacaram Pearl Harbor em 7 de dezembro de 1941. Sobreviveu à guerra. Anos depois, recebeu um panfleto evangelístico escrito por Jacob DeShazer, um americano que ele tinha bombardeado, que tinha se convertido ao cristianismo num campo de prisioneiros japonês. Fuchida se converteu. Virou evangelista. Pregou pelo mundo.
+Liderou os 360 aviões japoneses que atacaram Pearl Harbor em 7 de dezembro de 1941. Sobreviveu à guerra. Anos depois, recebeu um panfleto evangelístico escrito por Jacob DeShazer, um americano que ele tinha bombardeado, que tinha se convertido ao cristianismo num campo de prisioneiros japonês. Fuchida se converteu, virou evangelista. Pregou pelo mundo.
 → **Ponte:** Ef 4.24, "Vos revistais do novo homem, que segundo Deus é criado em verdadeira justiça e santidade."
 
 ### PEÇAS
@@ -190,9 +190,9 @@ Liderou os 360 aviões japoneses que atacaram Pearl Harbor em 7 de dezembro de 1
 - Slide 1 (hook): "Ele liderou o ataque a Pearl Harbor. Anos depois pregava o evangelho pelo mundo. O que aconteceu?"
 - Slide 2: "7 de dezembro de 1941. Mitsuo Fuchida grita no rádio: 'Tora! Tora! Tora!'"
 - Slide 3: "360 aviões japoneses. 2.403 americanos mortos. EUA entrou na guerra."
-- Slide 4: "Fuchida sobreviveu. Voltou pro Japão derrotado. Sem propósito."
+- Slide 4: "Fuchida sobreviveu, voltou pro Japão derrotado, sem propósito nenhum."
 - Slide 5: "Um dia recebeu um panfleto. Escrito por Jacob DeShazer, um americano que ele tinha bombardeado."
-- Slide 6: "DeShazer foi preso pelos japoneses, torturado, e leu uma Bíblia na cela. Se converteu. Voltou ao Japão como missionário."
+- Slide 6: "DeShazer foi preso pelos japoneses, torturado, e leu uma Bíblia na cela. Se converteu e voltou ao Japão como missionário."
 - Slide 7: "Fuchida leu. Comprou uma Bíblia. Em meses, entregou a vida a Cristo."
 - Slide 8: "O homem que tinha matado milhares virou evangelista. Pregou em estádios pelo mundo todo."
 - Slide 9 (verso): "'Vos revistais do novo homem, que segundo Deus é criado em verdadeira justiça e santidade.' Efésios 4.24"
@@ -218,8 +218,8 @@ Bonhoeffer foi preso pela Gestapo em 1943. Tinha 37 anos, recém-noivo de Maria,
 → **Ponte:** Ef 5.25, "Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela."
 
 **5.2, O farol de Eddystone e a tempestade**
-Henry Winstanley construiu o primeiro farol de Eddystone (1698), num penhasco mortal no canal da Mancha. Era engenheiro confiante: "Quero estar dentro do meu farol durante a maior tempestade que já existiu." Em novembro de 1703 veio a Grande Tempestade. Winstanley estava no farol. Farol e homem desapareceram. Mas a história inteira do farol é a história da luz que recusa se apagar.
-→ **Ponte:** Ef 5.8, "Porque noutro tempo éreis trevas, mas agora sois luz no Senhor; andai como filhos da luz."
+Henry Winstanley construiu o primeiro farol de Eddystone (1698), num penhasco mortal no canal da Mancha. Era engenheiro confiante: "Quero estar dentro do meu farol durante a maior tempestade que já existiu." Em novembro de 1703 veio a Grande Tempestade. Winstanley estava lá dentro do farol, e tanto a estrutura quanto o homem desapareceram naquela noite. Mas a história inteira do farol é a história da luz que recusa se apagar.
+→ **Ponte:** Ef 5.8, "Porque noutro tempo éreis trevas, mas agora sois luz no Senhor. Andai como filhos da luz."
 
 ### PEÇAS
 
@@ -245,12 +245,12 @@ Henry Winstanley construiu o primeiro farol de Eddystone (1698), num penhasco mo
 - Slide 6: "Maria nunca o viu de novo. Mas guardou as 200 cartas a vida inteira."
 - Slide 7: "Décadas depois disse: 'Aqueles 2 anos foram a coisa mais real que eu vivi.'"
 - Slide 8 (verso): "'Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela.' Efésios 5.25"
-- Slide 9 (CTA): "Amor de verdade não é estética. É entrega. Marca quem precisa lembrar disso."
+- Slide 9 (CTA): "Amor de verdade não é estética, é entrega que custa caro. Marca quem precisa lembrar disso."
 
 **REEL 30s, "Ele escreveu 200 cartas da cela nazista"**
 - 0-3s (hook): "Ele escreveu 200 cartas de amor de uma cela nazista."
 - 3-12s: "Dietrich Bonhoeffer. Pastor. Recém-noivo. Preso por conspirar contra Hitler."
-- 12-22s: "Foi enforcado 3 semanas antes do fim da guerra. Nunca casou. Mas amou."
+- 12-22s: "Foi enforcado 3 semanas antes do fim da guerra, nunca casou, mas amou como ninguém."
 - 22-30s: "Amor de verdade é Cristo se entregando pela igreja. Efésios 5.25."
 
 ---
@@ -267,7 +267,7 @@ Zamperini sobreviveu ao bote, ao campo japonês, voltou pra casa quebrado. Pesad
 → **Ponte:** Ef 6.12, "Não temos que lutar contra carne e sangue, mas contra os principados, contra as potestades, contra os príncipes das trevas deste século, contra as hostes espirituais da maldade."
 
 **6.2, Desmond Doss (a Batalha de Hacksaw Ridge)**
-Soldado americano que se recusou a tocar numa arma na 2ª Guerra por convicção religiosa. Apanhava dos colegas no treinamento. Quase foi expulso do exército. Na Batalha de Okinawa, em Hacksaw Ridge, resgatou sozinho 75 soldados feridos sob fogo japonês. Cada vez que descia um, orava: "Senhor, me ajuda a salvar mais um." Recebeu a Medalha de Honra. Nunca atirou um tiro.
+Soldado americano que se recusou a tocar numa arma na 2ª Guerra por convicção religiosa. Apanhava dos colegas no treinamento e quase foi expulso do exército. Na Batalha de Okinawa, em Hacksaw Ridge, resgatou sozinho 75 soldados feridos sob fogo japonês. Cada vez que descia um, orava: "Senhor, me ajuda a salvar mais um." Recebeu a Medalha de Honra sem nunca ter atirado um tiro.
 → **Ponte:** Ef 6.10-11, "Fortalecei-vos no Senhor e na força do seu poder. Revesti-vos de toda a armadura de Deus, para que possais estar firmes contra as astutas ciladas do diabo."
 
 ### PEÇAS

@@ -17,7 +17,7 @@ Toda peça segue 5 movimentos:
 [2] TRÍADE        → 3 micro-histórias bíblicas em paralelismo rítmico
 [3] SÍNTESE       → 1 frase-martelo que fecha o argumento
 [4] APLICAÇÃO     → 1-2 linhas que trazem pro hoje (e pro Efésios)
-[5] CTA + VERSO   → "Série Em Cristo. 07/06, 09:30. Castelo Forte." + verso de Efésios
+[5] CTA + VERSO   → "Série Em Cristo, 07/06, 09:30. Castelo Forte." + verso de Efésios
 ```
 
 ---
@@ -286,7 +286,7 @@ Antioquia tinha judeu, grego, africano, romano. Uma igreja.
 
 **[3] SÍNTESE**
 Deus não fez clones.
-Fez um corpo. Com membros distintos. Servindo a uma cabeça.
+Fez um corpo, com membros distintos. Servindo a uma cabeça.
 
 **[4] APLICAÇÃO**
 Você não precisa ser igual ao irmão pra ser um com ele.
@@ -314,7 +314,7 @@ O dom que você acha pequeno é exatamente o que falta no corpo.
 
 **[4] APLICAÇÃO**
 Você não foi feito pra ser o outro.
-Foi feito pra ser você. No lugar certo. Servindo ao mesmo Senhor.
+Foi feito pra ser você, no lugar certo. Servindo ao mesmo Senhor.
 
 **[5] CTA + VERSO**
 "A cada um de nós foi dada a graça segundo a medida do dom de Cristo.", Efésios 4.7
@@ -524,7 +524,7 @@ O que está atrás dela é.
 
 **[1] PREMISSA**
 A armadura existe.
-Mas Deus não veste por você.
+Quem veste é você, não Deus.
 
 **[2] TRÍADE**
 Davi recusou a armadura de Saul. Foi com a de Deus.
@@ -536,7 +536,7 @@ Você não está perdendo a guerra.
 Está perdendo porque não vestiu o que Ele te deu.
 
 **[4] APLICAÇÃO**
-Verdade. Justiça. Evangelho. Fé. Salvação. Palavra.
+Verdade, justiça, evangelho, fé. Salvação, palavra.
 Todas. Hoje. Antes de sair de casa.
 
 **[5] CTA + VERSO**
@@ -566,7 +566,7 @@ Hoje começa a série que vai expor isso ponto a ponto.
 
 **[5] CTA + VERSO**
 "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, o qual nos abençoou com TODAS as bênçãos espirituais nos lugares celestiais EM CRISTO.", Efésios 1.3
-**Série Em Cristo, começa HOJE, 09:30. Castelo Forte. Te espero.**
+**Série Em Cristo, começa HOJE, 09:30, castelo Forte. Te espero.**
 
 ---
 

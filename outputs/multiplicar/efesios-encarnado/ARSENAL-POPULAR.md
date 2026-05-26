@@ -15,7 +15,7 @@ Simba foge achando que matou o pai. Cresce comendo larva com Timão e Pumba, esq
 
 **1.2, Mike Tyson (perdeu tudo, achou que tinha acabado)**
 Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi preso, faliu. Em entrevista recente disse chorando: "Eu não sabia quem eu era sem o cinturão."
-→ **Ponte Ef 1.4:** "Ele nos escolheu antes da criação do mundo." Sua identidade não é seu título. Não é seu salário. Não é seu corpo. Foi decidida antes de tudo isso existir.
+→ **Ponte Ef 1.4:** "Ele nos escolheu antes da criação do mundo." Sua identidade não é seu título, nem seu salário, nem o seu corpo. Foi decidida antes de tudo isso existir.
 
 ### PEÇAS
 
@@ -34,12 +34,12 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 
 **CARROSSEL 1 (10 slides), "Lembra quem você é"**
 - Slide 1 (hook): "A cena mais marcante da Disney explica Efésios 1 melhor que qualquer pregação."
-- Slide 2: "Simba fugiu achando que matou o pai. Cresceu comendo larva. Esqueceu quem era."
+- Slide 2: "Simba fugiu achando que matou o pai, cresceu comendo larva e esqueceu quem era."
 - Slide 3: "Aí Mufasa aparece nas nuvens e fala a frase que toda criança guardou: 'Lembra quem você é.'"
 - Slide 4: "Você também esqueceu. Não fugiu pra savana. Fugiu pro Instagram, pro álcool, pro trabalho compulsivo."
 - Slide 5: "Você acha que é o que você fez. Acha que é o pior dia da sua vida."
 - Slide 6: "Mas tem alguém falando o tempo todo: 'Lembra quem você é.'"
-- Slide 7: "Você foi adotado como filho. Não conquistou. Foi escolhido."
+- Slide 7: "Você foi adotado como filho, não conquistou nada, foi escolhido."
 - Slide 8: "Antes da fundação do mundo já tinha sido decidido."
 - Slide 9 (verso): "'Em amor nos predestinou para sermos adotados como filhos por meio de Jesus Cristo.' Efésios 1.5"
 - Slide 10 (CTA): "Lembra quem você é. Salva esse post pra ler no próximo dia que esquecer."
@@ -57,12 +57,12 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 ### Histórias-âncora populares
 
 **2.1, Nelson Mandela (saiu da prisão e perdoou os algozes)**
-27 anos preso por causa do apartheid. Quando saiu, podia ter feito guerra civil. Em vez disso, montou a Comissão da Verdade e Reconciliação. Sentou na mesa com os torturadores. Perdoou. O mundo todo conhece.
+27 anos preso por causa do apartheid. Quando saiu, podia ter feito guerra civil. Em vez disso, montou a Comissão da Verdade e Reconciliação. Sentou na mesa com os torturadores, perdoou. O mundo todo conhece.
 → **Ponte Ef 2.14:** "Cristo é a nossa paz, derrubou a parede da separação."
 
 **2.2, A história de Ronaldo Fenômeno (caiu, voltou)**
-2 lesões gravíssimas no joelho. Médicos disseram que ele nunca mais jogaria. Voltou. Ganhou Copa do Mundo de 2002 e Bola de Ouro. Hoje fala em entrevista: "Eu não merecia voltar. Mas voltei."
-→ **Ponte Ef 2.8:** "Pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus."
+2 lesões gravíssimas no joelho, médicos disseram que ele nunca mais jogaria. Voltou. Ganhou Copa do Mundo de 2002 e Bola de Ouro. Hoje fala em entrevista: "Eu não merecia voltar. Mas voltei."
+→ **Ponte Ef 2.8:** "Pela graça sois salvos, por meio da fé. E isto não vem de vós, é dom de Deus."
 
 ### PEÇAS
 
@@ -83,10 +83,10 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 - Slide 1 (hook): "Ele passou 27 anos preso pelo regime racista. Saiu e fez a única coisa que ninguém esperava."
 - Slide 2: "Nelson Mandela. África do Sul. Apartheid."
 - Slide 3: "Preso por lutar contra um governo que dizia que negro não era gente."
-- Slide 4: "27 anos numa cela. Trabalho forçado. Família destruída."
+- Slide 4: "27 anos numa cela, trabalho forçado, família destruída."
 - Slide 5: "Em 1990 saiu. O país esperava guerra civil. Ninguém duvidaria se ele liderasse vingança."
 - Slide 6: "Em vez disso, ele criou a Comissão da Verdade e Reconciliação."
-- Slide 7: "Sentou na mesa com os torturadores. Olhou no olho deles. Perdoou."
+- Slide 7: "Sentou na mesa com os torturadores, olhou no olho deles e perdoou."
 - Slide 8: "Como? Porque ele sabia de uma coisa: ele também precisava ser perdoado por Deus."
 - Slide 9 (verso): "'Mas Deus, sendo rico em misericórdia, pelo grande amor com que nos amou, estando nós mortos em nossos delitos, nos deu vida.' Efésios 2.4-5"
 - Slide 10 (CTA): "Quem você não consegue perdoar hoje? Marca essa pessoa mentalmente e ora por ela agora."
@@ -133,7 +133,7 @@ Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A
 - Slide 5: "'Você tem que acreditar que os pontos vão se conectar no futuro.'"
 - Slide 6: "Paulo escreveu Efésios 3 dizendo a mesma coisa: existe um mistério, um plano, e você faz parte."
 - Slide 7 (verso): "'Àquele que é poderoso para fazer infinitamente mais do que tudo quanto pedimos ou pensamos, segundo o seu poder que opera em nós.' Efésios 3.20"
-- Slide 8 (CTA): "O ponto de hoje vai conectar amanhã. Deus já viu o desenho. Comenta AMÉM."
+- Slide 8 (CTA): "O ponto de hoje vai conectar amanhã, Deus já viu o desenho inteiro. Salva esse post pra ler no próximo dia que parecer sem sentido."
 
 **REEL 30s, "Jobs e os pontos"**
 - 0-3s: Imagem de Jobs em Stanford. "O discurso mais famoso da história."
@@ -148,17 +148,17 @@ Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A
 ### Histórias-âncora populares
 
 **4.1, Eminem (8 Mile / "Lose Yourself")**
-Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. Todos riam. Virou o maior rapper da história. A música "Lose Yourself" inteira é sobre perder o velho e nascer o novo: **"Você só tem uma chance. Não vai deixar escapar."**
+Cara que cresceu num trailer em Detroit, mãe drogada. Sem pai, branco no rap. Todos riam, virou o maior rapper da história. A música "Lose Yourself" inteira é sobre perder o velho e nascer o novo: **"Você só tem uma chance. Não vai deixar escapar."**
 → **Ponte Ef 4.22-24:** "Que vos despojeis do velho homem... e vos revistais do novo homem."
 
 **4.2, Tiger Woods (caiu, voltou)**
-2009: pego em escândalo. Casamento destruído. Carreira em queda. Vícios. 10 anos sem ganhar um Major. Em 2019 voltou e ganhou o Masters de Augusta. Chorou abraçado ao filho. Esporte inteiro chorou junto.
+2009: pego em escândalo, casamento destruído, carreira em queda, vícios. 10 anos sem ganhar um Major. Em 2019 voltou e ganhou o Masters de Augusta, chorou abraçado ao filho enquanto o esporte inteiro chorava junto.
 → **Ponte Ef 4.24:** "Vos revistais do novo homem, que segundo Deus é criado em verdadeira justiça."
 
 ### PEÇAS
 
 **FRASE 4.1:**
-> "Eminem cresceu num trailer. Mãe drogada. Branco no rap. Todos riram.
+> "Eminem cresceu num trailer, com a mãe drogada, branco no rap, e todos riram.
 > 'Você só tem uma chance. Não deixa escapar.'
 > O velho homem pode morrer.
 > O novo pode nascer hoje."
@@ -173,15 +173,15 @@ Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. T
 
 **CARROSSEL 4 (10 slides), "Tiger Woods, 10 anos no inferno"**
 - Slide 1 (hook): "Tiger Woods passou 10 anos no fundo do poço. Em 2019 ganhou Augusta e o mundo chorou junto. O que aconteceu?"
-- Slide 2: "2008. Tiger era o maior do mundo. 14 Majors. Acima de qualquer atleta."
-- Slide 3: "2009. Pego no escândalo. Múltiplas amantes. Casamento explodido em rede nacional."
-- Slide 4: "Vício em remédios. Lesão na coluna. 4 cirurgias. Preso por dirigir drogado."
-- Slide 5: "Tabloides davam ele como acabado. 10 anos sem ganhar um Major."
-- Slide 6: "Abril de 2019. Augusta. Domingo de páscoa."
-- Slide 7: "Ele jogou a última volta como um homem que tinha morrido e renascido. Ganhou."
-- Slide 8: "Saiu do green. Abraçou o filho. Chorou. O mundo chorou junto."
+- Slide 2: "2008, Tiger era o maior do mundo, com 14 Majors, acima de qualquer atleta."
+- Slide 3: "2009, pego no escândalo, com múltiplas amantes, casamento explodido em rede nacional."
+- Slide 4: "Vício em remédios, lesão na coluna, 4 cirurgias e preso por dirigir drogado."
+- Slide 5: "Tabloides davam ele como acabado, 10 anos sem ganhar um Major."
+- Slide 6: "Abril de 2019, Augusta, domingo de páscoa."
+- Slide 7: "Ele jogou a última volta como um homem que tinha morrido e renascido, e ganhou."
+- Slide 8: "Saiu do green, abraçou o filho, chorou, e o mundo chorou junto."
 - Slide 9 (verso): "'Vos despojeis do velho homem, que se corrompe pelas concupiscências do engano, e vos revistais do novo homem.' Efésios 4.22-24"
-- Slide 10 (CTA): "Você não foi feito pra ficar no chão. O novo homem nasce. Marca quem precisa ler isso."
+- Slide 10 (CTA): "Você não foi feito pra ficar no chão, o novo homem nasce. Marca quem precisa ler isso."
 
 **REEL 30s, "Tiger no fundo do poço"**
 - 0-3s: Imagem do Tiger preso/destruído. "Ele foi o atleta mais escrachado do mundo."
@@ -244,7 +244,7 @@ Várias histórias documentadas de 11/9, pessoas dentro das Torres ligando pra f
 ### Histórias-âncora populares
 
 **6.1, Rocky Balboa (a fala pro filho)**
-A fala que viralizou pra sempre: **"O mundo não é um mar de rosas. É um lugar mau e sujo, e por mais durão que você seja, ele vai te ajoelhar e te manter ajoelhado se você deixar. Mas não é sobre quão forte você bate. É sobre quanto você aguenta apanhar e continuar avançando."**
+A fala que viralizou pra sempre: **"O mundo não é um mar de rosas. É um lugar mau e sujo, e por mais durão que você seja, ele vai te ajoelhar e te manter ajoelhado se você deixar. O que importa não é o tamanho do golpe que você dá. É se você ainda consegue se levantar depois de apanhar e seguir andando."**
 → **Ponte Ef 6.10-13:** "Fortalecei-vos no Senhor... revesti-vos de toda a armadura de Deus... para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes."
 
 **6.2, Anita Garibaldi / Senna nas últimas voltas / Kobe Bryant (mentalidade da batalha)**
@@ -254,7 +254,7 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 ### PEÇAS
 
 **FRASE 6.1:**
-> "Rocky disse pro filho: 'Não é sobre quão forte você bate. É sobre quanto aguenta apanhar e continuar avançando.'
+> "Rocky disse pro filho: 'O que importa não é o tamanho do golpe que você dá. É se você ainda consegue se levantar depois de apanhar e seguir andando.'
 > Paulo disse 2 mil anos antes: 'Havendo feito tudo, ficar firmes.'
 > A armadura é dada. Mas você precisa vestir."
 >, Efésios 6.13
@@ -269,17 +269,17 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 - Slide 1 (hook): "Rocky deu o discurso mais famoso do cinema motivacional. Paulo escreveu Efésios 6 dizendo a mesma coisa."
 - Slide 2: "Rocky fala pro filho que tá se vitimizando: 'O mundo não é um mar de rosas.'"
 - Slide 3: "'É um lugar mau e sujo. Por mais durão que você seja, vai te ajoelhar e te manter ajoelhado se você deixar.'"
-- Slide 4: "'Mas não é sobre quão forte você bate. É sobre quanto aguenta apanhar e continuar avançando.'"
+- Slide 4: "'O que importa não é o tamanho do golpe que você dá. É se você ainda consegue se levantar depois de apanhar e seguir andando.'"
 - Slide 5: "Você se identifica? Eu também. Porque é verdade."
 - Slide 6: "Paulo escreveu a mesma coisa em Efésios 6: 'Havendo feito tudo, ficar firmes.'"
 - Slide 7: "A diferença é que Rocky não te dá armadura. Paulo dá."
 - Slide 8: "Verdade, justiça, evangelho da paz, fé, salvação, palavra de Deus. Equipamento completo."
 - Slide 9 (verso): "'Tomai toda a armadura de Deus, para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes.' Efésios 6.13"
-- Slide 10 (CTA): "Sua batalha de hoje não é com gente. Veste a armadura. Salva esse post."
+- Slide 10 (CTA): "Sua batalha de hoje não é com gente, veste a armadura. Salva esse post."
 
 **REEL 30s, "Rocky e Paulo"**
 - 0-3s: Visual de boxe/luta. "A fala mais famosa do cinema motivacional."
-- 3-12s: "Rocky pro filho: 'Não é quão forte você bate. É quanto aguenta apanhar e continuar avançando.'"
+- 3-12s: "Rocky pro filho: 'O que importa é se você consegue se levantar depois de apanhar e seguir andando.'"
 - 12-22s: "Paulo escreveu a mesma coisa 2 mil anos antes. A diferença? Ele te dá a armadura."
 - 22-30s: "Havendo feito tudo, ficar firmes. Efésios 6.13."
 
@@ -296,7 +296,7 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 | 5 | Ef 5 | Titanic + 11 de Setembro | Universal |
 | 6 | Ef 6 | Rocky Balboa + Kobe Bryant | Universal |
 
-**12 histórias. Zero precisa de explicação. Hook bate em 3 segundos.**
+**12 histórias, zero precisa de explicação. Hook bate em 3 segundos.**
 
 ## PRÓXIMOS PASSOS
 

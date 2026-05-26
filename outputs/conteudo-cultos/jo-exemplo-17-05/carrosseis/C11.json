@@ -17,19 +17,19 @@
     {
       "n": 2,
       "tipo": "texto-midnight",
-      "headline": "Era manhã. Tudo estava em pé. À noite, ele não tinha mais nada.",
+      "headline": "Era manhã, tudo estava em pé. À noite, ele não tinha mais nada.",
       "accent_word": "nada"
     },
     {
       "n": 3,
       "tipo": "texto-off",
       "headline": "O primeiro mensageiro chegou",
-      "body": "Os sabeus atacaram. Levaram os bois. Levaram as jumentas. Mataram os criados. Só ele escapou pra contar. Enquanto ainda falava, chegou outro."
+      "body": "Os sabeus atacaram, levaram os bois. Levaram as jumentas, mataram os criados. Só ele escapou pra contar, enquanto ainda falava, chegou outro."
     },
     {
       "n": 4,
       "tipo": "texto-off",
-      "headline": "O segundo. O terceiro. O quarto.",
+      "headline": "O segundo, O terceiro. O quarto.",
       "body": "Fogo do céu queimou as ovelhas e os pastores. Os caldeus levaram os camelos e mataram os homens. E enquanto ele ainda falava, o quarto chegou correndo."
     },
     {
@@ -37,7 +37,7 @@
       "tipo": "triade",
       "personagem": "Jó",
       "headline_resto": "A notícia que ninguém quer ouvir",
-      "sub": "Seus dez filhos estavam à mesa, comendo na casa do mais velho. Veio um vento do deserto, derrubou as quatro paredes. Caiu sobre todos. Morreram juntos.",
+      "sub": "Seus dez filhos estavam à mesa, comendo na casa do mais velho. Veio um vento do deserto, derrubou as quatro paredes, caiu sobre todos. Morreram juntos.",
       "image_hint": "Casa antiga em ruína recente ao entardecer, poeira no ar, silêncio"
     },
     {
@@ -50,7 +50,7 @@
       "n": 7,
       "tipo": "texto-off",
       "headline": "O que o Pastor Jacob disse no domingo",
-      "body": "Quem já perdeu um filho sabe que ninguém está preparado pra enterrar um filho. Imagina sepultar dez. De uma vez. No mesmo dia. É esse o peso da história. Não diminua."
+      "body": "Quem já perdeu um filho sabe que ninguém está preparado pra enterrar um filho. Imagina sepultar dez, de uma vez. No mesmo dia, é esse o peso da história. Não diminua."
     },
     {
       "n": 8,
@@ -74,5 +74,5 @@
       "igreja": "Igreja Castelo Forte · Jurerê"
     }
   ],
-  "legenda_instagram": "Jó acordou rico. Pai de dez. Dono de rebanhos que não se contavam. Antes do sol se pôr, não tinha mais nada.\n\nQuatro mensageiros, um atrás do outro. Sabeus. Fogo do céu. Caldeus. Vento do deserto. O último trouxe a notícia que nenhum pai quer ouvir: seus dez filhos estavam debaixo da casa.\n\nO Pastor Jacob lembrou no domingo: quem já perdeu um filho sabe o peso. Imagina dez. No mesmo dia.\n\nAntes de entender a fé de Jó, é preciso sentir o tamanho da perda.\n\nAmanhã, a parte 2: o que ele fez depois.\n\n#castelofortejurere #jo #pastorjacobanijar #provacao #fe #floripa #jurere"
+  "legenda_instagram": "Jó acordou rico, Pai de dez. Dono de rebanhos que não se contavam. Antes do sol se pôr, não tinha mais nada. Quatro mensageiros, um atrás do outro, sabeus, fogo do céu, caldeus. Vento do deserto. O último trouxe a notícia que nenhum pai quer ouvir: seus dez filhos estavam debaixo da casa. O Pastor Jacob lembrou no domingo: quem já perdeu um filho sabe o peso. Imagina dez, no mesmo dia. Antes de entender a fé de Jó, é preciso sentir o tamanho da perda. Amanhã, a parte 2: o que ele fez depois. #castelofortejurere #jo #pastorjacobanijar #provacao #fe #floripa #jurere"
 }

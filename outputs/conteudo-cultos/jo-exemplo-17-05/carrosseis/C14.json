@@ -24,13 +24,13 @@
       "n": 3,
       "tipo": "texto-off",
       "headline": "A frase do Pastor Jacob que dói",
-      "body": "Não deu pra pagar a luz esse mês. Essa desgraça, essa droga. Começa a murmurar. Calma. Ele é Jeová Jireh, o Deus que provê. Para de transformar contratempo pequeno em prova de que Deus te abandonou."
+      "body": "Não deu pra pagar a luz esse mês, essa desgraça, essa droga. Começa a murmurar, calma. Ele é Jeová Jireh, o Deus que provê. Para de transformar contratempo pequeno em prova de que Deus te abandonou."
     },
     {
       "n": 4,
       "tipo": "triade",
       "personagem": "Jó",
-      "headline_resto": "Sepultou dez filhos no mesmo dia. Perdeu sete mil ovelhas. Três mil camelos. Tudo num dia.",
+      "headline_resto": "Sepultou dez filhos no mesmo dia, perdeu sete mil ovelhas. Três mil camelos, tudo num dia.",
       "sub": "A resposta dele: bendito seja o nome do Senhor. E você reclama do trânsito, do café frio, do Wi-Fi caindo.",
       "image_hint": "Cinzas e pedras no chão de terra batida, vento levantando poeira"
     },
@@ -50,7 +50,7 @@
       "n": 7,
       "tipo": "texto-off",
       "headline": "Antes de reclamar, faça três perguntas",
-      "body": "Você comeu hoje? Tem roupa? Tem onde dormir? Se a resposta é sim pras três, você ainda está dentro do cuidado de Deus. O problema não é o problema. É a sua memória curta."
+      "body": "Você comeu hoje, tem roupa? Tem onde dormir? Se a resposta é sim pras três, você ainda está dentro do cuidado de Deus. O problema não é o problema. É a sua memória curta."
     },
     {
       "n": 8,
@@ -68,11 +68,11 @@
     {
       "n": 10,
       "tipo": "cta",
-      "intro": "Domingo, 09h. Volte pra Castelo Forte. Volte pra recuperar a proporção.",
+      "intro": "Domingo, 09h, volte pra Castelo Forte. Volte pra recuperar a proporção.",
       "marca": "DOMINGO",
       "data": "09H · CULTO",
       "igreja": "Castelo Forte · Jurerê"
     }
   ],
-  "legenda_instagram": "A gente sente um calo no pé e já reclama.\n\nNão deu pra pagar a luz esse mês. Essa desgraça, essa droga. Começa a murmurar.\n\nO Pastor Jacob disse no domingo: calma. Ele é Jeová Jireh, o Deus que provê.\n\nJó sepultou dez filhos no mesmo dia e adorou. E você reclama do café frio.\n\nVocê comeu hoje? Tem roupa? Tem onde dormir? Então você ainda está dentro do cuidado de Deus. O problema não é o problema. É a sua memória curta.\n\nDomingo, 09h, Castelo Forte. Vem recuperar a proporção.\n\n#castelofortejurere #jo #pastorjacobanijar #murmuracao #fe #floripa #jurere"
+  "legenda_instagram": "A gente sente um calo no pé e já reclama. Não deu pra pagar a luz esse mês, essa desgraça, essa droga. Começa a murmurar, O Pastor Jacob disse no domingo: calma. Ele é Jeová Jireh, o Deus que provê. Jó sepultou dez filhos no mesmo dia e adorou. E você reclama do café frio, Você comeu hoje? Tem roupa, tem onde dormir? Então você ainda está dentro do cuidado de Deus. O problema não é o problema, é a sua memória curta. Domingo, 09h, Castelo Forte, vem recuperar a proporção. #castelofortejurere #jo #pastorjacobanijar #murmuracao #fe #floripa #jurere"
 }
