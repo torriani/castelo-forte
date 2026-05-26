@@ -1,9 +1,9 @@
-# CAMPANHA EM CRISTO — 21 dias de antecipação
+# CAMPANHA EM CRISTO, 21 dias de antecipação
 
 **Cliente:** igreja-castelo-forte
 **Período:** Segunda 18/05/2026 → Domingo 07/06/2026 (21 dias)
-**Objetivo:** Lotar a série "Em Cristo" (Efésios) — 4 cultos a partir de 07/06 às 09:30
-**Formato dominante:** Padrão Tese-Tríade-Martelo (TTM) — frase-tese + 3 evidências bíblicas em paralelismo + síntese + aplicação + verso
+**Objetivo:** Lotar a série "Em Cristo" (Efésios), 4 cultos a partir de 07/06 às 09:30
+**Formato dominante:** Padrão Tese-Tríade-Martelo (TTM), frase-tese + 3 evidências bíblicas em paralelismo + síntese + aplicação + verso
 **Saída:** Carrossel 4-6 slides OU post único de imagem (texto inteiro grafado)
 
 ---
@@ -22,7 +22,7 @@ Toda peça segue 5 movimentos:
 
 ---
 
-## CRONOGRAMA — 21 PEÇAS (1 por dia)
+## CRONOGRAMA, 21 PEÇAS (1 por dia)
 
 | # | Data | Dia | Tema (gancho de Efésios) | Tríade bíblica |
 |---|------|-----|--------------------------|----------------|
@@ -54,7 +54,7 @@ Toda peça segue 5 movimentos:
 
 ---
 
-### #01 — Segunda 18/05 — Deus não depende de você
+### #01, Segunda 18/05, Deus não depende de você
 
 **[1] PREMISSA**
 Deus não fala. Ele AGE.
@@ -73,12 +73,12 @@ Nenhum de nós é insubstituível.
 Se não formos obedientes, Ele levantará outros pra pregar, reinar e liderar.
 
 **[5] CTA + VERSO**
-"Vocês são meus amigos, se fizerem o que eu mando." — Jesus, João 15.14
-**Série Em Cristo — começa 07/06, 09:30. Castelo Forte.**
+"Vocês são meus amigos, se fizerem o que eu mando.", Jesus, João 15.14
+**Série Em Cristo, começa 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #02 — Terça 19/05 — Você foi escolhido antes
+### #02, Terça 19/05, Você foi escolhido antes
 
 **[1] PREMISSA**
 Você acha que precisa ser escolhido.
@@ -98,12 +98,12 @@ Sua identidade não está no que você fez.
 Está em quem te escolheu antes da fundação do mundo.
 
 **[5] CTA + VERSO**
-"Nos escolheu nele antes da criação do mundo." — Efésios 1.4
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Nos escolheu nele antes da criação do mundo.", Efésios 1.4
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #03 — Quarta 20/05 — Graça é o oposto de mérito
+### #03, Quarta 20/05, Graça é o oposto de mérito
 
 **[1] PREMISSA**
 Você não foi salvo porque mereceu.
@@ -123,12 +123,12 @@ Você ainda tenta pagar pelo que já foi pago.
 Para. Recebe.
 
 **[5] CTA + VERSO**
-"Pela graça sois salvos, por meio da fé. E isto não vem de vós, é dom de Deus." — Efésios 2.8
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Pela graça sois salvos, por meio da fé. E isto não vem de vós, é dom de Deus.", Efésios 2.8
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #04 — Quinta 21/05 — Ressuscitou quem estava morto
+### #04, Quinta 21/05, Ressuscitou quem estava morto
 
 **[1] PREMISSA**
 Deus não conserta. Ele ressuscita.
@@ -147,12 +147,12 @@ Não tem reforma pro velho homem.
 Tem morte. E vida nova.
 
 **[5] CTA + VERSO**
-"Estando nós mortos em nossos delitos, nos deu vida juntamente com Cristo." — Efésios 2.5
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Estando nós mortos em nossos delitos, nos deu vida juntamente com Cristo.", Efésios 2.5
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #05 — Sexta 22/05 — O muro caiu
+### #05, Sexta 22/05, O muro caiu
 
 **[1] PREMISSA**
 Tudo que separa você de Deus, Ele já derrubou.
@@ -171,12 +171,12 @@ Aquele muro que você acha que não cai?
 Cristo já passou por ele.
 
 **[5] CTA + VERSO**
-"Ele é a nossa paz, que derrubou a parede da separação." — Efésios 2.14
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Ele é a nossa paz, que derrubou a parede da separação.", Efésios 2.14
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #06 — Sábado 23/05 — Você é obra dele
+### #06, Sábado 23/05, Você é obra dele
 
 **[1] PREMISSA**
 Você não é acidente.
@@ -196,12 +196,12 @@ Você se acha sem propósito.
 Foi feito EM Cristo PRA boas obras que Ele preparou antes.
 
 **[5] CTA + VERSO**
-"Somos feitura sua, criados em Cristo Jesus para as boas obras que Deus preparou para que andássemos nelas." — Efésios 2.10
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Somos feitura sua, criados em Cristo Jesus para as boas obras que Deus preparou para que andássemos nelas.", Efésios 2.10
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #07 — Domingo 24/05 — Estrangeiro virou família
+### #07, Domingo 24/05, Estrangeiro virou família
 
 **[1] PREMISSA**
 Você não é mais visita.
@@ -221,12 +221,12 @@ Você ainda anda na ponta do pé na casa do Pai.
 Senta. Come. Você é da casa.
 
 **[5] CTA + VERSO**
-"Já não sois estrangeiros, mas concidadãos dos santos, e da família de Deus." — Efésios 2.19
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Já não sois estrangeiros, mas concidadãos dos santos, e da família de Deus.", Efésios 2.19
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #08 — Segunda 25/05 — Plano oculto desde sempre
+### #08, Segunda 25/05, Plano oculto desde sempre
 
 **[1] PREMISSA**
 O que parece coincidência é estratégia.
@@ -244,12 +244,12 @@ Você só consegue ler o parágrafo de hoje.
 O capítulo que parece o pior pode ser onde Ele te coloca pra exato esse momento.
 
 **[5] CTA + VERSO**
-"Segundo o seu beneplácito, que propusera em si mesmo, para a dispensação da plenitude dos tempos." — Efésios 1.9-10
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Segundo o seu beneplácito, que propusera em si mesmo, para a dispensação da plenitude dos tempos.", Efésios 1.9-10
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #09 — Terça 26/05 — Conhecer o amor que excede
+### #09, Terça 26/05, Conhecer o amor que excede
 
 **[1] PREMISSA**
 Tem um amor que não cabe na cabeça.
@@ -268,12 +268,12 @@ Você ainda acha que precisa se ajeitar pra Ele te amar.
 Ele já amou antes de você se ajeitar.
 
 **[5] CTA + VERSO**
-"Conhecer o amor de Cristo, que excede todo o entendimento." — Efésios 3.19
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Conhecer o amor de Cristo, que excede todo o entendimento.", Efésios 3.19
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #10 — Quarta 27/05 — Unidade não é uniformidade
+### #10, Quarta 27/05, Unidade não é uniformidade
 
 **[1] PREMISSA**
 Igreja não é uniforme.
@@ -293,12 +293,12 @@ Você não precisa ser igual ao irmão pra ser um com ele.
 Precisa servir ao mesmo Senhor.
 
 **[5] CTA + VERSO**
-"Um só corpo, um só Espírito, um só Senhor, uma só fé, um só batismo." — Efésios 4.4-5
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Um só corpo, um só Espírito, um só Senhor, uma só fé, um só batismo.", Efésios 4.4-5
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #11 — Quinta 28/05 — Dons diferentes, corpo um
+### #11, Quinta 28/05, Dons diferentes, corpo um
 
 **[1] PREMISSA**
 Deus não distribui igual.
@@ -317,12 +317,12 @@ Você não foi feito pra ser o outro.
 Foi feito pra ser você. No lugar certo. Servindo ao mesmo Senhor.
 
 **[5] CTA + VERSO**
-"A cada um de nós foi dada a graça segundo a medida do dom de Cristo." — Efésios 4.7
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"A cada um de nós foi dada a graça segundo a medida do dom de Cristo.", Efésios 4.7
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #12 — Sexta 29/05 — Maturidade é parar de criança
+### #12, Sexta 29/05, Maturidade é parar de criança
 
 **[1] PREMISSA**
 Tempo de igreja não é idade espiritual.
@@ -341,12 +341,12 @@ Você ainda muda de doutrina toda vez que aparece um vento novo?
 Cristo te chama pra firmeza.
 
 **[5] CTA + VERSO**
-"Para que não sejamos mais meninos inconstantes, levados em roda por todo vento de doutrina." — Efésios 4.14
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Para que não sejamos mais meninos inconstantes, levados em roda por todo vento de doutrina.", Efésios 4.14
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #13 — Sábado 30/05 — Falar a verdade em amor
+### #13, Sábado 30/05, Falar a verdade em amor
 
 **[1] PREMISSA**
 Verdade sem amor machuca.
@@ -366,12 +366,12 @@ Quem você tem ao redor pra te falar o que você não quer ouvir?
 Igreja existe pra isso.
 
 **[5] CTA + VERSO**
-"Seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo." — Efésios 4.15
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo.", Efésios 4.15
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #14 — Domingo 31/05 — Tirar o velho. Vestir o novo.
+### #14, Domingo 31/05, Tirar o velho. Vestir o novo.
 
 **[1] PREMISSA**
 Deus troca seu nome quando troca sua vida.
@@ -390,12 +390,12 @@ Você ainda chama você pelo nome antigo?
 Quem você é em Cristo tem outro.
 
 **[5] CTA + VERSO**
-"Despojai-vos do velho homem. Revesti-vos do novo." — Efésios 4.22, 24
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Despojai-vos do velho homem. Revesti-vos do novo.", Efésios 4.22, 24
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #15 — Segunda 01/06 — Imitar Deus como filho amado
+### #15, Segunda 01/06, Imitar Deus como filho amado
 
 **[1] PREMISSA**
 Filho imita pai.
@@ -415,12 +415,12 @@ Olhe pra sua vida.
 Você imita mais o algoritmo ou mais o Pai?
 
 **[5] CTA + VERSO**
-"Sede, pois, imitadores de Deus, como filhos amados." — Efésios 5.1
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Sede, pois, imitadores de Deus, como filhos amados.", Efésios 5.1
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #16 — Terça 02/06 — Andar como filho da luz
+### #16, Terça 02/06, Andar como filho da luz
 
 **[1] PREMISSA**
 Deus não te chamou pra fugir do escuro.
@@ -440,12 +440,12 @@ Você se queixa do mundo escuro.
 Você é a luz que ele precisa ver.
 
 **[5] CTA + VERSO**
-"Noutro tempo éreis trevas, mas agora sois luz no Senhor. Andai como filhos da luz." — Efésios 5.8
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Noutro tempo éreis trevas, mas agora sois luz no Senhor. Andai como filhos da luz.", Efésios 5.8
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #17 — Quarta 03/06 — Casamento espelha Cristo
+### #17, Quarta 03/06, Casamento espelha Cristo
 
 **[1] PREMISSA**
 Casamento não é contrato.
@@ -465,12 +465,12 @@ Casado, sua casa é evangelho ou contradição?
 Solteiro, você foi feito pra refletir esse amor de outra forma.
 
 **[5] CTA + VERSO**
-"Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela." — Efésios 5.25
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela.", Efésios 5.25
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #18 — Quinta 04/06 — Filho obedece. Pai não exaspera.
+### #18, Quinta 04/06, Filho obedece. Pai não exaspera.
 
 **[1] PREMISSA**
 Família de Deus tem regra.
@@ -490,12 +490,12 @@ Pai, você está criando filho ou inimigo?
 Filho, você está honrando ou só tolerando?
 
 **[5] CTA + VERSO**
-"Filhos, obedecei a vossos pais no Senhor. Pais, não provoqueis à ira a vossos filhos." — Efésios 6.1, 4
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Filhos, obedecei a vossos pais no Senhor. Pais, não provoqueis à ira a vossos filhos.", Efésios 6.1, 4
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #19 — Sexta 05/06 — Batalha não é contra carne
+### #19, Sexta 05/06, Batalha não é contra carne
 
 **[1] PREMISSA**
 Quem você está odiando não é o seu inimigo.
@@ -515,12 +515,12 @@ Aquela pessoa não é o problema.
 O que está atrás dela é.
 
 **[5] CTA + VERSO**
-"Não temos que lutar contra carne e sangue, mas contra as hostes espirituais da maldade." — Efésios 6.12
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Não temos que lutar contra carne e sangue, mas contra as hostes espirituais da maldade.", Efésios 6.12
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #20 — Sábado 06/06 — Vista a armadura. Toda.
+### #20, Sábado 06/06, Vista a armadura. Toda.
 
 **[1] PREMISSA**
 A armadura existe.
@@ -540,12 +540,12 @@ Verdade. Justiça. Evangelho. Fé. Salvação. Palavra.
 Todas. Hoje. Antes de sair de casa.
 
 **[5] CTA + VERSO**
-"Tomai toda a armadura de Deus, para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes." — Efésios 6.13
-**Série Em Cristo — 07/06, 09:30. Castelo Forte.**
+"Tomai toda a armadura de Deus, para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes.", Efésios 6.13
+**Série Em Cristo, 07/06, 09:30. Castelo Forte.**
 
 ---
 
-### #21 — Domingo 07/06 — HOJE. 09:30. Comece em Cristo.
+### #21, Domingo 07/06, HOJE. 09:30. Comece em Cristo.
 
 **[1] PREMISSA**
 21 dias atrás eu te contei uma história.
@@ -565,8 +565,8 @@ Hoje começa a série que vai expor isso ponto a ponto.
 4 cultos. Efésios inteiro. Sem atalho.
 
 **[5] CTA + VERSO**
-"Bendito o Deus e Pai de nosso Senhor Jesus Cristo, o qual nos abençoou com TODAS as bênçãos espirituais nos lugares celestiais EM CRISTO." — Efésios 1.3
-**Série Em Cristo — começa HOJE, 09:30. Castelo Forte. Te espero.**
+"Bendito o Deus e Pai de nosso Senhor Jesus Cristo, o qual nos abençoou com TODAS as bênçãos espirituais nos lugares celestiais EM CRISTO.", Efésios 1.3
+**Série Em Cristo, começa HOJE, 09:30. Castelo Forte. Te espero.**
 
 ---
 
@@ -574,7 +574,7 @@ Hoje começa a série que vai expor isso ponto a ponto.
 
 ### Formato recomendado por peça
 
-**Post único (imagem com texto inteiro):** peças com tríade curta (1-2 linhas cada) — #02, #03, #07, #13, #15
+**Post único (imagem com texto inteiro):** peças com tríade curta (1-2 linhas cada), #02, #03, #07, #13, #15
 **Carrossel 5 slides:** todas as outras. Estrutura padrão:
 - Slide 1: PREMISSA (hook gigante)
 - Slide 2: 1ª linha da tríade
@@ -584,7 +584,7 @@ Hoje começa a série que vai expor isso ponto a ponto.
 
 ### Template visual sugerido
 
-**Família Imperial** (cover + 3 internos + cta) — combina perfeitamente com a estrutura TTM.
+**Família Imperial** (cover + 3 internos + cta), combina perfeitamente com a estrutura TTM.
 Alternativa: **Twitter/impact** pras peças de post único (#02, #03, #07, #13, #15).
 
 ### Identidade da campanha

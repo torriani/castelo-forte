@@ -1,19 +1,19 @@
-# EFÉSIOS ENCARNADO — Versão Popular (histórias que todo mundo conhece)
+# EFÉSIOS ENCARNADO, Versão Popular (histórias que todo mundo conhece)
 
 **Cliente:** igreja-castelo-forte
-**Mudança:** Trocar histórias "cultas" por referências de massa — filmes, esporte, tragédias famosas, figuras pop. Hook em 3 segundos sem precisar explicar quem é a pessoa.
+**Mudança:** Trocar histórias "cultas" por referências de massa, filmes, esporte, tragédias famosas, figuras pop. Hook em 3 segundos sem precisar explicar quem é a pessoa.
 
 ---
 
-## ONDA 1 — EFÉSIOS 1: "Quem eu sou de verdade?"
+## ONDA 1, EFÉSIOS 1: "Quem eu sou de verdade?"
 
 ### Histórias-âncora populares
 
-**1.1 — Simba (O Rei Leão)**
+**1.1, Simba (O Rei Leão)**
 Simba foge achando que matou o pai. Cresce comendo larva com Timão e Pumba, esquecido de quem é. Até Mufasa aparecer nas nuvens e dizer: **"Você é meu filho. Lembra quem você é."** Cena que toda criança dos anos 90 chorou.
 → **Ponte Ef 1.5:** "Ele nos predestinou para sermos adotados como filhos." Você não precisa lembrar o que você fez. Precisa lembrar de quem você é.
 
-**1.2 — Mike Tyson (perdeu tudo, achou que tinha acabado)**
+**1.2, Mike Tyson (perdeu tudo, achou que tinha acabado)**
 Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi preso, faliu. Em entrevista recente disse chorando: "Eu não sabia quem eu era sem o cinturão."
 → **Ponte Ef 1.4:** "Ele nos escolheu antes da criação do mundo." Sua identidade não é seu título. Não é seu salário. Não é seu corpo. Foi decidida antes de tudo isso existir.
 
@@ -24,15 +24,15 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 > Mufasa falou pro Simba no maior momento de filme da história.
 > Deus fala isso pra você todo dia.
 > Você é filho. Antes de tudo, antes de tudo."
-> — Efésios 1.5
+>, Efésios 1.5
 
 **FRASE 1.2 (eco):**
 > "Mike Tyson disse chorando: 'Eu não sabia quem eu era sem o cinturão.'
 > Você também não sabe quem é sem o trabalho, sem o corpo, sem o status.
 > Deus sabe. Ele decidiu antes do mundo existir."
-> — Efésios 1.4
+>, Efésios 1.4
 
-**CARROSSEL 1 (10 slides) — "Lembra quem você é"**
+**CARROSSEL 1 (10 slides), "Lembra quem você é"**
 - Slide 1 (hook): "A cena mais marcante da Disney explica Efésios 1 melhor que qualquer pregação."
 - Slide 2: "Simba fugiu achando que matou o pai. Cresceu comendo larva. Esqueceu quem era."
 - Slide 3: "Aí Mufasa aparece nas nuvens e fala a frase que toda criança guardou: 'Lembra quem você é.'"
@@ -44,7 +44,7 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 - Slide 9 (verso): "'Em amor nos predestinou para sermos adotados como filhos por meio de Jesus Cristo.' Efésios 1.5"
 - Slide 10 (CTA): "Lembra quem você é. Salva esse post pra ler no próximo dia que esquecer."
 
-**REEL 30s — "Lembra quem você é"**
+**REEL 30s, "Lembra quem você é"**
 - 0-3s: Imagem/recriação da nuvem do Mufasa. "Essa cena marcou uma geração inteira."
 - 3-10s: "Simba fugiu achando que matou o pai. Esqueceu quem era. Mufasa apareceu e disse: 'Lembra quem você é.'"
 - 10-20s: "Você também esqueceu. Acha que é o pior dia da sua vida. Acha que é o que falaram de você."
@@ -52,15 +52,15 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 
 ---
 
-## ONDA 2 — EFÉSIOS 2: "Mereço ser perdoado/aceito?"
+## ONDA 2, EFÉSIOS 2: "Mereço ser perdoado/aceito?"
 
 ### Histórias-âncora populares
 
-**2.1 — Nelson Mandela (saiu da prisão e perdoou os algozes)**
+**2.1, Nelson Mandela (saiu da prisão e perdoou os algozes)**
 27 anos preso por causa do apartheid. Quando saiu, podia ter feito guerra civil. Em vez disso, montou a Comissão da Verdade e Reconciliação. Sentou na mesa com os torturadores. Perdoou. O mundo todo conhece.
 → **Ponte Ef 2.14:** "Cristo é a nossa paz, derrubou a parede da separação."
 
-**2.2 — A história de Ronaldo Fenômeno (caiu, voltou)**
+**2.2, A história de Ronaldo Fenômeno (caiu, voltou)**
 2 lesões gravíssimas no joelho. Médicos disseram que ele nunca mais jogaria. Voltou. Ganhou Copa do Mundo de 2002 e Bola de Ouro. Hoje fala em entrevista: "Eu não merecia voltar. Mas voltei."
 → **Ponte Ef 2.8:** "Pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus."
 
@@ -71,15 +71,15 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 > Quando saiu, sentou na mesa com os torturadores e os perdoou.
 > Você não consegue perdoar a pessoa do trabalho.
 > A diferença é que Mandela entendeu que ele também precisava ser perdoado."
-> — Efésios 2.4
+>, Efésios 2.4
 
 **FRASE 2.2 (eco):**
 > "Ronaldo Fenômeno disse: 'Eu não merecia voltar. Mas voltei.'
 > Isso é graça.
 > Você não merece. Por isso é dom."
-> — Efésios 2.8
+>, Efésios 2.8
 
-**CARROSSEL 2 (10 slides) — "27 anos preso. Saiu e perdoou."**
+**CARROSSEL 2 (10 slides), "27 anos preso. Saiu e perdoou."**
 - Slide 1 (hook): "Ele passou 27 anos preso pelo regime racista. Saiu e fez a única coisa que ninguém esperava."
 - Slide 2: "Nelson Mandela. África do Sul. Apartheid."
 - Slide 3: "Preso por lutar contra um governo que dizia que negro não era gente."
@@ -91,7 +91,7 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 - Slide 9 (verso): "'Mas Deus, sendo rico em misericórdia, pelo grande amor com que nos amou, estando nós mortos em nossos delitos, nos deu vida.' Efésios 2.4-5"
 - Slide 10 (CTA): "Quem você não consegue perdoar hoje? Marca essa pessoa mentalmente e ora por ela agora."
 
-**REEL 30s — "27 anos preso e perdoou"**
+**REEL 30s, "27 anos preso e perdoou"**
 - 0-3s: Imagem do Mandela saindo da prisão. "27 anos preso. O mundo esperava vingança."
 - 3-12s: "Nelson Mandela. Apartheid. Saiu da cela em 1990. Tinha motivo pra guerra civil."
 - 12-22s: "Em vez disso, sentou com os torturadores. Perdoou. Mudou um país."
@@ -99,15 +99,15 @@ Mais jovem campeão mundial dos pesos-pesados. Ficou rico, perdeu tudo, foi pres
 
 ---
 
-## ONDA 3 — EFÉSIOS 3: "Existe um plano maior?"
+## ONDA 3, EFÉSIOS 3: "Existe um plano maior?"
 
 ### Histórias-âncora populares
 
-**3.1 — Steve Jobs (conectando os pontos)**
+**3.1, Steve Jobs (conectando os pontos)**
 Discurso em Stanford, 2005. Famoso até hoje: **"Você não consegue conectar os pontos olhando pra frente. Só consegue olhando pra trás."** Jobs largou a faculdade, fez curso de caligrafia "por nada", anos depois usou isso pra inventar a tipografia do Mac. "Você tem que acreditar que os pontos vão se conectar de alguma forma no futuro."
 → **Ponte Ef 3.20:** "Àquele que é poderoso para fazer infinitamente mais do que tudo quanto pedimos ou pensamos."
 
-**3.2 — A foto pálida (Carl Sagan e o "Ponto Azul Pálido")**
+**3.2, A foto pálida (Carl Sagan e o "Ponto Azul Pálido")**
 Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A Terra é 1 pixel. Carl Sagan escreveu o famoso texto: "Aqui está cada pessoa que você amou, cada herói, cada criança..."
 → **Ponte Ef 3.18-19:** "Poder compreender, com todos os santos, qual seja a largura, e o comprimento, e a altura, e a profundidade, e conhecer o amor de Cristo que excede todo o entendimento."
 
@@ -117,15 +117,15 @@ Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A
 > "Steve Jobs disse: 'Você não conecta os pontos olhando pra frente. Só olhando pra trás.'
 > Deus já conectou.
 > Você só precisa confiar que faz parte de um plano que excede tudo o que você imagina."
-> — Efésios 3.20
+>, Efésios 3.20
 
 **FRASE 3.2 (eco):**
 > "Essa foto mostra a Terra como 1 pixel azul, a 6 bilhões de km.
 > O Deus que sustenta o universo escreveu seu nome.
 > Você não é pequeno demais. Você é parte do plano."
-> — Efésios 3.18
+>, Efésios 3.18
 
-**CARROSSEL 3 (8 slides) — "Steve Jobs conectando os pontos"**
+**CARROSSEL 3 (8 slides), "Steve Jobs conectando os pontos"**
 - Slide 1 (hook): "Steve Jobs deu o discurso mais famoso da história em Stanford. Uma frase explica Efésios 3 inteiro."
 - Slide 2: "2005. Ele já tinha sido demitido da Apple e voltado. Tinha câncer."
 - Slide 3: "Falou pros formandos: 'Você não conecta os pontos olhando pra frente. Só olhando pra trás.'"
@@ -135,7 +135,7 @@ Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A
 - Slide 7 (verso): "'Àquele que é poderoso para fazer infinitamente mais do que tudo quanto pedimos ou pensamos, segundo o seu poder que opera em nós.' Efésios 3.20"
 - Slide 8 (CTA): "O ponto de hoje vai conectar amanhã. Deus já viu o desenho. Comenta AMÉM."
 
-**REEL 30s — "Jobs e os pontos"**
+**REEL 30s, "Jobs e os pontos"**
 - 0-3s: Imagem de Jobs em Stanford. "O discurso mais famoso da história."
 - 3-12s: "'Você não conecta os pontos olhando pra frente. Só olhando pra trás.' Steve Jobs, 2005."
 - 12-22s: "O curso de caligrafia que ele fez 'sem motivo' virou o design do Mac 10 anos depois."
@@ -143,15 +143,15 @@ Em 1990, a Voyager 1 tirou uma foto da Terra a 6 bilhões de km de distância. A
 
 ---
 
-## ONDA 4 — EFÉSIOS 4: "Dá pra mudar de verdade?"
+## ONDA 4, EFÉSIOS 4: "Dá pra mudar de verdade?"
 
 ### Histórias-âncora populares
 
-**4.1 — Eminem (8 Mile / "Lose Yourself")**
+**4.1, Eminem (8 Mile / "Lose Yourself")**
 Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. Todos riam. Virou o maior rapper da história. A música "Lose Yourself" inteira é sobre perder o velho e nascer o novo: **"Você só tem uma chance. Não vai deixar escapar."**
 → **Ponte Ef 4.22-24:** "Que vos despojeis do velho homem... e vos revistais do novo homem."
 
-**4.2 — Tiger Woods (caiu, voltou)**
+**4.2, Tiger Woods (caiu, voltou)**
 2009: pego em escândalo. Casamento destruído. Carreira em queda. Vícios. 10 anos sem ganhar um Major. Em 2019 voltou e ganhou o Masters de Augusta. Chorou abraçado ao filho. Esporte inteiro chorou junto.
 → **Ponte Ef 4.24:** "Vos revistais do novo homem, que segundo Deus é criado em verdadeira justiça."
 
@@ -162,16 +162,16 @@ Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. T
 > 'Você só tem uma chance. Não deixa escapar.'
 > O velho homem pode morrer.
 > O novo pode nascer hoje."
-> — Efésios 4.24
+>, Efésios 4.24
 
 **FRASE 4.2 (eco):**
 > "Tiger Woods passou 10 anos sem ganhar nada.
 > Vícios. Divórcio. Esculacho público.
 > Em 2019 ganhou Augusta de novo e chorou abraçado no filho.
 > Volta tem. O novo homem nasce."
-> — Efésios 4.22
+>, Efésios 4.22
 
-**CARROSSEL 4 (10 slides) — "Tiger Woods, 10 anos no inferno"**
+**CARROSSEL 4 (10 slides), "Tiger Woods, 10 anos no inferno"**
 - Slide 1 (hook): "Tiger Woods passou 10 anos no fundo do poço. Em 2019 ganhou Augusta e o mundo chorou junto. O que aconteceu?"
 - Slide 2: "2008. Tiger era o maior do mundo. 14 Majors. Acima de qualquer atleta."
 - Slide 3: "2009. Pego no escândalo. Múltiplas amantes. Casamento explodido em rede nacional."
@@ -183,7 +183,7 @@ Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. T
 - Slide 9 (verso): "'Vos despojeis do velho homem, que se corrompe pelas concupiscências do engano, e vos revistais do novo homem.' Efésios 4.22-24"
 - Slide 10 (CTA): "Você não foi feito pra ficar no chão. O novo homem nasce. Marca quem precisa ler isso."
 
-**REEL 30s — "Tiger no fundo do poço"**
+**REEL 30s, "Tiger no fundo do poço"**
 - 0-3s: Imagem do Tiger preso/destruído. "Ele foi o atleta mais escrachado do mundo."
 - 3-12s: "Tiger Woods. Escândalo, vícios, divórcio, 4 cirurgias, prisão. 10 anos sem ganhar nada."
 - 12-22s: "Domingo de páscoa, 2019. Augusta. Ganhou. Chorou abraçado no filho."
@@ -191,16 +191,16 @@ Cara que cresceu num trailer em Detroit. Mãe drogada. Sem pai. Branco no rap. T
 
 ---
 
-## ONDA 5 — EFÉSIOS 5: "Amor sobrevive?"
+## ONDA 5, EFÉSIOS 5: "Amor sobrevive?"
 
 ### Histórias-âncora populares
 
-**5.1 — Titanic (Jack e Rose) — usar a referência cultural sem mostrar o filme literalmente**
+**5.1, Titanic (Jack e Rose), usar a referência cultural sem mostrar o filme literalmente**
 A cena que toda pessoa adulta lembra: Jack na água gelada, segurando a mão da Rose, dizendo: **"Promete que vai viver."** Cinema inteiro chorou em 1997. Continua chorando. Por quê? Porque amor que se entrega bate fundo no coração humano.
 → **Ponte Ef 5.25:** "Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela."
 
-**5.2 — O casal das Torres Gêmeas (Edgar Emery e a esposa)**
-Várias histórias documentadas de 11/9 — pessoas dentro das Torres ligando pra família dizendo "eu te amo" como últimas palavras. Bombeiros entrando enquanto todos saíam. Amor de entrega aparece quando tudo está caindo.
+**5.2, O casal das Torres Gêmeas (Edgar Emery e a esposa)**
+Várias histórias documentadas de 11/9, pessoas dentro das Torres ligando pra família dizendo "eu te amo" como últimas palavras. Bombeiros entrando enquanto todos saíam. Amor de entrega aparece quando tudo está caindo.
 → **Ponte Ef 5.2:** "Andai em amor, como também Cristo nos amou, e se entregou a si mesmo por nós."
 
 ### PEÇAS
@@ -211,16 +211,16 @@ Várias histórias documentadas de 11/9 — pessoas dentro das Torres ligando pr
 > Jack se entregou pelo amor da Rose.
 > Cristo se entregou pela igreja.
 > Amor de verdade tem cara de entrega."
-> — Efésios 5.25
+>, Efésios 5.25
 
 **FRASE 5.2 (eco):**
 > "Quando as Torres Gêmeas caíram, as últimas ligações eram 'eu te amo'.
 > Não 'eu te admiro'. Não 'você foi importante'.
 > 'EU TE AMO.'
 > No fim, sobra o amor que se entregou."
-> — Efésios 5.2
+>, Efésios 5.2
 
-**CARROSSEL 5 (9 slides) — "Promete que vai viver"**
+**CARROSSEL 5 (9 slides), "Promete que vai viver"**
 - Slide 1 (hook): "A cena do Titanic que toda pessoa chorou em 1997 explica Efésios 5 inteiro."
 - Slide 2: "Jack na água gelada. Rose na porta. Os dois sabem que só um sobrevive."
 - Slide 3: "Ele segura a mão dela. Diz: 'Promete que vai viver. Promete que vai ter filhos. Promete que vai morrer velha na cama.'"
@@ -231,7 +231,7 @@ Várias histórias documentadas de 11/9 — pessoas dentro das Torres ligando pr
 - Slide 8 (verso): "'Maridos, amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela.' Efésios 5.25"
 - Slide 9 (CTA): "Casal: vocês foram chamados pra amar assim. Marca seu parceiro nos comentários."
 
-**REEL 30s — "Promete que vai viver"**
+**REEL 30s, "Promete que vai viver"**
 - 0-3s: Visual de água/gelo, sem mostrar o filme. "A cena que todo mundo chorou em 1997."
 - 3-12s: "Jack na água gelada. Rose na porta. 'Promete que vai viver. Promete.'"
 - 12-22s: "Por que isso marca? Porque amor que se entrega é a coisa mais rara que existe."
@@ -239,15 +239,15 @@ Várias histórias documentadas de 11/9 — pessoas dentro das Torres ligando pr
 
 ---
 
-## ONDA 6 — EFÉSIOS 6: "Como aguentar quando tudo desaba?"
+## ONDA 6, EFÉSIOS 6: "Como aguentar quando tudo desaba?"
 
 ### Histórias-âncora populares
 
-**6.1 — Rocky Balboa (a fala pro filho)**
+**6.1, Rocky Balboa (a fala pro filho)**
 A fala que viralizou pra sempre: **"O mundo não é um mar de rosas. É um lugar mau e sujo, e por mais durão que você seja, ele vai te ajoelhar e te manter ajoelhado se você deixar. Mas não é sobre quão forte você bate. É sobre quanto você aguenta apanhar e continuar avançando."**
 → **Ponte Ef 6.10-13:** "Fortalecei-vos no Senhor... revesti-vos de toda a armadura de Deus... para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes."
 
-**6.2 — Anita Garibaldi / Senna nas últimas voltas / Kobe Bryant (mentalidade da batalha)**
+**6.2, Anita Garibaldi / Senna nas últimas voltas / Kobe Bryant (mentalidade da batalha)**
 Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do lance livre, com o tendão rompido, e converteu os 2 lances livres antes de sair do jogo. Mentalidade Mamba. Frase dele: "Eu não posso me dar ao luxo de não tentar."
 → **Ponte Ef 6.13:** "Tomai toda a armadura de Deus, para que possais resistir no dia mau."
 
@@ -257,15 +257,15 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 > "Rocky disse pro filho: 'Não é sobre quão forte você bate. É sobre quanto aguenta apanhar e continuar avançando.'
 > Paulo disse 2 mil anos antes: 'Havendo feito tudo, ficar firmes.'
 > A armadura é dada. Mas você precisa vestir."
-> — Efésios 6.13
+>, Efésios 6.13
 
 **FRASE 6.2 (eco):**
 > "Kobe rompeu o tendão de Aquiles e mancou até a linha do lance livre.
 > Converteu os 2 lances. Saiu andando.
 > Você tá numa batalha. A armadura existe. Veste."
-> — Efésios 6.11
+>, Efésios 6.11
 
-**CARROSSEL 6 (10 slides) — "Rocky e a fala que ninguém esquece"**
+**CARROSSEL 6 (10 slides), "Rocky e a fala que ninguém esquece"**
 - Slide 1 (hook): "Rocky deu o discurso mais famoso do cinema motivacional. Paulo escreveu Efésios 6 dizendo a mesma coisa."
 - Slide 2: "Rocky fala pro filho que tá se vitimizando: 'O mundo não é um mar de rosas.'"
 - Slide 3: "'É um lugar mau e sujo. Por mais durão que você seja, vai te ajoelhar e te manter ajoelhado se você deixar.'"
@@ -277,7 +277,7 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 - Slide 9 (verso): "'Tomai toda a armadura de Deus, para que possais resistir no dia mau, e, havendo feito tudo, ficar firmes.' Efésios 6.13"
 - Slide 10 (CTA): "Sua batalha de hoje não é com gente. Veste a armadura. Salva esse post."
 
-**REEL 30s — "Rocky e Paulo"**
+**REEL 30s, "Rocky e Paulo"**
 - 0-3s: Visual de boxe/luta. "A fala mais famosa do cinema motivacional."
 - 3-12s: "Rocky pro filho: 'Não é quão forte você bate. É quanto aguenta apanhar e continuar avançando.'"
 - 12-22s: "Paulo escreveu a mesma coisa 2 mil anos antes. A diferença? Ele te dá a armadura."
@@ -300,7 +300,7 @@ Kobe Bryant, lesão grave no tendão de Aquiles em 2013. Andou até a linha do l
 
 ## PRÓXIMOS PASSOS
 
-1. **Recomendado começar pela Onda 1 (Rei Leão)** — hook nostálgico, alcance enorme, baixa fricção
-2. **Ou Onda 6 (Rocky)** — hook viral, mensagem dura, alto engajamento
+1. **Recomendado começar pela Onda 1 (Rei Leão)**, hook nostálgico, alcance enorme, baixa fricção
+2. **Ou Onda 6 (Rocky)**, hook viral, mensagem dura, alto engajamento
 3. Depois eu direciono pro `@carousel-creator` produzir o carrossel completo
 4. Gero as frases como print-tweets via `app/image-generator/generate.mjs`
