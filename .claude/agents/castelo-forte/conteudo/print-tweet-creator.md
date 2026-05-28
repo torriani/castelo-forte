@@ -147,7 +147,7 @@ S1_HOOKS:
 
 \`\`\`
 operador da Castelo Forte
-@castelofortemandaqui
+@castelofortefloripa
 
 <corpo da reflexão com paragrafos espaçados>
 \`\`\`
@@ -195,7 +195,7 @@ Próxima etapa: `@content-validator` (Oráculo Castelo Forte) com score >= 80.
 
 ```
 operador da Castelo Forte
-@castelofortemandaqui
+@castelofortefloripa
 
 Quanto mais dinheiro você fizer, menos tempo você terá.
 
@@ -219,7 +219,7 @@ Caption: `Tô mentindo?`
 
 ```
 operador da Castelo Forte
-@castelofortemandaqui
+@castelofortefloripa
 
 Você tem caixa pra investir.
 

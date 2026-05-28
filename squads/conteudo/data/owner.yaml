@@ -5,7 +5,7 @@
 owner:
   name: "operador da Castelo Forte"
   git_email: "meu@email.com"
-  username: "castelofortemandaqui"
+  username: "castelofortefloripa"
   hostname_contains: "Castelo Forte"
 
 # Se qualquer um desses bater, é o owner → pula onboarding

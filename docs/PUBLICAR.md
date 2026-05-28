@@ -1,6 +1,6 @@
 # PUBLICAR — Pipeline Instagram
 
-Manual completo da publicação automática no Instagram da Castelo Forte (@castelofortemandaqui).
+Manual completo da publicação automática no Instagram da Castelo Forte (@castelofortefloripa).
 
 ---
 

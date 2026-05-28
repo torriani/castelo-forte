@@ -4,8 +4,8 @@
 
 brand:
   name: "Castelo Forte"
-  handle: "@castelofortemandaqui"
-  instagram: "castelofortemandaqui"
+  handle: "@castelofortefloripa"
+  instagram: "castelofortefloripa"
 
 colors:
   primary: "#2B7DE1"        # Azul marca — títulos, destaques, accent
@@ -37,7 +37,7 @@ assets:
       - "assets/face-reference/castelo-forte-07.jpg"
       - "assets/face-reference/castelo-forte-08.JPG"
       - "assets/face-reference/castelo-forte-09.jpg"
-    source: "/Users/castelofortemandaqui/Library/CloudStorage/Dropbox/AUTORIDADE/TREINAR IA/"
+    source: "/Users/castelofortefloripa/Library/CloudStorage/Dropbox/AUTORIDADE/TREINAR IA/"
 
 output:
   directory: "../../outputs/conteudo"  # Onde os carrosséis renderizados são salvos
@@ -52,4 +52,4 @@ templates:
 onboarding:
   completed: true
   completed_at: "2026-04-21"
-  completed_by: "castelofortemandaqui"
+  completed_by: "castelofortefloripa"

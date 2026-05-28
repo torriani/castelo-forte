@@ -126,7 +126,7 @@ Pergunta retórica (de outra pessoa) + resposta que vira ensinamento.
 - **Alinhamento do bloco:** **CENTRALIZADO NA VERTICAL** (nao top-aligned). Header (foto/nome/@) + corpo formam um BLOCO UNICO solidario. Texto curto = bloco compacto no centro do canvas. Texto longo = bloco maior, ainda centralizado (header sobe, texto desce, mas juntos). NUNCA travar o header no topo.
 - **Foto perfil:** circular, ~56px de diametro, ao lado esquerdo do nome (alinhada a esquerda)
 - **Nome:** "operador da Castelo Forte" (negrito, ~26pt, preto #0f1419)
-- **Handle:** "@castelofortemandaqui" (cinza #536471, ~18pt)
+- **Handle:** "@castelofortefloripa" (cinza #536471, ~18pt)
 - **Selo verificado:** azul Twitter (#1D9BF0), ~22pt, ao lado do nome
 - **Corpo:** texto preto puro (#0f1419), **~52-54pt**, sans-serif (Inter), line-height 1.45
 - **Espaçamento:** linha vazia entre cada paragrafo (gera ~2 linhas de respiro visual, proporcional a fonte)
@@ -180,7 +180,7 @@ Se falhou em 1+ → reescreve.
 
 ```
 operador da Castelo Forte
-@castelofortemandaqui
+@castelofortefloripa
 
 Quanto mais dinheiro você fizer, menos tempo você terá.
 

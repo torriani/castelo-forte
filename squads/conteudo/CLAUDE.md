@@ -2,7 +2,7 @@
 
 Este arquivo carrega automaticamente toda vez que o Claude Code abre dentro de `squads/conteudo/` ou subpasta. Define como o squad funciona, onde estão as coisas, e como executar cada fluxo.
 
-**Cliente único deste repositório:** `igreja-castelo-forte` (@castelofortemandaqui).
+**Cliente único deste repositório:** `igreja-castelo-forte` (@castelofortefloripa).
 
 Tudo neste repo é dedicado à Igreja Castelo Forte. Outputs sempre vão para `outputs/...`.
 

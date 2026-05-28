@@ -2,7 +2,7 @@
 
 Squad de edição de vídeo longform → shorts/reels para a **Igreja Castelo Forte**. Combina 3 diretores elite (Pearlman, MrBeast, Murch) com workers técnicos (Whisper + auto-editor + Remotion + ffmpeg).
 
-**Cliente único:** `igreja-castelo-forte` (@castelofortemandaqui).
+**Cliente único:** `igreja-castelo-forte` (@castelofortefloripa).
 
 > **Origem:** este squad é uma cópia adaptada de `legacy/squads/video-editor/`. A skill global `/legendar-video` continua funcionando com o squad legacy. Este aqui é pra trabalhos nativos do Castelo Forte (cultos, prédicas, lives da igreja).
 

@@ -39,7 +39,7 @@ POST https://api.apify.com/v2/acts/{actorId}/run-sync-get-dataset-items?token={A
 ### Exemplo testado (POST do Instagram)
 
 ```bash
-TOKEN=$(grep APIFY_TOKEN /Users/castelofortemandaqui/claude/squads/conteudo/.env | cut -d= -f2)
+TOKEN=$(grep APIFY_TOKEN /Users/castelofortefloripa/claude/squads/conteudo/.env | cut -d= -f2)
 
 curl -s "https://api.apify.com/v2/acts/apify~instagram-post-scraper/run-sync-get-dataset-items?token=${TOKEN}&timeout=120" \
   -H "Content-Type: application/json" \

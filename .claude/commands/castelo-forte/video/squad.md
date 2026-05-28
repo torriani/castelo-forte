@@ -8,7 +8,7 @@ Mostre **exatamente isto** (formatado bonito):
 
 # Squad Video Editor — Castelo Forte (ATIVO)
 
-**Cliente:** Igreja Castelo Forte (@castelofortemandaqui)
+**Cliente:** Igreja Castelo Forte (@castelofortefloripa)
 **Localização:** `squads/video-editor/`
 **Origem:** cópia adaptada de `legacy/squads/video-editor/`
 

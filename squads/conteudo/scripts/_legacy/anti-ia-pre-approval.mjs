@@ -83,7 +83,7 @@ function buildAuthorFeedback(violations) {
     lines.push('');
   }
   lines.push(`Consulte o STYLEBOOK.md para reescrita:`);
-  lines.push(`/Users/castelofortemandaqui/claude/legacy/outputs/antiia/STYLEBOOK.md`);
+  lines.push(`/Users/castelofortefloripa/claude/legacy/outputs/antiia/STYLEBOOK.md`);
   lines.push(``);
   lines.push(`Após corrigir, ressubmeta. Conteúdo só entra na fila quando aprovado.`);
   return lines.join('\n');

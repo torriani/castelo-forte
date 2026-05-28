@@ -8,7 +8,7 @@ Mostre **exatamente isto** (formatado bonito):
 
 # Squad Conteúdo — Castelo Forte (ATIVO)
 
-**Cliente:** Igreja Castelo Forte (@castelofortemandaqui)
+**Cliente:** Igreja Castelo Forte (@castelofortefloripa)
 **Localização:** ~/claude/castelo-forte/squads/conteudo/
 **Repositório:** github.com/torriani/castelo-forte
 

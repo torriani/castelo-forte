@@ -271,7 +271,7 @@ node /tmp/render-*.mjs  # scripts ad-hoc no /tmp
 
 **Deploy Vercel:**
 ```bash
-cd /Users/castelofortemandaqui/claude/apps/conteudo
+cd /Users/castelofortefloripa/claude/apps/conteudo
 vercel --prod --yes
 ```
 

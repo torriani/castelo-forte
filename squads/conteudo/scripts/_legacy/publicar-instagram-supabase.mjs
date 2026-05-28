@@ -14,7 +14,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createClient } from '/Users/castelofortemandaqui/claude/squads/conteudo/app/carrossel-dashboard/node_modules/@supabase/supabase-js/dist/index.mjs';
+import { createClient } from '/Users/castelofortefloripa/claude/squads/conteudo/app/carrossel-dashboard/node_modules/@supabase/supabase-js/dist/index.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

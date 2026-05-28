@@ -5,7 +5,7 @@
 //   node squads/conteudo/scripts/upload-archive.mjs <pasta-local> [--prefix <prefixo-remoto>]
 //
 // Exemplos:
-//   node squads/conteudo/scripts/upload-archive.mjs /Users/castelofortemandaqui/claude/outputs/campanhas --prefix campanhas
+//   node squads/conteudo/scripts/upload-archive.mjs /Users/castelofortefloripa/claude/outputs/campanhas --prefix campanhas
 //   node squads/conteudo/scripts/upload-archive.mjs ./outputs/multiplicar --prefix multiplicar
 
 import { readFileSync, readdirSync, statSync } from 'fs';

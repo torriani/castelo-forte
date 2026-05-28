@@ -190,7 +190,7 @@ Exemplo:
   console.log(`📁 Pasta: ${inputDir}`);
   console.log(`☁️  Supabase: carrosseis/${folderName}/`);
   if (dryRun) console.log(`⚠️  DRY RUN — não vai publicar no Instagram\n`);
-  else console.log(`📷 Instagram: @castelofortemandaqui\n`);
+  else console.log(`📷 Instagram: @castelofortefloripa\n`);
 
   // STEP 1: Upload para Supabase
   console.log('━━━ Step 1: Upload para Supabase Storage ━━━');

@@ -109,7 +109,7 @@ outputs/inteligencia/{tipo}/{slug}/
 | Espiar outra igreja grande | `/stalk dossie @hillsongbrasil --client igreja-castelo-forte` |
 | Banco de hooks sobre "presença de Deus" | `/stalk hooks "presença de Deus"` |
 | Vocabulário do avatar (comentários) | `/stalk comments <url-post-da-igreja>` |
-| Comparar igrejas | `/stalk compare @castelofortemandaqui @hillsongbrasil @bolasdeneveoficial` |
+| Comparar igrejas | `/stalk compare @castelofortefloripa @hillsongbrasil @bolasdeneveoficial` |
 | Concorrentes regionais (Mandaqui/SP) | `/stalk competitors "igreja zona norte sp"` |
 
 ## Princípios

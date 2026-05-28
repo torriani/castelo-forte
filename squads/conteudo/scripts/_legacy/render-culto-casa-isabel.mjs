@@ -9,7 +9,7 @@
  *   node scripts/render-culto-casa-isabel.mjs <pasta-carrosseis> <arquivo-frases.json> <pasta-out-img>
  */
 
-import { chromium } from '/Users/castelofortemandaqui/claude/legacy/node_modules/playwright/index.mjs';
+import { chromium } from '/Users/castelofortefloripa/claude/legacy/node_modules/playwright/index.mjs';
 import fs from 'fs';
 import path from 'path';
 
@@ -23,7 +23,7 @@ if (!PASTA_CARROSSEIS || !FRASES_JSON || !OUT_IMG_BASE) {
   process.exit(1);
 }
 
-const ROOT = '/Users/castelofortemandaqui/claude/legacy';
+const ROOT = '/Users/castelofortefloripa/claude/legacy';
 const LOGO = `${ROOT}/squads/workspace/businesses/igreja-castelo-forte/brand/logo-castelo-forte-oficial.png`;
 const OUT_CARR = `${OUT_IMG_BASE}/carrosseis`;
 const OUT_FRASES = `${OUT_IMG_BASE}/frases`;

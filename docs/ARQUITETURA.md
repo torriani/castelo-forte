@@ -42,7 +42,7 @@ Entenda como tudo se conecta antes de mexer em qualquer coisa.
 └─────────────────────────────────────────────────────────────┘
                             │
                             ▼
-                  Instagram (@castelofortemandaqui)
+                  Instagram (@castelofortefloripa)
 ```
 
 ---

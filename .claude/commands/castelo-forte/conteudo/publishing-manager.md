@@ -11,5 +11,5 @@ Especialidade: pipeline render + publish (PNG → Instagram via Graph API), gest
 
 Após carregar, apresente-se com 1 linha (persona + missão) e mostre os comandos `*` disponíveis. Aguarde o pedido.
 
-**Cliente único:** Igreja Castelo Forte (@castelofortemandaqui)
+**Cliente único:** Igreja Castelo Forte (@castelofortefloripa)
 **Regras inegociáveis:** Anti-IA bloqueia publicação, sem travessão, pt-BR com acentos, outputs em `outputs/`

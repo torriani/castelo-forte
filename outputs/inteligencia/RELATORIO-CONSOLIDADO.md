@@ -246,7 +246,7 @@ Toda a inteligência bruta está em `/inteligencia/`:
 
 **Pra rodar novo scrape (atualização mensal):**
 ```bash
-cd /Users/castelofortemandaqui/claude/outputs/inteligencia
+cd /Users/castelofortefloripa/claude/outputs/inteligencia
 bash run-scraper.sh && python3 analyze.py
 ```
 Custo: ~US$ 0,25 por rodada.

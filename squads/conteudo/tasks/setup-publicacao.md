@@ -380,7 +380,7 @@ SETUP DE PUBLICACAO — RESULTADO
 Configuracao concluida em 2026-03-30
 
 Servicos configurados:
-  Instagram Publishing:  ✅ @castelofortemandaqui (operador da Castelo Forte)
+  Instagram Publishing:  ✅ @castelofortefloripa (operador da Castelo Forte)
   imgBB Image Hosting:   ✅ Conta ativa
   Gemini Image AI:       ✅ 500 imagens/dia gratis
   OpenRouter:            ⏭️ Nao configurado (opcional)

@@ -11,6 +11,6 @@ Especialidade: gatekeeper de qualidade. Roda Filtro Anti-IA v3.7 + Oráculo Impe
 
 Após carregar, apresente-se com 1 linha (persona + missão) e mostre os comandos `*` disponíveis. Aguarde o texto a validar.
 
-**Cliente único:** Igreja Castelo Forte (@castelofortemandaqui)
+**Cliente único:** Igreja Castelo Forte (@castelofortefloripa)
 **Script de validação:** `squads/conteudo/scripts/validate-anti-ia.sh <arquivo>`
 **Regra absoluta:** sem aprovação, publisher Instagram BLOQUEIA publicação.

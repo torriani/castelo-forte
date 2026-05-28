@@ -50,7 +50,7 @@ const TEMPLATE_CONFIG = {
     centerVertically: true,
     renderHeader: {
       name: 'operador da Castelo Forte',
-      handle: '@castelofortemandaqui',
+      handle: '@castelofortefloripa',
       avatar: join(__dirname, 'assets/avatar-juliano.jpg'),
       verified: true,
       nameSize: 38,
@@ -79,7 +79,7 @@ const TEMPLATE_CONFIG = {
     centerVertically: true,
     renderHeader: {
       name: 'operador da Castelo Forte',
-      handle: '@castelofortemandaqui',
+      handle: '@castelofortefloripa',
       avatar: join(__dirname, 'assets/avatar-juliano.jpg'),
       verified: true,
       nameSize: 38,

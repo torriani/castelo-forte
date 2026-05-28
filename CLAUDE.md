@@ -2,7 +2,7 @@
 
 Este repositório é o **centro operacional da Igreja Castelo Forte**. Contém apps, squads de inteligência (agentes), dados da igreja e tudo que é produzido.
 
-**Cliente único:** `igreja-castelo-forte` (@castelofortemandaqui).
+**Cliente único:** `igreja-castelo-forte` (@castelofortefloripa).
 
 ---
 

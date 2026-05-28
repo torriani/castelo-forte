@@ -1,6 +1,6 @@
 # Plano de Conteúdo 2026 — Pipeline de Publicação Automática
 
-Sistema de publicação automática no Instagram (@castelofortemandaqui) com agendamento via LaunchAgent do macOS e hosting de imagens no Supabase Storage.
+Sistema de publicação automática no Instagram (@castelofortefloripa) com agendamento via LaunchAgent do macOS e hosting de imagens no Supabase Storage.
 
 ---
 
@@ -69,7 +69,7 @@ Exemplos:
 ## Comandos
 
 ```bash
-cd /Users/castelofortemandaqui/claude/apps/publisher-instagram-2026
+cd /Users/castelofortefloripa/claude/apps/publisher-instagram-2026
 
 # Modo dry-run (mostra o que faria, sem postar)
 node publisher.mjs --dry-run --only=1
@@ -121,7 +121,7 @@ Pode também copiar PNG + JSON existentes da pasta `CALENDARIO-10-DIAS/` e adici
 Tudo em `.env`. Já configurado:
 
 - `INSTAGRAM_ACCESS_TOKEN` — System User Token (não expira)
-- `INSTAGRAM_BUSINESS_ACCOUNT_ID` — ID da conta @castelofortemandaqui
+- `INSTAGRAM_BUSINESS_ACCOUNT_ID` — ID da conta @castelofortefloripa
 - `FACEBOOK_PAGE_ID` — Página Facebook vinculada
 - `GRAPH_API_VERSION` — v21.0
 - `SUPABASE_URL` — projeto Castelo Forte

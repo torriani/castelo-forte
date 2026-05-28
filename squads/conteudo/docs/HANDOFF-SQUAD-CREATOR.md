@@ -23,7 +23,7 @@ Este documento contem TODA a analise feita sobre as fontes originais (AGENTE IMP
 
 ### 1.1 AGENTE IMPERADOR
 
-**Raiz:** `/Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE IMPERADOR/`
+**Raiz:** `/Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE IMPERADOR/`
 
 #### DOCS IMPERADOR/ (Conhecimento do Agente)
 
@@ -98,7 +98,7 @@ Este documento contem TODA a analise feita sobre as fontes originais (AGENTE IMP
 
 ### 1.2 AGENTE BLAZE
 
-**Raiz:** `/Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE BLAZE/`
+**Raiz:** `/Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE BLAZE/`
 
 #### KNOWLEDGE-BLAZE/
 
@@ -122,7 +122,7 @@ Este documento contem TODA a analise feita sobre as fontes originais (AGENTE IMP
 
 ### 1.3 BRANDCONTENT
 
-**Raiz:** `/Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/BRANDCONTENT/`
+**Raiz:** `/Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/BRANDCONTENT/`
 
 | Arquivo | Status | Conteudo |
 |---------|--------|----------|
@@ -645,7 +645,7 @@ Todo post deve gerar pelo menos 2:
 
 ## PARTE 3: O QUE FOI CRIADO (36 ARQUIVOS)
 
-Arquivos que existem em `/Users/castelofortemandaqui/claude/squads/conteudo/` -- podem ser reaproveitados ou descartados:
+Arquivos que existem em `/Users/castelofortefloripa/claude/squads/conteudo/` -- podem ser reaproveitados ou descartados:
 
 ### data/ (15 arquivos)
 nucleo.md, expression.md, tipos-de-post.md, frameworks-copy.md, aberturas-poderosas.md, hooks-bank.md, cta-bank.md, oraculo-posts.md, oraculo-reels.md, reels-framework.md, reels-patterns.md, reels-swipefile.md, swipe-posts.md, cliches-proibidos.md, regras-inviolaveis.md

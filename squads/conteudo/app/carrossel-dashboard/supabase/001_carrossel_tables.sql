@@ -173,7 +173,7 @@ values
 insert into carrossel_brands (nome, handle, verificado, marca_nome, tagline, categoria)
 values (
   'operador da Castelo Forte',
-  'castelofortemandaqui',
+  'castelofortefloripa',
   true,
   'F2L',
   'FAMÍLIA, LUCRO E LIBERDADE',

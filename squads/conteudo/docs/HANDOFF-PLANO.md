@@ -287,20 +287,20 @@ squads/conteudo/
 
 ## FONTES ORIGINAIS (Paths)
 
-- IMPERADOR: /Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE IMPERADOR/
+- IMPERADOR: /Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE IMPERADOR/
   - DOCS: DOCS IMPERADOR/ (NARRATIVAS.md, HOOKS.md, VALIDATOR.md, ORACULO.md, NUCLEO.md, EXPRESSION.md, PLANEJAMENTO.md, + PDFs)
   - PROMPTS: PROMPTS IMPERADOR/ (prompt-imperador-v9.md e outros)
-- BLAZE: /Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE BLAZE/
+- BLAZE: /Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/AGENTE BLAZE/
   - KNOWLEDGE: KNOWLEDGE-BLAZE/ (01-FRAMEWORK-ROTEIRO-REELS.md, 02-frameworks-ganchos-virais.md, 05-swipe-file-ganchos-virais.md, 20-ORACULO-REELS.md)
   - PROMPT: promtp-BLAZE-27102025.md
-- BRANDCONTENT: /Users/castelofortemandaqui/Library/CloudStorage/Dropbox/[AGENTES GPT]/BRANDCONTENT/
+- BRANDCONTENT: /Users/castelofortefloripa/Library/CloudStorage/Dropbox/[AGENTES GPT]/BRANDCONTENT/
   - O CODIGO ESCONDIDO NA COPY DOS CARROSSEIS.pdf (9 frameworks + 5 aberturas)
 - Posts Intencionais: AGENTE IMPERADOR/como-criar-posts-intencionais.pdf
 
 ## NARRATIVAS COMPLETAS JA EXTRAIDAS
 
 O arquivo completo de narrativas (todos os 7 tipos com estrutura slide-a-slide) foi salvo em:
-/Users/castelofortemandaqui/.claude/projects/-Users-castelofortemandaqui-claude-legacy/17d2910e-bbe8-45be-9ca0-d51895327612/tool-results/toolu_01NJwp1eMmtokLRxFwNSsuFm.txt
+/Users/castelofortefloripa/.claude/projects/-Users-castelofortefloripa-claude-legacy/17d2910e-bbe8-45be-9ca0-d51895327612/tool-results/toolu_01NJwp1eMmtokLRxFwNSsuFm.txt
 
 ---
 
