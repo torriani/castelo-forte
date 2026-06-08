@@ -1,0 +1,22 @@
+{
+  "id": "C06",
+  "titulo": "O Rei e a Serva Grávida",
+  "tipo": "História",
+  "proporção": "Tensão",
+  "hook": "O marido morreu antes do filho nascer. Então o rei decidiu: esse filho será meu.",
+  "tema_central": "Ilustrar com a parábola do rei que adoção é decisão soberana e anterior: Deus decidiu te chamar de filho antes de você nascer.",
+  "versiculo_base": "Efésios 1:5",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "O REI decidiu antes do filho nascer", "accent_word": "REI", "image_hint": "Silhueta de um rei olhando uma janela de palácio ao entardecer, luz quente e nobre, fundo neutro cinematográfico"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Tinha um rei dono de um vasto território", "body": "Terras até onde a vista alcança, poder pra fazer qualquer coisa. E dentro do palácio, uma serva."},
+    {"n": 3, "tipo": "triade", "headline_resto": "A história dentro do palácio", "personagem": "A SERVA", "sub": "Grávida. E o marido morre antes do filho nascer. Sem nome, sem herança, sem futuro garantido."},
+    {"n": 4, "tipo": "texto-off", "headline": "Então o rei toma uma decisão", "body": "Antes daquela criança respirar, antes do primeiro choro, ele declara: assim que nascer, esse filho será meu."},
+    {"n": 5, "tipo": "texto-midnight", "headline": "A criança não fez nada pra merecer", "accent_word": "nada", "body": "Não sorriu, não falou, não provou valor. A decisão foi inteira do rei, movida por vontade, não por mérito."},
+    {"n": 6, "tipo": "texto-off", "headline": "É exatamente isso que Deus diz sobre você", "body": "Antes de você nascer, antes de qualquer escolha sua, Ele já tinha decidido: será meu filho."},
+    {"n": 7, "tipo": "verso", "versiculo": "Em amor nos predestinou para sermos adotados como filhos, por meio de Jesus Cristo.", "referencia": "Efésios 1:5"},
+    {"n": 8, "tipo": "texto-midnight", "headline": "Você entrou na família por decisão de quem manda", "body": "Não por carência sua. Não por barganha. Pela vontade boa de um Pai que decidiu primeiro."},
+    {"n": 9, "tipo": "texto-midnight", "headline": "A adoção não esperou você nascer. Ela foi decidida antes, no coração do Rei.", "accent_word": "decidida"},
+    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem ouvir a história inteira da sua adoção.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Um rei dono de um vasto território. No palácio, uma serva grávida cujo marido morre antes do filho nascer. Antes daquela criança respirar, o rei decide: esse filho será meu. É exatamente isso que Deus diz sobre você. Em amor Ele nos predestinou para sermos adotados como filhos. A adoção não esperou você nascer, foi decidida antes, no coração do Rei. #castelofortejurere #emcristo #efesios #pristraelanijar"
+}

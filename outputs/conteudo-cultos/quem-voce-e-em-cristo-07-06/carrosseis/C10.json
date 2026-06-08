@@ -1,0 +1,22 @@
+{
+  "id": "C10",
+  "titulo": "Você Não É Mais Forasteiro",
+  "tipo": "Crença",
+  "proporção": "Acolhimento",
+  "hook": "Você não está mais do lado de fora. Foi adotado como filho. A mesa do Pai tem lugar pra você.",
+  "tema_central": "Fechar a série com acolhimento: o fim da condição de estranho. Em Cristo você pertence, tem lugar e tem família.",
+  "versiculo_base": "Efésios 1:5-6",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "Você não é mais FORASTEIRO", "accent_word": "FORASTEIRO", "image_hint": "Porta aberta de uma casa quente vista de fora à noite, luz dourada saindo, fundo off-white acolhedor"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Tem um lugar onde você sempre se sentiu de fora", "body": "Olhando a festa pela janela. Achando que pertencer era pra outros. Que o seu lugar era sempre o lado de lá."},
+    {"n": 3, "tipo": "texto-off", "headline": "Essa era a sua condição. Não é mais.", "body": "Separado, estranho, do lado de fora da família. Tudo isso ficou pra trás no momento em que Ele te adotou."},
+    {"n": 4, "tipo": "texto-midnight", "headline": "Você não está mais separado", "accent_word": "separado", "body": "Não é mais forasteiro, não está fora da família de Deus. Foi trazido pra dentro, com nome e lugar."},
+    {"n": 5, "tipo": "verso", "versiculo": "Para o louvor da glória da sua graça, que nos deu gratuitamente no amado.", "referencia": "Efésios 1:6"},
+    {"n": 6, "tipo": "texto-off", "headline": "A mesa do Pai tem um lugar com o seu nome", "body": "Não é canto emprestado. Não é cadeira de visita. É assento de filho, posto ali antes de você chegar."},
+    {"n": 7, "tipo": "texto-midnight", "headline": "Pertencer não é algo que você conquista", "body": "É algo que você recebe. A casa não te abriu a porta porque você bateu forte. Ela já estava aberta pra você."},
+    {"n": 8, "tipo": "texto-off", "headline": "O lado de fora ficou pra trás", "body": "Aquela sensação de não caber, de estar sempre fora do círculo, perde a força diante de uma palavra: filho."},
+    {"n": 9, "tipo": "texto-midnight", "headline": "A porta está aberta, a mesa está posta, e o seu lugar tem o seu nome.", "accent_word": "nome"},
+    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem ocupar o lugar que o Pai guardou pra você.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Tem um lugar onde você sempre se sentiu de fora, olhando a festa pela janela. Essa era a sua condição, não é mais. Você não está mais separado, não é mais forasteiro, não está fora da família de Deus. Foi adotado como filho. A mesa do Pai tem um lugar com o seu nome, não é cadeira de visita, é assento de filho. Pertencer não se conquista, se recebe. A porta já estava aberta pra você. #castelofortejurere #emcristo #efesios #pristraelanijar"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "C01",
+  "titulo": "Antes de Você Fazer, Deus Já Fez",
+  "tipo": "Crença",
+  "proporção": "Revelação",
+  "hook": "Antes de você fazer qualquer coisa por Deus, Deus já fez tudo com você em Cristo",
+  "tema_central": "Estabelecer o indicativo antes do imperativo: a graça age primeiro, a obediência responde depois.",
+  "versiculo_base": "Efésios 1:3",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "Antes de você fazer qualquer coisa por Deus, Deus já FEZ tudo com você", "accent_word": "FEZ", "image_hint": "Mãos abertas recebendo luz dourada de cima, fundo off-white, atmosfera serena e cinematográfica"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Você vive correndo pra agradar Deus", "body": "Acorda cansado da própria fé. Cumpre tarefa atrás de tarefa. E no fundo, sente que nunca é o bastante."},
+    {"n": 3, "tipo": "texto-off", "headline": "Tem uma palavra que muda a ordem das coisas", "body": "Indicativo antes do imperativo. Primeiro Deus diz quem você é. Só depois Ele diz o que fazer."},
+    {"n": 4, "tipo": "texto-midnight", "headline": "Paulo não começa mandando. Ele começa anunciando.", "accent_word": "anunciando", "body": "Antes de qualquer ordem, três capítulos só pra dizer o que Deus já fez por você."},
+    {"n": 5, "tipo": "verso", "versiculo": "Bendito o Deus que nos abençoou com toda bênção espiritual nas regiões celestiais em Cristo.", "referencia": "Efésios 1:3"},
+    {"n": 6, "tipo": "texto-off", "headline": "A obra não começou em você", "body": "Começou nele. Você não está construindo um caminho até Deus. Você está recebendo o caminho que Ele já abriu."},
+    {"n": 7, "tipo": "texto-midnight", "headline": "Filho não trabalha pra virar filho", "body": "Filho trabalha porque já é filho. A identidade vem primeiro, e ela sustenta tudo que vem depois."},
+    {"n": 8, "tipo": "texto-off", "headline": "Sua fé não é uma cobrança", "body": "É uma resposta. Tudo que você faz nasce de um lugar que já foi conquistado por outro."},
+    {"n": 9, "tipo": "texto-midnight", "headline": "Você não corre para alcançar Deus. Você descansa porque Ele te alcançou.", "accent_word": "alcançou"},
+    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem entender quem você já é antes de fazer qualquer coisa.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "A gente acorda cansado de tentar agradar Deus, sem perceber que Ele agiu primeiro. Efésios começa com três capítulos inteiros só anunciando o que já foi feito, antes de qualquer ordem: indicativo antes do imperativo. Sua fé não é cobrança, é resposta. Você não corre pra alcançar Deus: você descansa porque Ele te alcançou. Vem domingo. #castelofortejurere #emcristo #efesios #pristraelanijar"
+}

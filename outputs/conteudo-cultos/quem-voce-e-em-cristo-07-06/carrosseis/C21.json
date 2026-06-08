@@ -1,0 +1,22 @@
+{
+  "id": "C21",
+  "titulo": "O Anel de Noivado",
+  "tipo": "Crença",
+  "proporção": "Profundidade",
+  "hook": "O Espírito é o anel que Deus colocou em você: é pra valer, não é brincadeira, e já tem data.",
+  "tema_central": "O Espírito Santo é como o anel de noivado: isso é pra valer, nós vamos casar, e já tem data. Deus prometeu voltar, deixou o sinal dentro de você. Jesus vai voltar, e já tem data.",
+  "versiculo_base": "Efésios 1:14",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "O anel já está na sua mão. E já tem DATA", "accent_word": "DATA", "image_hint": "Aliança de noivado em close sobre veludo escuro, ponto de luz refletindo, fundo neutro e elegante"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Quando um homem decide casar, ele faz um gesto.", "body": "Coloca um anel na mão dela. E aquele anel não é enfeite. É uma declaração inteira concentrada num pedaço de metal."},
+    {"n": 3, "tipo": "texto-off", "headline": "O anel diz tudo de uma vez.", "body": "Isso aqui é pra valer, não é brincadeira, nós vamos casar. E não é vago: já tem data marcada."},
+    {"n": 4, "tipo": "triade", "headline_resto": "O que o anel garante", "personagem": "A PROMESSA", "sub": "O anel fica na mão dela enquanto o casamento não chega. Toda vez que ela olha, lembra: ele vem, ele prometeu, e já tem dia."},
+    {"n": 5, "tipo": "texto-midnight", "headline": "O Espírito Santo é esse anel.", "accent_word": "dentro", "body": "Deus colocou o anel, não na sua mão, mas dentro de você. O sinal de que a promessa é firme. De que o casamento vai acontecer."},
+    {"n": 6, "tipo": "texto-off", "headline": "Deus está dizendo uma coisa só.", "body": "Eu prometo que vou voltar, e tá aqui o sinal. Está dentro de você, onde ninguém tira. Não é talvez, é compromisso assinado."},
+    {"n": 7, "tipo": "texto-midnight", "headline": "Jesus vai voltar.", "body": "Não é esperança vaga de quem quer acreditar. É promessa de noivo que já deixou o anel. Ele vem buscar o que é dele."},
+    {"n": 8, "tipo": "verso", "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.", "referencia": "Efésios 1:14"},
+    {"n": 9, "tipo": "texto-midnight", "headline": "Jesus vai voltar. O anel já está em você. E já tem data.", "accent_word": "data"},
+    {"n": 10, "tipo": "cta", "intro": "O Espírito Santo nos selou: o anel da promessa que Deus não volta atrás.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Quando um homem decide casar, ele coloca um anel na mão dela. E aquele anel não é enfeite. Ele diz tudo de uma vez: isso é pra valer, não é brincadeira, nós vamos casar, e já tem data.\n\nO Espírito Santo é esse anel. Deus colocou, não na sua mão, mas dentro de você. O sinal de que a promessa é firme.\n\nEle está dizendo: eu prometo que vou voltar, tá aqui o sinal, e está dentro de você.\n\nJesus vai voltar. E já tem data.\n\nComenta JÁ TEM DATA se você espera esse dia.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
+}

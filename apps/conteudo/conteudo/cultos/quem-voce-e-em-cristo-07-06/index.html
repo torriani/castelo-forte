@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quem Você É em Cristo · Pr. Israel Anijar · Castelo Forte</title>
+<link rel="icon" href="/img/logo-castelo-forte.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/conteudo/maio/_shared.css">
+<style>
+  /* Hero do culto */
+  .culto-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+    align-items: center;
+  }
+  @media (max-width: 800px) { .culto-hero { grid-template-columns: 1fr; } }
+  .culto-hero .arte { aspect-ratio: 16/9; background: var(--ink); overflow: hidden; border-radius: 4px; }
+  .culto-hero .arte img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .culto-hero .kicker { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: var(--glory); text-transform: uppercase; margin-bottom: 16px; }
+  .culto-hero h1 { font-family: 'Playfair Display', serif; font-weight: 500; font-size: 44px; letter-spacing: -.5px; line-height: 1.1; color: var(--midnight); margin-bottom: 16px; }
+  .culto-hero h1 em { font-style: italic; font-weight: 500; color: var(--midnight); }
+  .culto-hero .pastor { font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; color: var(--midnight); margin-bottom: 8px; }
+  .culto-hero .data { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--muted); letter-spacing: 1.5px; }
+  .culto-hero .yt-link { display: inline-block; margin-top: 20px; padding: 10px 18px; background: var(--ink); color: var(--parchment); font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 4px; transition: all .2s; }
+  .culto-hero .yt-link:hover { background: var(--glory); color: var(--ink); }
+
+  .stats-bar { display: flex; gap: 32px; padding: 20px 28px; background: #fff; border: 1px solid var(--line); border-radius: 4px; margin-bottom: 40px; flex-wrap: wrap; }
+  .stat .n { font-family: 'Archivo Black', sans-serif; font-size: 32px; color: var(--midnight); line-height: 1; }
+  .stat .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+
+  .section-title { font-family: 'Playfair Display', serif; font-weight: 500; font-size: 30px; letter-spacing: -.5px; color: var(--midnight); margin: 48px 0 4px; padding-bottom: 12px; border-bottom: 1px solid rgba(21,50,71,.15); }
+  .section-title em { font-style: italic; font-weight: 500; }
+  .section-sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+
+  /* Carrossel block — head com actions */
+  .carrossel-block .head { flex-wrap: wrap; gap: 12px; }
+  .carrossel-block .head-actions { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+  .carrossel-block .head .num { font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px; letter-spacing: -.3px; color: var(--midnight); line-height: 1.2; }
+  .carrossel-block .head .num .id { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .carrossel-block .head .tema { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; color: var(--muted); margin-top: 8px; }
+
+  /* Slides grid: 10 colunas no desktop */
+  .carrossel-slides { grid-template-columns: repeat(10, 1fr) !important; }
+  @media (max-width: 1200px) { .carrossel-slides { grid-template-columns: repeat(5, 1fr) !important; } }
+  @media (max-width: 700px) { .carrossel-slides { grid-template-columns: repeat(3, 1fr) !important; } }
+  .carrossel-slides .slide { cursor: pointer; transition: transform .2s; }
+  .carrossel-slides .slide:hover { transform: scale(1.05); z-index: 2; box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+
+  /* Botoes copiar */
+  .btn-copy {
+    background: var(--ink); color: var(--parchment); border: none;
+    padding: 8px 16px; font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; cursor: pointer; border-radius: 3px;
+    transition: all .2s;
+  }
+  .btn-copy:hover { background: var(--glory); color: var(--ink); }
+  .btn-copy.copied { background: #075057; color: #fff; }
+  .btn-copy.small { padding: 6px 12px; font-size: 10px; }
+
+  .legenda-block { margin-top: 18px; padding: 14px 18px; background: var(--off); border-radius: 4px; border: 1px solid var(--line); }
+  .legenda-block summary { cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--midnight); text-transform: uppercase; }
+  .legenda-content { margin-top: 12px; }
+  .legenda-block pre { font-family: 'Inter', sans-serif; font-size: 13px; line-height: 1.6; color: var(--midnight); white-space: pre-wrap; word-break: break-word; margin-bottom: 12px; }
+
+  /* Peca card (frases) com botao copiar */
+  .peca-card .thumb { cursor: pointer; transition: opacity .2s; }
+  .peca-card .thumb:hover { opacity: .85; }
+  .peca-card .card-actions { padding: 0 16px 16px; }
+  .peca-card .meta .date { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13px; color: var(--glory); letter-spacing: 0; max-width: 60%; text-align: right; line-height: 1.2; }
+
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(10, 22, 40, .96); z-index: 1000; align-items: center; justify-content: center; padding: 40px; }
+  .lightbox.active { display: flex; flex-direction: column; }
+  .lightbox-img-wrap { display: flex; align-items: center; justify-content: center; flex: 1; width: 100%; max-height: calc(100vh - 120px); }
+  .lightbox img { max-width: 90%; max-height: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.6); border-radius: 4px; }
+  .lightbox-close { position: absolute; top: 20px; right: 24px; color: #fff; font-size: 28px; cursor: pointer; background: none; border: none; line-height: 1; padding: 8px; }
+  .lightbox-close:hover { color: var(--glory); }
+  .lightbox-info { color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 16px; text-align: center; opacity: .85; }
+  .lightbox-info .gtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px; color: var(--glory); letter-spacing: 0; text-transform: none; margin-bottom: 4px; }
+  .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,.1); color: #fff; border: none; width: 56px; height: 56px; border-radius: 50%; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+  .lightbox-nav:hover { background: var(--glory); color: var(--ink); }
+  .lightbox-nav.prev { left: 24px; }
+  .lightbox-nav.next { right: 24px; }
+  .lightbox-nav:disabled { opacity: .25; cursor: not-allowed; }
+  @media (max-width: 700px) {
+    .lightbox-nav { width: 44px; height: 44px; font-size: 20px; }
+    .lightbox-nav.prev { left: 8px; }
+    .lightbox-nav.next { right: 8px; }
+  }
+</style>
+</head>
+<body class="has-sidebar">
+
+<nav class="main-menu">
+  <div class="menu-inner">
+    <ul>
+      <li><a href="/conteudo/">Hub</a></li>
+      <li><a href="/conteudo/cultos/" class="active">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/">Campanhas</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sub-menu">
+  <div class="menu-inner">
+    <div class="sidebar-brand">
+      <div class="logo-mini"><img src="/img/logo-oficial.png" alt="Castelo Forte"></div>
+      <div class="brand-text">
+        Castelo Forte
+        <small>Jurerê · SC</small>
+      </div>
+    </div>
+    <span class="sub-label">Con<em>teúdo</em></span>
+    <ul>
+      <li><a href="/conteudo/">Hub</a></li>
+      <li><a href="/conteudo/cultos/" class="active">Cultos</a></li>
+      <li><a href="/conteudo/campanhas/">Campanhas</a></li>
+    </ul>
+    <span class="sub-label" style="margin-top:8px">Quem Você É em Cristo</span>
+    <ul>
+      <li><a href="#carrosseis" class="active">Carrosséis</a></li>
+      <li><a href="#frases">Frases</a></li>
+      <li><a href="https://www.youtube.com/live/9XIuDNK3veU" target="_blank">YouTube ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+<div class="culto-hero">
+  <div class="arte"></div>
+  <div class="info">
+    <div class="kicker">Pregação · Castelo Forte Floripa</div>
+    <h1>Quem Você É em Cristo</h1>
+    <div class="pastor">Pr. Israel Anijar</div>
+    <div class="data">07/06/2026 · Série Em Cristo · Efésios 1</div>
+    <a href="https://www.youtube.com/live/9XIuDNK3veU" target="_blank" class="yt-link">▶ Assistir no YouTube</a>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="n">6</div><div class="l">Peças Totais</div></div>
+  <div class="stat"><div class="n">3</div><div class="l">Carrosséis</div></div>
+  <div class="stat"><div class="n">29</div><div class="l">Slides</div></div>
+  <div class="stat"><div class="n">3</div><div class="l">Frases</div></div>
+</div>
+
+<h2 class="section-title" id="carrosseis">Carros<em>séis</em></h2>
+<div class="section-sub">3 carrosséis · template Casa de Isabel · 29 slides · clique num slide pra ampliar (use ← → pra navegar)</div>
+
+
+<div class="carrossel-block" id="c03" data-gallery="C03" data-slides='["/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-01-capa.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-02-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-03-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-04-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-05-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-06-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-07-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-08-verso.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-09-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-10-cta.png"]' data-title="O Problema Nunca Foi o Copo">
+  <div class="head">
+    <div>
+      <div class="num"><span class="id">C03</span>O Problema Nunca Foi o Copo</div>
+      <div class="tema">O casal não briga pelo copo na pia. Briga pelo que veio muito antes do copo.</div>
+    </div>
+    <div class="head-actions">
+      <div class="info">Crença · Efésios 1:1-3</div>
+      <button class="btn-copy" onclick="copyText(this, `O Problema Nunca Foi o Copo
+
+[Slide 1]
+O problema nunca foi o COPO
+
+[Slide 2]
+Briga de casal por um copo na pia
+Ele não lavou. Ela explodiu. Mas no começo do casamento, aquele copo não importava pra ninguém.
+
+[Slide 3]
+O copo é só a pontinha
+Aquela briga nunca foi pela louça. Foi por tudo que ficou guardado por baixo, longe da pia, longe da vista.
+
+[Slide 4]
+Você tem um problema financeiro?
+O dinheiro é só a superfície. Por baixo tem uma crença sobre valor, medo e merecimento que ninguém vê.
+
+[Slide 5]
+A gente foca em mudar o comportamento
+Promete fazer diferente. Tenta com força de vontade. E volta pro mesmo lugar, porque a raiz continua intacta.
+
+[Slide 6]
+Crença vem antes de comportamento
+Quem você acredita que é determina o que você faz. Mude a fonte, e o comportamento muda junto.
+
+[Slide 7]
+Por isso Paulo não começa mandando
+Três capítulos de identidade antes de qualquer ordem. Ele trata a crença antes de tocar no comportamento.
+
+[Slide 8]
+"Paulo, apóstolo de Cristo Jesus, aos santos e fiéis em Cristo Jesus." — Efésios 1:1
+
+[Slide 9]
+Deus não começa pelo copo. Ele começa pelo coração que você nem sabia que estava quebrado.
+
+[Slide 10]
+Domingo tem a série Em Cristo. Vem mexer na raiz, não só na superfície.
+SÉRIE EM CRISTO
+DOMINGOS DE JUNHO
+Igreja Castelo Forte · Jurerê
+
+---
+O casal briga pelo copo que não foi lavado, mas no começo do casamento aquele copo não importava. O copo é só a pontinha. No problema financeiro, o dinheiro é só a superfície. A gente vive tentando mudar comportamento e esquece de mudar a crença profunda. Por isso Efésios trata identidade antes de mandar fazer qualquer coisa. Crença vem antes de comportamento.`)">Copiar carrossel</button>
+    </div>
+  </div>
+  <div class="carrossel-slides">
+    <div class="slide" onclick="openGallery('C03', 0)"><div class="badge">1/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-01-capa.png" alt="C03 slide 1" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 1)"><div class="badge">2/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-02-texto-midnight.png" alt="C03 slide 2" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 2)"><div class="badge">3/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-03-texto-off.png" alt="C03 slide 3" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 3)"><div class="badge">4/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-04-texto-midnight.png" alt="C03 slide 4" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 4)"><div class="badge">5/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-05-texto-off.png" alt="C03 slide 5" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 5)"><div class="badge">6/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-06-texto-midnight.png" alt="C03 slide 6" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 6)"><div class="badge">7/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-07-texto-off.png" alt="C03 slide 7" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 7)"><div class="badge">8/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-08-verso.png" alt="C03 slide 8" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 8)"><div class="badge">9/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-09-texto-midnight.png" alt="C03 slide 9" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C03', 9)"><div class="badge">10/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C03/slide-10-cta.png" alt="C03 slide 10" loading="lazy"></div>
+  </div>
+  
+  <details class="legenda-block">
+    <summary>Legenda do Instagram</summary>
+    <div class="legenda-content">
+      <pre>O casal briga pelo copo que não foi lavado, mas no começo do casamento aquele copo não importava. O copo é só a pontinha. No problema financeiro, o dinheiro é só a superfície. A gente vive tentando mudar comportamento e esquece de mudar a crença profunda. Por isso Efésios trata identidade antes de mandar fazer qualquer coisa. Crença vem antes de comportamento.</pre>
+      <button class="btn-copy small" onclick="copyText(this, `O casal briga pelo copo que não foi lavado, mas no começo do casamento aquele copo não importava. O copo é só a pontinha. No problema financeiro, o dinheiro é só a superfície. A gente vive tentando mudar comportamento e esquece de mudar a crença profunda. Por isso Efésios trata identidade antes de mandar fazer qualquer coisa. Crença vem antes de comportamento.`)">Copiar legenda</button>
+    </div>
+  </details>
+</div>
+
+
+<div class="carrossel-block" id="c12" data-gallery="C12" data-slides='["/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-01-capa.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-02-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-03-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-04-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-05-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-06-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-07-verso.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-08-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-09-cta.png"]' data-title="Perdão e Redenção Não São a Mesma Coisa">
+  <div class="head">
+    <div>
+      <div class="num"><span class="id">C12</span>Perdão e Redenção Não São a Mesma Coisa</div>
+      <div class="tema">Perdão é a dívida cancelada. Redenção é o escravo comprado de volta. Deus fez as duas.</div>
+    </div>
+    <div class="head-actions">
+      <div class="info">Crença · Efésios 1:7</div>
+      <button class="btn-copy" onclick="copyText(this, `Perdão e Redenção Não São a Mesma Coisa
+
+[Slide 1]
+Perdão é o primeiro passo. Redenção é a obra INTEIRA
+
+[Slide 2]
+Tem gente que acha que perdão e redenção são sinônimos.
+Não são. Martyn Lloyd-Jones separa os dois com cuidado. E essa separação muda como você se enxerga.
+
+[Slide 3]
+Perdão.
+Aphesis. A dívida cancelada no tribunal. O que você devia foi riscado. Não existe mais cobrança pendente sobre a sua cabeça.
+
+[Slide 4]
+Redenção.
+Apolytrosis. O preço pago pra libertar o escravo por inteiro. Do começo ao fim. Não é só a dívida que sai: é você que é comprado de volta.
+
+[Slide 5]
+Sente a diferença.
+Cancelar a dívida tira o que está contra você. Comprar o escravo te tira do lugar onde você estava preso. Uma coisa olha pra trás. A outra te leva pra frente.
+
+[Slide 6]
+Deus não parou no perdão.
+Ele podia ter só riscado a conta e te deixado onde estava. Mas Ele pagou o preço da sua liberdade completa.
+
+[Slide 7]
+"Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça." — Efésios 1:7
+
+[Slide 8]
+Você não foi só perdoado. Você foi resgatado por inteiro.
+
+[Slide 9]
+O Filho nos redimiu. E redimir é mais do que perdoar.
+SÉRIE EM CRISTO
+DOMINGOS DE JUNHO
+Igreja Castelo Forte · Jurerê
+
+---
+Perdão e redenção não são a mesma coisa. E você precisa entender a diferença.
+Perdão (aphesis) cancela a dívida no tribunal. Redenção (apolytrosis) paga o preço pra libertar o escravo por inteiro. Deus podia ter só riscado a sua conta. Mas Ele te comprou de volta, completo.
+Você não foi só perdoado. Você foi resgatado.
+Comenta RESGATADO se isso pregou em você hoje.`)">Copiar carrossel</button>
+    </div>
+  </div>
+  <div class="carrossel-slides">
+    <div class="slide" onclick="openGallery('C12', 0)"><div class="badge">1/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-01-capa.png" alt="C12 slide 1" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 1)"><div class="badge">2/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-02-texto-midnight.png" alt="C12 slide 2" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 2)"><div class="badge">3/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-03-texto-off.png" alt="C12 slide 3" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 3)"><div class="badge">4/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-04-texto-midnight.png" alt="C12 slide 4" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 4)"><div class="badge">5/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-05-texto-off.png" alt="C12 slide 5" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 5)"><div class="badge">6/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-06-texto-midnight.png" alt="C12 slide 6" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 6)"><div class="badge">7/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-07-verso.png" alt="C12 slide 7" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 7)"><div class="badge">8/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-08-texto-midnight.png" alt="C12 slide 8" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C12', 8)"><div class="badge">9/9</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C12/slide-09-cta.png" alt="C12 slide 9" loading="lazy"></div>
+  </div>
+  
+  <details class="legenda-block">
+    <summary>Legenda do Instagram</summary>
+    <div class="legenda-content">
+      <pre>Perdão e redenção não são a mesma coisa. E você precisa entender a diferença.
+Perdão (aphesis) cancela a dívida no tribunal. Redenção (apolytrosis) paga o preço pra libertar o escravo por inteiro. Deus podia ter só riscado a sua conta. Mas Ele te comprou de volta, completo.
+Você não foi só perdoado. Você foi resgatado.
+Comenta RESGATADO se isso pregou em você hoje.</pre>
+      <button class="btn-copy small" onclick="copyText(this, `Perdão e redenção não são a mesma coisa. E você precisa entender a diferença.
+Perdão (aphesis) cancela a dívida no tribunal. Redenção (apolytrosis) paga o preço pra libertar o escravo por inteiro. Deus podia ter só riscado a sua conta. Mas Ele te comprou de volta, completo.
+Você não foi só perdoado. Você foi resgatado.
+Comenta RESGATADO se isso pregou em você hoje.`)">Copiar legenda</button>
+    </div>
+  </details>
+</div>
+
+
+<div class="carrossel-block" id="c19" data-gallery="C19" data-slides='["/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-01-capa.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-02-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-03-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-04-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-05-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-06-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-07-texto-off.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-08-verso.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-09-texto-midnight.png","/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-10-cta.png"]' data-title="Deus Fez o PIX na Conta">
+  <div class="head">
+    <div>
+      <div class="num"><span class="id">C19</span>Deus Fez o PIX na Conta</div>
+      <div class="tema">Enquanto não cai o sinal, é conversa. Na hora que o PIX entra, a coisa fica séria. Deus fez o PIX.</div>
+    </div>
+    <div class="head-actions">
+      <div class="info">Crença · Efésios 1:14</div>
+      <button class="btn-copy" onclick="copyText(this, `Deus Fez o PIX na Conta
+
+[Slide 1]
+Deus fez o PIX na CONTA
+
+[Slide 2]
+Você já sabe como funciona uma compra grande.
+Casa, carro. Enquanto a pessoa só fala que quer, fica todo mundo enrolando. Promessa é barato, ninguém leva a sério.
+
+[Slide 3]
+Aí o sinal entra.
+Na hora que o sinal cai na conta, tudo muda. Para a enrolação, começa o processo, o negócio vira realidade. O dinheiro na conta fala mais alto que qualquer discurso.
+
+[Slide 4]
+Tem um detalhe ainda mais forte.
+Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria. Não precisa nem ser o valor total. O sinal já muda o jogo inteiro.
+
+[Slide 5]
+Foi exatamente isso que Deus fez.
+Ele deu o Espírito Santo como sinal. No original, arrabom: a entrada, a garantia, o penhor de tudo o que ainda vem por completo.
+
+[Slide 6]
+O Espírito em você é o comprovante.
+Não é sentimento solto, não é coincidência. É Deus depositando a garantia da herança. É o sinal de que a compra está fechada.
+
+[Slide 7]
+Por isso é pra valer.
+Promessa de Deus não é conversa de quem enrola. Ele não falou que quer te ter. Ele já deu a entrada. O resto da herança vem com data.
+
+[Slide 8]
+"O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória." — Efésios 1:14
+
+[Slide 9]
+Deus fez o PIX na conta. A herança não é promessa solta, é compra fechada.
+
+[Slide 10]
+O Espírito Santo nos selou e deu a entrada da herança que vem.
+SÉRIE EM CRISTO
+DOMINGOS DE JUNHO
+Igreja Castelo Forte · Jurerê
+
+---
+Você já sabe como funciona compra grande. Enquanto a pessoa só fala que quer, todo mundo enrola. Promessa é barato. Aí o sinal cai na conta e tudo muda: para a enrolação, começa o processo.
+Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria.
+Foi isso que Deus fez. Ele deu o Espírito Santo como sinal (arrabom): a entrada, a garantia da herança que vem. O Espírito em você é o comprovante de que a compra está fechada.
+Promessa de Deus não é conversa de quem enrola.
+Comenta FECHADO se isso pregou em você.`)">Copiar carrossel</button>
+    </div>
+  </div>
+  <div class="carrossel-slides">
+    <div class="slide" onclick="openGallery('C19', 0)"><div class="badge">1/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-01-capa.png" alt="C19 slide 1" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 1)"><div class="badge">2/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-02-texto-midnight.png" alt="C19 slide 2" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 2)"><div class="badge">3/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-03-texto-off.png" alt="C19 slide 3" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 3)"><div class="badge">4/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-04-texto-midnight.png" alt="C19 slide 4" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 4)"><div class="badge">5/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-05-texto-off.png" alt="C19 slide 5" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 5)"><div class="badge">6/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-06-texto-midnight.png" alt="C19 slide 6" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 6)"><div class="badge">7/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-07-texto-off.png" alt="C19 slide 7" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 7)"><div class="badge">8/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-08-verso.png" alt="C19 slide 8" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 8)"><div class="badge">9/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-09-texto-midnight.png" alt="C19 slide 9" loading="lazy"></div>
+      <div class="slide" onclick="openGallery('C19', 9)"><div class="badge">10/10</div><img src="/img/quem-voce-e-em-cristo-07-06/carrosseis/C19/slide-10-cta.png" alt="C19 slide 10" loading="lazy"></div>
+  </div>
+  
+  <details class="legenda-block">
+    <summary>Legenda do Instagram</summary>
+    <div class="legenda-content">
+      <pre>Você já sabe como funciona compra grande. Enquanto a pessoa só fala que quer, todo mundo enrola. Promessa é barato. Aí o sinal cai na conta e tudo muda: para a enrolação, começa o processo.
+Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria.
+Foi isso que Deus fez. Ele deu o Espírito Santo como sinal (arrabom): a entrada, a garantia da herança que vem. O Espírito em você é o comprovante de que a compra está fechada.
+Promessa de Deus não é conversa de quem enrola.
+Comenta FECHADO se isso pregou em você.</pre>
+      <button class="btn-copy small" onclick="copyText(this, `Você já sabe como funciona compra grande. Enquanto a pessoa só fala que quer, todo mundo enrola. Promessa é barato. Aí o sinal cai na conta e tudo muda: para a enrolação, começa o processo.
+Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria.
+Foi isso que Deus fez. Ele deu o Espírito Santo como sinal (arrabom): a entrada, a garantia da herança que vem. O Espírito em você é o comprovante de que a compra está fechada.
+Promessa de Deus não é conversa de quem enrola.
+Comenta FECHADO se isso pregou em você.`)">Copiar legenda</button>
+    </div>
+  </details>
+</div>
+
+
+
+<h2 class="section-title" id="frases">Fra<em>ses</em></h2>
+<div class="section-sub">3 frases prontas · template Casa de Isabel · clique pra ampliar</div>
+
+<div class="peca-grid">
+
+<div class="peca-card" id="f-01">
+  <div class="thumb" onclick="openLightbox('/img/quem-voce-e-em-cristo-07-06/frases/frase-01.png')"><img src="/img/quem-voce-e-em-cristo-07-06/frases/frase-01.png" alt="Frase 01" loading="lazy"></div>
+  <div class="meta">
+    <div class="day">F01</div>
+    <div class="date">Pr. Israel Anijar</div>
+  </div>
+  <div class="card-actions">
+    <button class="btn-copy small" onclick="copyText(this, `Antes de você fazer qualquer coisa por Deus, Deus já fez tudo com você em Cristo.`)">Copiar texto</button>
+  </div>
+</div>
+
+
+<div class="peca-card" id="f-02">
+  <div class="thumb" onclick="openLightbox('/img/quem-voce-e-em-cristo-07-06/frases/frase-02.png')"><img src="/img/quem-voce-e-em-cristo-07-06/frases/frase-02.png" alt="Frase 02" loading="lazy"></div>
+  <div class="meta">
+    <div class="day">F02</div>
+    <div class="date">Pr. Israel Anijar</div>
+  </div>
+  <div class="card-actions">
+    <button class="btn-copy small" onclick="copyText(this, `Antes do imperativo, vem o indicativo. Primeiro quem você é, depois o que você faz.`)">Copiar texto</button>
+  </div>
+</div>
+
+
+<div class="peca-card" id="f-03">
+  <div class="thumb" onclick="openLightbox('/img/quem-voce-e-em-cristo-07-06/frases/frase-03.png')"><img src="/img/quem-voce-e-em-cristo-07-06/frases/frase-03.png" alt="Frase 03" loading="lazy"></div>
+  <div class="meta">
+    <div class="day">F03</div>
+    <div class="date">Pr. Israel Anijar</div>
+  </div>
+  <div class="card-actions">
+    <button class="btn-copy small" onclick="copyText(this, `Toda essa carta gira em torno de uma coisa só: a sua identidade em Cristo.`)">Copiar texto</button>
+  </div>
+</div>
+
+</div>
+
+
+</main>
+
+<footer>
+  <strong>Castelo Forte</strong> · Igreja em Jurerê · Pastor Israel Anijar
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav prev" onclick="navGallery(-1)" id="nav-prev">‹</button>
+  <button class="lightbox-nav next" onclick="navGallery(1)" id="nav-next">›</button>
+  <div class="lightbox-img-wrap"><img id="lightbox-img" src="" alt=""></div>
+  <div class="lightbox-info">
+    <div class="gtitle" id="lightbox-title"></div>
+    <div id="lightbox-counter"></div>
+  </div>
+</div>
+
+<script>
+let currentGallery = null;
+let currentIndex = 0;
+let currentTitle = '';
+
+function openLightbox(src) {
+  // Frase ou imagem solta — sem navegação
+  currentGallery = [src];
+  currentIndex = 0;
+  currentTitle = '';
+  renderLightbox();
+}
+
+function openGallery(galleryId, index) {
+  const block = document.querySelector('.carrossel-block[data-gallery="' + galleryId + '"]');
+  if (!block) return;
+  currentGallery = JSON.parse(block.getAttribute('data-slides'));
+  currentTitle = block.getAttribute('data-title') || '';
+  currentIndex = index;
+  renderLightbox();
+}
+
+function renderLightbox() {
+  if (!currentGallery || currentGallery.length === 0) return;
+  document.getElementById('lightbox-img').src = currentGallery[currentIndex];
+  document.getElementById('lightbox-title').textContent = currentTitle;
+  document.getElementById('lightbox-counter').textContent = currentGallery.length > 1
+    ? (currentIndex + 1) + ' / ' + currentGallery.length
+    : '';
+  document.getElementById('nav-prev').disabled = currentIndex === 0;
+  document.getElementById('nav-next').disabled = currentIndex === currentGallery.length - 1;
+  document.getElementById('nav-prev').style.display = currentGallery.length > 1 ? 'flex' : 'none';
+  document.getElementById('nav-next').style.display = currentGallery.length > 1 ? 'flex' : 'none';
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function navGallery(dir) {
+  if (!currentGallery) return;
+  const next = currentIndex + dir;
+  if (next < 0 || next >= currentGallery.length) return;
+  currentIndex = next;
+  renderLightbox();
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+  currentGallery = null;
+}
+
+document.getElementById('lightbox').addEventListener('click', e => {
+  if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-img-wrap')) closeLightbox();
+});
+
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navGallery(-1);
+  if (e.key === 'ArrowRight') navGallery(1);
+});
+
+function copyText(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = '✓ Copiado!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.classList.remove('copied');
+    }, 1800);
+  });
+}
+</script>
+</body>
+</html>

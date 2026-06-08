@@ -1,0 +1,22 @@
+{
+  "id": "C17",
+  "titulo": "O Capacete Sem Selo É Só Pintura",
+  "tipo": "Crença",
+  "proporção": "Tensão",
+  "hook": "Tira o selo do capacete e ele vira só um capacete pintado pra parecer do Senna. Sem o Espírito, é imitação.",
+  "tema_central": "O capacete do Senna tem selo de autenticidade. Sem o selo, é só pintura imitando o original. Sem o selo do Espírito, a vida cristã é fachada. Com o selo, é genuína.",
+  "versiculo_base": "Efésios 1:13",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "O capacete sem selo é só PINTURA", "accent_word": "PINTURA", "image_hint": "Capacete de corrida amarelo e verde sob luz de estúdio, ângulo lateral, fundo escuro neutro, brilho na pintura"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Pega um capacete original do Senna.", "body": "Vale uma fortuna. Mas o que faz ele valer não é a pintura amarela. É um selo de autenticidade, pequeno, que prova que aquilo é de verdade."},
+    {"n": 3, "tipo": "texto-off", "headline": "Tira o selo.", "body": "Na hora que o selo sai, dá um trabalho enorme autenticar de novo. Sem a marca, vira a palavra de um contra a de outro. A prova se perdeu."},
+    {"n": 4, "tipo": "texto-midnight", "headline": "Aí sobra só um capacete pintado.", "accent_word": "pintado", "body": "Bonito, parecido, convincente à distância. Pintado pra parecer que era do Senna. Mas por dentro, sem o selo, é só imitação."},
+    {"n": 5, "tipo": "texto-off", "headline": "Tem vida cristã assim.", "body": "Pintada por fora pra parecer original. A linguagem certa, a postura certa, a aparência certa. Mas sem o selo do Espírito, é fachada."},
+    {"n": 6, "tipo": "texto-midnight", "headline": "O selo separa o original da cópia.", "body": "Não é a pintura que prova que você é de Deus. É o Espírito Santo selando a sua vida por dentro. Isso ninguém imita."},
+    {"n": 7, "tipo": "triade", "headline_resto": "O que você é", "personagem": "GENUÍNO", "sub": "Você não precisa fingir ser original. Quando você creu, o Espírito te selou. Você é o genuíno, não a réplica pintada."},
+    {"n": 8, "tipo": "verso", "versiculo": "Tendo nele também crido, fostes selados com o Espírito Santo da promessa.", "referencia": "Efésios 1:13"},
+    {"n": 9, "tipo": "texto-midnight", "headline": "Sem o selo é imitação, com o selo é você. E você foi selado.", "accent_word": "selado"},
+    {"n": 10, "tipo": "cta", "intro": "O Espírito Santo nos selou, e o selo é o que separa o real da cópia.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Um capacete original do Senna vale uma fortuna. Mas não é a pintura amarela que prova o valor. É um selo de autenticidade pequeno, que diz que aquilo é de verdade.\n\nTira o selo e sobra só um capacete pintado pra parecer do Senna. Bonito de longe, imitação de perto.\n\nTem vida cristã assim: pintada por fora pra parecer original. Mas o que prova que você é de Deus não é a fachada, é o Espírito Santo selando você por dentro.\n\nVocê é o genuíno.\n\nComenta GENUÍNO se isso falou com você.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "C02",
+  "titulo": "Você Tenta Alcançar o Que Já É Seu",
+  "tipo": "Crença",
+  "proporção": "Tensão",
+  "hook": "Você passa a vida orando por aquilo que já foi entregue nas suas mãos",
+  "tema_central": "Romper com a oração de mendicância e revelar que a bênção já foi dada em Cristo, esperando ser recebida.",
+  "versiculo_base": "Efésios 1:3-6",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "Você tenta alcançar o que JÁ É seu", "accent_word": "JÁ É", "image_hint": "Mão estendida tentando alcançar luz que já está na palma da outra mão, fundo off-white minimalista"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "Você ora pedindo o que já está na sua conta", "body": "Implora pela bênção como quem implora por esmola. Sem saber que a herança já foi transferida pro seu nome."},
+    {"n": 3, "tipo": "texto-off", "headline": "Tem um detalhe no texto que muda o tempo verbal", "body": "Paulo não diz que Deus vai abençoar. Ele diz que Deus já abençoou. Passado. Coisa feita."},
+    {"n": 4, "tipo": "verso", "versiculo": "Deus nos abençoou com toda bênção espiritual nas regiões celestiais em Cristo.", "referencia": "Efésios 1:3"},
+    {"n": 5, "tipo": "texto-midnight", "headline": "Toda bênção. Não algumas.", "accent_word": "Toda", "body": "Não é um pacote parcial esperando você merecer o resto. É tudo, já depositado, esperando ser recebido."},
+    {"n": 6, "tipo": "texto-off", "headline": "A diferença entre mendigar e receber", "body": "Mendigo estende a mão sem certeza. Filho abre a gaveta porque sabe o que tem dentro."},
+    {"n": 7, "tipo": "texto-midnight", "headline": "Você não precisa convencer Deus a te dar o que Ele já deu", "body": "A bênção não depende da sua insistência. Depende de você acreditar que ela já tem o seu nome."},
+    {"n": 8, "tipo": "texto-off", "headline": "Para de pedir como quem não tem", "body": "Começa a viver como quem já recebeu. A herança não muda. A sua consciência dela é que precisa mudar."},
+    {"n": 9, "tipo": "texto-midnight", "headline": "O que já é seu não se conquista. Se reconhece.", "accent_word": "reconhece"},
+    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem descobrir o tamanho da herança que já está no seu nome.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Você passa a vida orando por aquilo que já foi entregue. Paulo não diz que Deus vai abençoar, ele diz que Deus já abençoou, com toda bênção espiritual, nas regiões celestiais em Cristo. Passado, coisa feita: a herança já tem o seu nome. Para de pedir como quem não tem e começa a viver como quem já recebeu. O que já é seu não se conquista, se reconhece. #castelofortejurere #emcristo #efesios #pristraelanijar"
+}

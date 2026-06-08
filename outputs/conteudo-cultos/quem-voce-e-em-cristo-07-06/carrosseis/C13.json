@@ -1,0 +1,22 @@
+{
+  "id": "C13",
+  "titulo": "Os Três Tempos da Libertação",
+  "tipo": "Crença",
+  "proporção": "Profundidade",
+  "hook": "Você FOI justificado, está SENDO santificado, VAI SER glorificado. Tudo isso é a mesma salvação.",
+  "tema_central": "A libertação acontece em três tempos: a culpa já removida, o poder do pecado sendo quebrado agora, a presença do pecado eliminada no fim. Você está vivendo um desses tempos neste momento.",
+  "versiculo_base": "Efésios 1:7",
+  "slides": [
+    {"n": 1, "tipo": "capa", "headline": "Justificado, santificado, GLORIFICADO", "accent_word": "GLORIFICADO", "image_hint": "Três marcos de pedra alinhados num caminho que se perde no horizonte, luz dourada lateral, fundo neutro"},
+    {"n": 2, "tipo": "texto-midnight", "headline": "A sua libertação acontece em três tempos.", "body": "Não é um evento isolado. É uma obra que tem passado, presente e futuro. E você está dentro dela agora."},
+    {"n": 3, "tipo": "texto-off", "headline": "Passado: você FOI justificado.", "accent_word": "FOI", "body": "A culpa foi removida pelo sangue de Cristo. Isso já aconteceu. Não está em processo, não está pendente. Está terminado."},
+    {"n": 4, "tipo": "texto-midnight", "headline": "Presente: você está SENDO santificado.", "accent_word": "SENDO", "body": "O poder do pecado está sendo quebrado. Isso é agora. É o processo que dói, que demora, que parece lento. Mas é real e é hoje."},
+    {"n": 5, "tipo": "texto-off", "headline": "Futuro: você VAI SER glorificado.", "accent_word": "VAI SER", "body": "A presença do pecado vai ser eliminada por completo. Não vai sobrar nada. Esse dia ainda vem, e ele é certo."},
+    {"n": 6, "tipo": "triade", "headline_resto": "Onde você está agora", "personagem": "VOCÊ", "sub": "Você está no meio de um desses tempos neste exato momento. Provavelmente no que dói: o santificar. Calma, é processo, não é fracasso."},
+    {"n": 7, "tipo": "texto-midnight", "headline": "Para de cobrar de hoje o que é do fim.", "body": "Você quer estar glorificado já, mas o presente é santificação, e santificação é luta. Lutar não significa que você perdeu a justificação."},
+    {"n": 8, "tipo": "verso", "versiculo": "Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.", "referencia": "Efésios 1:7"},
+    {"n": 9, "tipo": "texto-midnight", "headline": "Sua culpa já foi, sua luta é agora, e sua glória já tem dia marcado.", "accent_word": "dia"},
+    {"n": 10, "tipo": "cta", "intro": "O Filho nos redimiu em três tempos. E nenhum deles depende da sua força.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+  ],
+  "legenda_instagram": "Sua libertação tem três tempos, e isso explica muita coisa que você sente.\n\nVocê FOI justificado: a culpa já foi removida pelo sangue. Você está SENDO santificado: o poder do pecado sendo quebrado agora, e é por isso que dói. Você VAI SER glorificado: a presença do pecado eliminada de vez, e esse dia já tem data no calendário de Deus.\n\nSe hoje está doendo, você não fracassou. Você está no tempo do meio.\n\nComenta em que tempo você sente que está hoje.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
+}
