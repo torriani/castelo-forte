@@ -84,12 +84,15 @@ function htmlWrap(extra, body) {
 }
 
 // CAPA: headline grande mesclando Inter + Playfair italic
+// Fonte fluida: headline curta fica enorme, longa encolhe pra caber sem vazar.
 function tplCapa(headline, accent_word) {
   const h = italicizeAccent(headline, accent_word);
+  const len = (headline || '').length;
+  const fs = len <= 28 ? 92 : len <= 42 ? 84 : len <= 56 ? 74 : 66;
   return htmlWrap(`
-    .h{font-family:'Inter',sans-serif;font-weight:700;font-size:64px;line-height:1.14;letter-spacing:-1.4px;text-align:center}
-    .h em{font-weight:500}
-    .bloco{padding:0 20px}
+    .h{font-family:'Inter',sans-serif;font-weight:700;font-size:${fs}px;line-height:1.1;letter-spacing:-2px;text-align:center}
+    .h em{font-weight:500;letter-spacing:-1px}
+    .bloco{padding:0 12px}
   `, `<div class="bloco"><div class="h">${h}</div></div>`);
 }
 

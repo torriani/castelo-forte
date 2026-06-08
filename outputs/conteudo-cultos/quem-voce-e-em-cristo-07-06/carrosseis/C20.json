@@ -7,16 +7,70 @@
   "tema_central": "O sinal de uma compra costuma ser 5%, no máximo 10. Tudo o que você já experimentou de Deus é só a entrada. O grosso da herança ainda nem chegou.",
   "versiculo_base": "Efésios 1:14",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Tudo que você sentiu de Deus é só CINCO POR CENTO", "accent_word": "CINCO POR CENTO", "image_hint": "Horizonte vasto ao amanhecer visto de um penhasco, primeira luz tocando a paisagem, fundo neutro cinematográfico"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Quanto vale o sinal numa compra grande?", "body": "Costuma ser cinco por cento. No máximo dez. Uma fração pequena que garante o negócio. O grosso vem depois, na hora certa."},
-    {"n": 3, "tipo": "texto-off", "headline": "Agora pensa no que Deus já te deu.", "body": "Toda a paz que você sentiu em meio à tempestade. Toda a alegria que apareceu sem explicação. Toda a certeza da salvação que segurou você."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Isso tudo é só o sinalzinho.", "accent_word": "sinalzinho", "body": "Cinco por cento. O Espírito Santo é a entrada da herança. Tudo o que você experimentou até hoje é a fração que garante o resto."},
-    {"n": 5, "tipo": "texto-off", "headline": "Deixa esse número te assustar.", "body": "Se o que você já viveu de Deus é tão bom e era só cinco por cento, o que será o cento por cento? A conta não cabe na cabeça."},
-    {"n": 6, "tipo": "texto-midnight", "headline": "O melhor não passou.", "body": "Tem gente vivendo de saudade do que Deus já fez. Mas o que você viveu foi a amostra. A herança inteira ainda está vindo."},
-    {"n": 7, "tipo": "texto-off", "headline": "Levanta a cabeça.", "body": "Você não está no fim da experiência com Deus. Você está no comecinho. O melhor capítulo ainda nem começou a ser lido."},
-    {"n": 8, "tipo": "verso", "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.", "referencia": "Efésios 1:14"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Tudo que você já experimentou de Deus é só o começo. Tem muito mais.", "accent_word": "mais"},
-    {"n": 10, "tipo": "cta", "intro": "O Espírito Santo é a entrada. A herança inteira ainda vem.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Tudo que você sentiu de Deus é só cinco por cento",
+      "accent_word": "cinco por cento",
+      "image_hint": "Horizonte vasto ao amanhecer visto de um penhasco, primeira luz tocando a paisagem, fundo neutro cinematográfico"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Quanto vale o sinal numa compra grande?",
+      "body": "Costuma ser cinco por cento. No máximo dez. Uma fração pequena que garante o negócio. O grosso vem depois, na hora certa."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Agora pensa no que Deus já te deu.",
+      "body": "Toda a paz que você sentiu em meio à tempestade. Toda a alegria que apareceu sem explicação. Toda a certeza da salvação que segurou você."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Isso tudo é só o sinalzinho.",
+      "accent_word": "sinalzinho",
+      "body": "Cinco por cento. O Espírito Santo é a entrada da herança. Tudo o que você experimentou até hoje é a fração que garante o resto."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-off",
+      "headline": "Deixa esse número te assustar.",
+      "body": "Se o que você já viveu de Deus é tão bom e era só cinco por cento, o que será o cento por cento? A conta não cabe na cabeça."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-midnight",
+      "headline": "O melhor não passou.",
+      "body": "Tem gente vivendo de saudade do que Deus já fez. Mas o que você viveu foi a amostra. A herança inteira ainda está vindo."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "Levanta a cabeça.",
+      "body": "Você não está no fim da experiência com Deus. Você está no comecinho. O melhor capítulo ainda nem começou a ser lido."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.",
+      "referencia": "Efésios 1:14"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Tudo que você já experimentou de Deus é só o começo. Tem muito mais.",
+      "accent_word": "mais"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "O Espírito Santo é a entrada. A herança inteira ainda vem.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "Quanto vale o sinal numa compra grande? Cinco por cento, no máximo dez. Uma fração que garante o negócio. O grosso vem depois.\n\nAgora pensa: toda a paz que você sentiu na tempestade, toda a alegria sem explicação, toda a certeza que segurou você. Isso tudo é só o sinalzinho. Cinco por cento.\n\nSe o que você já viveu era só a entrada, imagina o cento por cento.\n\nO melhor não passou. Você está no comecinho.\n\nComenta TEM MAIS se você precisava levantar a cabeça hoje.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
 }

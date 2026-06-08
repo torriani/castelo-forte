@@ -7,16 +7,70 @@
   "tema_central": "Mostrar que comportamento é só a superfície: a crença profunda é a raiz. Por isso Efésios trata identidade antes de mandar mudar.",
   "versiculo_base": "Efésios 1:1-3",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "O problema nunca foi o COPO", "accent_word": "COPO", "image_hint": "Um único copo solitário na beira de uma pia, luz fria de manhã, fundo neutro, clima de tensão silenciosa"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Briga de casal por um copo na pia", "body": "Ele não lavou. Ela explodiu. Mas no começo do casamento, aquele copo não importava pra ninguém."},
-    {"n": 3, "tipo": "texto-off", "headline": "O copo é só a pontinha", "body": "Aquela briga nunca foi pela louça. Foi por tudo que ficou guardado por baixo, longe da pia, longe da vista."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Você tem um problema financeiro?", "accent_word": "financeiro", "body": "O dinheiro é só a superfície. Por baixo tem uma crença sobre valor, medo e merecimento que ninguém vê."},
-    {"n": 5, "tipo": "texto-off", "headline": "A gente foca em mudar o comportamento", "body": "Promete fazer diferente. Tenta com força de vontade. E volta pro mesmo lugar, porque a raiz continua intacta."},
-    {"n": 6, "tipo": "texto-midnight", "headline": "Crença vem antes de comportamento", "body": "Quem você acredita que é determina o que você faz. Mude a fonte, e o comportamento muda junto."},
-    {"n": 7, "tipo": "texto-off", "headline": "Por isso Paulo não começa mandando", "body": "Três capítulos de identidade antes de qualquer ordem. Ele trata a crença antes de tocar no comportamento."},
-    {"n": 8, "tipo": "verso", "versiculo": "Paulo, apóstolo de Cristo Jesus, aos santos e fiéis em Cristo Jesus.", "referencia": "Efésios 1:1"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Deus não começa pelo copo. Ele começa pelo coração que você nem sabia que estava quebrado.", "accent_word": "coração"},
-    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem mexer na raiz, não só na superfície.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Por que a briga nunca foi sobre o copo na pia",
+      "accent_word": "nunca foi sobre o copo",
+      "image_hint": "Um único copo solitário na beira de uma pia, luz fria de manhã, fundo neutro, clima de tensão silenciosa"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Briga de casal por um copo na pia",
+      "body": "Ele não lavou. Ela explodiu. Mas no começo do casamento, aquele copo não importava pra ninguém."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "O copo é só a pontinha",
+      "body": "Aquela briga nunca foi pela louça. Foi por tudo que ficou guardado por baixo, longe da pia, longe da vista."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Você tem um problema financeiro?",
+      "accent_word": "financeiro",
+      "body": "O dinheiro é só a superfície. Por baixo tem uma crença sobre valor, medo e merecimento que ninguém vê."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-off",
+      "headline": "A gente foca em mudar o comportamento",
+      "body": "Promete fazer diferente. Tenta com força de vontade. E volta pro mesmo lugar, porque a raiz continua intacta."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-midnight",
+      "headline": "Crença vem antes de comportamento",
+      "body": "Quem você acredita que é determina o que você faz. Mude a fonte, e o comportamento muda junto."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "Por isso Paulo não começa mandando",
+      "body": "Três capítulos de identidade antes de qualquer ordem. Ele trata a crença antes de tocar no comportamento."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Paulo, apóstolo de Cristo Jesus, aos santos e fiéis em Cristo Jesus.",
+      "referencia": "Efésios 1:1"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Deus não começa pelo copo. Ele começa pelo coração que você nem sabia que estava quebrado.",
+      "accent_word": "coração"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Domingo tem a série Em Cristo. Vem mexer na raiz, não só na superfície.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "O casal briga pelo copo que não foi lavado, mas no começo do casamento aquele copo não importava. O copo é só a pontinha. No problema financeiro, o dinheiro é só a superfície. A gente vive tentando mudar comportamento e esquece de mudar a crença profunda. Por isso Efésios trata identidade antes de mandar fazer qualquer coisa. Crença vem antes de comportamento. #castelofortejurere #emcristo #efesios #pristraelanijar"
 }

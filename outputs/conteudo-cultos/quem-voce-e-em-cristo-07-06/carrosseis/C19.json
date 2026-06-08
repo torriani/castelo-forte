@@ -7,16 +7,71 @@
   "tema_central": "O Espírito Santo é o sinal (arrabom) da herança que vem. Quando o sinal entra na conta, o negócio fica sério. Deus depositou o Espírito como garantia: é pra valer.",
   "versiculo_base": "Efésios 1:14",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Deus fez o PIX na CONTA", "accent_word": "CONTA", "image_hint": "Celular sobre mesa de madeira com tela acesa mostrando confirmação, luz lateral noturna, fundo neutro e quente"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Você já sabe como funciona uma compra grande.", "body": "Casa, carro. Enquanto a pessoa só fala que quer, fica todo mundo enrolando. Promessa é barato, ninguém leva a sério."},
-    {"n": 3, "tipo": "texto-off", "headline": "Aí o sinal entra.", "body": "Na hora que o sinal cai na conta, tudo muda. Para a enrolação, começa o processo, o negócio vira realidade. O dinheiro na conta fala mais alto que qualquer discurso."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Tem um detalhe ainda mais forte.", "accent_word": "viu", "body": "Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria. Não precisa nem ser o valor total. O sinal já muda o jogo inteiro."},
-    {"n": 5, "tipo": "texto-off", "headline": "Foi exatamente isso que Deus fez.", "accent_word": "arrabom", "body": "Ele deu o Espírito Santo como sinal. No original, arrabom: a entrada, a garantia, o penhor de tudo o que ainda vem por completo."},
-    {"n": 6, "tipo": "texto-midnight", "headline": "O Espírito em você é o comprovante.", "body": "Não é sentimento solto, não é coincidência. É Deus depositando a garantia da herança. É o sinal de que a compra está fechada."},
-    {"n": 7, "tipo": "texto-off", "headline": "Por isso é pra valer.", "body": "Promessa de Deus não é conversa de quem enrola. Ele não falou que quer te ter. Ele já deu a entrada. O resto da herança vem com data."},
-    {"n": 8, "tipo": "verso", "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.", "referencia": "Efésios 1:14"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Deus fez o PIX na conta. A herança não é promessa solta, é compra fechada.", "accent_word": "fechada"},
-    {"n": 10, "tipo": "cta", "intro": "O Espírito Santo nos selou e deu a entrada da herança que vem.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Deus já fez o PIX na sua conta",
+      "accent_word": "PIX",
+      "image_hint": "Celular sobre mesa de madeira com tela acesa mostrando confirmação, luz lateral noturna, fundo neutro e quente"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Você já sabe como funciona uma compra grande.",
+      "body": "Casa, carro. Enquanto a pessoa só fala que quer, fica todo mundo enrolando. Promessa é barato, ninguém leva a sério."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Aí o sinal entra.",
+      "body": "Na hora que o sinal cai na conta, tudo muda. Para a enrolação, começa o processo, o negócio vira realidade. O dinheiro na conta fala mais alto que qualquer discurso."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Tem um detalhe ainda mais forte.",
+      "accent_word": "viu",
+      "body": "Mesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria. Não precisa nem ser o valor total. O sinal já muda o jogo inteiro."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-off",
+      "headline": "Foi exatamente isso que Deus fez.",
+      "accent_word": "arrabom",
+      "body": "Ele deu o Espírito Santo como sinal. No original, arrabom: a entrada, a garantia, o penhor de tudo o que ainda vem por completo."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-midnight",
+      "headline": "O Espírito em você é o comprovante.",
+      "body": "Não é sentimento solto, não é coincidência. É Deus depositando a garantia da herança. É o sinal de que a compra está fechada."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "Por isso é pra valer.",
+      "body": "Promessa de Deus não é conversa de quem enrola. Ele não falou que quer te ter. Ele já deu a entrada. O resto da herança vem com data."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.",
+      "referencia": "Efésios 1:14"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Deus fez o PIX na conta. A herança não é promessa solta, é compra fechada.",
+      "accent_word": "fechada"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "O Espírito Santo nos selou e deu a entrada da herança que vem.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "Você já sabe como funciona compra grande. Enquanto a pessoa só fala que quer, todo mundo enrola. Promessa é barato. Aí o sinal cai na conta e tudo muda: para a enrolação, começa o processo.\n\nMesmo quando o vendedor só vê o PIX na conta, a coisa ficou séria.\n\nFoi isso que Deus fez. Ele deu o Espírito Santo como sinal (arrabom): a entrada, a garantia da herança que vem. O Espírito em você é o comprovante de que a compra está fechada.\n\nPromessa de Deus não é conversa de quem enrola.\n\nComenta FECHADO se isso pregou em você.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
 }
