@@ -119,6 +119,9 @@ function renderFraseCard(f, i) {
   const num = String(i + 1).padStart(2, '0');
   const imgPath = `${IMG_BASE}/frases/frase-${num}.png`;
   const textoCopia = esc(f.texto).replace(/`/g, '\\`');
+  let legenda = f.legenda_instagram || '';
+  legenda = legenda.replace(/#\S+/g, '').replace(/\s+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  const legendaCopia = legenda.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
   return `
 <div class="peca-card" id="f-${num}">
   <div class="thumb" onclick="openLightbox('${imgPath}')"><img src="${imgPath}" alt="Frase ${num}" loading="lazy"></div>
@@ -129,6 +132,14 @@ function renderFraseCard(f, i) {
   <div class="card-actions">
     <button class="btn-copy small" onclick="copyText(this, \`${textoCopia}\`)">Copiar texto</button>
   </div>
+  ${legenda ? `
+  <details class="legenda-block">
+    <summary>▸ Legenda do Instagram</summary>
+    <div class="legenda-content">
+      <pre>${esc(legenda)}</pre>
+      <button class="btn-copy small" onclick="copyText(this, \`${legendaCopia}\`)">Copiar legenda</button>
+    </div>
+  </details>` : ''}
 </div>
 `;
 }
