@@ -1,34 +1,130 @@
 [
-  {"texto": "Antes de você fazer qualquer coisa por Deus, Deus já fez tudo com você em Cristo.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Antes do imperativo, vem o indicativo. Primeiro quem você é, depois o que você faz.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Toda essa carta gira em torno de uma coisa só: a sua identidade em Cristo.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Paulo não se chama prisioneiro de Roma. Ele se chama prisioneiro de Cristo.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "O seu problema nunca foi financeiro. O financeiro é só a pontinha do que está mais embaixo.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "A única forma de você deixar de ser filho adotado seria convencer o Pai a te desadotar. E isso Ele não faz.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Cristo não pagou parte da conta. Cristo entrou no seu lugar e absolveu toda a culpa.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Perdão é o primeiro passo. Redenção é a obra completa.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Você foi justificado, está sendo santificado, e vai ser glorificado.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "O Espírito Santo te selou. Você é posse, está autenticado, está protegido.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "A herança já caiu na conta. Deus fez o PIX.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Tudo o que você já experimentou de Deus é só o começo. É só o sinal.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Dinheiro é a menor forma de riqueza que existe.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Toda a história está caminhando para um único ponto: Cristo, cabeça de tudo.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Você não está mais separado nem é mais forasteiro. Você é de casa.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Deus te escolheu antes da criação do mundo. Não havia você pra avaliar, mas Ele já sabia.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Você é herdeiro do Rei. E ninguém toca nesse herdeiro sem consequência.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Comece a falar mais Jesus e pare de falar só Deus.", "fonte": "Pr. Israel Anijar"},
-  {"texto": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda sorte de bênção espiritual.", "fonte": "Efésios 1:3"},
-  {"texto": "Ele nos escolheu antes da fundação do mundo, para sermos santos e irrepreensíveis diante dele.", "fonte": "Efésios 1:4"},
-  {"texto": "Em amor nos predestinou para sermos adotados como filhos, por meio de Jesus Cristo.", "fonte": "Efésios 1:5"},
-  {"texto": "Nele temos a redenção pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.", "fonte": "Efésios 1:7"},
-  {"texto": "Deus quis convergir nele, na plenitude dos tempos, todas as coisas, tanto no céu como na terra.", "fonte": "Efésios 1:9-10"},
-  {"texto": "Nele, tendo crido, fostes selados com o Espírito Santo da promessa, que é o penhor da nossa herança.", "fonte": "Efésios 1:13-14"},
-  {"texto": "A adoção é o privilégio mais alto que o evangelho oferece, mais alto até do que a justificação.", "fonte": "J.I. Packer"},
-  {"texto": "Se você quer avaliar quão bem alguém entende o cristianismo, descubra quanto valor essa pessoa dá ao pensamento de ser filho de Deus.", "fonte": "J.I. Packer"},
-  {"texto": "O Senhor Jesus Cristo domina a mente de Paulo e enche a sua visão.", "fonte": "John Stott"},
-  {"texto": "Os cristãos sabem que seus pecados foram perdoados livremente, inteiramente, totalmente, de uma vez por todas, pelo sangue de Cristo.", "fonte": "Martyn Lloyd-Jones"},
-  {"texto": "Você está orando pelo que já deveria estar vivendo.", "fonte": "Provocação · Anijar"},
-  {"texto": "Você briga pelo copo, mas a rachadura é bem antes do copo.", "fonte": "Provocação · Anijar"},
-  {"texto": "Você mendiga na porta de uma herança que já está no seu nome.", "fonte": "Provocação · Anijar"},
-  {"texto": "Você passa a vida tentando pagar uma conta que já foi quitada na cruz.", "fonte": "Provocação · Anijar"}
+  {
+    "texto": "Antes de você fazer qualquer coisa por Deus, Deus já fez tudo com você em Cristo.",
+    "fonte": "Efésios 1:3"
+  },
+  {
+    "texto": "Antes do imperativo, vem o indicativo. Primeiro quem você é, depois o que você faz.",
+    "fonte": "Paulo · Efésios 1"
+  },
+  {
+    "texto": "Identidade não é o que você faz. É de quem você é.",
+    "fonte": "Paulo · Efésios 1"
+  },
+  {
+    "texto": "Paulo não se chama prisioneiro de Roma. Ele se chama prisioneiro de Cristo.",
+    "fonte": "Paulo · Efésios"
+  },
+  {
+    "texto": "O seu problema nunca foi financeiro. O financeiro é só a pontinha do que está mais embaixo.",
+    "fonte": "Efésios 1:1"
+  },
+  {
+    "texto": "A única forma de você deixar de ser filho adotado seria convencer o Pai a te desadotar. E isso Ele não faz.",
+    "fonte": "Paulo · Efésios 1:5"
+  },
+  {
+    "texto": "Cristo não pagou parte da conta. Cristo entrou no seu lugar e absolveu toda a culpa.",
+    "fonte": "Paulo · Efésios 1:5"
+  },
+  {
+    "texto": "Perdão é o primeiro passo. Redenção é a obra completa.",
+    "fonte": "Paulo · Efésios 1:7"
+  },
+  {
+    "texto": "Você foi justificado, está sendo santificado, e vai ser glorificado.",
+    "fonte": "Paulo · Efésios 1:7"
+  },
+  {
+    "texto": "O Espírito Santo te selou. Você é posse, está autenticado, está protegido.",
+    "fonte": "Paulo · Efésios 1:13"
+  },
+  {
+    "texto": "A herança já caiu na conta. Deus fez o PIX.",
+    "fonte": "Paulo · Efésios 1:14"
+  },
+  {
+    "texto": "Já parou pra pensar que tudo que você sentiu de Deus é só o sinal do que vem?",
+    "fonte": "Paulo · Efésios 1:14"
+  },
+  {
+    "texto": "Dinheiro é a menor forma de riqueza que existe.",
+    "fonte": "Paulo · Efésios 1:18"
+  },
+  {
+    "texto": "Toda a história está caminhando para um único ponto: Cristo, cabeça de tudo.",
+    "fonte": "Paulo · Efésios 1:10"
+  },
+  {
+    "texto": "Você não é visita na casa do Pai. Você é de casa.",
+    "fonte": "Paulo · Efésios 1:5"
+  },
+  {
+    "texto": "Deus te escolheu antes da criação do mundo. Não havia você pra avaliar, mas Ele já sabia.",
+    "fonte": "Paulo · Efésios 1:4"
+  },
+  {
+    "texto": "Mexeu com você, mexeu com o herdeiro do Rei.",
+    "fonte": "Paulo · Efésios 1:14"
+  },
+  {
+    "texto": "Para de falar só de Deus. Comece a falar de Jesus.",
+    "fonte": "Paulo · Efésios 1"
+  },
+  {
+    "texto": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda sorte de bênção espiritual.",
+    "fonte": "Paulo · Efésios 1:3"
+  },
+  {
+    "texto": "Ele nos escolheu antes da fundação do mundo, para sermos santos e irrepreensíveis diante dele.",
+    "fonte": "Paulo · Efésios 1:4"
+  },
+  {
+    "texto": "Em amor nos predestinou para sermos adotados como filhos, por meio de Jesus Cristo.",
+    "fonte": "Paulo · Efésios 1:5"
+  },
+  {
+    "texto": "Nele temos a redenção pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.",
+    "fonte": "Paulo · Efésios 1:7"
+  },
+  {
+    "texto": "Deus quis convergir nele, na plenitude dos tempos, todas as coisas, tanto no céu como na terra.",
+    "fonte": "Paulo · Efésios 1:9-10"
+  },
+  {
+    "texto": "Nele, tendo crido, fostes selados com o Espírito Santo da promessa, que é o penhor da nossa herança.",
+    "fonte": "Paulo · Efésios 1:13-14"
+  },
+  {
+    "texto": "A adoção é o privilégio mais alto que o evangelho oferece, mais alto até do que a justificação.",
+    "fonte": "J.I. Packer"
+  },
+  {
+    "texto": "Se você quer avaliar quão bem alguém entende o cristianismo, descubra quanto valor essa pessoa dá ao pensamento de ser filho de Deus.",
+    "fonte": "J.I. Packer"
+  },
+  {
+    "texto": "O Senhor Jesus Cristo domina a mente de Paulo e enche a sua visão.",
+    "fonte": "John Stott"
+  },
+  {
+    "texto": "Os cristãos sabem que seus pecados foram perdoados livremente, inteiramente, totalmente, de uma vez por todas, pelo sangue de Cristo.",
+    "fonte": "Martyn Lloyd-Jones"
+  },
+  {
+    "texto": "Você está orando pelo que já deveria estar vivendo.",
+    "fonte": "Paulo · Efésios 1:3"
+  },
+  {
+    "texto": "Você briga pelo copo, mas a rachadura é bem antes do copo.",
+    "fonte": "Paulo · Efésios 1"
+  },
+  {
+    "texto": "Você mendiga na porta de uma herança que já está no seu nome.",
+    "fonte": "Paulo · Efésios 1:11"
+  },
+  {
+    "texto": "Você gasta a vida pagando uma conta que Cristo já quitou.",
+    "fonte": "Paulo · Efésios 1:7"
+  }
 ]

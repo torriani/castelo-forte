@@ -7,16 +7,70 @@
   "tema_central": "Derrubar a crença de cristão de segunda classe: o filho adotado recebe a herança inteira. Filho não mendiga, recebe.",
   "versiculo_base": "Efésios 1:5",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Você é TÃO filho quanto o filho de sangue", "accent_word": "TÃO", "image_hint": "Dois assentos idênticos lado a lado numa mesa nobre, mesma luz sobre os dois, fundo off-white"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "No fundo, você se sente de segunda categoria", "body": "Como quem entrou pela porta dos fundos. Como se houvesse cristãos de primeira e você ficasse no balcão."},
-    {"n": 3, "tipo": "texto-off", "headline": "Roma não pensava assim sobre adoção", "body": "O filho adotado recebia direito completo. Herança igual, nome da família, lugar à mesa. Nada pela metade."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Não existe filho com herança reduzida", "accent_word": "reduzida", "body": "O adotado não herdava as sobras. Recebia o mesmo que o filho de sangue, com o mesmo nome e o mesmo peso."},
-    {"n": 5, "tipo": "verso", "versiculo": "Adotados como filhos, por meio de Jesus Cristo, segundo o beneplácito da sua vontade.", "referencia": "Efésios 1:5"},
-    {"n": 6, "tipo": "texto-off", "headline": "Não existe cristão de segunda classe", "body": "A mesa do Pai não tem fila VIP e fila comum. Quem foi adotado em Cristo sentou no mesmo lugar."},
-    {"n": 7, "tipo": "texto-midnight", "headline": "Filho não mendiga herança. Filho recebe.", "body": "Você não vive implorando favor à porta. Você vive como quem tem o sobrenome e a chave da casa."},
-    {"n": 8, "tipo": "texto-off", "headline": "Seu lugar não é menor por causa do passado", "body": "Não importa de onde você veio pra entrar na família. O direito que você recebeu é inteiro, igual ao dos outros."},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Você não é convidado tolerado. Você é filho com nome na herança.", "accent_word": "filho"},
-    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem ocupar o lugar que sempre foi seu na mesa.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Não existe filho de Deus de segunda classe",
+      "accent_word": "segunda classe",
+      "image_hint": "Dois assentos idênticos lado a lado numa mesa nobre, mesma luz sobre os dois, fundo off-white"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "No fundo, você se sente de segunda categoria",
+      "body": "Como quem entrou pela porta dos fundos. Como se houvesse cristãos de primeira e você ficasse no balcão."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Roma não pensava assim sobre adoção",
+      "body": "O filho adotado recebia direito completo. Herança igual, nome da família, lugar à mesa. Nada pela metade."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Não existe filho com herança reduzida",
+      "accent_word": "reduzida",
+      "body": "O adotado não herdava as sobras. Recebia o mesmo que o filho de sangue, com o mesmo nome e o mesmo peso."
+    },
+    {
+      "n": 5,
+      "tipo": "verso",
+      "versiculo": "Adotados como filhos, por meio de Jesus Cristo, segundo o beneplácito da sua vontade.",
+      "referencia": "Efésios 1:5"
+    },
+    {
+      "n": 6,
+      "tipo": "texto-off",
+      "headline": "Não existe cristão de segunda classe",
+      "body": "A mesa do Pai não tem fila VIP e fila comum. Quem foi adotado em Cristo sentou no mesmo lugar."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-midnight",
+      "headline": "Filho não mendiga herança. Filho recebe.",
+      "body": "Você não vive implorando favor à porta. Você vive como quem tem o sobrenome e a chave da casa."
+    },
+    {
+      "n": 8,
+      "tipo": "texto-off",
+      "headline": "Seu lugar não é menor por causa do passado",
+      "body": "Não importa de onde você veio pra entrar na família. O direito que você recebeu é inteiro, igual ao dos outros."
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Você não é convidado tolerado. Você é filho com nome na herança.",
+      "accent_word": "filho"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Domingo tem a série Em Cristo. Vem ocupar o lugar que sempre foi seu na mesa.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "No fundo você se sente cristão de segunda classe, como quem entrou pela porta dos fundos. Roma não pensava assim: o filho adotado tinha direito completo, herança igual, nome da família, lugar à mesa, nada pela metade. A mesa do Pai não tem fila VIP e fila comum. Filho não mendiga herança, recebe. Você não é convidado tolerado, é filho com nome na herança. #castelofortejurere #emcristo #efesios #pristraelanijar"
 }

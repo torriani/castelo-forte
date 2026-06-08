@@ -7,16 +7,70 @@
   "tema_central": "Lloyd-Jones afirma que o perdão é livre, inteiro, total e absoluto, de uma vez por todas, no sangue de Cristo. Não existe pecado que sobrou fora da conta.",
   "versiculo_base": "Efésios 1:7",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Seus pecados foram perdoados TOTALMENTE", "accent_word": "TOTALMENTE", "image_hint": "Folha em branco sob luz lateral suave, marcas antigas apagadas, papel limpo, fundo neutro cinematográfico"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Tem um pecado seu que você acha que ficou de fora.", "body": "Aquele que você nem ousa nomear. Aquele que você acha que é grande demais até pra graça alcançar. Lê o próximo slide."},
-    {"n": 3, "tipo": "verso", "versiculo": "Os cristãos sabem que seus pecados foram perdoados livremente, inteiramente, totalmente e absolutamente, de uma vez por todas, no e pelo sangue de Cristo.", "referencia": "Martyn Lloyd-Jones"},
-    {"n": 4, "tipo": "texto-off", "headline": "Lê de novo, devagar.", "body": "Livremente, inteiramente, totalmente, de uma vez por todas. Não tem brecha nessas palavras, não sobra espaço pra exceção."},
-    {"n": 5, "tipo": "texto-midnight", "headline": "Não é perdão de oitenta por cento.", "accent_word": "oitenta", "body": "Não é Deus perdoando o que dá e guardando o resto contra você. É total. Aquele pecado que você esconde também está coberto."},
-    {"n": 6, "tipo": "texto-off", "headline": "O sangue não vaza.", "body": "Não tem mancha que ele alcança pela metade. Se Cristo pagou, pagou inteiro. A sua vergonha não é maior que o preço que Ele pôs na mesa."},
-    {"n": 7, "tipo": "texto-midnight", "headline": "Para de separar um pecado da graça.", "body": "Quando você guarda um pecado fora do perdão, você está dizendo que o sangue de Cristo não foi suficiente. E foi."},
-    {"n": 8, "tipo": "verso", "versiculo": "Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.", "referencia": "Efésios 1:7"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Não tem pecado seu que ficou fora da conta. Total quer dizer total.", "accent_word": "total"},
-    {"n": 10, "tipo": "cta", "intro": "O Filho nos redimiu por inteiro. Sem exceção, sem letra miúda.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Aquele pecado que você esconde também foi perdoado",
+      "accent_word": "também",
+      "image_hint": "Folha em branco sob luz lateral suave, marcas antigas apagadas, papel limpo, fundo neutro cinematográfico"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Tem um pecado seu que você acha que ficou de fora.",
+      "body": "Aquele que você nem ousa nomear. Aquele que você acha que é grande demais até pra graça alcançar. Lê o próximo slide."
+    },
+    {
+      "n": 3,
+      "tipo": "verso",
+      "versiculo": "Os cristãos sabem que seus pecados foram perdoados livremente, inteiramente, totalmente e absolutamente, de uma vez por todas, no e pelo sangue de Cristo.",
+      "referencia": "Martyn Lloyd-Jones"
+    },
+    {
+      "n": 4,
+      "tipo": "texto-off",
+      "headline": "Lê de novo, devagar.",
+      "body": "Livremente, inteiramente, totalmente, de uma vez por todas. Não tem brecha nessas palavras, não sobra espaço pra exceção."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-midnight",
+      "headline": "Não é perdão de oitenta por cento.",
+      "accent_word": "oitenta",
+      "body": "Não é Deus perdoando o que dá e guardando o resto contra você. É total. Aquele pecado que você esconde também está coberto."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-off",
+      "headline": "O sangue não vaza.",
+      "body": "Não tem mancha que ele alcança pela metade. Se Cristo pagou, pagou inteiro. A sua vergonha não é maior que o preço que Ele pôs na mesa."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-midnight",
+      "headline": "Para de separar um pecado da graça.",
+      "body": "Quando você guarda um pecado fora do perdão, você está dizendo que o sangue de Cristo não foi suficiente. E foi."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.",
+      "referencia": "Efésios 1:7"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Não tem pecado seu que ficou fora da conta. Total quer dizer total.",
+      "accent_word": "total"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "O Filho nos redimiu por inteiro. Sem exceção, sem letra miúda.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "Tem um pecado que você acha que ficou de fora. Aquele que você nem ousa nomear.\n\nLloyd-Jones disse: os cristãos sabem que seus pecados foram perdoados livremente, inteiramente, totalmente e absolutamente, de uma vez por todas, no sangue de Cristo.\n\nNão é perdão de oitenta por cento. Quando você guarda um pecado fora da graça, está dizendo que o sangue não foi suficiente. E foi.\n\nTotal quer dizer total.\n\nComenta TOTAL se você precisava ouvir isso.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
 }

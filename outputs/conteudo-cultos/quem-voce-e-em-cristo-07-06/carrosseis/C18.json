@@ -7,16 +7,71 @@
   "tema_central": "O selo é proteção. Esse filho é meu, está protegido porque é herdeiro. Você está protegido não pela sua força, mas porque pertence a Deus.",
   "versiculo_base": "Efésios 1:13-14",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Você não toca nesse herdeiro sem CONSEQUÊNCIA", "accent_word": "CONSEQUÊNCIA", "image_hint": "Brasão real gravado em portão de ferro, luz lateral fria, fundo de pedra neutro, atmosfera de palácio"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "O selo do Rei tem um recado pra quem chega perto.", "body": "Não é só posse, não é só autenticidade. É proteção. E proteção sempre vem com um aviso pra quem pensa em avançar."},
-    {"n": 3, "tipo": "texto-off", "headline": "O aviso é curto.", "body": "Esse filho é meu. Está protegido porque é meu herdeiro. E você não toca nesse herdeiro sem consequência."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Repara de onde vem a proteção.", "accent_word": "dono", "body": "Não é a força do herdeiro que assusta o inimigo. É o nome do dono gravado nele. Ele está seguro pela autoridade de quem o selou."},
-    {"n": 5, "tipo": "texto-off", "headline": "Isso muda como você enfrenta o medo.", "body": "Você já se cansou de tentar ser forte o bastante pra se proteger. Mas a sua segurança nunca foi a sua força. É a quem você pertence."},
-    {"n": 6, "tipo": "triade", "headline_resto": "Quem te protege", "personagem": "O DONO", "sub": "Quando o inimigo olha pra você, ele não vê a sua fraqueza primeiro. Ele vê o selo, o brasão, o nome do Rei. E recua."},
-    {"n": 7, "tipo": "texto-midnight", "headline": "Filho protegido não dorme com a guarda armada.", "body": "Quem é herdeiro descansa, porque sabe que a casa inteira responde por ele. Você pode baixar os ombros."},
-    {"n": 8, "tipo": "verso", "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.", "referencia": "Efésios 1:14"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Você está protegido não pela sua força, mas porque pertence a Deus.", "accent_word": "pertence"},
-    {"n": 10, "tipo": "cta", "intro": "O Espírito Santo nos selou, e o selo protege quem é do Rei.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Mexeu com você, mexeu com o herdeiro do Rei",
+      "accent_word": "herdeiro do Rei",
+      "image_hint": "Brasão real gravado em portão de ferro, luz lateral fria, fundo de pedra neutro, atmosfera de palácio"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "O selo do Rei tem um recado pra quem chega perto.",
+      "body": "Não é só posse, não é só autenticidade. É proteção. E proteção sempre vem com um aviso pra quem pensa em avançar."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "O aviso é curto.",
+      "body": "Esse filho é meu. Está protegido porque é meu herdeiro. E você não toca nesse herdeiro sem consequência."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Repara de onde vem a proteção.",
+      "accent_word": "dono",
+      "body": "Não é a força do herdeiro que assusta o inimigo. É o nome do dono gravado nele. Ele está seguro pela autoridade de quem o selou."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-off",
+      "headline": "Isso muda como você enfrenta o medo.",
+      "body": "Você já se cansou de tentar ser forte o bastante pra se proteger. Mas a sua segurança nunca foi a sua força. É a quem você pertence."
+    },
+    {
+      "n": 6,
+      "tipo": "triade",
+      "headline_resto": "Quem te protege",
+      "personagem": "O DONO",
+      "sub": "Quando o inimigo olha pra você, ele não vê a sua fraqueza primeiro. Ele vê o selo, o brasão, o nome do Rei. E recua."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-midnight",
+      "headline": "Filho protegido não dorme com a guarda armada.",
+      "body": "Quem é herdeiro descansa, porque sabe que a casa inteira responde por ele. Você pode baixar os ombros."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "O qual é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da sua glória.",
+      "referencia": "Efésios 1:14"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Você está protegido não pela sua força, mas porque pertence a Deus.",
+      "accent_word": "pertence"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "O Espírito Santo nos selou, e o selo protege quem é do Rei.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "O selo do Rei traz um aviso pra quem chega perto: esse filho é meu, está protegido porque é meu herdeiro, e você não toca nesse herdeiro sem consequência.\n\nRepara de onde vem a proteção. Não é a força do herdeiro que assusta o inimigo. É o nome do dono gravado nele.\n\nVocê já se cansou de tentar ser forte o bastante pra se proteger. Mas a sua segurança nunca foi a sua força. É a quem você pertence.\n\nPode baixar os ombros.\n\nComenta PROTEGIDO se você precisava descansar nisso.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
 }

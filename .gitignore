@@ -120,3 +120,4 @@ squad-runtime/
 # Caches Apify (stalk skill)
 **/data.json
 !squads/conteudo/data/**/data.json
+squads/.claude/scheduled_tasks.lock

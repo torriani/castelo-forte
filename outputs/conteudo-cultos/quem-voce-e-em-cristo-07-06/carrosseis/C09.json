@@ -7,16 +7,70 @@
   "tema_central": "Elevar a adoção acima do perdão: Deus não só apaga a dívida, Ele te faz filho e te dá a herança inteira.",
   "versiculo_base": "Efésios 1:5",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "A adoção é o privilégio MAIS alto do evangelho", "accent_word": "MAIS", "image_hint": "Coroa simples pousada sobre um documento de filiação, luz dourada vinda de cima, fundo off-white solene"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "A gente para no perdão e acha que acabou", "body": "Como se o ponto alto fosse a dívida quitada, o nome fora do vermelho, a ficha limpa. Mas isso é só o começo do que Ele fez."},
-    {"n": 3, "tipo": "texto-off", "headline": "Tem um teólogo que vai mais fundo que isso", "body": "J.I. Packer enxergou algo que a maioria passa batido lendo Efésios com pressa."},
-    {"n": 4, "tipo": "verso", "versiculo": "A adoção é o privilégio mais alto que o evangelho oferece, mais alto até do que a justificação.", "referencia": "J.I. Packer"},
-    {"n": 5, "tipo": "texto-midnight", "headline": "Justificação te tira do tribunal. Adoção te leva pra mesa.", "accent_word": "mesa", "body": "Uma apaga a condenação. A outra te dá um Pai, um nome e um lugar na casa."},
-    {"n": 6, "tipo": "texto-off", "headline": "Deus não parou no perdão", "body": "Além de quitar a dívida, Ele te chamou de filho e colocou o seu nome no testamento da família."},
-    {"n": 7, "tipo": "texto-midnight", "headline": "Perdoado é muito. Adotado é mais.", "body": "O perdão te devolve a paz com Deus. A adoção te devolve um Pai, com tudo o que pertence a Ele."},
-    {"n": 8, "tipo": "verso", "versiculo": "Quer avaliar quão bem alguém entende o cristianismo? Descubra quanto valor essa pessoa dá a ser filho de Deus.", "referencia": "J.I. Packer"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Você não foi só inocentado. Você foi adotado.", "accent_word": "adotado"},
-    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem descobrir o privilégio mais alto que você já recebeu.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Maior que ser perdoado é virar filho",
+      "accent_word": "virar filho",
+      "image_hint": "Coroa simples pousada sobre um documento de filiação, luz dourada vinda de cima, fundo off-white solene"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "A gente para no perdão e acha que acabou",
+      "body": "Como se o ponto alto fosse a dívida quitada, o nome fora do vermelho, a ficha limpa. Mas isso é só o começo do que Ele fez."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Tem um teólogo que vai mais fundo que isso",
+      "body": "J.I. Packer enxergou algo que a maioria passa batido lendo Efésios com pressa."
+    },
+    {
+      "n": 4,
+      "tipo": "verso",
+      "versiculo": "A adoção é o privilégio mais alto que o evangelho oferece, mais alto até do que a justificação.",
+      "referencia": "J.I. Packer"
+    },
+    {
+      "n": 5,
+      "tipo": "texto-midnight",
+      "headline": "Justificação te tira do tribunal. Adoção te leva pra mesa.",
+      "accent_word": "mesa",
+      "body": "Uma apaga a condenação. A outra te dá um Pai, um nome e um lugar na casa."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-off",
+      "headline": "Deus não parou no perdão",
+      "body": "Além de quitar a dívida, Ele te chamou de filho e colocou o seu nome no testamento da família."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-midnight",
+      "headline": "Perdoado é muito. Adotado é mais.",
+      "body": "O perdão te devolve a paz com Deus. A adoção te devolve um Pai, com tudo o que pertence a Ele."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Quer avaliar quão bem alguém entende o cristianismo? Descubra quanto valor essa pessoa dá a ser filho de Deus.",
+      "referencia": "J.I. Packer"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Você não foi só inocentado. Você foi adotado.",
+      "accent_word": "adotado"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Domingo tem a série Em Cristo. Vem descobrir o privilégio mais alto que você já recebeu.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "A gente para no perdão e acha que acabou. Mas Packer disse: a adoção é o privilégio mais alto que o evangelho oferece, mais alto até do que a justificação. A justificação te tira do tribunal, a adoção te leva pra mesa. Além de quitar a dívida, Deus te chamou de filho e colocou seu nome na herança. Quer avaliar quanto alguém entende o cristianismo? Veja quanto valor essa pessoa dá a ser filho de Deus. #castelofortejurere #emcristo #efesios #pristraelanijar"
 }

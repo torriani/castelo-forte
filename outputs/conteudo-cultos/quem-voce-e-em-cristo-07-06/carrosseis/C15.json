@@ -7,16 +7,70 @@
   "tema_central": "Confronto pastoral contra a religiosidade de mérito. Você não completa o que Cristo terminou. Tentar pagar o que já foi pago é desconfiar da obra dele.",
   "versiculo_base": "Efésios 1:7",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Para de pagar o que JÁ FOI pago", "accent_word": "JÁ FOI", "image_hint": "Mão soltando moedas que caem, fundo escuro neutro, luz lateral dramática, foco no gesto de soltar"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Você acorda tentando pagar.", "body": "Mais oração pra compensar a falha de ontem. Mais serviço pra apagar a culpa. Mais sacrifício pra Deus te olhar com bons olhos. E isso não termina nunca."},
-    {"n": 3, "tipo": "texto-off", "headline": "Tem um nome pra isso.", "body": "Religiosidade de mérito. A crença secreta de que o sangue de Cristo abriu a porta, mas o resto depende de você manter a conta no azul."},
-    {"n": 4, "tipo": "texto-midnight", "headline": "Não existe esforço humano que pague.", "accent_word": "nenhum", "body": "Não tem jejum suficiente, não tem disciplina suficiente, não tem boa obra suficiente. Nenhum esforço seu perdoa um pecado teu."},
-    {"n": 5, "tipo": "texto-off", "headline": "Cristo já perdoou.", "body": "Na cruz Ele disse: está consumado. Consumado quer dizer terminado, quitado, sem saldo devedor. Você não completa o que Ele terminou."},
-    {"n": 6, "tipo": "texto-midnight", "headline": "Filho não mendiga o que já é dele.", "body": "Quando você tenta pagar de novo, você troca a cadeira de filho pela fila de devedor. E Deus já te tirou dessa fila."},
-    {"n": 7, "tipo": "texto-off", "headline": "Tentar pagar é desconfiar.", "body": "No fundo, quem ainda paga não acredita que foi pago. O esforço vira uma forma educada de duvidar da cruz."},
-    {"n": 8, "tipo": "verso", "versiculo": "Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.", "referencia": "Efésios 1:7"},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Para de tentar pagar o que já foi pago. Descansa na conta quitada.", "accent_word": "descansa"},
-    {"n": 10, "tipo": "cta", "intro": "O Filho nos redimiu, e a fatura voltou marcada como paga.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Para de pagar uma conta que Cristo já quitou",
+      "accent_word": "já quitou",
+      "image_hint": "Mão soltando moedas que caem, fundo escuro neutro, luz lateral dramática, foco no gesto de soltar"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Você acorda tentando pagar.",
+      "body": "Mais oração pra compensar a falha de ontem. Mais serviço pra apagar a culpa. Mais sacrifício pra Deus te olhar com bons olhos. E isso não termina nunca."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "Tem um nome pra isso.",
+      "body": "Religiosidade de mérito. A crença secreta de que o sangue de Cristo abriu a porta, mas o resto depende de você manter a conta no azul."
+    },
+    {
+      "n": 4,
+      "tipo": "texto-midnight",
+      "headline": "Não existe esforço humano que pague.",
+      "accent_word": "nenhum",
+      "body": "Não tem jejum suficiente, não tem disciplina suficiente, não tem boa obra suficiente. Nenhum esforço seu perdoa um pecado teu."
+    },
+    {
+      "n": 5,
+      "tipo": "texto-off",
+      "headline": "Cristo já perdoou.",
+      "body": "Na cruz Ele disse: está consumado. Consumado quer dizer terminado, quitado, sem saldo devedor. Você não completa o que Ele terminou."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-midnight",
+      "headline": "Filho não mendiga o que já é dele.",
+      "body": "Quando você tenta pagar de novo, você troca a cadeira de filho pela fila de devedor. E Deus já te tirou dessa fila."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-off",
+      "headline": "Tentar pagar é desconfiar.",
+      "body": "No fundo, quem ainda paga não acredita que foi pago. O esforço vira uma forma educada de duvidar da cruz."
+    },
+    {
+      "n": 8,
+      "tipo": "verso",
+      "versiculo": "Nele temos a redenção, pelo seu sangue, a remissão dos pecados, segundo a riqueza da sua graça.",
+      "referencia": "Efésios 1:7"
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Para de tentar pagar o que já foi pago. Descansa na conta quitada.",
+      "accent_word": "descansa"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "O Filho nos redimiu, e a fatura voltou marcada como paga.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "Você acorda tentando pagar. Mais oração pra compensar a falha, mais serviço pra apagar a culpa, mais sacrifício pra Deus te olhar bem. E isso não termina nunca.\n\nNão existe esforço humano que perdoe um pecado teu. Cristo já perdoou. Na cruz Ele disse: está consumado. Quitado, sem saldo devedor.\n\nNo fundo, quem ainda paga não acredita que foi pago. Para de tentar completar o que Ele terminou.\n\nComenta DESCANSO se você precisa parar de pagar.\n\n#castelofortejurere #emcristo #efesios #pristraelanijar"
 }

@@ -7,16 +7,70 @@
   "tema_central": "Mostrar que a escolha de Deus é anterior e independente do desempenho humano: graça pura, decidida antes de você existir.",
   "versiculo_base": "Efésios 1:4",
   "slides": [
-    {"n": 1, "tipo": "capa", "headline": "Você foi ESCOLHIDO antes do mundo existir", "accent_word": "ESCOLHIDO", "image_hint": "Constelação se formando no escuro antes de uma terra surgir ao fundo, luz suave, profundidade cósmica serena"},
-    {"n": 2, "tipo": "texto-midnight", "headline": "Não tinha você ainda pra Deus avaliar", "body": "Nenhuma boa ação na sua conta, nenhum erro pra perdoar. Você nem existia, e mesmo assim Ele já sabia o seu nome."},
-    {"n": 3, "tipo": "texto-off", "headline": "A escolha veio antes do tempo", "body": "Antes da luz, antes do mar, antes do primeiro dia. Antes de qualquer coisa que pudesse te qualificar ou desqualificar."},
-    {"n": 4, "tipo": "verso", "versiculo": "Deus nos escolheu nele antes da criação do mundo, para sermos santos e irrepreensíveis em amor.", "referencia": "Efésios 1:4"},
-    {"n": 5, "tipo": "texto-midnight", "headline": "Sua escolha não foi prêmio por desempenho", "accent_word": "prêmio", "body": "Se Ele escolheu antes de você nascer, então não foi nada que você fez. E nada que você faça desfaz."},
-    {"n": 6, "tipo": "texto-off", "headline": "Isso muda como você lida com a falha", "body": "Você não foi escolhido por ser bom. Então o seu pior dia não cancela uma decisão tomada antes do mundo."},
-    {"n": 7, "tipo": "texto-midnight", "headline": "Escolhido para ser santo", "body": "A santidade não é a condição pra ser escolhido. É o destino de quem já foi. O fim, não o pedágio."},
-    {"n": 8, "tipo": "texto-off", "headline": "Você não conquistou esse olhar", "body": "Ele te olhou primeiro, no escuro, antes de qualquer estrela. E continua te olhando do mesmo jeito hoje."},
-    {"n": 9, "tipo": "texto-midnight", "headline": "Antes de você decidir por Deus, Deus já tinha decidido por você.", "accent_word": "decidido"},
-    {"n": 10, "tipo": "cta", "intro": "Domingo tem a série Em Cristo. Vem ouvir sobre a escolha que veio antes de você existir.", "marca": "SÉRIE EM CRISTO", "data": "DOMINGOS DE JUNHO", "igreja": "Igreja Castelo Forte · Jurerê"}
+    {
+      "n": 1,
+      "tipo": "capa",
+      "headline": "Antes de você nascer, Deus já tinha decidido",
+      "accent_word": "já tinha decidido",
+      "image_hint": "Constelação se formando no escuro antes de uma terra surgir ao fundo, luz suave, profundidade cósmica serena"
+    },
+    {
+      "n": 2,
+      "tipo": "texto-midnight",
+      "headline": "Não tinha você ainda pra Deus avaliar",
+      "body": "Nenhuma boa ação na sua conta, nenhum erro pra perdoar. Você nem existia, e mesmo assim Ele já sabia o seu nome."
+    },
+    {
+      "n": 3,
+      "tipo": "texto-off",
+      "headline": "A escolha veio antes do tempo",
+      "body": "Antes da luz, antes do mar, antes do primeiro dia. Antes de qualquer coisa que pudesse te qualificar ou desqualificar."
+    },
+    {
+      "n": 4,
+      "tipo": "verso",
+      "versiculo": "Deus nos escolheu nele antes da criação do mundo, para sermos santos e irrepreensíveis em amor.",
+      "referencia": "Efésios 1:4"
+    },
+    {
+      "n": 5,
+      "tipo": "texto-midnight",
+      "headline": "Sua escolha não foi prêmio por desempenho",
+      "accent_word": "prêmio",
+      "body": "Se Ele escolheu antes de você nascer, então não foi nada que você fez. E nada que você faça desfaz."
+    },
+    {
+      "n": 6,
+      "tipo": "texto-off",
+      "headline": "Isso muda como você lida com a falha",
+      "body": "Você não foi escolhido por ser bom. Então o seu pior dia não cancela uma decisão tomada antes do mundo."
+    },
+    {
+      "n": 7,
+      "tipo": "texto-midnight",
+      "headline": "Escolhido para ser santo",
+      "body": "A santidade não é a condição pra ser escolhido. É o destino de quem já foi. O fim, não o pedágio."
+    },
+    {
+      "n": 8,
+      "tipo": "texto-off",
+      "headline": "Você não conquistou esse olhar",
+      "body": "Ele te olhou primeiro, no escuro, antes de qualquer estrela. E continua te olhando do mesmo jeito hoje."
+    },
+    {
+      "n": 9,
+      "tipo": "texto-midnight",
+      "headline": "Antes de você decidir por Deus, Deus já tinha decidido por você.",
+      "accent_word": "decidido"
+    },
+    {
+      "n": 10,
+      "tipo": "cta",
+      "intro": "Domingo tem a série Em Cristo. Vem ouvir sobre a escolha que veio antes de você existir.",
+      "marca": "SÉRIE EM CRISTO",
+      "data": "DOMINGOS DE JUNHO",
+      "igreja": "Igreja Castelo Forte · Jurerê"
+    }
   ],
   "legenda_instagram": "Deus te escolheu nele antes da criação do mundo. Não tinha você ainda pra Ele avaliar, nenhuma boa ação, nenhum erro pra perdoar, e Ele já sabia o seu nome. Se a escolha veio antes de você nascer, então não foi nada que você fez, e nada que você faça desfaz. Seu pior dia não cancela uma decisão tomada antes do mundo. Antes de você decidir por Deus, Ele já tinha decidido por você. #castelofortejurere #emcristo #efesios #pristraelanijar"
 }
